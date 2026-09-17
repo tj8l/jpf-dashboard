@@ -1,8 +1,8 @@
 {
   "meta": {
     "timezone": "America/Vancouver",
-    "lastUpdated": "2026-09-16T17:04:00-07:00",
-    "lastUpdatedLabel": "Wed Sep 16, 2026 · 5:04 PM PT",
+    "lastUpdated": "2026-09-17T05:31:00-07:00",
+    "lastUpdatedLabel": "Thu Sep 17, 2026 · 5:31 AM PT",
     "updatedBy": "assistant-scheduled-refresh",
     "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses CoinGecko (+ Coinbase fallback); gold tries gold-api.com; WTI/SPX/US10Y use snapshot + TradingView embed (browser CORS blocks most free quote APIs). Does not write localStorage for prices."
   },
@@ -16,49 +16,49 @@
       "id": "xau",
       "label": "Spot gold",
       "ticker": "XAU",
-      "value": 4271.2,
-      "display": "$4,271",
+      "value": 4380.2,
+      "display": "$4,380",
       "unit": "USD/oz",
-      "change": 2.9,
-      "changePct": 0.07,
-      "changeDisplay": "+2.9 · +0.07%",
-      "asOf": "2026-09-16T17:04:00-07:00",
-      "asOfLabel": "Wed Sep 16, 2026 · 5:04 PM PT",
+      "change": 109.0,
+      "changePct": 2.55,
+      "changeDisplay": "+109.0 · +2.55%",
+      "asOf": "2026-09-17T05:31:00-07:00",
+      "asOfLabel": "Thu Sep 17, 2026 · 5:31 AM PT",
       "source": "gold-api.com",
       "status": "live",
-      "note": "Live ~$4,271 (+0.07% vs 4:05 PM); post-FOMC."
+      "note": "Live ~$4,380 (+2.55% vs Wed ~$4,271 snap)."
     },
     {
       "id": "wti",
       "label": "Spot oil",
       "ticker": "CL · WTI",
-      "value": 101.74,
-      "display": "$101.74",
+      "value": 99.66,
+      "display": "$99.66",
       "unit": "USD/bbl",
-      "change": -4.09,
-      "changePct": -3.86,
-      "changeDisplay": "$-4.09 · -3.86%",
-      "asOf": "2026-09-16T17:04:00-07:00",
-      "asOfLabel": "Wed Sep 16, 2026 · 5:04 PM PT",
+      "change": -1.73,
+      "changePct": -1.71,
+      "changeDisplay": "$-1.73 · -1.71%",
+      "asOf": "2026-09-17T05:31:00-07:00",
+      "asOfLabel": "Thu Sep 17, 2026 · 5:31 AM PT",
       "source": "Yahoo CL=F",
       "status": "live",
-      "note": "Live ~$101.74 (-3.86% vs Tue settle $105.83)."
+      "note": "Live ~$99.66 (-1.71% vs prior close $101.39; -2.04% vs Wed snap)."
     },
     {
       "id": "btc",
       "label": "Spot Bitcoin",
       "ticker": "BTC",
-      "value": 76196,
-      "display": "$76,196",
+      "value": 76895,
+      "display": "$76,895",
       "unit": "USD",
-      "change": 483,
-      "changePct": 0.64,
-      "changeDisplay": "+0.64% 24h · -2.67% 7d",
-      "asOf": "2026-09-16T17:04:00-07:00",
-      "asOfLabel": "Wed Sep 16, 2026 · 5:04 PM PT",
+      "change": 995,
+      "changePct": 1.31,
+      "changeDisplay": "+1.31% 24h · +0.43% 7d",
+      "asOf": "2026-09-17T05:31:00-07:00",
+      "asOfLabel": "Thu Sep 17, 2026 · 5:31 AM PT",
       "source": "Coinbase",
       "status": "live",
-      "note": "~$76,196 (+0.64% 24h); post-FOMC +25 bp hike."
+      "note": "~$76,895 (+1.31% 24h); overnight bid after FOMC."
     },
     {
       "id": "spx",
@@ -70,11 +70,11 @@
       "change": -33.92,
       "changePct": -0.45,
       "changeDisplay": "-33.92 · -0.45%",
-      "asOf": "2026-09-16T17:04:00-07:00",
-      "asOfLabel": "Wed Sep 16, 2026 · 5:04 PM PT",
+      "asOf": "2026-09-17T05:31:00-07:00",
+      "asOfLabel": "Thu Sep 17, 2026 · 5:31 AM PT",
       "source": "Yahoo ^GSPC",
       "status": "last-close",
-      "note": "Cash close/last 7,551.81 (-0.45% vs Tue close 7,585.73). Post-FOMC. After US equity hours."
+      "note": "Cash last close 7,551.81 (-0.45% vs prior session). Pre-US open (~6:30 AM PT)."
     },
     {
       "id": "us10y",
@@ -86,11 +86,11 @@
       "change": 0.01,
       "changePct": 0.2,
       "changeDisplay": "+1.0 bp · near 5%",
-      "asOf": "2026-09-16T17:04:00-07:00",
-      "asOfLabel": "Wed Sep 16, 2026 · 5:04 PM PT",
+      "asOf": "2026-09-17T05:31:00-07:00",
+      "asOfLabel": "Thu Sep 17, 2026 · 5:31 AM PT",
       "source": "Yahoo ^TNX",
       "status": "live",
-      "note": "~5.006% (+1.0 bp vs Tue 4.996%)."
+      "note": "~5.006% (+1.0 bp vs Tue 4.996%). Unchanged overnight."
     }
   ],
   "watchlist": [
@@ -99,22 +99,22 @@
       "symbol": "ETH",
       "name": "Ethereum",
       "role": "Primary L1 settlement for agents",
-      "price": 2415.68,
-      "change24h": 0.77,
+      "price": 2465.92,
+      "change24h": 2.55,
       "change7d": -2.1,
       "source": "Coinbase",
-      "asOf": "2026-09-16T17:04:00-07:00"
+      "asOf": "2026-09-17T05:31:00-07:00"
     },
     {
       "id": "sol",
       "symbol": "SOL",
       "name": "Solana",
       "role": "High-throughput agent txs",
-      "price": 98.48,
-      "change24h": 1.52,
+      "price": 101.03,
+      "change24h": 3.63,
       "change7d": -3.0,
       "source": "Coinbase",
-      "asOf": "2026-09-16T17:04:00-07:00"
+      "asOf": "2026-09-17T05:31:00-07:00"
     },
     {
       "id": "usdc",
@@ -125,42 +125,42 @@
       "change24h": 0.0,
       "change7d": 0.0,
       "source": "Coinbase",
-      "asOf": "2026-09-16T17:04:00-07:00"
+      "asOf": "2026-09-17T05:31:00-07:00"
     },
     {
       "id": "fet",
       "symbol": "FET",
       "name": "ASI Alliance (Fetch.ai)",
       "role": "Agent-economy token",
-      "price": 0.15777,
-      "change24h": 4.12,
+      "price": 0.16082,
+      "change24h": 6.18,
       "change7d": -7.06,
       "source": "Coinbase",
-      "asOf": "2026-09-16T17:04:00-07:00"
+      "asOf": "2026-09-17T05:31:00-07:00"
     },
     {
       "id": "near",
       "symbol": "NEAR",
       "name": "NEAR Protocol",
       "role": "Intents / agent protocol",
-      "price": 2.612,
-      "change24h": 11.19,
+      "price": 2.878,
+      "change24h": 16.43,
       "change7d": 5.18,
       "source": "Coinbase",
-      "asOf": "2026-09-16T17:04:00-07:00"
+      "asOf": "2026-09-17T05:31:00-07:00"
     }
   ],
   "bitcoinDetail": {
-    "price": 76196,
-    "change24h": 0.64,
-    "change7d": -2.67,
-    "high24h": 76500,
+    "price": 76895,
+    "change24h": 1.31,
+    "change7d": 0.43,
+    "high24h": 76935,
     "low24h": 74912,
-    "marketCap": 1529822376505,
+    "marketCap": 1543859334039,
     "ath": 126173,
     "athDate": "2025-10-06",
     "source": "Coinbase (spot/24h range); Coinbase daily candles (7d); market cap ≈ circ supply × spot",
-    "asOf": "2026-09-16T17:04:00-07:00"
+    "asOf": "2026-09-17T05:31:00-07:00"
   },
   "tasks": [
     {
@@ -250,53 +250,53 @@
   ],
   "news": [
     {
-      "title": "Cointelegraph: CLARITY Act could get another shot during lame-duck session, policy advocate says",
+      "title": "Cointelegraph: State hackers drive 420% surge in onchain malware, Chainalysis finds",
       "source": "Cointelegraph",
-      "date": "2026-09-16",
-      "dateLabel": "Sep 16",
-      "url": "https://cointelegraph.com/news/clarity-act-could-get-another-shot-during-lame-duck-session-policy-advocate-says"
+      "date": "2026-09-17",
+      "dateLabel": "Sep 17",
+      "url": "https://cointelegraph.com/news/onchain-malware-writes-surge-420-north-korea-iran-chainalysis"
     },
     {
-      "title": "Cointelegraph: US House tax committee advances crypto tax overhaul in 38–5 vote",
+      "title": "Cointelegraph: Zcash gains 20% as Paradigm founder reveals firm made ZEC investment",
       "source": "Cointelegraph",
-      "date": "2026-09-16",
-      "dateLabel": "Sep 16",
-      "url": "https://cointelegraph.com/news/house-tax-committee-advances-crypto-tax-overhaul-in-385-vote"
+      "date": "2026-09-17",
+      "dateLabel": "Sep 17",
+      "url": "https://cointelegraph.com/markets/zcash-zec-price-paradigm-investment-privacy-coins"
     },
     {
-      "title": "Yahoo Finance: Mysterious trader moves $122 million ahead of Fed's 2 p.m. decision",
-      "source": "Yahoo Finance / TheStreet",
-      "date": "2026-09-16",
-      "dateLabel": "Sep 16",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/mysterious-trader-moves-122-million-164740089.html"
-    },
-    {
-      "title": "Cointelegraph: UK FCA sets crypto authorization guidance ahead of September application window",
+      "title": "Cointelegraph: Revolut says no direct contact from hackers after $3M public ransom demand",
       "source": "Cointelegraph",
-      "date": "2026-09-16",
-      "dateLabel": "Sep 16",
-      "url": "https://cointelegraph.com/news/uk-fca-sets-crypto-authorization-guidance-ahead-of-september-application-window"
+      "date": "2026-09-17",
+      "dateLabel": "Sep 17",
+      "url": "https://cointelegraph.com/news/revolut-data-breach-monero-ransom-no-direct-contact"
     },
     {
-      "title": "SPX last close 7,551.81 (-0.45% vs Tue); US10Y 5.006% (+1.0 bp)",
-      "source": "Yahoo ^GSPC / ^TNX",
-      "date": "2026-09-16",
-      "dateLabel": "Sep 16",
-      "url": "https://finance.yahoo.com/quote/%5EGSPC"
+      "title": "Cointelegraph: Bitcoin treasuries buy just 5.9K BTC in three months as paper losses linger",
+      "source": "Cointelegraph",
+      "date": "2026-09-17",
+      "dateLabel": "Sep 17",
+      "url": "https://cointelegraph.com/markets/bitcoin-treasuries-buy-just-59k-btc-in-three-months-as-paper-losses-linger"
     },
     {
-      "title": "Bitcoin ~$76,196 (Coinbase, +0.64% 24h) after FOMC hike",
-      "source": "Coinbase",
-      "date": "2026-09-16",
-      "dateLabel": "Sep 16",
+      "title": "Cointelegraph: BitMEX faces Celsius lawsuit ahead of exchange closure",
+      "source": "Cointelegraph",
+      "date": "2026-09-17",
+      "dateLabel": "Sep 17",
+      "url": "https://cointelegraph.com/news/celsius-estate-bitmex-6360-btc-liquidation-lawsuit"
+    },
+    {
+      "title": "Spot gold ~$4,380 (+2.6% overnight vs Wed); WTI $99.66 (-2.0% vs Wed snap)",
+      "source": "gold-api.com / Yahoo CL=F",
+      "date": "2026-09-17",
+      "dateLabel": "Sep 17",
+      "url": "https://finance.yahoo.com/quote/CL=F"
+    },
+    {
+      "title": "Bitcoin ~$76,895 (Coinbase, +1.31% 24h); SPX last close 7,551.81 pre-open",
+      "source": "Coinbase / Yahoo ^GSPC",
+      "date": "2026-09-17",
+      "dateLabel": "Sep 17",
       "url": "https://www.coinbase.com/price/bitcoin"
-    },
-    {
-      "title": "Spot gold ~$4,271 (gold-api.com, +0.07% vs 4:05 PM)",
-      "source": "gold-api.com",
-      "date": "2026-09-16",
-      "dateLabel": "Sep 16",
-      "url": "https://api.gold-api.com/price/XAU"
     }
   ],
   "investmentNotes": [
@@ -307,36 +307,36 @@
   "weather": {
     "location": "Langley, BC",
     "timezone": "America/Vancouver",
-    "date": "2026-09-16",
-    "dateLabel": "Wed Sep 16, 2026",
-    "conditions": "Sunny and clear early evening (high ~25°C / low ~9°C); no rain expected",
+    "date": "2026-09-17",
+    "dateLabel": "Thu Sep 17, 2026",
+    "conditions": "Clear/sunny morning into a warm afternoon (high ~26°C / low ~9°C); no rain expected",
     "conditionsShort": "Sunny",
     "temp": {
-      "highC": 25,
+      "highC": 26,
       "lowC": 9,
-      "highF": 77,
+      "highF": 79,
       "lowF": 48,
-      "displayC": "25° / 9°C",
-      "displayF": "77° / 48°F",
-      "currentC": 24,
-      "currentF": 75
+      "displayC": "26° / 9°C",
+      "displayF": "79° / 48°F",
+      "currentC": 10,
+      "currentF": 50
     },
     "rainChancePct": 0,
     "wind": {
       "summary": "light",
-      "maxKmh": 12,
-      "display": "Light, up to ~12 km/h"
+      "maxKmh": 13,
+      "display": "Light, up to ~13 km/h"
     },
     "sun": {
-      "sunrise": "06:48",
-      "sunset": "19:20",
-      "sunriseLabel": "6:48 AM",
-      "sunsetLabel": "7:20 PM",
+      "sunrise": "06:50",
+      "sunset": "19:18",
+      "sunriseLabel": "6:50 AM",
+      "sunsetLabel": "7:18 PM",
       "timezoneNote": "PT"
     },
-    "asOf": "2026-09-16T17:04:00-07:00",
-    "asOfLabel": "Wed Sep 16, 2026 · 5:04 PM PT",
-    "source": "Open-Meteo (Langley BC 49.10N, 122.66W); cross-checked wttr.in/MET Norway",
-    "lastUpdated": "2026-09-16T17:04:00-07:00"
+    "asOf": "2026-09-17T05:31:00-07:00",
+    "asOfLabel": "Thu Sep 17, 2026 · 5:31 AM PT",
+    "source": "Open-Meteo (Langley BC 49.10N, 122.66W); cross-checked wttr.in",
+    "lastUpdated": "2026-09-17T05:31:00-07:00"
   }
 }

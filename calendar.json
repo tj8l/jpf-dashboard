@@ -1,47 +1,24 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-16T17:04:00-07:00",
+  "fetchedAt": "2026-09-17T05:31:00-07:00",
   "source": "Google Calendar (primary)",
   "range": {
-    "start": "2026-09-16",
-    "end": "2026-09-23",
-    "label": "Next 7 days"
+    "start": "2026-09-17",
+    "end": "2026-09-30",
+    "label": "Sep 17–30"
   },
   "notes": [
-    "Wed Sep 16 tonight: U15 coach @ TWIN 2 (7:15–8:35 PM) overlaps U17 player @ LEC 3 (7:45–9:15 PM).",
-    "Brooks reassigned to U17 tryout group (listed as Lang U18 A4 for Cloverdale jamboree).",
+    "Today Thu Sep 17: MMA D 8:00 AM–4:00 PM.",
     "Cloverdale jamboree Fri–Sun Sep 18–20 (CLOV / CSIC #1); arrive 60 min early, dress code.",
-    "Sat Sep 19 jamboree 12:45–2:15 PM overlaps MMA D shift — book off or leave early if attending.",
-    "TODO reminder on calendar Sun Sep 20: book off Sat Sep 26 for U15 eval.",
-    "Post-jamboree U17 ice Tue Sep 22 @ SPX 2; regular season ice from Sat Oct 3 (times TBD).",
-    "Sat Sep 19: Greg's 50th Birthday 6–9 PM @ Hebner's House (also MMA D + U18 jamboree that day).",
-    "FOMC OUT: Fed hiked +25 bp to 3.75%–4.00% (unanimous) ~11:00 AM PT; dots signal possible another hike this year."
+    "Sat Sep 19 jamboree 12:45–2:15 PM overlaps MMA D — book off or leave early if attending.",
+    "Sat Sep 19: Greg's 50th Birthday 6–9 PM @ Hebner's House (also MMA D + U18 jamboree).",
+    "TODO reminder Sun Sep 20: book off Sat Sep 26 for U15 eval (hard clash with MMA D).",
+    "Sat Sep 26: MMA D vs U15 Eval 1:15–2:15 PM @ LEC 1 — book the day off.",
+    "Post-jamboree: U15 early Tue Sep 22 @ SPX 2; U17 Tue Sep 22 @ SPX 2 7:45–9:15 PM.",
+    "U15 C Draft Wed Sep 30; regular season ice from Sat Oct 3 (times TBD).",
+    "Brooks reassigned to U17 tryout group (listed as Lang U18 A4 for Cloverdale jamboree)."
   ],
   "events": [
-    {
-      "id": "ptpvv7thp9rfff3fuba3q3143k",
-      "summary": "Work · MMA D",
-      "location": "",
-      "start": "2026-09-16T08:00:00-07:00",
-      "end": "2026-09-16T16:00:00-07:00",
-      "whenLabel": "Wed Sep 16 · 8:00 AM–4:00 PM PT"
-    },
-    {
-      "id": "63erokev58vitm6pranl4auabc",
-      "summary": "U15 C Practice — Group 4 (coach)",
-      "location": "TWIN 2 (Langley)",
-      "start": "2026-09-16T19:15:00-07:00",
-      "end": "2026-09-16T20:35:00-07:00",
-      "whenLabel": "Wed Sep 16 · 7:15 PM–8:35 PM PT"
-    },
-    {
-      "id": "31lrl446q6h7j77e2vehhmr6uo",
-      "summary": "U17 Practice · LEC 3",
-      "location": "LEC 3 (Langley Events Centre)",
-      "start": "2026-09-16T19:45:00-07:00",
-      "end": "2026-09-16T21:15:00-07:00",
-      "whenLabel": "Wed Sep 16 · 7:45 PM–9:15 PM PT"
-    },
     {
       "id": "20d9v6la8em04ae203tv78q080",
       "summary": "Work · MMA D",
@@ -137,6 +114,102 @@
       "start": "2026-09-22T19:45:00-07:00",
       "end": "2026-09-22T21:15:00-07:00",
       "whenLabel": "Tue Sep 22 · 7:45 PM–9:15 PM PT"
+    },
+    {
+      "id": "1qqj5pq2l64pp9tm7nofnrn838",
+      "summary": "U17 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-09-24T21:15:00-07:00",
+      "end": "2026-09-24T22:45:00-07:00",
+      "whenLabel": "Thu Sep 24 · 9:15 PM–10:45 PM PT"
+    },
+    {
+      "id": "u6jofvdjsommsbs2b8both3o4s",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-26T08:00:00-07:00",
+      "end": "2026-09-26T16:00:00-07:00",
+      "whenLabel": "Sat Sep 26 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "7kd04vb9g5u3pibs6ao7uq5c7k",
+      "summary": "U15 C Eval — Groups 3 & 4",
+      "location": "LEC 1 (Langley Events Centre)",
+      "start": "2026-09-26T13:15:00-07:00",
+      "end": "2026-09-26T14:15:00-07:00",
+      "whenLabel": "Sat Sep 26 · 1:15 PM–2:15 PM PT"
+    },
+    {
+      "id": "sj2nkmc4gn80h6f2el1t226sgo",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-27T08:00:00-07:00",
+      "end": "2026-09-27T16:00:00-07:00",
+      "whenLabel": "Sun Sep 27 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "e4sl40ju6ob9n0ndt1th87uii0",
+      "summary": "U17 Practice · LEC 1",
+      "location": "LEC 1 (Langley Events Centre)",
+      "start": "2026-09-27T19:00:00-07:00",
+      "end": "2026-09-27T20:30:00-07:00",
+      "whenLabel": "Sun Sep 27 · 7:00 PM–8:30 PM PT"
+    },
+    {
+      "id": "k0emnnmcmquoh8g00c7ogpo6uc",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-28T08:00:00-07:00",
+      "end": "2026-09-28T16:00:00-07:00",
+      "whenLabel": "Mon Sep 28 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "6mrrrh8sf2ceu1b9lspu4v4gq4",
+      "summary": "U17 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-09-28T21:30:00-07:00",
+      "end": "2026-09-28T23:00:00-07:00",
+      "whenLabel": "Mon Sep 28 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "e41uqd9bifi3350aogin33buro",
+      "summary": "U15 C Practice — Group 4 (coach)",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-09-29T06:00:00-07:00",
+      "end": "2026-09-29T07:00:00-07:00",
+      "whenLabel": "Tue Sep 29 · 6:00 AM–7:00 AM PT"
+    },
+    {
+      "id": "n4bgolc1n74ftvv4pejq60rksc",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-29T08:00:00-07:00",
+      "end": "2026-09-29T16:00:00-07:00",
+      "whenLabel": "Tue Sep 29 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "k0ff6aoc6p0se04bpv9noeculo",
+      "summary": "U15 C Draft",
+      "location": "",
+      "start": "2026-09-30",
+      "end": "2026-10-01",
+      "whenLabel": "Wed Sep 30 · all day"
+    },
+    {
+      "id": "6au0kcg4hi796449pnmc0i038o",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-30T08:00:00-07:00",
+      "end": "2026-09-30T16:00:00-07:00",
+      "whenLabel": "Wed Sep 30 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "94jqceoni4rnsatpr3iuiqe6s4",
+      "summary": "U17 Practice · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-09-30T19:00:00-07:00",
+      "end": "2026-09-30T20:00:00-07:00",
+      "whenLabel": "Wed Sep 30 · 7:00 PM–8:00 PM PT"
     }
   ]
 }
