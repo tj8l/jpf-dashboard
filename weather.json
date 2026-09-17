@@ -3,33 +3,33 @@
   "timezone": "America/Vancouver",
   "date": "2026-09-16",
   "dateLabel": "Wed Sep 16, 2026",
-  "conditions": "Sunny and clear late afternoon (high ~24°C / low ~11°C); very low rain risk",
+  "conditions": "Sunny and clear early evening (high ~25°C / low ~9°C); no rain expected",
   "conditionsShort": "Sunny",
   "temp": {
-    "highC": 24,
-    "lowC": 11,
-    "highF": 75,
-    "lowF": 52,
-    "displayC": "24° / 11°C",
-    "displayF": "75° / 52°F",
+    "highC": 25,
+    "lowC": 9,
+    "highF": 77,
+    "lowF": 48,
+    "displayC": "25° / 9°C",
+    "displayF": "77° / 48°F",
     "currentC": 24,
     "currentF": 75
   },
-  "rainChancePct": 1,
+  "rainChancePct": 0,
   "wind": {
     "summary": "light",
-    "maxKmh": 13,
-    "display": "Light, up to ~13 km/h"
+    "maxKmh": 12,
+    "display": "Light, up to ~12 km/h"
   },
   "sun": {
-    "sunrise": "06:49",
-    "sunset": "19:22",
-    "sunriseLabel": "6:49 AM",
-    "sunsetLabel": "7:22 PM",
+    "sunrise": "06:48",
+    "sunset": "19:20",
+    "sunriseLabel": "6:48 AM",
+    "sunsetLabel": "7:20 PM",
     "timezoneNote": "PT"
   },
-  "asOf": "2026-09-16T16:05:45-07:00",
-  "asOfLabel": "Wed Sep 16, 2026 · 4:05 PM PT",
-  "source": "MET Norway + wttr.in (Langley BC 49.10N, 122.66W); Open-Meteo daily limit hit",
-  "lastUpdated": "2026-09-16T16:05:45-07:00"
+  "asOf": "2026-09-16T17:04:00-07:00",
+  "asOfLabel": "Wed Sep 16, 2026 · 5:04 PM PT",
+  "source": "Open-Meteo (Langley BC 49.10N, 122.66W); cross-checked wttr.in/MET Norway",
+  "lastUpdated": "2026-09-16T17:04:00-07:00"
 }
