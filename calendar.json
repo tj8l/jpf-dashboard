@@ -1,40 +1,22 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-17T05:31:00-07:00",
+  "fetchedAt": "2026-09-18T05:22:00-07:00",
   "source": "Google Calendar (primary)",
   "range": {
-    "start": "2026-09-17",
+    "start": "2026-09-18",
     "end": "2026-10-01",
-    "label": "Sep 17–Oct 1"
+    "label": "Sep 18–Oct 1"
   },
   "notes": [
-    "Today Thu Sep 17: MMA D 8:00 AM–4:00 PM, then NEW U17 practice 7:45–9:45 PM @ LEC 1.",
-    "Cloverdale jamboree Fri–Sun Sep 18–20 (CLOV / CSIC #1); arrive 60 min early, dress code.",
-    "Sat Sep 19 jamboree 12:45–2:15 PM overlaps MMA D — book off or leave early if attending.",
-    "Sat Sep 19: Greg's 50th Birthday 6–9 PM @ Hebner's House (also MMA D + U18 jamboree).",
-    "TODO reminder Sun Sep 20: book off Sat Sep 26 for U15 eval (hard clash with MMA D).",
-    "Sat Sep 26: MMA D vs U15 Eval 1:15–2:15 PM @ LEC 1 — book the day off.",
-    "Post-jamboree: U15 early Tue Sep 22 @ SPX 2; U17 GAME Tue Sep 22 @ SPX 2 7:45–9:15 PM vs Abbotsford U17.",
+    "Today Fri Sep 18: MMA D 8:00 AM–4:00 PM; Cloverdale jamboree opens — U18 vs RM A4 9:30–11:00 PM @ CLOV (arrive 60 min early, dress code).",
+    "Sat Sep 19: jamboree @ Clov A3 12:45–2:15 PM overlaps MMA D — leave early if attending; Greg's 50th 6–9 PM @ Hebner's House.",
+    "Sun Sep 20: jamboree @ RM A3 1:15–2:45 PM @ CSIC #1; U15 C practice 7:00–8:30 PM @ LEC 1; TODO reminder to book off Sat Sep 26.",
+    "Sat Sep 26: MMA D vs U15 Eval 1:15–2:15 PM @ LEC 1 — book the day off (hard clash).",
+    "Tue Sep 22: early U15 @ SPX 2 6–7 AM; U17 GAME vs Abbotsford 7:45–9:15 PM @ SPX 2.",
     "U15 C Draft Wed Sep 30; regular season ice from Sat Oct 3 (times TBD).",
     "Brooks reassigned to U17 tryout group (listed as Lang U18 A4 for Cloverdale jamboree)."
   ],
   "events": [
-    {
-      "id": "20d9v6la8em04ae203tv78q080",
-      "summary": "Work · MMA D",
-      "location": "",
-      "start": "2026-09-17T08:00:00-07:00",
-      "end": "2026-09-17T16:00:00-07:00",
-      "whenLabel": "Thu Sep 17 · 8:00 AM–4:00 PM PT"
-    },
-    {
-      "id": "00scmnhu9815dplmcoilntqeg4",
-      "summary": "U17 Practice · LEC 1 (NEW)",
-      "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-09-17T19:45:00-07:00",
-      "end": "2026-09-17T21:45:00-07:00",
-      "whenLabel": "Thu Sep 17 · 7:45 PM–9:45 PM PT"
-    },
     {
       "id": "6vav88d25tadt4tnmrlpq7j86g",
       "summary": "Work · MMA D",
