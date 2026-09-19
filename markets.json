@@ -1,60 +1,60 @@
 {
-  "asOf": "2026-09-18T05:22:00-07:00",
-  "note": "Fri ~5:22 AM PT — pre-US open; SPX last-close; gold/WTI/crypto/US10Y live",
+  "asOf": "2026-09-19T05:12:00-07:00",
+  "note": "Sat ~5:08 AM PT \u2014 weekend; SPX Fri close; gold/WTI/crypto/US10Y live",
   "spots": [
     {
       "id": "gold",
       "name": "Spot gold",
       "symbol": "XAU",
-      "value": 4368.9,
+      "value": 4379.0,
       "unit": "USD/oz",
-      "change": "-0.26% vs prior snap",
+      "change": "+0.23% vs prior snap",
       "source": "gold-api.com",
-      "asOf": "2026-09-18",
+      "asOf": "2026-09-19",
       "status": "live"
     },
     {
       "id": "oil",
       "name": "Spot oil (WTI)",
       "symbol": "CL",
-      "value": 96.54,
+      "value": 96.08,
       "unit": "USD/bbl",
-      "change": "-4.78% vs prior close",
+      "change": "-5.24% vs prior close",
       "source": "Yahoo CL=F (live)",
-      "asOf": "2026-09-18",
+      "asOf": "2026-09-19",
       "status": "live"
     },
     {
       "id": "btc",
       "name": "Spot BTC",
       "symbol": "BTC",
-      "value": 77938,
+      "value": 81312,
       "unit": "USD",
-      "change": "+2.08% 24h",
+      "change": "+4.28% 24h",
       "source": "Coinbase",
-      "asOf": "2026-09-18",
+      "asOf": "2026-09-19",
       "status": "live"
     },
     {
       "id": "spx",
       "name": "S&P 500",
       "symbol": "SPX",
-      "value": 7637.76,
+      "value": 7650.5,
       "unit": "index",
-      "change": "+0.61%",
+      "change": "+0.17%",
       "source": "Yahoo ^GSPC (last close)",
-      "asOf": "2026-09-18",
+      "asOf": "2026-09-19",
       "status": "last-close"
     },
     {
       "id": "us10y",
       "name": "US 10-year Treasury",
       "symbol": "US10Y",
-      "value": 4.947,
+      "value": 4.998,
       "unit": "%",
-      "change": "-5.9 bp vs Thu snap",
+      "change": "+5.1 bp vs Fri snap",
       "source": "Yahoo ^TNX",
-      "asOf": "2026-09-18",
+      "asOf": "2026-09-19",
       "status": "live"
     }
   ]

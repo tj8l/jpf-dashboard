@@ -1,19 +1,19 @@
 {
   "location": "Langley, BC",
   "timezone": "America/Vancouver",
-  "date": "2026-09-18",
-  "dateLabel": "Fri Sep 18, 2026",
-  "conditions": "Mostly cloudy / overcast morning into a mild afternoon (high ~22°C / low ~9°C); no rain expected. Wttr notes early smoky haze.",
+  "date": "2026-09-19",
+  "dateLabel": "Sat Sep 19, 2026",
+  "conditions": "Overcast / cloudy morning into a mild afternoon (high ~23\u00b0C / low ~9\u00b0C); no rain expected. Wttr notes early smoky haze.",
   "conditionsShort": "Cloudy",
   "temp": {
-    "highC": 22,
+    "highC": 23,
     "lowC": 9,
-    "highF": 72,
+    "highF": 73,
     "lowF": 48,
-    "displayC": "22° / 9°C",
-    "displayF": "72° / 48°F",
-    "currentC": 10,
-    "currentF": 50
+    "displayC": "23\u00b0 / 9\u00b0C",
+    "displayF": "73\u00b0 / 48\u00b0F",
+    "currentC": 9,
+    "currentF": 48
   },
   "rainChancePct": 0,
   "wind": {
@@ -22,14 +22,14 @@
     "display": "Light, up to ~10 km/h"
   },
   "sun": {
-    "sunrise": "06:51",
-    "sunset": "19:16",
-    "sunriseLabel": "6:51 AM",
-    "sunsetLabel": "7:16 PM",
+    "sunrise": "06:53",
+    "sunset": "19:14",
+    "sunriseLabel": "6:53 AM",
+    "sunsetLabel": "7:14 PM",
     "timezoneNote": "PT"
   },
-  "asOf": "2026-09-18T05:22:00-07:00",
-  "asOfLabel": "Fri Sep 18, 2026 · 5:22 AM PT",
+  "asOf": "2026-09-19T05:12:00-07:00",
+  "asOfLabel": "Sat Sep 19, 2026 \u00b7 5:12 AM PT",
   "source": "Open-Meteo (Langley BC 49.10N, 122.66W); cross-checked wttr.in",
-  "lastUpdated": "2026-09-18T05:22:00-07:00"
+  "lastUpdated": "2026-09-19T05:12:00-07:00"
 }
