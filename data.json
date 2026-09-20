@@ -1,15 +1,15 @@
 {
   "meta": {
     "timezone": "America/Vancouver",
-    "lastUpdated": "2026-09-20T05:15:00-07:00",
-    "lastUpdatedLabel": "Sun Sep 20, 2026 · 5:15 AM PT",
+    "lastUpdated": "2026-09-20T09:17:00-07:00",
+    "lastUpdatedLabel": "Sun Sep 20, 2026 \u00b7 9:17 AM PT",
     "updatedBy": "assistant-scheduled-refresh",
-    "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses CoinGecko (+ Coinbase fallback); gold tries gold-api.com; WTI/SPX/US10Y use snapshot + TradingView embed (browser CORS blocks most free quote APIs). Does not write localStorage for prices."
+    "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold tries gold-api.com; WTI/SPX/US10Y use snapshot + TradingView embed (browser CORS blocks most free quote APIs). Does not write localStorage for prices."
   },
   "profile": {
     "name": "Command Center",
     "title": "",
-    "bitcoinStance": "Long-term holder. DCAs Bitcoin on a regular cadence — not a trader."
+    "bitcoinStance": "Long-term holder. DCAs Bitcoin on a regular cadence \u2014 not a trader."
   },
   "primaryMarkets": [
     {
@@ -21,9 +21,9 @@
       "unit": "USD/oz",
       "change": 0.0,
       "changePct": 0.0,
-      "changeDisplay": "flat · 0.00%",
+      "changeDisplay": "flat \u00b7 0.00%",
       "asOf": "2026-09-20T05:15:00-07:00",
-      "asOfLabel": "Sun Sep 20, 2026 · 5:15 AM PT",
+      "asOfLabel": "Sun Sep 20, 2026 \u00b7 5:15 AM PT",
       "source": "gold-api.com",
       "status": "live",
       "note": "Live ~$4,379 (flat vs Sat snap; weekend)."
@@ -31,15 +31,15 @@
     {
       "id": "wti",
       "label": "Spot oil",
-      "ticker": "CL · WTI",
+      "ticker": "CL \u00b7 WTI",
       "value": 96.08,
       "display": "$96.08",
       "unit": "USD/bbl",
       "change": 0.0,
       "changePct": 0.0,
-      "changeDisplay": "flat · 0.00%",
+      "changeDisplay": "flat \u00b7 0.00%",
       "asOf": "2026-09-20T05:15:00-07:00",
-      "asOfLabel": "Sun Sep 20, 2026 · 5:15 AM PT",
+      "asOfLabel": "Sun Sep 20, 2026 \u00b7 5:15 AM PT",
       "source": "Yahoo CL=F",
       "status": "live",
       "note": "Live ~$96.08 (flat vs Sat snap; weekend quote)."
@@ -48,17 +48,17 @@
       "id": "btc",
       "label": "Spot Bitcoin",
       "ticker": "BTC",
-      "value": 80461,
-      "display": "$80,461",
+      "value": 81119,
+      "display": "$81,119",
       "unit": "USD",
-      "change": -851,
-      "changePct": -1.04,
-      "changeDisplay": "-1.04% 24h · +4.74% 7d",
-      "asOf": "2026-09-20T05:15:00-07:00",
-      "asOfLabel": "Sun Sep 20, 2026 · 5:15 AM PT",
+      "change": -694,
+      "changePct": -0.85,
+      "changeDisplay": "-0.85% 24h \u00b7 +5.62% 7d",
+      "asOf": "2026-09-20T09:17:00-07:00",
+      "asOfLabel": "Sun Sep 20, 2026 \u00b7 9:17 AM PT",
       "source": "Coinbase",
       "status": "live",
-      "note": "~$80,461 (-1.04% 24h); soft overnight after Fri rally."
+      "note": "~$81,119 (-0.85% 24h \u00b7 +5.62% 7d); Coinbase live Sunday morning."
     },
     {
       "id": "spx",
@@ -69,9 +69,9 @@
       "unit": "index",
       "change": 12.74,
       "changePct": 0.17,
-      "changeDisplay": "+12.74 · +0.17%",
+      "changeDisplay": "+12.74 \u00b7 +0.17%",
       "asOf": "2026-09-20T05:15:00-07:00",
-      "asOfLabel": "Sun Sep 20, 2026 · 5:15 AM PT",
+      "asOfLabel": "Sun Sep 20, 2026 \u00b7 5:15 AM PT",
       "source": "Yahoo ^GSPC",
       "status": "last-close",
       "note": "Cash Fri close 7,650.50 (+0.17% vs prior session). Weekend."
@@ -85,9 +85,9 @@
       "unit": "yield",
       "change": 0.0,
       "changePct": 0.0,
-      "changeDisplay": "flat · near 5%",
+      "changeDisplay": "flat \u00b7 near 5%",
       "asOf": "2026-09-20T05:15:00-07:00",
-      "asOfLabel": "Sun Sep 20, 2026 · 5:15 AM PT",
+      "asOfLabel": "Sun Sep 20, 2026 \u00b7 5:15 AM PT",
       "source": "Yahoo ^TNX",
       "status": "live",
       "note": "~4.998% (flat vs Sat snap)."
@@ -151,22 +151,22 @@
     }
   ],
   "bitcoinDetail": {
-    "price": 80461,
-    "change24h": -1.04,
-    "change7d": 4.74,
-    "high24h": 81925.0,
+    "price": 81119,
+    "change24h": -0.85,
+    "change7d": 5.62,
+    "high24h": 81829.76,
     "low24h": 80085.0,
-    "marketCap": 1605206825250,
+    "marketCap": 1618338594536,
     "ath": 126173,
     "athDate": "2025-10-06",
-    "source": "Coinbase (spot/24h range); Coinbase daily candles (7d); market cap ≈ circ supply × spot",
-    "asOf": "2026-09-20T05:15:00-07:00"
+    "source": "Coinbase (spot/24h range); Coinbase daily candles (7d); market cap \u2248 circ supply \u00d7 spot",
+    "asOf": "2026-09-20T09:17:00-07:00"
   },
   "tasks": [
     {
       "id": "book-off-sep26",
       "title": "Book off Sat Sep 26 (U15 eval)",
-      "detail": "Hard conflict: MMA D 08:00–16:00 vs U15 Eval 1:15–2:15 PM @ LEC 1. Request the day off.",
+      "detail": "Hard conflict: MMA D 08:00\u201316:00 vs U15 Eval 1:15\u20132:15 PM @ LEC 1. Request the day off.",
       "priority": "high",
       "done": false,
       "due": "2026-09-20"
@@ -198,7 +198,7 @@
     {
       "id": "exercise",
       "label": "Exercise",
-      "target": "Move the body — practice counts",
+      "target": "Move the body \u2014 practice counts",
       "week": [
         false,
         false,
@@ -271,7 +271,7 @@
       "url": "https://bingx.com/en/flash-news/post/us-spot-bitcoin-etfs-log-m-friday-inflow-end-week-with-m-net-gain-as-ether-etfs-lose-m"
     },
     {
-      "title": "Bitcoin ~$80,461 (Coinbase, -1.04% 24h); SPX Fri close 7,650.50",
+      "title": "Bitcoin ~$81,119 (Coinbase, -0.85% 24h); SPX Fri close 7,650.50",
       "source": "Coinbase / Yahoo ^GSPC",
       "date": "2026-09-20",
       "dateLabel": "Sep 20",
@@ -288,22 +288,22 @@
   "investmentNotes": [
     "Primary tape: gold, WTI, BTC, S&P 500, US 10-year. Crypto watchlist is secondary.",
     "BTC is a DCA long-term hold. Do not turn the CPI session into a trade.",
-    "ETH / SOL / USDC / FET / NEAR are the agent-settlement watchlist — payments rails, not a new core position."
+    "ETH / SOL / USDC / FET / NEAR are the agent-settlement watchlist \u2014 payments rails, not a new core position."
   ],
   "weather": {
     "location": "Langley, BC",
     "timezone": "America/Vancouver",
     "date": "2026-09-20",
     "dateLabel": "Sun Sep 20, 2026",
-    "conditions": "Early smoky haze; cloudy/overcast morning into a milder afternoon (high ~22°C / low ~11°C); little rain chance.",
+    "conditions": "Early smoky haze; cloudy/overcast morning into a milder afternoon (high ~22\u00b0C / low ~11\u00b0C); little rain chance.",
     "conditionsShort": "Hazy / cloudy",
     "temp": {
       "highC": 22,
       "lowC": 11,
       "highF": 72,
       "lowF": 52,
-      "displayC": "22° / 11°C",
-      "displayF": "72° / 52°F",
+      "displayC": "22\u00b0 / 11\u00b0C",
+      "displayF": "72\u00b0 / 52\u00b0F",
       "currentC": 11,
       "currentF": 52
     },
@@ -321,7 +321,7 @@
       "timezoneNote": "PT"
     },
     "asOf": "2026-09-20T05:15:00-07:00",
-    "asOfLabel": "Sun Sep 20, 2026 · 5:15 AM PT",
+    "asOfLabel": "Sun Sep 20, 2026 \u00b7 5:15 AM PT",
     "source": "wttr.in (Langley BC); Open-Meteo rate-limited today",
     "lastUpdated": "2026-09-20T05:15:00-07:00"
   }
