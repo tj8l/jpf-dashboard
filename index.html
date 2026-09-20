@@ -1,0 +1,4353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12110e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<title>JPF · Command Center</title>
+<style>
+  :root {
+    --bg: #12110e;
+    --bg-elev: #1a1915;
+    --card: #1c1b17;
+    --card-2: #22211c;
+    --ink: #f0ebe3;
+    --ink-soft: #c8c2b6;
+    --muted: #8f8a80;
+    --faint: #5e5a53;
+    --line: rgba(240, 235, 227, 0.08);
+    --line-strong: rgba(240, 235, 227, 0.14);
+    --gold: #c9a66b;
+    --gold-dim: #8a7348;
+    --gold-wash: rgba(201, 166, 107, 0.12);
+    --up: #8eae86;
+    --down: #c48474;
+    --up-wash: rgba(142, 174, 134, 0.12);
+    --down-wash: rgba(196, 132, 116, 0.12);
+    --shadow: 0 1px 0 rgba(255,255,255,0.04) inset, 0 18px 40px rgba(0,0,0,0.28);
+    --radius: 16px;
+    --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background:
+      radial-gradient(1200px 600px at 10% -10%, rgba(201,166,107,0.07), transparent 50%),
+      radial-gradient(900px 500px at 110% 0%, rgba(90,110,100,0.06), transparent 46%),
+      var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.5;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 36px 22px 64px;
+  }
+
+  header.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 28px;
+  }
+  .brand-kicker {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  .brand h1 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(36px, 5vw, 52px);
+    letter-spacing: -0.03em;
+    margin: 0;
+    line-height: 1;
+  }
+  .brand h1 span { color: var(--ink-soft); font-weight: 400; }
+  .when {
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .when .date {
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 20px;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+  }
+  .when .stamp {
+    font-variant-numeric: tabular-nums;
+  }
+  .when .stamp strong {
+    color: var(--ink-soft);
+    font-weight: 550;
+  }
+
+  .strip {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .spot {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 16px 14px;
+    box-shadow: var(--shadow);
+    min-width: 0;
+    cursor: pointer;
+    transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+    position: relative;
+  }
+  .spot:hover, .spot:focus-within {
+    border-color: rgba(201,166,107,0.45);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.28), var(--shadow);
+    transform: translateY(-1px);
+  }
+  .spot:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .spot .open-hint {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 10px;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    opacity: 0;
+    transition: opacity 140ms ease;
+    pointer-events: none;
+  }
+  .spot:hover .open-hint, .spot:focus-within .open-hint { opacity: 1; }
+  .spot .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .spot .name {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .spot .ticker {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--gold-dim);
+    letter-spacing: 0.04em;
+  }
+  .spot .px {
+    font-family: var(--serif);
+    font-size: clamp(24px, 2.4vw, 30px);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .spot .unit {
+    color: var(--muted);
+    font-size: 12px;
+    margin: 6px 0 10px;
+  }
+  .chg {
+    display: inline-block;
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    padding: 2px 7px;
+    border-radius: 999px;
+    font-weight: 550;
+  }
+  .chg.up { color: var(--up); background: var(--up-wash); }
+  .chg.down { color: var(--down); background: var(--down-wash); }
+  .chg.flat { color: var(--muted); background: rgba(255,255,255,0.04); }
+  .spot .meta {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+    color: var(--faint);
+    font-size: 11px;
+    line-height: 1.45;
+  }
+  .spot .meta span { color: var(--muted); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 14px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 22px 18px;
+    box-shadow: var(--shadow);
+    min-width: 0;
+  }
+  .card h2 {
+    margin: 0 0 4px;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .lede {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0 0 18px;
+  }
+
+  .btc-hold {
+    background: var(--gold-wash);
+    border: 1px solid rgba(201,166,107,0.22);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    color: var(--ink-soft);
+    font-size: 13.5px;
+  }
+  .btc-hold strong { color: var(--gold); font-weight: 600; }
+
+  .btc-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .stat {
+    background: var(--card-2);
+    border-radius: 10px;
+    padding: 10px 10px 9px;
+    border: 1px solid var(--line);
+  }
+  .stat dt {
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin: 0 0 4px;
+  }
+  .stat dd {
+    margin: 0;
+    font-variant-numeric: tabular-nums;
+    font-size: 14px;
+    color: var(--ink);
+  }
+
+  table.wl {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+  table.wl th {
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+    font-weight: 600;
+    padding: 0 8px 8px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  table.wl th.num, table.wl td.num { text-align: right; }
+  table.wl td {
+    padding: 10px 8px 10px 0;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  table.wl tr:last-child td { border-bottom: 0; }
+  table.wl tbody tr.wl-row {
+    cursor: pointer;
+    transition: background 140ms ease;
+  }
+  table.wl tbody tr.wl-row:hover {
+    background: rgba(201,166,107,0.06);
+  }
+  table.wl tbody tr.wl-row:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: -2px;
+  }
+  table.wl td.wl-open {
+    text-align: right;
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  .sym {
+    font-weight: 650;
+    letter-spacing: 0.02em;
+  }
+  .role { color: var(--muted); font-size: 12px; display: block; margin-top: 2px; }
+  .px-cell { font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 12.5px; }
+
+  .weekbar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+  .dow {
+    text-align: center;
+    background: var(--card-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 4px 9px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .dow .d { display: block; font-size: 15px; color: var(--ink); font-weight: 600; margin-top: 2px; }
+  .dow.today { border-color: rgba(201,166,107,0.45); background: var(--gold-wash); }
+  .dow.today .k { color: var(--gold); }
+  .dow.has { box-shadow: inset 0 -2px 0 var(--gold); }
+  .dow .dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--gold); margin: 6px auto 0;
+  }
+  .dow.empty .dot { background: transparent; }
+
+  .cal-label {
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 650;
+    margin: 4px 0 10px;
+  }
+  .cal-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    margin: 0 0 14px;
+    font-size: 11.5px;
+    color: var(--muted);
+    line-height: 1.3;
+  }
+  .cal-legend .leg {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .cal-swatch {
+    width: 11px;
+    height: 11px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12);
+  }
+  .cal-swatch.cal-dayshift { background: #4a8fd4; }
+  .cal-swatch.cal-afternoon { background: #5fad6e; }
+  .cal-swatch.cal-graveyard { background: #c45c4a; }
+  .cal-swatch.cal-u15 { background: #d4893a; }
+  .cal-swatch.cal-u18 { background: #d4b84a; }
+  .cal-swatch.cal-other { background: #6a6660; }
+
+  .cal-days {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .cal-day-block {
+    background: var(--card-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px 12px 10px;
+  }
+  .cal-day-block.is-today {
+    border-color: rgba(201,166,107,0.4);
+    box-shadow: 0 0 0 1px rgba(201,166,107,0.12);
+  }
+  .cal-day-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .cal-day-title {
+    font-family: var(--serif);
+    font-size: 17px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .cal-today-badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    background: var(--gold-wash);
+    border: 1px solid rgba(201,166,107,0.35);
+    border-radius: 999px;
+    padding: 2px 8px;
+  }
+  .cal-day-events {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .cal-event {
+    display: grid;
+    grid-template-columns: minmax(92px, auto) 1fr;
+    gap: 6px 12px;
+    align-items: start;
+    padding: 9px 10px 9px 12px;
+    border-radius: 9px;
+    border-left: 3px solid var(--faint);
+    background: rgba(255,255,255,0.03);
+    min-width: 0;
+  }
+  .cal-event .cal-time {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.35;
+    padding-top: 1px;
+  }
+  .cal-event .cal-body { min-width: 0; }
+  .cal-event .cal-title {
+    margin: 0;
+    font-size: 14.5px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+    color: var(--ink);
+    word-break: break-word;
+  }
+  .cal-event .cal-loc {
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 12.5px;
+    line-height: 1.35;
+  }
+  .cal-event.cal-dayshift {
+    border-left-color: #4a8fd4;
+    background: rgba(74, 143, 212, 0.12);
+  }
+  .cal-event.cal-afternoon {
+    border-left-color: #5fad6e;
+    background: rgba(95, 173, 110, 0.12);
+  }
+  .cal-event.cal-graveyard {
+    border-left-color: #c45c4a;
+    background: rgba(196, 92, 74, 0.13);
+  }
+  .cal-event.cal-u15 {
+    border-left-color: #d4893a;
+    background: rgba(212, 137, 58, 0.13);
+  }
+  .cal-event.cal-u18 {
+    border-left-color: #d4b84a;
+    background: rgba(212, 184, 74, 0.13);
+  }
+  .cal-event.cal-other {
+    border-left-color: #6a6660;
+    background: rgba(106, 102, 96, 0.14);
+  }
+
+  /* legacy .event kept harmless if any remnant markup appears */
+  .event {
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+  }
+  .event:first-of-type { border-top: 0; padding-top: 0; }
+  .event .when-e {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+  .event h3 {
+    margin: 0 0 4px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .event .loc { color: var(--muted); font-size: 13px; }
+  .today-banner,
+  .today-empty {
+    background: var(--card-2);
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 14px;
+    border: 1px dashed var(--line-strong);
+  }
+  .src-note {
+    margin-top: 12px;
+    color: var(--faint);
+    font-size: 11.5px;
+  }
+
+  .task {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    gap: 10px;
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+  }
+  .task:first-of-type { border-top: 0; padding-top: 0; }
+  .box {
+    width: 16px; height: 16px;
+    border: 1.5px solid var(--gold-dim);
+    border-radius: 4px;
+    margin-top: 3px;
+    background: transparent;
+  }
+  .task h3 {
+    margin: 0 0 3px;
+    font-size: 14.5px;
+    font-weight: 600;
+  }
+  .task p { margin: 0; color: var(--muted); font-size: 12.5px; }
+  .pri {
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-left: 8px;
+    font-weight: 650;
+  }
+  .edit-hint {
+    margin-top: 14px;
+    color: var(--faint);
+    font-size: 11.5px;
+  }
+
+  .news { list-style: none; margin: 0; padding: 0; }
+  .news li {
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+  }
+  .news li:first-child { border-top: 0; padding-top: 0; }
+  .news a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .news a:hover { color: var(--gold); }
+  .news .by {
+    display: block;
+    margin-top: 5px;
+    color: var(--faint);
+    font-size: 12px;
+  }
+  .news .by em { color: var(--muted); font-style: normal; }
+
+  .habit {
+    display: grid;
+    grid-template-columns: minmax(88px, 140px) 1fr;
+    gap: 12px;
+    align-items: center;
+    padding: 11px 0;
+    border-top: 1px solid var(--line);
+  }
+  .habit:first-of-type { border-top: 0; }
+  .habit .hl { font-weight: 600; }
+  .habit .ht { color: var(--muted); font-size: 12px; display: block; }
+  .dots {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+  }
+  .dotcell {
+    text-align: center;
+  }
+  .dotcell .lab {
+    font-size: 10px;
+    color: var(--faint);
+    margin-bottom: 5px;
+  }
+  .ring {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    border: 1.5px solid var(--line-strong);
+    margin: 0 auto;
+    background: transparent;
+  }
+
+  .span-2 { grid-column: 1 / -1; }
+
+  footer.foot {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--faint);
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  footer.foot strong { color: var(--muted); font-weight: 550; }
+
+  @media (max-width: 1100px) {
+    .strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+  @media (max-width: 880px) {
+    .strip { grid-template-columns: 1fr 1fr; }
+    .grid { grid-template-columns: 1fr; }
+    .btc-stats { grid-template-columns: 1fr 1fr; }
+    header.top { flex-direction: column; align-items: flex-start; }
+    .when { text-align: left; }
+  }
+  @media (max-width: 520px) {
+    .strip { grid-template-columns: 1fr; }
+    .wrap { padding: 22px 14px 40px; }
+  }
+
+
+  .wx {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 18px 22px;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(201,166,107,0.10), rgba(28,27,23,0.9) 42%, var(--card));
+    border: 1px solid rgba(201,166,107,0.22);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    box-shadow: var(--shadow);
+    margin-bottom: 18px;
+  }
+  .wx-icon {
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    background: var(--gold-wash);
+    border: 1px solid rgba(201,166,107,0.28);
+    display: grid;
+    place-items: center;
+    font-size: 26px;
+    line-height: 1;
+  }
+  .wx-main { min-width: 0; }
+  .wx-kicker {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 650;
+    margin: 0 0 4px;
+  }
+  .wx-loc {
+    font-family: var(--serif);
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    margin: 0 0 2px;
+    font-weight: 500;
+  }
+  .wx-cond {
+    color: var(--ink-soft);
+    font-size: 13.5px;
+    margin: 0;
+  }
+  .wx-temps {
+    text-align: right;
+  }
+  .wx-hi {
+    font-family: var(--serif);
+    font-size: 34px;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .wx-hi span {
+    color: var(--muted);
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .wx-f {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 4px;
+    font-variant-numeric: tabular-nums;
+  }
+  .wx-meta {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .wx-chip {
+    background: var(--card-2);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 9px 11px;
+    min-width: 0;
+  }
+  .wx-chip dt {
+    margin: 0 0 3px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--faint);
+    font-weight: 600;
+  }
+  .wx-chip dd {
+    margin: 0;
+    color: var(--ink);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+  }
+  .wx-src {
+    grid-column: 1 / -1;
+    color: var(--faint);
+    font-size: 11px;
+    margin: 2px 0 0;
+  }
+  @media (max-width: 720px) {
+    .wx { grid-template-columns: auto 1fr; }
+    .wx-temps { grid-column: 1 / -1; text-align: left; }
+    .wx-meta { grid-template-columns: 1fr 1fr; }
+  }
+
+
+
+  /* —— Editable tasks / habits —— */
+  .card-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .card-head h2 { margin: 0; }
+  .save-hint {
+    font-size: 11px;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    min-height: 1.2em;
+  }
+  .save-hint.flash { color: var(--gold-dim); }
+
+  .task {
+    grid-template-columns: 18px 1fr auto;
+    align-items: start;
+  }
+  .task.done .task-title {
+    text-decoration: line-through;
+    color: var(--muted);
+  }
+  .task.done .box {
+    background: var(--gold);
+    border-color: var(--gold);
+    position: relative;
+  }
+  .task.done .box::after {
+    content: "";
+    position: absolute;
+    left: 4px; top: 1px;
+    width: 5px; height: 9px;
+    border: solid var(--bg);
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+  }
+  button.box {
+    cursor: pointer;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    flex-shrink: 0;
+  }
+  button.box:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .task-title {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: inherit;
+    font: inherit;
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 2px 6px;
+    margin: -2px -6px 3px;
+    letter-spacing: -0.01em;
+  }
+  .task-title:hover { border-color: var(--line); }
+  .task-title:focus {
+    outline: none;
+    border-color: rgba(201,166,107,0.45);
+    background: var(--card-2);
+  }
+  .task-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .task-detail {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+  select.pri-sel {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    font-weight: 650;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  select.pri-sel:focus { outline: 1px solid var(--gold-dim); }
+  .icon-btn {
+    background: rgba(196, 132, 116, 0.08);
+    border: 1px solid var(--line-strong);
+    color: var(--ink-soft);
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1;
+    padding: 0;
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+  .icon-btn.task-del {
+    color: var(--down);
+  }
+  .icon-btn:hover {
+    color: var(--down);
+    border-color: var(--line);
+    background: var(--down-wash);
+  }
+  .icon-btn:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+
+  .edit-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+  }
+  .btn {
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 550;
+    border-radius: 999px;
+    padding: 7px 14px;
+    cursor: pointer;
+    border: 1px solid var(--line-strong);
+    background: var(--card-2);
+    color: var(--ink-soft);
+    transition: border-color 140ms ease, background 140ms ease, color 140ms ease;
+  }
+  .btn:hover {
+    border-color: rgba(201,166,107,0.4);
+    color: var(--ink);
+  }
+  .btn:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .btn-primary {
+    background: var(--gold-wash);
+    border-color: rgba(201,166,107,0.35);
+    color: var(--gold);
+  }
+  .btn-primary:hover {
+    background: rgba(201,166,107,0.2);
+    color: var(--ink);
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--muted);
+  }
+  .btn-danger {
+    color: var(--down);
+    border-color: transparent;
+  }
+  .btn-danger:hover {
+    background: var(--down-wash);
+    border-color: rgba(196,132,116,0.35);
+  }
+
+  .habit {
+    grid-template-columns: minmax(120px, 1fr) auto minmax(160px, 1.2fr);
+    gap: 10px;
+  }
+  .habit-labels { min-width: 0; }
+  .habit-label, .habit-target {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: inherit;
+    font: inherit;
+    padding: 2px 6px;
+    margin: 0 -6px;
+  }
+  .habit-label {
+    font-weight: 600;
+    font-size: 14.5px;
+  }
+  .habit-target {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .habit-label:hover, .habit-target:hover { border-color: var(--line); }
+  .habit-label:focus, .habit-target:focus {
+    outline: none;
+    border-color: rgba(201,166,107,0.45);
+    background: var(--card-2);
+  }
+  .ring {
+    cursor: default;
+  }
+  .ring.filled {
+    background: var(--gold);
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-wash);
+  }
+  .ring.today {
+    cursor: pointer;
+    border-color: rgba(201,166,107,0.55);
+  }
+  .ring.today:hover {
+    border-color: var(--gold);
+    background: var(--gold-wash);
+  }
+  .ring.today:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  button.ring {
+    display: block;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    font: inherit;
+  }
+  .dotcell.today .lab { color: var(--gold); font-weight: 650; }
+
+  .refresh-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  @media (max-width: 880px) {
+    .refresh-row { justify-content: flex-start; }
+    .habit {
+      grid-template-columns: 1fr auto;
+    }
+    .habit .dots { grid-column: 1 / -1; }
+  }
+
+
+  .spot.btc-spot {
+    position: relative;
+  }
+  .spot-actions, .btc-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .btn-mini {
+    font-family: inherit;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 4px 10px;
+    cursor: pointer;
+    border: 1px solid var(--line-strong);
+    background: var(--card-2);
+    color: var(--muted);
+    transition: border-color 140ms ease, background 140ms ease, color 140ms ease;
+  }
+  .btn-mini:hover {
+    border-color: rgba(201,166,107,0.45);
+    color: var(--gold);
+    background: var(--gold-wash);
+  }
+  .btn-mini:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .btn-mini:disabled {
+    opacity: 0.55;
+    cursor: wait;
+  }
+  .btn-mini.busy {
+    color: var(--gold);
+    border-color: rgba(201,166,107,0.35);
+  }
+  .btc-live-stamp {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+    min-height: 1.2em;
+  }
+  .btc-live-stamp.fresh {
+    color: var(--gold-dim);
+  }
+  .btc-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin: 0 0 14px;
+  }
+  .btc-toolbar .btc-live-stamp {
+    margin-top: 0;
+    margin-left: 4px;
+  }
+
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 7, 5, 0.72);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+  }
+  .modal-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal {
+    width: min(560px, 100%);
+    background: var(--card);
+    border: 1px solid var(--line-strong);
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.55), var(--shadow);
+    padding: 20px 22px 18px;
+    max-height: min(90vh, 640px);
+    overflow: auto;
+    transform: translateY(8px);
+    transition: transform 180ms ease;
+  }
+  .modal-backdrop.open .modal {
+    transform: translateY(0);
+  }
+  .modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .modal-head h3 {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  .modal-head .sub {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+  .modal-close {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 999px;
+    border: 1px solid var(--line-strong);
+    background: var(--card-2);
+    color: var(--ink-soft);
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+  }
+  .modal-close:hover {
+    border-color: rgba(201,166,107,0.45);
+    color: var(--gold);
+  }
+  .modal-close:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .chart-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .chart-stats .stat dd {
+    font-size: 15px;
+    font-family: var(--serif);
+    letter-spacing: -0.02em;
+  }
+  .chart-wrap {
+    background: var(--card-2);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px 10px 8px;
+    min-height: 200px;
+    position: relative;
+  }
+  .chart-wrap svg {
+    display: block;
+    width: 100%;
+    height: 180px;
+  }
+  .chart-msg {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    padding: 48px 16px;
+    line-height: 1.55;
+  }
+  .chart-msg a {
+    color: var(--gold);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201,166,107,0.35);
+  }
+  .chart-msg a:hover { border-bottom-color: var(--gold); }
+  .chart-foot {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--faint);
+    font-size: 11.5px;
+  }
+  .chart-foot a {
+    color: var(--gold-dim);
+    text-decoration: none;
+  }
+  .chart-foot a:hover { color: var(--gold); }
+  @media (max-width: 520px) {
+    .chart-stats { grid-template-columns: 1fr; }
+  }
+  .modal.modal-asset {
+    width: min(720px, 100%);
+    max-height: min(92vh, 780px);
+  }
+  .asset-price-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px 12px;
+    margin-bottom: 8px;
+  }
+  .asset-price-row .px-lg {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4vw, 36px);
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+  .asset-meta-line {
+    color: var(--faint);
+    font-size: 12px;
+    margin: 0 0 14px;
+    line-height: 1.45;
+  }
+  .asset-meta-line span { color: var(--muted); }
+  .modal-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .modal-tab {
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 5px 12px;
+    cursor: pointer;
+    border: 1px solid var(--line-strong);
+    background: var(--card-2);
+    color: var(--muted);
+  }
+  .modal-tab:hover {
+    border-color: rgba(201,166,107,0.4);
+    color: var(--gold);
+  }
+  .modal-tab.is-active {
+    background: var(--gold-wash);
+    border-color: rgba(201,166,107,0.5);
+    color: var(--gold);
+  }
+  .modal-tab:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  .tv-wrap {
+    padding: 0;
+    overflow: hidden;
+    min-height: 360px;
+  }
+  .tv-wrap iframe {
+    display: block;
+    width: 100%;
+    height: 360px;
+    border: 0;
+    background: #131722;
+  }
+  @media (max-width: 520px) {
+    .tv-wrap, .tv-wrap iframe { min-height: 280px; height: 280px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .modal-backdrop, .modal, .spot { transition: none; }
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(12px);
+    background: var(--card-2);
+    border: 1px solid rgba(201,166,107,0.35);
+    color: var(--ink-soft);
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 13px;
+    box-shadow: var(--shadow);
+    max-width: min(440px, calc(100vw - 32px));
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+    z-index: 100;
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .spot, .card { transition: border-color 160ms ease; }
+    .spot:hover, .card:hover { border-color: var(--line-strong); }
+  }
+
+  /* —— To-do list (tasks section) —— */
+  .todo-chrome {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background: linear-gradient(180deg, var(--card) 78%, rgba(28,27,23,0.94) 100%);
+    padding: 0 0 2px;
+    margin: 0 0 2px;
+  }
+  .todo-quickadd {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background: var(--card-2);
+    border: 1px solid var(--line-strong);
+    border-radius: 12px;
+    padding: 8px 8px 8px 12px;
+    margin: 0 0 12px;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset;
+  }
+  .todo-quick-title {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: 0;
+    color: var(--ink);
+    font: inherit;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 7px 4px;
+    letter-spacing: -0.01em;
+  }
+  .todo-quick-title:focus { outline: none; }
+  .todo-quick-title::placeholder { color: var(--faint); font-weight: 450; }
+  .todo-quick-due {
+    width: 138px;
+    flex-shrink: 0;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink-soft);
+    font: inherit;
+    font-size: 12px;
+    padding: 6px 8px;
+    color-scheme: dark;
+  }
+  .todo-quick-due:focus {
+    outline: 1px solid var(--gold-dim);
+    border-color: rgba(201,166,107,0.45);
+  }
+  .todo-filters {
+    display: flex;
+    gap: 3px;
+    padding: 3px;
+    background: var(--card-2);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    width: fit-content;
+    margin: 0 0 8px;
+  }
+  .todo-tab {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 550;
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 5px 13px;
+    cursor: pointer;
+  }
+  .todo-tab:hover { color: var(--ink); }
+  .todo-tab.is-active {
+    background: var(--gold-wash);
+    color: var(--gold);
+  }
+  .todo-tab .n {
+    font-variant-numeric: tabular-nums;
+    color: var(--faint);
+    margin-left: 5px;
+    font-size: 11px;
+  }
+  .todo-tab.is-active .n { color: var(--gold-dim); }
+  .todo-tab:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+  }
+  #tasks-list.todo-list {
+    max-height: min(440px, 56vh);
+    overflow: auto;
+    margin: 0 -8px;
+    padding: 2px 8px 4px;
+  }
+  .task {
+    display: grid;
+    grid-template-columns: 28px 1fr auto;
+    gap: 12px;
+    align-items: start;
+    padding: 13px 8px;
+    margin: 0 -8px;
+    border-top: 1px solid var(--line);
+    border-radius: 10px;
+  }
+  .task:first-of-type { border-top: 0; padding-top: 10px; }
+  .task:hover { background: rgba(255,255,255,0.018); }
+  button.box {
+    width: 22px;
+    height: 22px;
+    border: 1.75px solid var(--gold-dim);
+    border-radius: 6px;
+    margin-top: 4px;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 3px transparent;
+    transition: background 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+  }
+  button.box:hover {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 4px var(--gold-wash);
+  }
+  .task.done .box {
+    background: var(--gold);
+    border-color: var(--gold);
+    position: relative;
+  }
+  .task.done .box::after {
+    content: "";
+    position: absolute;
+    left: 6px; top: 2px;
+    width: 6px; height: 11px;
+    border: solid var(--bg);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .task.done .task-title {
+    text-decoration: line-through;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .task-title {
+    font-size: 15.5px;
+    font-weight: 650;
+    letter-spacing: -0.015em;
+    margin: -2px -6px 5px;
+  }
+  .task-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .todo-due {
+    width: 132px;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    font: inherit;
+    font-size: 11px;
+    padding: 3px 8px;
+    color-scheme: dark;
+  }
+  .todo-due:hover { border-color: var(--line-strong); }
+  .todo-due:focus {
+    outline: 1px solid var(--gold-dim);
+    border-color: rgba(201,166,107,0.45);
+  }
+  .todo-due.due-today {
+    color: var(--gold);
+    border-color: rgba(201,166,107,0.4);
+    background: var(--gold-wash);
+  }
+  .todo-due.overdue {
+    color: var(--down);
+    border-color: rgba(196,132,116,0.4);
+    background: var(--down-wash);
+  }
+  select.pri-sel {
+    opacity: 0.7;
+    font-size: 10px;
+  }
+  select.pri-sel:hover { opacity: 1; }
+  .todo-due-label {
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    font-weight: 650;
+  }
+  @media (max-width: 520px) {
+    .todo-quickadd { flex-wrap: wrap; }
+    .todo-quick-title { flex: 1 1 100%; }
+    .todo-quick-due { width: auto; flex: 1; }
+  }
+
+  /* —— Large live BTC price widget —— */
+  .btc-hero {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px 28px;
+    align-items: center;
+    margin: 0 0 18px;
+    padding: 22px 26px 20px;
+    background:
+      radial-gradient(800px 220px at 0% 0%, rgba(201,166,107,0.14), transparent 55%),
+      radial-gradient(600px 200px at 100% 100%, rgba(142,174,134,0.06), transparent 50%),
+      var(--card);
+    border: 1px solid rgba(201,166,107,0.28);
+    border-radius: calc(var(--radius) + 2px);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    position: relative;
+    transition: border-color 160ms ease, transform 160ms ease;
+  }
+  .btc-hero:hover {
+    border-color: rgba(201,166,107,0.5);
+  }
+  .btc-hero:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+  .btc-hero-kicker {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 650;
+    margin: 0 0 6px;
+  }
+  .btc-hero-name {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .btc-hero-px {
+    font-family: var(--serif);
+    font-size: clamp(48px, 7vw, 64px);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+    margin: 0 0 10px;
+  }
+  .btc-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 14px;
+  }
+  .btc-hero-chg {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 10px;
+  }
+  .btc-hero-stamp {
+    font-size: 12px;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+  .btc-hero-stamp.fresh { color: var(--gold-dim); }
+  .btc-hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .btc-hero-actions .btn {
+    white-space: nowrap;
+    min-width: 120px;
+  }
+  @media (max-width: 640px) {
+    .btc-hero {
+      grid-template-columns: 1fr;
+      padding: 18px 18px 16px;
+    }
+    .btc-hero-actions {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .btc-hero-px { font-size: clamp(40px, 12vw, 52px); }
+  }
+
+  #tasks.card {
+    margin: 0 0 22px;
+  }
+  #weather.wx {
+    margin: 28px 0 8px;
+  }
+
+  .live-clock {
+    font-variant-numeric: tabular-nums;
+    font-family: var(--mono);
+    font-size: 22px;
+    font-weight: 650;
+    letter-spacing: 0.02em;
+    color: var(--ink);
+    margin-top: 4px;
+  }
+  .live-clock .sec { color: var(--muted); font-weight: 500; }
+  .motto {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  body.kiosk .live-clock { font-size: clamp(28px, 4vw, 42px); }
+
+
+  /* —— Phone / narrow screens —— */
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    overflow-x: hidden;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  @media (max-width: 640px) {
+    body { font-size: 14.5px; }
+    .wrap {
+      padding: 14px 12px calc(28px + env(safe-area-inset-bottom));
+      max-width: 100%;
+    }
+
+    header.top {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 14px;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+    .brand h1 { font-size: clamp(28px, 9vw, 36px); }
+    .brand-kicker { letter-spacing: 0.16em; }
+    .motto { font-size: 13px; line-height: 1.35; }
+    .when { text-align: left; width: 100%; }
+    .live-clock { font-size: 20px; }
+    .stamp { font-size: 12px; }
+
+    .refresh-row {
+      justify-content: stretch;
+      width: 100%;
+      gap: 8px;
+    }
+    .refresh-row .btn,
+    .refresh-row button {
+      flex: 1 1 auto;
+      min-height: 44px;
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+
+    .btc-hero {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      padding: 16px 14px 14px;
+      margin-bottom: 14px;
+    }
+    .btc-hero-px { font-size: clamp(36px, 11vw, 48px); }
+    .btc-hero-actions {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .btc-hero-actions .btn {
+      flex: 1 1 calc(50% - 6px);
+      min-width: 0;
+      min-height: 44px;
+    }
+
+    .strip {
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+    .spot {
+      padding: 12px 12px 11px;
+      border-radius: 14px;
+    }
+    .spot .name { font-size: 12px; }
+    .spot .price,
+    .spot .px-md,
+    .spot [class*="px"] {
+      font-size: clamp(18px, 5.5vw, 22px);
+    }
+
+    .grid { grid-template-columns: 1fr; gap: 14px; }
+    .card {
+      padding: 14px 14px 12px;
+      border-radius: 14px;
+      margin-bottom: 14px;
+    }
+    .card h2 { font-size: 18px; }
+
+    .event {
+      padding: 10px 0;
+    }
+    .event .title,
+    .event-title {
+      font-size: 14px;
+      word-break: break-word;
+    }
+    .cal-day-block {
+      padding: 12px 11px 10px;
+    }
+    .cal-day-title { font-size: 16px; }
+    .cal-event {
+      grid-template-columns: 1fr;
+      gap: 4px;
+      padding: 10px 10px 10px 12px;
+    }
+    .cal-event .cal-time { font-size: 12px; }
+    .cal-event .cal-title { font-size: 14.5px; }
+    .cal-legend { font-size: 11px; gap: 8px 12px; }
+
+    .todo-chrome {
+      top: env(safe-area-inset-top);
+      padding-top: 2px;
+    }
+    .todo-quickadd { gap: 8px; }
+    .todo-quick-title,
+    .todo-quick-due,
+    .todo-quickadd button,
+    .todo-quickadd .btn {
+      min-height: 44px;
+      font-size: 15px;
+    }
+    .todo-row {
+      gap: 8px;
+      padding: 10px 0;
+      align-items: flex-start;
+    }
+    .todo-check {
+      width: 22px;
+      height: 22px;
+      min-width: 22px;
+      margin-top: 2px;
+    }
+    .todo-del,
+    .todo-row .x,
+    button.todo-x {
+      min-width: 40px;
+      min-height: 40px;
+    }
+
+    .habit {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .habit .dots { justify-content: flex-start; }
+
+    .wx {
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      padding: 14px;
+      margin: 18px 0 8px;
+    }
+    .wx-temps { grid-column: 1 / -1; text-align: left; }
+    .wx-hi { font-size: 30px; }
+    .wx-meta { grid-template-columns: 1fr 1fr; gap: 6px; }
+    .wx-loc { font-size: 20px; }
+
+    footer.foot {
+      flex-direction: column;
+      gap: 6px;
+      font-size: 11px;
+      padding-top: 12px;
+    }
+
+    /* Modals: near full-screen sheet on phone */
+    .modal-backdrop {
+      padding: 0;
+      align-items: flex-end;
+    }
+    .modal,
+    .modal.modal-asset {
+      width: 100%;
+      max-width: 100%;
+      max-height: min(92dvh, 100%);
+      border-radius: 18px 18px 0 0;
+      padding: 16px 14px calc(16px + env(safe-area-inset-bottom));
+    }
+    .tv-wrap, .tv-wrap iframe {
+      min-height: 240px;
+      height: 240px;
+    }
+
+    .toast {
+      bottom: calc(16px + env(safe-area-inset-bottom));
+      max-width: calc(100vw - 24px);
+      font-size: 12.5px;
+      padding: 11px 14px;
+    }
+
+    /* Kill horizontal spill from long labels */
+    .lede, .edit-hint, .src-note, .stamp, .news a, .event {
+      overflow-wrap: anywhere;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .strip { grid-template-columns: 1fr; }
+    .refresh-row .btn,
+    .refresh-row button { flex: 1 1 100%; }
+  }
+
+
+  @media (hover: none) and (pointer: coarse) {
+    .spot:hover, .card:hover, .btc-hero:hover { border-color: var(--line); transform: none; }
+    .spot:active, .btc-hero:active { border-color: rgba(201,166,107,0.45); }
+  }
+
+
+  /* Compact to-do under BTC */
+  #tasks.tasks-compact {
+    padding: 12px 14px 10px;
+    margin-bottom: 12px;
+  }
+  #tasks.tasks-compact .card-head h2 {
+    font-size: 1.05rem;
+    margin: 0;
+  }
+  #tasks.tasks-compact .todo-lede-short {
+    margin: 4px 0 8px;
+    font-size: 0.82rem;
+    opacity: 0.75;
+  }
+  #tasks.tasks-compact .todo-chrome {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  #tasks.tasks-compact .todo-quickadd input,
+  #tasks.tasks-compact .todo-quick-title {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+  #tasks.tasks-compact .todo-tab {
+    font-size: 0.78rem;
+    padding: 4px 8px;
+  }
+  #tasks.tasks-compact #tasks-list.todo-list,
+  #tasks.tasks-compact .todo-list {
+    max-height: 220px;
+    overflow-y: auto;
+    gap: 6px;
+  }
+  #tasks.tasks-compact .edit-bar {
+    margin-top: 8px;
+    gap: 6px;
+  }
+  #tasks.tasks-compact .edit-bar .btn {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+  #tasks.tasks-compact .todo-hint-short {
+    margin: 6px 0 0;
+    font-size: 0.72rem;
+    opacity: 0.65;
+  }
+  #calendar.card-full {
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  @media (max-width: 640px) {
+    #tasks.tasks-compact #tasks-list.todo-list,
+    #tasks.tasks-compact .todo-list {
+      max-height: 180px;
+    }
+  }
+
+
+  .header-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .header-actions .btn-sm {
+    font-size: 0.78rem;
+    padding: 6px 10px;
+    white-space: nowrap;
+  }
+  .when .stamp,
+  #live-tz,
+  #last-updated-label,
+  .refresh-row { display: none !important; }
+  #kiosk-hint[hidden] { display: none !important; }
+  #kiosk-hint:not([hidden]) {
+    display: block;
+    margin: 6px 0 0;
+    font-size: 0.72rem;
+    opacity: 0.65;
+  }
+
+</style>
+
+<script>
+window.__JPF_BAKED__ = {"calendar.json":{"timezone":"America/Vancouver","fetchedAt":"2026-09-20T05:15:00-07:00","source":"Google Calendar (primary)","range":{"start":"2026-09-20","end":"2026-10-01","label":"Sep 20–Oct 1"},"notes":["Today Sun Sep 20: MMA D 8:00 AM–4:00 PM; U18 jamboree @ RM A3 1:15–2:45 PM @ CSIC #1 (overlaps work); U15 C practice 7:00–8:30 PM @ LEC 1; TODO reminder to book off Sat Sep 26.","Mon Sep 21: PCAHA Coach/Manager Meeting 7:00–8:00 PM PT (Zoom).","Tue Sep 22: early U15 @ SPX 2 6–7 AM; U17 GAME vs Abbotsford 7:45–9:15 PM @ SPX 2.","Sat Sep 26: MMA D vs U15 Eval 1:15–2:15 PM @ LEC 1 — book the day off (hard clash).","U15 C Draft Wed Sep 30; regular season ice from Sat Oct 3 (times TBD). MMA A crew starts Mon Oct 5."],"events":[{"id":"sq4ka9sdodfj6lqrtmqjg5gnlc","summary":"Work · MMA D","location":"","start":"2026-09-20T08:00:00-07:00","end":"2026-09-20T16:00:00-07:00","whenLabel":"Sun Sep 20 · 8:00 AM–4:00 PM PT"},{"id":"35l1i08v92d73t4rel349710fc","summary":"TODO: Book off Sat Sep 26","location":"","start":"2026-09-20T09:00:00-07:00","end":"2026-09-20T17:00:00-07:00","whenLabel":"Sun Sep 20 · 9:00 AM–5:00 PM PT"},{"id":"ikvdu8sj1fl8jiplna4g1tmfs4","summary":"U18 Jamboree · @ RM A3","location":"CSIC #1 (Cloverdale Sport & Ice Complex)","start":"2026-09-20T13:15:00-07:00","end":"2026-09-20T14:45:00-07:00","whenLabel":"Sun Sep 20 · 1:15 PM–2:45 PM PT"},{"id":"ca14p4msq3f01a0lo7v6b58shk","summary":"U15 C Practice — Group 4 (coach)","location":"LEC 1 (Langley Events Centre)","start":"2026-09-20T19:00:00-07:00","end":"2026-09-20T20:30:00-07:00","whenLabel":"Sun Sep 20 · 7:00 PM–8:30 PM PT"},{"id":"a3ohllho421jpn1r3h98idfmgk","summary":"PCAHA Coach/Manager Meeting","location":"Zoom","start":"2026-09-21T19:00:00-07:00","end":"2026-09-21T20:00:00-07:00","whenLabel":"Mon Sep 21 · 7:00 PM–8:00 PM PT"},{"id":"6obhmmmfv8gmhimraj1k3k8jp8","summary":"U15 C Practice — Group 4 (coach)","location":"SPX 2 (Langley)","start":"2026-09-22T06:00:00-07:00","end":"2026-09-22T07:00:00-07:00","whenLabel":"Tue Sep 22 · 6:00 AM–7:00 AM PT"},{"id":"hjcmbub7ktecqbagebiasauc7g","summary":"U17 Game · vs Abbotsford U17","location":"SPX 2 (Langley)","start":"2026-09-22T19:45:00-07:00","end":"2026-09-22T21:15:00-07:00","whenLabel":"Tue Sep 22 · 7:45 PM–9:15 PM PT"},{"id":"1qqj5pq2l64pp9tm7nofnrn838","summary":"U17 Practice · SPX 2","location":"SPX 2 (Langley)","start":"2026-09-24T21:15:00-07:00","end":"2026-09-24T22:45:00-07:00","whenLabel":"Thu Sep 24 · 9:15 PM–10:45 PM PT"},{"id":"u6jofvdjsommsbs2b8both3o4s","summary":"Work · MMA D","location":"","start":"2026-09-26T08:00:00-07:00","end":"2026-09-26T16:00:00-07:00","whenLabel":"Sat Sep 26 · 8:00 AM–4:00 PM PT"},{"id":"7kd04vb9g5u3pibs6ao7uq5c7k","summary":"U15 C Eval — Groups 3 & 4","location":"LEC 1 (Langley Events Centre)","start":"2026-09-26T13:15:00-07:00","end":"2026-09-26T14:15:00-07:00","whenLabel":"Sat Sep 26 · 1:15 PM–2:15 PM PT"},{"id":"sj2nkmc4gn80h6f2el1t226sgo","summary":"Work · MMA D","location":"","start":"2026-09-27T08:00:00-07:00","end":"2026-09-27T16:00:00-07:00","whenLabel":"Sun Sep 27 · 8:00 AM–4:00 PM PT"},{"id":"e4sl40ju6ob9n0ndt1th87uii0","summary":"U17 Practice · LEC 1","location":"LEC 1 (Langley Events Centre)","start":"2026-09-27T19:00:00-07:00","end":"2026-09-27T20:30:00-07:00","whenLabel":"Sun Sep 27 · 7:00 PM–8:30 PM PT"},{"id":"k0emnnmcmquoh8g00c7ogpo6uc","summary":"Work · MMA D","location":"","start":"2026-09-28T08:00:00-07:00","end":"2026-09-28T16:00:00-07:00","whenLabel":"Mon Sep 28 · 8:00 AM–4:00 PM PT"},{"id":"6mrrrh8sf2ceu1b9lspu4v4gq4","summary":"U17 Practice · SPX 2","location":"SPX 2 (Langley)","start":"2026-09-28T21:30:00-07:00","end":"2026-09-28T23:00:00-07:00","whenLabel":"Mon Sep 28 · 9:30 PM–11:00 PM PT"},{"id":"e41uqd9bifi3350aogin33buro","summary":"U15 C Practice — Group 4 (coach)","location":"SPX 2 (Langley)","start":"2026-09-29T06:00:00-07:00","end":"2026-09-29T07:00:00-07:00","whenLabel":"Tue Sep 29 · 6:00 AM–7:00 AM PT"},{"id":"n4bgolc1n74ftvv4pejq60rksc","summary":"Work · MMA D","location":"","start":"2026-09-29T08:00:00-07:00","end":"2026-09-29T16:00:00-07:00","whenLabel":"Tue Sep 29 · 8:00 AM–4:00 PM PT"},{"id":"k0ff6aoc6p0se04bpv9noeculo","summary":"U15 C Draft","location":"","start":"2026-09-30","end":"2026-10-01","whenLabel":"Wed Sep 30 · all day"},{"id":"6au0kcg4hi796449pnmc0i038o","summary":"Work · MMA D","location":"","start":"2026-09-30T08:00:00-07:00","end":"2026-09-30T16:00:00-07:00","whenLabel":"Wed Sep 30 · 8:00 AM–4:00 PM PT"},{"id":"94jqceoni4rnsatpr3iuiqe6s4","summary":"U17 Practice · LEC 2","location":"LEC 2 (Langley Events Centre)","start":"2026-09-30T19:00:00-07:00","end":"2026-09-30T20:00:00-07:00","whenLabel":"Wed Sep 30 · 7:00 PM–8:00 PM PT"},{"id":"m8n62rb0i261m3le8b6bldca1o","summary":"U17 Practice · SPX 2","location":"SPX 2 (Langley)","start":"2026-10-01T21:15:00-07:00","end":"2026-10-01T22:45:00-07:00","whenLabel":"Thu Oct 1 · 9:15 PM–10:45 PM PT"}]},"weather.json":{"location":"Langley, BC","timezone":"America/Vancouver","date":"2026-09-20","dateLabel":"Sun Sep 20, 2026","conditions":"Early smoky haze; cloudy/overcast morning into a milder afternoon (high ~22°C / low ~11°C); little rain chance.","conditionsShort":"Hazy / cloudy","temp":{"highC":22,"lowC":11,"highF":72,"lowF":52,"displayC":"22° / 11°C","displayF":"72° / 52°F","currentC":11,"currentF":52},"rainChancePct":12,"wind":{"summary":"light","maxKmh":10,"display":"Light, up to ~10 km/h"},"sun":{"sunrise":"06:55","sunset":"19:13","sunriseLabel":"6:55 AM","sunsetLabel":"7:13 PM","timezoneNote":"PT"},"asOf":"2026-09-20T05:15:00-07:00","asOfLabel":"Sun Sep 20, 2026 · 5:15 AM PT","source":"wttr.in (Langley BC); Open-Meteo rate-limited today","lastUpdated":"2026-09-20T05:15:00-07:00"},"markets.json":{"asOf":"2026-09-20T05:15:00-07:00","note":"Sun ~5:15 AM PT — weekend; SPX Fri close; gold/WTI/crypto/US10Y live","spots":[{"id":"gold","name":"Spot gold","symbol":"XAU","value":4379.0,"unit":"USD/oz","change":"flat vs prior snap","source":"gold-api.com","asOf":"2026-09-20","status":"live"},{"id":"oil","name":"Spot oil (WTI)","symbol":"CL","value":96.08,"unit":"USD/bbl","change":"flat vs prior snap (weekend)","source":"Yahoo CL=F (live)","asOf":"2026-09-20","status":"live"},{"id":"btc","name":"Spot BTC","symbol":"BTC","value":80461,"unit":"USD","change":"-1.04% 24h","source":"Coinbase","asOf":"2026-09-20","status":"live"},{"id":"spx","name":"S&P 500","symbol":"SPX","value":7650.5,"unit":"index","change":"+0.17% Fri close","source":"Yahoo ^GSPC (last close)","asOf":"2026-09-20","status":"last-close"},{"id":"us10y","name":"US 10-year Treasury","symbol":"US10Y","value":4.998,"unit":"%","change":"flat vs prior snap","source":"Yahoo ^TNX","asOf":"2026-09-20","status":"live"}]},"data.json":{"meta":{"timezone":"America/Vancouver","lastUpdated":"2026-09-20T05:15:00-07:00","lastUpdatedLabel":"Sun Sep 20, 2026 · 5:15 AM PT","updatedBy":"assistant-scheduled-refresh","notes":"User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses CoinGecko (+ Coinbase fallback); gold tries gold-api.com; WTI/SPX/US10Y use snapshot + TradingView embed (browser CORS blocks most free quote APIs). Does not write localStorage for prices."},"profile":{"name":"Command Center","title":"","bitcoinStance":"Long-term holder. DCAs Bitcoin on a regular cadence — not a trader."},"primaryMarkets":[{"id":"xau","label":"Spot gold","ticker":"XAU","value":4379.0,"display":"$4,379","unit":"USD/oz","change":0.0,"changePct":0.0,"changeDisplay":"flat · 0.00%","asOf":"2026-09-20T05:15:00-07:00","asOfLabel":"Sun Sep 20, 2026 · 5:15 AM PT","source":"gold-api.com","status":"live","note":"Live ~$4,379 (flat vs Sat snap; weekend)."},{"id":"wti","label":"Spot oil","ticker":"CL · WTI","value":96.08,"display":"$96.08","unit":"USD/bbl","change":0.0,"changePct":0.0,"changeDisplay":"flat · 0.00%","asOf":"2026-09-20T05:15:00-07:00","asOfLabel":"Sun Sep 20, 2026 · 5:15 AM PT","source":"Yahoo CL=F","status":"live","note":"Live ~$96.08 (flat vs Sat snap; weekend quote)."},{"id":"btc","label":"Spot Bitcoin","ticker":"BTC","value":80461,"display":"$80,461","unit":"USD","change":-851,"changePct":-1.04,"changeDisplay":"-1.04% 24h · +4.74% 7d","asOf":"2026-09-20T05:15:00-07:00","asOfLabel":"Sun Sep 20, 2026 · 5:15 AM PT","source":"Coinbase","status":"live","note":"~$80,461 (-1.04% 24h); soft overnight after Fri rally."},{"id":"spx","label":"S&P 500","ticker":"SPX","value":7650.5,"display":"7,650.50","unit":"index","change":12.74,"changePct":0.17,"changeDisplay":"+12.74 · +0.17%","asOf":"2026-09-20T05:15:00-07:00","asOfLabel":"Sun Sep 20, 2026 · 5:15 AM PT","source":"Yahoo ^GSPC","status":"last-close","note":"Cash Fri close 7,650.50 (+0.17% vs prior session). Weekend."},{"id":"us10y","label":"US 10-year","ticker":"US10Y","value":4.998,"display":"4.998%","unit":"yield","change":0.0,"changePct":0.0,"changeDisplay":"flat · near 5%","asOf":"2026-09-20T05:15:00-07:00","asOfLabel":"Sun Sep 20, 2026 · 5:15 AM PT","source":"Yahoo ^TNX","status":"live","note":"~4.998% (flat vs Sat snap)."}],"watchlist":[{"id":"eth","symbol":"ETH","name":"Ethereum","role":"Primary L1 settlement for agents","price":2579.675,"change24h":-2.34,"change7d":4.14,"source":"Coinbase","asOf":"2026-09-20T05:15:00-07:00"},{"id":"sol","symbol":"SOL","name":"Solana","role":"High-throughput agent txs","price":108.58,"change24h":-2.83,"change7d":9.34,"source":"Coinbase","asOf":"2026-09-20T05:15:00-07:00"},{"id":"usdc","symbol":"USDC","name":"USD Coin","role":"Stable unit for on-chain payments","price":1.0,"change24h":0.0,"change7d":0.0,"source":"Coinbase","asOf":"2026-09-20T05:15:00-07:00"},{"id":"fet","symbol":"FET","name":"ASI Alliance (Fetch.ai)","role":"Agent-economy token","price":0.17095,"change24h":-6.45,"change7d":2.99,"source":"Coinbase","asOf":"2026-09-20T05:15:00-07:00"},{"id":"near","symbol":"NEAR","name":"NEAR Protocol","role":"Intents / agent protocol","price":3.6265,"change24h":0.07,"change7d":15.0,"source":"Coinbase","asOf":"2026-09-20T05:15:00-07:00"}],"bitcoinDetail":{"price":80461,"change24h":-1.04,"change7d":4.74,"high24h":81925.0,"low24h":80085.0,"marketCap":1605206825250,"ath":126173,"athDate":"2025-10-06","source":"Coinbase (spot/24h range); Coinbase daily candles (7d); market cap ≈ circ supply × spot","asOf":"2026-09-20T05:15:00-07:00"},"tasks":[{"id":"book-off-sep26","title":"Book off Sat Sep 26 (U15 eval)","detail":"Hard conflict: MMA D 08:00–16:00 vs U15 Eval 1:15–2:15 PM @ LEC 1. Request the day off.","priority":"high","done":false,"due":"2026-09-20"},{"id":"pay-silverstar-winter-passes","title":"Pay for SilverStar winter passes","detail":"Complete payment for SilverStar winter passes.","priority":"high","done":false,"due":"2026-09-30"}],"habits":[{"id":"sleep","label":"Sleep","target":"In bed at a sane hour","week":[false,false,false,false,false,false,false]},{"id":"exercise","label":"Exercise","target":"Move the body — practice counts","week":[false,false,false,false,false,false,false]},{"id":"meditation","label":"Meditation","target":"Ten quiet minutes","week":[false,false,false,false,false,false,false]},{"id":"reading","label":"Reading","target":"A few pages, not a feed","week":[false,false,false,false,false,false,false]}],"habitWeekStart":"2026-09-19","habitWeekDays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"news":[{"title":"Spot Bitcoin ETFs log $433M Friday inflow, flipping week net positive","source":"AINewsCrypto","date":"2026-09-20","dateLabel":"Sep 20","url":"https://www.ainewscrypto.com/news/spot-bitcoin-etfs-log-433m-friday-inflow-flipping-the-week-net-positive"},{"title":"FinanceFeeds: BTC held above $81k after ~6% rally as oil risks mount","source":"FinanceFeeds","date":"2026-09-20","dateLabel":"Sep 20","url":"https://financefeeds.com/bitcoin-holds-above-81000-after-6-rally-as-oil-risks-mount/"},{"title":"BingX/The Block: Ether ETFs post $140M weekly outflow after BTC Friday surge","source":"BingX","date":"2026-09-20","dateLabel":"Sep 20","url":"https://bingx.com/en/flash-news/post/us-spot-bitcoin-etfs-log-m-friday-inflow-end-week-with-m-net-gain-as-ether-etfs-lose-m"},{"title":"Bitcoin ~$80,461 (Coinbase, -1.04% 24h); SPX Fri close 7,650.50","source":"Coinbase / Yahoo ^GSPC","date":"2026-09-20","dateLabel":"Sep 20","url":"https://www.coinbase.com/price/bitcoin"},{"title":"WTI ~$96.08 (flat weekend); gold ~$4,379 (flat)","source":"gold-api.com / Yahoo CL=F","date":"2026-09-20","dateLabel":"Sep 20","url":"https://finance.yahoo.com/quote/CL=F"}],"investmentNotes":["Primary tape: gold, WTI, BTC, S&P 500, US 10-year. Crypto watchlist is secondary.","BTC is a DCA long-term hold. Do not turn the CPI session into a trade.","ETH / SOL / USDC / FET / NEAR are the agent-settlement watchlist — payments rails, not a new core position."],"weather":{"location":"Langley, BC","timezone":"America/Vancouver","date":"2026-09-20","dateLabel":"Sun Sep 20, 2026","conditions":"Early smoky haze; cloudy/overcast morning into a milder afternoon (high ~22°C / low ~11°C); little rain chance.","conditionsShort":"Hazy / cloudy","temp":{"highC":22,"lowC":11,"highF":72,"lowF":52,"displayC":"22° / 11°C","displayF":"72° / 52°F","currentC":11,"currentF":52},"rainChancePct":12,"wind":{"summary":"light","maxKmh":10,"display":"Light, up to ~10 km/h"},"sun":{"sunrise":"06:55","sunset":"19:13","sunriseLabel":"6:55 AM","sunsetLabel":"7:13 PM","timezoneNote":"PT"},"asOf":"2026-09-20T05:15:00-07:00","asOfLabel":"Sun Sep 20, 2026 · 5:15 AM PT","source":"wttr.in (Langley BC); Open-Meteo rate-limited today","lastUpdated":"2026-09-20T05:15:00-07:00"}}};(function () {
+  var orig = window.fetch;
+  if (!orig) return;
+  window.fetch = function (input, init) {
+    try {
+      var url = typeof input === "string" ? input : (input && input.url);
+      if (url && window.__JPF_BAKED__ && Object.prototype.hasOwnProperty.call(window.__JPF_BAKED__, url)) {
+        var body = JSON.stringify(window.__JPF_BAKED__[url]);
+        return Promise.resolve(new Response(body, {
+          status: 200,
+          headers: { "Content-Type": "application/json" }
+        }));
+      }
+    } catch (e) {}
+    return orig.apply(this, arguments);
+  };
+})();
+</script>
+
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <p class="brand-kicker">For JPF</p>
+        <h1>Command Center</h1>
+        <p class="motto">Discipline = freedom</p>
+      </div>
+      <div class="when">
+        <div class="date" id="live-date">—</div>
+        <div class="live-clock" id="live-clock" aria-live="polite">—</div>
+        <div class="header-actions" role="group" aria-label="Board controls">
+          <button type="button" class="btn btn-ghost btn-sm" id="btn-kiosk" title="Fullscreen">Fullscreen</button>
+          <button type="button" class="btn btn-primary btn-sm" id="btn-reload" title="Reload">Refresh</button>
+        </div>
+        <p class="kiosk-hint" id="kiosk-hint" hidden>Esc exits fullscreen</p>
+      </div>
+    </header>
+
+<section class="btc-hero" id="btc-hero" tabindex="0" role="button" aria-label="Open Bitcoin detail — live price">
+      <div class="btc-hero-main">
+        <p class="btc-hero-kicker">Live · Crypto</p>
+        <h2 class="btc-hero-name">Bitcoin</h2>
+        <div class="btc-hero-px" id="btc-hero-px">$75,854</div>
+        <div class="btc-hero-meta">
+          <span class="chg down" id="btc-hero-chg">−1.51% 24h · −4.31% 7d</span>
+          <span class="btc-hero-stamp" id="btc-hero-stamp" aria-live="polite">Snapshot · Wed Sep 16, 2026 · 3:55 AM PT</span>
+        </div>
+      </div>
+      <div class="btc-hero-actions">
+        <button type="button" class="btn btn-primary" id="btn-btc-hero-refresh" title="Fetch live BTC/USD (CoinGecko, Coinbase fallback)">Refresh</button>
+        <button type="button" class="btn btn-ghost" id="btn-btc-hero-chart" title="Open Bitcoin 24h chart">24h chart</button>
+      </div>
+    </section>
+
+<section class="card tasks-compact" id="tasks">
+        <div class="card-head">
+          <h2>To-do</h2>
+          <span class="save-hint" id="tasks-save-hint" aria-live="polite"></span>
+        </div>
+        <p class="lede todo-lede-short">Quick checklist — Enter to add.</p>
+        <div class="todo-chrome">
+          <form class="todo-quickadd" id="todo-quickadd" autocomplete="off">
+            <input class="todo-quick-title" id="todo-quick-title" type="text" placeholder="Add a to-do…" aria-label="New to-do title">
+            <input class="todo-quick-due" id="todo-quick-due" type="date" aria-label="Optional due date" title="Optional due date">
+            <button type="button" class="btn btn-primary" id="add-task">Add</button>
+          </form>
+          <div class="todo-filters" role="tablist" aria-label="To-do filter">
+            <button type="button" class="todo-tab is-active" data-filter="open" aria-pressed="true">Open <span class="n" id="todo-n-open">0</span></button>
+            <button type="button" class="todo-tab" data-filter="done" aria-pressed="false">Done <span class="n" id="todo-n-done">0</span></button>
+            <button type="button" class="todo-tab" data-filter="all" aria-pressed="false">All <span class="n" id="todo-n-all">0</span></button>
+          </div>
+        </div>
+        <div id="tasks-list" class="todo-list"></div>
+        <div class="edit-bar">
+          <button type="button" class="btn" id="clear-todos" title="Remove every to-do">Clear all to-dos</button>
+          <button type="button" class="btn btn-danger" id="reset-local" title="Clear browser overrides for tasks and habits">Reset to defaults</button>
+        </div>
+        <p class="edit-hint todo-hint-short">Saved on this phone/browser.</p>
+      </section>
+
+<section class="card card-full" id="calendar">
+        <h2>Calendar &amp; schedule</h2>
+        <p class="lede">Events grouped into day blocks from Google Calendar (<code>calendar.json</code>). Color legend shows shift and hockey types.</p>
+        <div class="cal-legend" aria-label="Event color legend">
+          <span class="leg"><i class="cal-swatch cal-dayshift" aria-hidden="true"></i>Dayshift</span>
+          <span class="leg"><i class="cal-swatch cal-afternoon" aria-hidden="true"></i>Afternoon</span>
+          <span class="leg"><i class="cal-swatch cal-graveyard" aria-hidden="true"></i>Graveyard</span>
+          <span class="leg"><i class="cal-swatch cal-u15" aria-hidden="true"></i>U15 C</span>
+          <span class="leg"><i class="cal-swatch cal-u18" aria-hidden="true"></i>U18</span>
+        </div>
+        <div class="weekbar" id="weekbar" aria-label="Next 7 days"></div>
+        <div class="today-banner">Today · Saturday — MMA D 8–4; U18 jamboree @ Clov A3 12:45–2:15 PM (leave early if attending); Greg's 50th 6–9 PM @ Hebner's. Mon: PCAHA Coach/Manager Meeting 7–8 PM Zoom.</div>
+        <div class="cal-label">By day</div>
+        <div class="cal-days" id="cal-days">
+        <div class="cal-day-block is-today" data-date="2026-09-17">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Thu Sep 17</span> <span class="cal-today-badge">Today</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-u18>
+            <div class="cal-time">7:45 PM–9:45 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U17 Practice · LEC 1 (NEW)</h3>
+              <div class="cal-loc">LEC 1 (Langley Events Centre)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-18">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Fri Sep 18</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-u18>
+            <div class="cal-time">9:30 PM–11:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U18 Jamboree · vs RM A4</h3>
+              <div class="cal-loc">CLOV (Cloverdale Arena)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-19">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Sat Sep 19</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-u18>
+            <div class="cal-time">12:45 PM–2:15 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U18 Jamboree · @ Clov A3</h3>
+              <div class="cal-loc">CLOV (Cloverdale Arena)</div>
+            </div>
+          </div>
+          <div class="cal-event cal-other>
+            <div class="cal-time">6:00 PM–9:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Greg's 50th Birthday!</h3>
+              <div class="cal-loc">Hebner's House</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-20">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Sun Sep 20</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-other>
+            <div class="cal-time">9:00 AM–5:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">TODO: Book off Sat Sep 26</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-u18>
+            <div class="cal-time">1:15 PM–2:45 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U18 Jamboree · @ RM A3</h3>
+              <div class="cal-loc">CSIC #1 (Cloverdale Sport &amp; Ice Complex)</div>
+            </div>
+          </div>
+          <div class="cal-event cal-u15>
+            <div class="cal-time">7:00 PM–8:30 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U15 C Practice — Group 4 (coach)</h3>
+              <div class="cal-loc">LEC 1 (Langley Events Centre)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-22">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Tue Sep 22</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-u15>
+            <div class="cal-time">6:00 AM–7:00 AM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U15 C Practice — Group 4 (coach)</h3>
+              <div class="cal-loc">SPX 2 (Langley)</div>
+            </div>
+          </div>
+          <div class="cal-event cal-u18>
+            <div class="cal-time">7:45 PM–9:15 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U17 Game · vs Abbotsford U17</h3>
+              <div class="cal-loc">SPX 2 (Langley)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-24">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Thu Sep 24</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-u18>
+            <div class="cal-time">9:15 PM–10:45 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U17 Practice · SPX 2</h3>
+              <div class="cal-loc">SPX 2 (Langley)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-26">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Sat Sep 26</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-u15>
+            <div class="cal-time">1:15 PM–2:15 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U15 C Eval — Groups 3 &amp; 4</h3>
+              <div class="cal-loc">LEC 1 (Langley Events Centre)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-27">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Sun Sep 27</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-u18>
+            <div class="cal-time">7:00 PM–8:30 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U17 Practice · LEC 1</h3>
+              <div class="cal-loc">LEC 1 (Langley Events Centre)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-28">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Mon Sep 28</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-u18>
+            <div class="cal-time">9:30 PM–11:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U17 Practice · SPX 2</h3>
+              <div class="cal-loc">SPX 2 (Langley)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-29">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Tue Sep 29</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-u15>
+            <div class="cal-time">6:00 AM–7:00 AM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U15 C Practice — Group 4 (coach)</h3>
+              <div class="cal-loc">SPX 2 (Langley)</div>
+            </div>
+          </div>
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-09-30">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Wed Sep 30</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-u15>
+            <div class="cal-time">all day</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U15 C Draft</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-dayshift>
+            <div class="cal-time">8:00 AM–4:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">Work · MMA D</h3>
+              
+            </div>
+          </div>
+          <div class="cal-event cal-u18>
+            <div class="cal-time">7:00 PM–8:00 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U17 Practice · LEC 2</h3>
+              <div class="cal-loc">LEC 2 (Langley Events Centre)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="cal-day-block" data-date="2026-10-01">
+          <div class="cal-day-head">
+            <span class="cal-day-title">Thu Oct 1</span>
+          </div>
+          <div class="cal-day-events">
+          <div class="cal-event cal-u18>
+            <div class="cal-time">9:15 PM–10:45 PM</div>
+            <div class="cal-body">
+              <h3 class="cal-title">U17 Practice · SPX 2</h3>
+              <div class="cal-loc">SPX 2 (Langley)</div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+        <p class="src-note">Google Calendar · America/Vancouver · day blocks with color legend (Dayshift / Afternoon / Graveyard / U15 C / U18) · Sep 17–Oct 1.</p>
+      </section>
+
+
+
+
+    
+
+    
+
+    <section class="strip" aria-label="Primary markets">
+      <article class="spot" id="spot-xau" data-asset="xau" tabindex="0" role="button" aria-label="Open spot gold detail">
+        <span class="open-hint">Open</span>
+        <div class="row"><span class="name">Spot gold</span><span class="ticker">XAU</span></div>
+        <div class="px" id="xau-spot-px">$4,347</div>
+        <div class="unit">USD / oz</div>
+        <span class="chg up" id="xau-spot-chg">+$7.8 · +0.2%</span>
+        <div class="spot-actions">
+          <button type="button" class="btn-mini btn-open-asset" data-asset="xau" title="Open gold detail &amp; chart">Open</button>
+        </div>
+        <div class="meta" id="xau-spot-meta">Live ~$4,347 into Wed FOMC; yields ~4.996%. · Wed Sep 16, 2026 · 3:55 AM PT</div>
+      </article>
+      <article class="spot" id="spot-wti" data-asset="wti" tabindex="0" role="button" aria-label="Open spot oil WTI detail">
+        <span class="open-hint">Open</span>
+        <div class="row"><span class="name">Spot oil</span><span class="ticker">CL · WTI</span></div>
+        <div class="px" id="wti-spot-px">$103.58</div>
+        <div class="unit">USD / bbl</div>
+        <span class="chg down" id="wti-spot-chg">$−2.25 · −2.13%</span>
+        <div class="spot-actions">
+          <button type="button" class="btn-mini btn-open-asset" data-asset="wti" title="Open WTI detail &amp; chart">Open</button>
+        </div>
+        <div class="meta" id="wti-spot-meta">Overnight ~$103.58 (−2.13% vs Tue $105.83). · Wed Sep 16, 2026 · 3:55 AM PT</div>
+      </article>
+      <article class="spot btc-spot" id="spot-btc" data-asset="btc" tabindex="0" role="button" aria-label="Open Bitcoin detail">
+        <span class="open-hint">Open</span>
+        <div class="row"><span class="name">Spot Bitcoin</span><span class="ticker">BTC</span></div>
+        <div class="px" id="btc-spot-px">$75,854</div>
+        <div class="unit">USD</div>
+        <span class="chg down" id="btc-spot-chg">−1.51% 24h · −4.31% 7d</span>
+        <div class="btc-actions spot-actions">
+          <button type="button" class="btn-mini" id="btn-btc-refresh" title="Fetch live BTC/USD (CoinGecko, Coinbase fallback)">Refresh BTC</button>
+          <button type="button" class="btn-mini btn-open-asset" id="btn-btc-chart" data-asset="btc" title="Open Bitcoin detail &amp; 24h chart">Open</button>
+        </div>
+        <div class="btc-live-stamp" id="btc-live-stamp" aria-live="polite">Coinbase · Wed Sep 16, 2026 · 3:55 AM PT</div>
+        <div class="meta" id="btc-spot-meta">Overnight soft into Wed FOMC — spot mid-$75ks; hike odds elevated; decision ~11 AM PT. · Wed Sep 16, 2026 · 3:55 AM PT</div>
+      </article>
+      <article class="spot" id="spot-spx" data-asset="spx" tabindex="0" role="button" aria-label="Open S&amp;P 500 detail">
+        <span class="open-hint">Open</span>
+        <div class="row"><span class="name">S&amp;P 500</span><span class="ticker">SPX</span></div>
+        <div class="px" id="spx-spot-px">7,585.73</div>
+        <div class="unit">index</div>
+        <span class="chg down" id="spx-spot-chg">−34.25 · −0.45%</span>
+        <div class="spot-actions">
+          <button type="button" class="btn-mini btn-open-asset" data-asset="spx" title="Open S&amp;P 500 detail &amp; chart">Open</button>
+        </div>
+        <div class="meta" id="spx-spot-meta">Tue close −0.45% vs Mon close 7,619.98; FOMC Sep 16 (today ~11 AM PT) is the main macro event.</div>
+      </article>
+      <article class="spot" id="spot-us10y" data-asset="us10y" tabindex="0" role="button" aria-label="Open US 10-year detail">
+        <span class="open-hint">Open</span>
+        <div class="row"><span class="name">US 10-year</span><span class="ticker">US10Y</span></div>
+        <div class="px" id="us10y-spot-px">4.996%</div>
+        <div class="unit">yield</div>
+        <span class="chg up" id="us10y-spot-chg">+3.5 bp · still near 5%</span>
+        <div class="spot-actions">
+          <button type="button" class="btn-mini btn-open-asset" data-asset="us10y" title="Open US 10-year detail &amp; chart">Open</button>
+        </div>
+        <div class="meta" id="us10y-spot-meta">Tue close ~4.996% (+3.5 bp vs Mon 4.961%) into Sep 16 FOMC — multiyear highs in headlines.</div>
+      </article>
+    </section>
+
+    <div class="grid">
+      <section class="card" id="investments">
+        <h2>Investments &amp; crypto</h2>
+        <p class="lede">Five-spot tape above is the core. Below: Bitcoin hold + agent-settlement watchlist.</p>
+        <div class="btc-hold"><strong>Bitcoin · long-term hold.</strong> DCA on a regular cadence. The CPI session is noise, not a reason to trade.</div>
+        <div class="btc-toolbar">
+          <button type="button" class="btn btn-primary" id="btn-btc-refresh-card" title="Fetch live BTC/USD (CoinGecko, Coinbase fallback)">Refresh BTC</button>
+          <button type="button" class="btn btn-ghost btn-open-asset" id="btn-btc-chart-card" data-asset="btc" title="Open Bitcoin detail &amp; chart">Open chart</button>
+          <span class="btc-live-stamp" id="btc-live-stamp-card" aria-live="polite">Coinbase · Wed Sep 16, 2026 · 3:55 AM PT</span>
+        </div>
+        <dl class="btc-stats">
+          <div class="stat"><dt>BTC spot</dt><dd id="btc-stat-px">$75,854</dd></div>
+          <div class="stat"><dt>24h range</dt><dd id="btc-stat-range">$74,888 – $77,297</dd></div>
+          <div class="stat"><dt>Market cap</dt><dd id="btc-stat-mcap">$1.52T</dd></div>
+          <div class="stat"><dt>ATH (Oct 2025)</dt><dd id="btc-stat-ath">$126,080</dd></div>
+        </dl>
+        <table class="wl">
+          <thead>
+            <tr>
+              <th>Watchlist</th>
+              <th class="num">Price</th>
+              <th class="num">24h</th>
+              <th class="num">7d</th>
+              <th class="num"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="wl-row" data-asset="eth" tabindex="0" role="button" aria-label="Open Ethereum detail">
+              <td><span class="sym">ETH</span><span class="role">Primary L1 settlement for agents</span></td>
+              <td class="num px-cell" id="eth-wl-px">$2,395.97</td>
+              <td class="num"><span class="chg down" id="eth-wl-chg24">−3.1%</span></td>
+              <td class="num"><span class="chg down" id="eth-wl-chg7">−2.9%</span></td>
+              <td class="wl-open"><button type="button" class="btn-mini btn-open-asset" data-asset="eth" title="Open ETH chart">Open</button></td>
+            </tr>
+            <tr class="wl-row" data-asset="sol" tabindex="0" role="button" aria-label="Open Solana detail">
+              <td><span class="sym">SOL</span><span class="role">High-throughput agent txs</span></td>
+              <td class="num px-cell" id="sol-wl-px">$96.89</td>
+              <td class="num"><span class="chg down" id="sol-wl-chg24">−3.5%</span></td>
+              <td class="num"><span class="chg down" id="sol-wl-chg7">−4.6%</span></td>
+              <td class="wl-open"><button type="button" class="btn-mini btn-open-asset" data-asset="sol" title="Open SOL chart">Open</button></td>
+            </tr>
+            <tr class="wl-row" data-asset="usdc" tabindex="0" role="button" aria-label="Open USDC detail">
+              <td><span class="sym">USDC</span><span class="role">Stable unit for on-chain payments</span></td>
+              <td class="num px-cell" id="usdc-wl-px">$1.00</td>
+              <td class="num"><span class="chg flat" id="usdc-wl-chg24">0.0%</span></td>
+              <td class="num"><span class="chg flat" id="usdc-wl-chg7">0.0%</span></td>
+              <td class="wl-open"><button type="button" class="btn-mini btn-open-asset" data-asset="usdc" title="Open USDC chart">Open</button></td>
+            </tr>
+            <tr class="wl-row" data-asset="fet" tabindex="0" role="button" aria-label="Open FET detail">
+              <td><span class="sym">FET</span><span class="role">ASI Alliance / agent-economy token</span></td>
+              <td class="num px-cell" id="fet-wl-px">$0.150</td>
+              <td class="num"><span class="chg down" id="fet-wl-chg24">−5.8%</span></td>
+              <td class="num"><span class="chg down" id="fet-wl-chg7">−11.8%</span></td>
+              <td class="wl-open"><button type="button" class="btn-mini btn-open-asset" data-asset="fet" title="Open FET chart">Open</button></td>
+            </tr>
+            <tr class="wl-row" data-asset="near" tabindex="0" role="button" aria-label="Open NEAR detail">
+              <td><span class="sym">NEAR</span><span class="role">Intents / agent protocol</span></td>
+              <td class="num px-cell" id="near-wl-px">$2.331</td>
+              <td class="num"><span class="chg down" id="near-wl-chg24">−1.0%</span></td>
+              <td class="num"><span class="chg down" id="near-wl-chg7">−6.0%</span></td>
+              <td class="wl-open"><button type="button" class="btn-mini btn-open-asset" data-asset="near" title="Open NEAR chart">Open</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="edit-hint">Watchlist and notes edit in <code>data.json</code>. Click a row or <strong>Open</strong> for live price + chart. Prices: Coinbase / Yahoo / gold-api snapshot, Wed Sep 16, 2026 · 4:05 PM PT.</p>
+      </section>
+
+
+      
+
+                        <section class="card" id="news">
+        <h2>News &amp; market pulse</h2>
+                                                        <p class="lede">Real headlines, fetched Wed Sep 16, 2026 · 3:55 AM PT.</p>
+                                <ul class="news">
+          <li><a href="https://www.cryptotimes.io/2026/09/16/what-to-expect-from-todays-fomc-meeting-warshs-first-fed-rate-hike-vote-dot-plot-and-bitcoin-reaction/" target="_blank" rel="noopener">FOMC today ~11 AM PT — hike widely expected; Warsh presser + dots in focus (decision not yet out)</a><span class="news-meta">Crypto Times · Sep 16</span></li>
+          <li><a href="https://www.coindesk.com/markets/2026/09/16/fed-meeting-is-shaping-up-to-be-a-nightmare-for-warsh-bitcoin-might-still-shine" target="_blank" rel="noopener">Fed meeting shaping up as a stress test for Warsh — BTC still in play</a><span class="news-meta">CoinDesk · Sep 16</span></li>
+          <li><a href="https://www.home.saxo/fr-ch/content/articles/macro/market-quick-take---oil-holds-firm-as-treasury-yields-hit-2007-highs---16-september-2026-16092026" target="_blank" rel="noopener">Oil holds firm as Treasury yields hit 2007 highs ahead of FOMC</a><span class="news-meta">Saxo · Sep 16</span></li>
+          <li><a href="https://coinpedia.org/news/fomc-meeting-today-fed-expected-to-hike-rates-25-bps-will-bitcoin-drop-again/" target="_blank" rel="noopener">FOMC today: markets price ~92% odds of 25 bp hike — BTC soft into decision</a><span class="news-meta">Coinpedia · Sep 16</span></li>
+          <li><a href="https://finance.yahoo.com/quote/CL%3DF/" target="_blank" rel="noopener">Oil overnight ~$103.58 after Tue settle $105.83 (Yahoo CL=F)</a><span class="news-meta">Yahoo CL=F · Sep 16</span></li>
+          <li><a href="https://www.coinbase.com/price/bitcoin" target="_blank" rel="noopener">Bitcoin ~$75,854 (Coinbase, −1.51% 24h) — soft into Wed FOMC.</a><span class="news-meta">Coinbase · Sep 16</span></li>
+        </ul>
+      </section>
+
+      <section class="card span-2" id="health">
+        <div class="card-head">
+          <h2>Health &amp; habits</h2>
+          <span class="save-hint" id="habits-save-hint" aria-live="polite"></span>
+        </div>
+        <p class="lede">Week of Sat Sep 12–Fri Sep 18. Tap today’s ring to mark done. Rename or add habits in place.</p>
+        <div id="habits-list"></div>
+        <div class="edit-bar">
+          <button type="button" class="btn btn-primary" id="add-habit">Add habit</button>
+        </div>
+        <p class="edit-hint">Edits are browser-local. Rings for other days stay visible; only today is one-tap. Use Reset to defaults above to clear local overrides.</p>
+      </section>
+
+    </div>
+
+    
+<section class="wx" id="weather" aria-label="Today's weather for Langley, BC">
+      <div class="wx-icon" aria-hidden="true">☀️</div>
+      <div class="wx-main">
+        <p class="wx-kicker">Today · Weather</p>
+        <h2 class="wx-loc">Langley, BC</h2>
+        <p class="wx-cond" id="wx-conditions">Clear overnight into a warm sunny day (high ~25°C); little rain risk</p>
+      </div>
+            <div class="wx-temps">
+        <div class="wx-hi" id="wx-hi">25° <span>/ 11°C</span></div>
+        <div class="wx-f" id="wx-f">77° / 52°F</div>
+      </div>
+      <dl class="wx-meta">
+        <div class="wx-chip"><dt>Rain</dt><dd id="wx-rain">~0%</dd></div>
+        <div class="wx-chip"><dt>Wind</dt><dd id="wx-wind">Light, up to ~13 km/h</dd></div>
+        <div class="wx-chip"><dt>Sunrise</dt><dd id="wx-rise">6:49 AM PT</dd></div>
+        <div class="wx-chip"><dt>Sunset</dt><dd id="wx-set">7:22 PM PT</dd></div>
+      </dl>
+      <p class="wx-src" id="wx-src">MET Norway (Langley BC); cross-checked wttr.in (Open-Meteo daily limit hit) · Wed Sep 16, 2026 · 3:55 AM PT</p>
+    </section>
+
+<footer class="foot">
+      <div>Self-contained page · system fonts · no CDN.</div>
+      <div>Maintained by your assistant · edit <code>data.json</code> · <code>weather.json</code> · <code>calendar.json</code></div>
+    </footer>
+  </div>
+
+    <div class="modal-backdrop" id="asset-modal" role="dialog" aria-modal="true" aria-labelledby="asset-modal-title" hidden>
+      <div class="modal modal-asset">
+        <div class="modal-head">
+          <div>
+            <h3 id="asset-modal-title">Asset</h3>
+            <p class="sub" id="asset-modal-sub">Detail</p>
+          </div>
+          <button type="button" class="modal-close" id="asset-modal-close" title="Close" aria-label="Close detail">&times;</button>
+        </div>
+        <div class="asset-price-row">
+          <div class="px-lg" id="asset-modal-px">—</div>
+          <span class="chg flat" id="asset-modal-chg">—</span>
+          <button type="button" class="btn-mini" id="asset-modal-refresh" title="Refresh live quote">Refresh</button>
+        </div>
+        <p class="asset-meta-line" id="asset-modal-meta"><span>Source</span> · —</p>
+        <dl class="chart-stats">
+          <div class="stat"><dt>Last</dt><dd id="asset-modal-last">—</dd></div>
+          <div class="stat"><dt>24h high</dt><dd id="asset-modal-hi">—</dd></div>
+          <div class="stat"><dt>24h low</dt><dd id="asset-modal-lo">—</dd></div>
+        </dl>
+        <div class="modal-tabs" role="tablist" aria-label="Chart type">
+          <button type="button" class="modal-tab is-active" role="tab" aria-selected="true" data-tab="spark" id="tab-spark">24h</button>
+          <button type="button" class="modal-tab" role="tab" aria-selected="false" data-tab="tv" id="tab-tv">Interactive</button>
+        </div>
+        <div class="chart-wrap" id="asset-chart-spark" role="tabpanel">
+          <div class="chart-msg">Loading…</div>
+        </div>
+        <div class="chart-wrap tv-wrap" id="asset-chart-tv" role="tabpanel" hidden>
+          <div class="chart-msg">TradingView loads when you open Interactive.</div>
+        </div>
+        <div class="chart-foot">
+          <span id="asset-modal-stamp">—</span>
+          <span id="asset-modal-links"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var STORAGE_KEY = "jpf-dashboard-v1";
+  var WEEK_DAYS = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+  var WEEK_START = "2026-09-12";
+
+  /* Baked-in defaults (stable ids). Assistant regenerations update these;
+     localStorage overlays merge on top so browser edits survive. */
+  var DEFAULTS = {
+    tasks: [
+      {
+        id: "book-off-sep26",
+        title: "Book off Sat Sep 26 (U15 eval)",
+        detail: "Hard conflict: MMA D 08:00–16:00 vs U15 Eval 1:15–2:15 PM @ LEC 1. Request the day off.",
+        priority: "high",
+        done: false,
+        due: "2026-09-20"
+      },
+      {
+        id: "pay-silverstar-winter-passes",
+        title: "Pay for SilverStar winter passes",
+        detail: "Complete payment for SilverStar winter passes.",
+        priority: "high",
+        done: false,
+        due: "2026-09-30"
+      }
+    ],
+    habits: [
+      { id: "sleep", label: "Sleep", target: "In bed at a sane hour", week: [false, false, false, false, false, false, false] },
+      { id: "exercise", label: "Exercise", target: "Move the body — practice counts", week: [false, false, false, false, false, false, false] },
+      { id: "meditation", label: "Meditation", target: "Ten quiet minutes", week: [false, false, false, false, false, false, false] },
+      { id: "reading", label: "Reading", target: "A few pages, not a feed", week: [false, false, false, false, false, false, false] }
+    ]
+  };
+
+  function clone(o) {
+    return JSON.parse(JSON.stringify(o));
+  }
+
+  function emptyStore() {
+    return {
+      taskOverrides: {},
+      habitOverrides: {},
+      addedTasks: [],
+      addedHabits: [],
+      deletedTaskIds: [],
+      deletedHabitIds: [],
+      savedAt: null,
+      refreshRequestedAt: null
+    };
+  }
+
+  function loadStore() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return emptyStore();
+      var parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object") return emptyStore();
+      var s = emptyStore();
+      s.taskOverrides = parsed.taskOverrides || {};
+      s.habitOverrides = parsed.habitOverrides || {};
+      s.addedTasks = Array.isArray(parsed.addedTasks) ? parsed.addedTasks : [];
+      s.addedHabits = Array.isArray(parsed.addedHabits) ? parsed.addedHabits : [];
+      s.deletedTaskIds = Array.isArray(parsed.deletedTaskIds) ? parsed.deletedTaskIds : [];
+      s.deletedHabitIds = Array.isArray(parsed.deletedHabitIds) ? parsed.deletedHabitIds : [];
+      s.savedAt = parsed.savedAt || null;
+      s.refreshRequestedAt = parsed.refreshRequestedAt || null;
+      /* Legacy: full arrays from an older shape */
+      if (Array.isArray(parsed.tasks) && !parsed.taskOverrides) {
+        s = migrateFullArrays(parsed);
+      }
+      return s;
+    } catch (e) {
+      return emptyStore();
+    }
+  }
+
+  function migrateFullArrays(parsed) {
+    var s = emptyStore();
+    var defIds = {};
+    DEFAULTS.tasks.forEach(function (t) { defIds[t.id] = true; });
+    (parsed.tasks || []).forEach(function (t) {
+      if (!t || !t.id) return;
+      if (defIds[t.id]) {
+        s.taskOverrides[t.id] = {
+          title: t.title,
+          detail: t.detail,
+          priority: t.priority,
+          done: !!t.done,
+          due: t.due || ""
+        };
+      } else {
+        s.addedTasks.push(t);
+      }
+    });
+    DEFAULTS.tasks.forEach(function (t) {
+      var found = (parsed.tasks || []).some(function (x) { return x && x.id === t.id; });
+      if (!found) s.deletedTaskIds.push(t.id);
+    });
+    var hDef = {};
+    DEFAULTS.habits.forEach(function (h) { hDef[h.id] = true; });
+    (parsed.habits || []).forEach(function (h) {
+      if (!h || !h.id) return;
+      if (hDef[h.id]) {
+        s.habitOverrides[h.id] = {
+          label: h.label,
+          target: h.target,
+          week: h.week
+        };
+      } else {
+        s.addedHabits.push(h);
+      }
+    });
+    DEFAULTS.habits.forEach(function (h) {
+      var found = (parsed.habits || []).some(function (x) { return x && x.id === h.id; });
+      if (!found) s.deletedHabitIds.push(h.id);
+    });
+    s.savedAt = parsed.savedAt || new Date().toISOString();
+    return s;
+  }
+
+  var store = loadStore();
+
+  function persist() {
+    store.savedAt = new Date().toISOString();
+    var ok = true;
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        taskOverrides: store.taskOverrides,
+        habitOverrides: store.habitOverrides,
+        addedTasks: store.addedTasks,
+        addedHabits: store.addedHabits,
+        deletedTaskIds: store.deletedTaskIds,
+        deletedHabitIds: store.deletedHabitIds,
+        savedAt: store.savedAt,
+        refreshRequestedAt: store.refreshRequestedAt
+      }));
+    } catch (e) {
+      ok = false; /* private mode / quota */
+    }
+    try { updateSaveHints(); } catch (e2) {}
+    return ok;
+  }
+
+  function fmtSaved(iso) {
+    if (!iso) return "";
+    try {
+      var d = new Date(iso);
+      return d.toLocaleString("en-CA", {
+        timeZone: "America/Vancouver",
+        month: "short", day: "numeric",
+        hour: "numeric", minute: "2-digit"
+      }) + " PT";
+    } catch (e) { return ""; }
+  }
+
+  function updateSaveHints() {
+    var text = store.savedAt
+      ? "Saved locally · " + fmtSaved(store.savedAt)
+      : "Browser-local edits";
+    ["tasks-save-hint", "habits-save-hint"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.textContent = text;
+      el.classList.remove("flash");
+      void el.offsetWidth;
+      el.classList.add("flash");
+    });
+  }
+
+  function todayIndex() {
+    /* Map America/Vancouver weekday onto WEEK_DAYS (Sat-start week). */
+    try {
+      var wd = new Date().toLocaleDateString("en-US", {
+        timeZone: "America/Vancouver",
+        weekday: "short"
+      });
+      var map = { Sat: 0, Sun: 1, Mon: 2, Tue: 3, Wed: 4, Thu: 5, Fri: 6 };
+      return map[wd] != null ? map[wd] : 0;
+    } catch (e) { return 0; }
+  }
+
+  function uid(prefix) {
+    return prefix + "-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 7);
+  }
+
+  function mergedTasks() {
+    var deleted = {};
+    store.deletedTaskIds.forEach(function (id) { deleted[id] = true; });
+    var list = [];
+    DEFAULTS.tasks.forEach(function (t) {
+      if (deleted[t.id]) return;
+      var o = store.taskOverrides[t.id] || {};
+      list.push({
+        id: t.id,
+        title: o.title != null ? o.title : t.title,
+        detail: o.detail != null ? o.detail : t.detail,
+        priority: o.priority != null ? o.priority : t.priority,
+        done: o.done != null ? !!o.done : !!t.done,
+        due: o.due != null ? o.due : (t.due || ""),
+        _source: "default"
+      });
+    });
+    store.addedTasks.forEach(function (t) {
+      if (!t || !t.id || deleted[t.id]) return;
+      list.push({
+        id: t.id,
+        title: t.title || "New to-do",
+        detail: t.detail || "",
+        priority: t.priority || "medium",
+        done: !!t.done,
+        due: t.due || "",
+        _source: "added"
+      });
+    });
+    return list;
+  }
+
+  function mergedHabits() {
+    var deleted = {};
+    store.deletedHabitIds.forEach(function (id) { deleted[id] = true; });
+    var list = [];
+    DEFAULTS.habits.forEach(function (h) {
+      if (deleted[h.id]) return;
+      var o = store.habitOverrides[h.id] || {};
+      var week = Array.isArray(o.week) ? o.week.slice() : (h.week || []).slice();
+      while (week.length < 7) week.push(false);
+      list.push({
+        id: h.id,
+        label: o.label != null ? o.label : h.label,
+        target: o.target != null ? o.target : h.target,
+        week: week.slice(0, 7),
+        _source: "default"
+      });
+    });
+    store.addedHabits.forEach(function (h) {
+      if (!h || !h.id || deleted[h.id]) return;
+      var week = Array.isArray(h.week) ? h.week.slice() : [false, false, false, false, false, false, false];
+      while (week.length < 7) week.push(false);
+      list.push({
+        id: h.id,
+        label: h.label || "New habit",
+        target: h.target || "",
+        week: week.slice(0, 7),
+        _source: "added"
+      });
+    });
+    return list;
+  }
+
+  function setTaskField(id, field, value) {
+    var added = store.addedTasks.filter(function (t) { return t.id === id; })[0];
+    if (added) {
+      added[field] = value;
+    } else {
+      if (!store.taskOverrides[id]) store.taskOverrides[id] = {};
+      store.taskOverrides[id][field] = value;
+    }
+    persist();
+  }
+
+  function setHabitField(id, field, value) {
+    var added = store.addedHabits.filter(function (h) { return h.id === id; })[0];
+    if (added) {
+      added[field] = value;
+    } else {
+      if (!store.habitOverrides[id]) store.habitOverrides[id] = {};
+      store.habitOverrides[id][field] = value;
+    }
+    persist();
+  }
+
+  function priLabel(p) {
+    if (p === "high") return "High";
+    if (p === "low") return "Low";
+    return "Med";
+  }
+
+  function escapeHtml(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  var taskFilter = "open";
+
+  function todayYmd() {
+    try {
+      return new Date().toLocaleDateString("en-CA", { timeZone: "America/Vancouver" });
+    } catch (e) {
+      var d = new Date();
+      return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+    }
+  }
+
+  function dueClass(due, done) {
+    if (!due || done) return "";
+    var today = todayYmd();
+    if (due < today) return " overdue";
+    if (due === today) return " due-today";
+    return "";
+  }
+
+  function updateTodoTabs(tasks) {
+    var open = 0, done = 0;
+    tasks.forEach(function (t) { if (t.done) done += 1; else open += 1; });
+    var nOpen = document.getElementById("todo-n-open");
+    var nDone = document.getElementById("todo-n-done");
+    var nAll = document.getElementById("todo-n-all");
+    if (nOpen) nOpen.textContent = String(open);
+    if (nDone) nDone.textContent = String(done);
+    if (nAll) nAll.textContent = String(tasks.length);
+    document.querySelectorAll(".todo-tab").forEach(function (btn) {
+      var on = btn.getAttribute("data-filter") === taskFilter;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
+  function renderTasks() {
+    var host = document.getElementById("tasks-list");
+    if (!host) return;
+    var tasks = mergedTasks();
+    updateTodoTabs(tasks);
+    var shown = tasks.filter(function (t) {
+      if (taskFilter === "open") return !t.done;
+      if (taskFilter === "done") return !!t.done;
+      return true;
+    });
+    if (!shown.length) {
+      var empty = "Nothing open — add one above.";
+      if (taskFilter === "done") empty = "No completed to-dos yet.";
+      else if (taskFilter === "all") empty = "No to-dos — add one above, or reset to defaults.";
+      else if (tasks.length) empty = "All caught up. Switch to Done or All to see the rest.";
+      host.innerHTML = '<p class="today-empty">' + empty + "</p>";
+      return;
+    }
+    host.innerHTML = shown.map(function (t) {
+      var due = t.due || "";
+      return (
+        '<article class="task' + (t.done ? " done" : "") + '" data-id="' + escapeHtml(t.id) + '">' +
+          '<button type="button" class="box" aria-label="' + (t.done ? "Mark incomplete" : "Mark complete") + '" data-act="toggle"></button>' +
+          '<div>' +
+            '<input class="task-title" type="text" value="' + escapeHtml(t.title) + '" data-act="title" aria-label="To-do title">' +
+            '<div class="task-meta">' +
+              '<input class="todo-due' + dueClass(due, t.done) + '" type="date" value="' + escapeHtml(due) + '" data-act="due" aria-label="Due date" title="Due date">' +
+              '<select class="pri-sel" data-act="priority" aria-label="Priority">' +
+                '<option value="high"' + (t.priority === "high" ? " selected" : "") + '>High</option>' +
+                '<option value="medium"' + (t.priority === "medium" ? " selected" : "") + '>Med</option>' +
+                '<option value="low"' + (t.priority === "low" ? " selected" : "") + '>Low</option>' +
+              '</select>' +
+              (t.detail ? '<p class="task-detail">' + escapeHtml(t.detail) + '</p>' : '') +
+            '</div>' +
+          '</div>' +
+          '<button type="button" class="icon-btn task-del" data-act="delete" title="Delete" aria-label="Delete to-do">×</button>' +
+        '</article>'
+      );
+    }).join("");
+  }
+
+  function renderHabits() {
+    var host = document.getElementById("habits-list");
+    if (!host) return;
+    var habits = mergedHabits();
+    var ti = todayIndex();
+    if (!habits.length) {
+      host.innerHTML = '<p class="today-empty">No habits — add one below, or reset to defaults.</p>';
+      return;
+    }
+    host.innerHTML = habits.map(function (h) {
+      var dots = WEEK_DAYS.map(function (lab, i) {
+        var filled = !!h.week[i];
+        var isToday = i === ti;
+        var cls = "ring" + (filled ? " filled" : "") + (isToday ? " today" : "");
+        var tag = isToday ? "button" : "div";
+        var extra = isToday
+          ? ' type="button" data-act="toggle-today" aria-pressed="' + (filled ? "true" : "false") + '" aria-label="Toggle ' + escapeHtml(h.label) + ' for today"'
+          : ' aria-hidden="true"';
+        return (
+          '<div class="dotcell' + (isToday ? " today" : "") + '">' +
+            '<div class="lab">' + lab + '</div>' +
+            '<' + tag + ' class="' + cls + '"' + extra + '></' + tag + '>' +
+          '</div>'
+        );
+      }).join("");
+      return (
+        '<div class="habit" data-id="' + escapeHtml(h.id) + '">' +
+          '<div class="habit-labels">' +
+            '<input class="habit-label" type="text" value="' + escapeHtml(h.label) + '" data-act="label" aria-label="Habit name">' +
+            '<input class="habit-target" type="text" value="' + escapeHtml(h.target) + '" data-act="target" aria-label="Habit target">' +
+          '</div>' +
+          '<button type="button" class="icon-btn" data-act="delete" title="Remove habit" aria-label="Remove habit">×</button>' +
+          '<div class="dots" aria-label="' + escapeHtml(h.label) + ' this week">' + dots + '</div>' +
+        '</div>'
+      );
+    }).join("");
+  }
+
+  function bindTasks() {
+    var host = document.getElementById("tasks-list");
+    if (!host || host._bound) return;
+    host._bound = true;
+    host.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-act]");
+      if (!btn || !host.contains(btn)) return;
+      var row = btn.closest(".task");
+      if (!row) return;
+      var id = row.getAttribute("data-id");
+      var act = btn.getAttribute("data-act");
+      if (act === "toggle") {
+        var tasks = mergedTasks();
+        var cur = tasks.filter(function (t) { return t.id === id; })[0];
+        setTaskField(id, "done", !(cur && cur.done));
+        renderTasks();
+      } else if (act === "delete") {
+        e.preventDefault();
+        e.stopPropagation();
+        var title = "";
+        try {
+          var titleEl = row.querySelector(".task-title");
+          title = titleEl ? titleEl.value : "";
+        } catch (err) {}
+        var addedIdx = -1;
+        store.addedTasks.forEach(function (t, i) { if (t.id === id) addedIdx = i; });
+        if (addedIdx >= 0) {
+          store.addedTasks.splice(addedIdx, 1);
+        } else {
+          if (store.deletedTaskIds.indexOf(id) < 0) store.deletedTaskIds.push(id);
+          if (store.taskOverrides[id]) delete store.taskOverrides[id];
+        }
+        persist();
+        renderTasks();
+        showToast(title ? ("Deleted: " + title) : "To-do deleted");
+      }
+    });
+    host.addEventListener("change", function (e) {
+      var el = e.target;
+      if (!el || !el.getAttribute) return;
+      var row = el.closest(".task");
+      if (!row) return;
+      var id = row.getAttribute("data-id");
+      var act = el.getAttribute("data-act");
+      if (act === "priority") {
+        setTaskField(id, "priority", el.value);
+      } else if (act === "due") {
+        setTaskField(id, "due", el.value || "");
+        el.className = "todo-due" + dueClass(el.value || "", row.classList.contains("done"));
+      }
+    });
+    host.addEventListener("input", function (e) {
+      var el = e.target;
+      if (!el || el.getAttribute("data-act") !== "title") return;
+      var row = el.closest(".task");
+      if (!row) return;
+      setTaskField(row.getAttribute("data-id"), "title", el.value);
+    });
+  }
+
+  function bindHabits() {
+    var host = document.getElementById("habits-list");
+    if (!host || host._bound) return;
+    host._bound = true;
+    host.addEventListener("click", function (e) {
+      var btn = e.target.closest("[data-act]");
+      if (!btn || !host.contains(btn)) return;
+      var row = btn.closest(".habit");
+      if (!row) return;
+      var id = row.getAttribute("data-id");
+      var act = btn.getAttribute("data-act");
+      if (act === "toggle-today") {
+        var habits = mergedHabits();
+        var cur = habits.filter(function (h) { return h.id === id; })[0];
+        if (!cur) return;
+        var week = cur.week.slice();
+        var ti = todayIndex();
+        week[ti] = !week[ti];
+        setHabitField(id, "week", week);
+        renderHabits();
+      } else if (act === "delete") {
+        if (!window.confirm("Remove this habit?")) return;
+        var addedIdx = -1;
+        store.addedHabits.forEach(function (h, i) { if (h.id === id) addedIdx = i; });
+        if (addedIdx >= 0) {
+          store.addedHabits.splice(addedIdx, 1);
+        } else if (store.deletedHabitIds.indexOf(id) < 0) {
+          store.deletedHabitIds.push(id);
+          delete store.habitOverrides[id];
+        }
+        persist();
+        renderHabits();
+      }
+    });
+    host.addEventListener("input", function (e) {
+      var el = e.target;
+      if (!el || !el.getAttribute) return;
+      var act = el.getAttribute("data-act");
+      if (act !== "label" && act !== "target") return;
+      var row = el.closest(".habit");
+      if (!row) return;
+      setHabitField(row.getAttribute("data-id"), act, el.value);
+    });
+  }
+
+  function showToast(msg) {
+    var el = document.getElementById("toast");
+    if (!el) return;
+    el.textContent = msg;
+    el.classList.add("show");
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(function () { el.classList.remove("show"); }, 4200);
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        resolve();
+      } catch (err) {
+        reject(err);
+      } finally {
+        document.body.removeChild(ta);
+      }
+    });
+  }
+
+  /* —— Wire controls —— */
+  function initEditable() {
+    renderTasks();
+    renderHabits();
+    bindTasks();
+    bindHabits();
+    updateSaveHints();
+
+    function addTodoFromQuick() {
+      var titleEl = document.getElementById("todo-quick-title");
+      var dueEl = document.getElementById("todo-quick-due");
+      var title = titleEl && titleEl.value ? titleEl.value.trim() : "";
+      if (!title) {
+        if (titleEl) titleEl.focus();
+        return;
+      }
+      var due = dueEl && dueEl.value ? dueEl.value : "";
+      try {
+        store.addedTasks.push({
+          id: uid("task"),
+          title: title,
+          detail: "",
+          priority: "medium",
+          done: false,
+          due: due
+        });
+        if (titleEl) titleEl.value = "";
+        if (dueEl) dueEl.value = "";
+        taskFilter = "open";
+        var saved = true;
+        try {
+          saved = persist() !== false;
+        } catch (pe) {
+          saved = false;
+        }
+        try {
+          renderTasks();
+        } catch (re) {
+          /* still report add outcome */
+        }
+        if (!saved) {
+          showToast("Couldn't save to this browser — item added for this session only.");
+        } else {
+          showToast("Added: " + title);
+        }
+        if (titleEl) titleEl.focus();
+      } catch (err) {
+        var msg = (err && err.message) ? err.message : String(err || "unknown error");
+        showToast("Couldn't add to-do: " + msg);
+        try { renderTasks(); } catch (e2) {}
+      }
+    }
+
+    var quickForm = document.getElementById("todo-quickadd");
+    if (quickForm) {
+      quickForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        addTodoFromQuick();
+      }, false);
+    }
+    var addTaskBtn = document.getElementById("add-task");
+    if (addTaskBtn) {
+      addTaskBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        addTodoFromQuick();
+      }, false);
+    }
+    var quickTitle = document.getElementById("todo-quick-title");
+    if (quickTitle) {
+      quickTitle.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          addTodoFromQuick();
+        }
+      }, false);
+    }
+
+    document.querySelectorAll(".todo-tab").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var f = btn.getAttribute("data-filter");
+        if (!f || f === taskFilter) return;
+        taskFilter = f;
+        renderTasks();
+      });
+    });
+
+    var addHabit = document.getElementById("add-habit");
+    if (addHabit) {
+      addHabit.addEventListener("click", function () {
+        store.addedHabits.push({
+          id: uid("habit"),
+          label: "New habit",
+          target: "",
+          week: [false, false, false, false, false, false, false]
+        });
+        persist();
+        renderHabits();
+        var inputs = document.querySelectorAll("#habits-list .habit-label");
+        var last = inputs[inputs.length - 1];
+        if (last) { last.focus(); last.select(); }
+      });
+    }
+
+
+    var clearTodos = document.getElementById("clear-todos");
+    if (clearTodos) {
+      clearTodos.addEventListener("click", function () {
+        var all = mergedTasks();
+        if (!all.length) { showToast("No to-dos to clear"); return; }
+        all.forEach(function (task) {
+          var addedIdx = -1;
+          store.addedTasks.forEach(function (t, i) { if (t.id === task.id) addedIdx = i; });
+          if (addedIdx >= 0) store.addedTasks.splice(addedIdx, 1);
+          else if (store.deletedTaskIds.indexOf(task.id) < 0) store.deletedTaskIds.push(task.id);
+          if (store.taskOverrides[task.id]) delete store.taskOverrides[task.id];
+        });
+        // Also wipe any remaining added
+        store.addedTasks = [];
+        persist();
+        renderTasks();
+        showToast("All to-dos cleared");
+      });
+    }
+
+    var resetBtn = document.getElementById("reset-local");
+    if (resetBtn) {
+      resetBtn.addEventListener("click", function () {
+        if (!window.confirm("Reset to-dos and habits to the page defaults? This clears your browser-local edits.")) return;
+        try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+        store = emptyStore();
+        taskFilter = "open";
+        renderTasks();
+        renderHabits();
+        updateSaveHints();
+        var hints = document.querySelectorAll(".save-hint");
+        hints.forEach(function (h) { h.textContent = "Defaults restored"; });
+        showToast("Local to-dos & habits cleared — defaults restored.");
+      });
+    }
+
+    var reloadBtn = document.getElementById("btn-reload");
+    if (reloadBtn) {
+      reloadBtn.addEventListener("click", function () {
+        window.location.reload();
+      });
+    }
+
+    var reqBtn = document.getElementById("btn-request-update");
+    if (reqBtn) {
+      reqBtn.addEventListener("click", function () {
+        var prompt = "refresh the dashboard";
+        store.refreshRequestedAt = new Date().toISOString();
+        persist();
+        copyText(prompt).then(function () {
+          showToast("Copied “refresh the dashboard” — paste that in chat with Dashboard and I’ll pull fresh markets, calendar, and Langley weather.");
+        }).catch(function () {
+          showToast("Ask in chat: refresh the dashboard — I’ll pull fresh markets, calendar, and Langley weather.");
+        });
+      });
+    }
+  }
+
+  /* —— Existing hydrate helpers (weather / calendar / meta) —— */
+  function fmtTime(iso) {
+    try {
+      var d = new Date(iso);
+      return d.toLocaleString("en-US", {
+        timeZone: "America/Vancouver",
+        weekday: "short", month: "short", day: "numeric",
+        hour: "numeric", minute: "2-digit"
+      }) + " PT";
+    } catch (e) { return iso; }
+  }
+  function fmtRange(start, end) {
+    try {
+      var a = new Date(start), b = new Date(end);
+      var day = a.toLocaleDateString("en-US", { timeZone: "America/Vancouver", weekday: "short", month: "short", day: "numeric" });
+      var t1 = a.toLocaleTimeString("en-US", { timeZone: "America/Vancouver", hour: "numeric", minute: "2-digit" });
+      var t2 = b.toLocaleTimeString("en-US", { timeZone: "America/Vancouver", hour: "numeric", minute: "2-digit" });
+      return day + " · " + t1 + "–" + t2 + " PT";
+    } catch (e) { return start; }
+  }
+  function calEventClass(summary) {
+    var s = String(summary || "").toLowerCase();
+    if (s.indexOf("mma d") !== -1 || s.indexOf("day shift") !== -1 || s.indexOf("dayshift") !== -1) return "cal-dayshift";
+    if (s.indexOf("mma a") !== -1 || s.indexOf("afternoon") !== -1) return "cal-afternoon";
+    if (s.indexOf("mma n") !== -1 || s.indexOf("graveyard") !== -1 || /\bnight\b/.test(s)) return "cal-graveyard";
+    if (s.indexOf("u15") !== -1 || s.indexOf("group 4") !== -1) return "cal-u15";
+    if (s.indexOf("u18") !== -1 || s.indexOf("u17") !== -1 || s.indexOf("jamboree") !== -1) return "cal-u18";
+    return "cal-other";
+  }
+  function calLocalYmd(iso) {
+    try {
+      return new Date(iso).toLocaleDateString("en-CA", { timeZone: "America/Vancouver" });
+    } catch (e) {
+      return String(iso || "").slice(0, 10);
+    }
+  }
+  function calDayHeader(ymd) {
+    try {
+      var d = new Date(ymd + "T12:00:00");
+      return d.toLocaleDateString("en-US", { timeZone: "America/Vancouver", weekday: "short", month: "short", day: "numeric" });
+    } catch (e) { return ymd; }
+  }
+  function calTimeOnly(start, end) {
+    try {
+      if (String(start || '').indexOf('T') === -1 || String(end || '').indexOf('T') === -1) return "all day";
+      var a = new Date(start), b = new Date(end);
+      var t1 = a.toLocaleTimeString("en-US", { timeZone: "America/Vancouver", hour: "numeric", minute: "2-digit" });
+      var t2 = b.toLocaleTimeString("en-US", { timeZone: "America/Vancouver", hour: "numeric", minute: "2-digit" });
+      return t1 + "–" + t2;
+    } catch (e) { return ""; }
+  }
+
+  function renderWeekbar(byDay) {
+    var bar = document.getElementById("weekbar") || document.querySelector(".weekbar");
+    if (!bar) return;
+    var today = todayYmd();
+    var parts = today.split("-");
+    var y = +parts[0], m = +parts[1] - 1, d = +parts[2];
+    var abbr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var html = "";
+    for (var i = 0; i < 7; i++) {
+      var dt = new Date(Date.UTC(y, m, d + i, 12, 0, 0));
+      var ymd = dt.getUTCFullYear() + "-" + String(dt.getUTCMonth() + 1).padStart(2, "0") + "-" + String(dt.getUTCDate()).padStart(2, "0");
+      // weekday in Vancouver: use formatter
+      var wd = new Date(ymd + "T12:00:00-07:00").toLocaleDateString("en-US", { timeZone: "America/Vancouver", weekday: "short" });
+      var dayNum = new Date(ymd + "T12:00:00-07:00").toLocaleDateString("en-US", { timeZone: "America/Vancouver", day: "numeric" });
+      var cls = "dow";
+      if (ymd === today) cls += " today";
+      if (byDay && byDay[ymd] && byDay[ymd].length) cls += " has";
+      html += '<div class="' + cls + '" data-date="' + ymd + '"><span class="k">' + wd + '</span><span class="d">' + dayNum + '</span><span class="dot"></span></div>';
+    }
+    bar.innerHTML = html;
+  }
+
+  function hydrateCalendar(data) {
+    if (!data || !data.events || !data.events.length) return;
+    var host = document.getElementById("calendar");
+    if (!host) return;
+    var wrap = document.getElementById("cal-days");
+    if (!wrap) {
+      wrap = document.createElement("div");
+      wrap.className = "cal-days";
+      wrap.id = "cal-days";
+      var label = host.querySelector(".cal-label");
+      if (label && label.nextSibling) host.insertBefore(wrap, label.nextSibling);
+      else host.appendChild(wrap);
+    }
+    var tz = data.timezone || "America/Vancouver";
+    var today = todayYmd();
+    var byDay = {};
+    var order = [];
+    data.events.forEach(function (ev) {
+      if (!ev || !ev.start) return;
+      var key = calLocalYmd(ev.start);
+      if (!byDay[key]) { byDay[key] = []; order.push(key); }
+      byDay[key].push(ev);
+    });
+    order.sort();
+    order.forEach(function (key) {
+      byDay[key].sort(function (a, b) {
+        return String(a.start).localeCompare(String(b.start));
+      });
+    });
+    renderWeekbar(byDay);
+    order = order.filter(function (ymd) { return ymd >= today; });
+    var html = "";
+    order.forEach(function (ymd) {
+      var isToday = ymd === today;
+      var badge = isToday ? ' <span class="cal-today-badge">Today</span>' : "";
+      var rows = byDay[ymd].map(function (ev) {
+        var cls = calEventClass(ev.summary);
+        var loc = ev.location ? '<div class="cal-loc">' + escapeHtml(ev.location) + "</div>" : "";
+        return (
+          '<div class="cal-event ' + cls + '">' +
+            '<div class="cal-time">' + escapeHtml(calTimeOnly(ev.start, ev.end)) + "</div>" +
+            '<div class="cal-body">' +
+              '<h3 class="cal-title">' + escapeHtml(ev.summary || "") + "</h3>" +
+              loc +
+            "</div>" +
+          "</div>"
+        );
+      }).join("");
+      html +=
+        '<div class="cal-day-block' + (isToday ? " is-today" : "") + '" data-date="' + escapeHtml(ymd) + '">' +
+          '<div class="cal-day-head">' +
+            '<span class="cal-day-title">' + escapeHtml(calDayHeader(ymd)) + "</span>" + badge +
+          "</div>" +
+          '<div class="cal-day-events">' + rows + "</div>" +
+        "</div>";
+    });
+    wrap.innerHTML = html;
+    var src = host.querySelector(".src-note");
+    if (src && data.source) {
+      var range = (data.range && data.range.label) ? " · " + data.range.label : "";
+      src.textContent = data.source + " · " + tz + " · day blocks with color legend (Dayshift / Afternoon / Graveyard / U15 C / U18)" + range + ".";
+    }
+  }
+  function tryFetch(url) {
+    return fetch(url, { cache: "no-store" }).then(function (r) {
+      if (!r.ok) throw new Error(url);
+      return r.json();
+    });
+  }
+  function hydrateWeather(w) {
+    if (!w) return;
+    var set = function (id, text) {
+      var el = document.getElementById(id);
+      if (el && text != null) el.textContent = text;
+    };
+    set("wx-conditions", w.conditions || w.conditionsShort);
+    if (w.temp) {
+      var hi = (w.temp.highC != null ? w.temp.highC : "") + "°";
+      var lo = (w.temp.lowC != null ? " / " + w.temp.lowC + "°C" : "");
+      var hiEl = document.getElementById("wx-hi");
+      if (hiEl) hiEl.innerHTML = hi + " <span>" + lo.trim() + "</span>";
+      set("wx-f", w.temp.displayF || ((w.temp.highF || "") + "° / " + (w.temp.lowF || "") + "°F"));
+    }
+    if (w.rainChancePct != null) set("wx-rain", "~" + w.rainChancePct + "%");
+    if (w.wind && w.wind.display) set("wx-wind", w.wind.display);
+    if (w.sun) {
+      set("wx-rise", (w.sun.sunriseLabel || w.sun.sunrise) + " " + (w.sun.timezoneNote || "PT"));
+      set("wx-set", (w.sun.sunsetLabel || w.sun.sunset) + " " + (w.sun.timezoneNote || "PT"));
+    }
+    if (w.source || w.asOfLabel) {
+      var asOf = w.asOfLabel || "";
+      set("wx-src", (w.source || "Forecast snapshot") + (asOf ? " · " + asOf : ""));
+    }
+  }
+
+
+
+  /* —— Shared AssetDetail — live quotes + 24h SVG / TradingView. Does not touch localStorage. —— */
+  var ASSETS = {
+    xau: {
+      id: "xau", name: "Spot gold", ticker: "XAU", kind: "macro", unit: "USD/oz",
+      format: "usd", digits: 2,
+      tvSymbol: "OANDA:XAUUSD",
+      yahooSymbol: "GC=F",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/GC=F/",
+        tv: "https://www.tradingview.com/symbols/XAUUSD/",
+        gecko: null
+      },
+      quote: { type: "gold-api", symbol: "XAU" },
+      snapshot: {"price": 4347.1, "changePct": 0.18, "changeDisplay": "+$7.8 · +0.2%", "high24h": null, "low24h": null, "source": "gold-api.com", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT", "note": "Live ~$4,347 into Wed FOMC; yields ~4.996%."}
+    },
+    wti: {
+      id: "wti", name: "Spot oil WTI", ticker: "CL · WTI", kind: "macro", unit: "USD/bbl",
+      format: "usd", digits: 2,
+      tvSymbol: "NYMEX:CL1!",
+      yahooSymbol: "CL=F",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/CL=F/",
+        tv: "https://www.tradingview.com/symbols/NYMEX-CL1!/",
+        gecko: null
+      },
+      quote: { type: "yahoo", symbol: "CL=F" },
+      snapshot: {"price": 103.58, "changePct": -2.13, "changeDisplay": "$−2.25 · −2.13%", "high24h": null, "low24h": null, "source": "Yahoo CL=F", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT", "note": "Overnight ~$103.58 (−2.13% vs Tue settle $105.83); still up vs Mon $101.39."}
+    },
+    btc: {
+      id: "btc", name: "Spot Bitcoin", ticker: "BTC", kind: "crypto", unit: "USD",
+      format: "usd", digits: 0,
+      tvSymbol: "COINBASE:BTCUSD",
+      geckoId: "bitcoin", geckoSlug: "bitcoin",
+      coinbaseProduct: "BTC-USD",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/BTC-USD/",
+        tv: "https://www.tradingview.com/symbols/BTCUSD/",
+        gecko: "https://www.coingecko.com/en/coins/bitcoin"
+      },
+      snapshot: {"price": 75854, "changePct": -1.51, "changeDisplay": "−1.51% 24h · −4.31% 7d", "high24h": 77297, "low24h": 74888, "source": "Coinbase", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT", "note": "Overnight soft into Wed FOMC — spot mid-$75ks; hike odds elevated; decision ~11 AM PT.", "marketCap": 1524048998764, "ath": 126173}
+    },
+    spx: {
+      id: "spx", name: "S&P 500", ticker: "SPX", kind: "macro", unit: "index",
+      format: "index", digits: 2,
+      tvSymbol: "SP:SPX",
+      yahooSymbol: "^GSPC",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/%5EGSPC/",
+        tv: "https://www.tradingview.com/symbols/SPX/",
+        gecko: null
+      },
+      quote: { type: "yahoo", symbol: "^GSPC" },
+      snapshot: {"price": 7585.73, "changePct": -0.45, "changeDisplay": "−34.25 · −0.45%", "high24h": null, "low24h": null, "source": "Yahoo ^GSPC", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT", "note": "Tue close −0.45% vs Mon close 7,619.98; FOMC Sep 16 (today ~11 AM PT) is the main macro event."}
+    },
+    us10y: {
+      id: "us10y", name: "US 10-year", ticker: "US10Y", kind: "macro", unit: "yield",
+      format: "yield", digits: 3,
+      tvSymbol: "TVC:US10Y",
+      yahooSymbol: "^TNX",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/%5ETNX/",
+        tv: "https://www.tradingview.com/symbols/TVC-US10Y/",
+        gecko: null
+      },
+      quote: { type: "yahoo", symbol: "^TNX" },
+      snapshot: {"price": 4.996, "changePct": 0.71, "changeDisplay": "+3.5 bp · still near 5%", "high24h": null, "low24h": null, "source": "Yahoo ^TNX", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT", "note": "Tue close ~4.996% (+3.5 bp vs Mon 4.961%) into Sep 16 FOMC — multiyear highs in headlines."}
+    },
+    eth: {
+      id: "eth", name: "Ethereum", ticker: "ETH", kind: "crypto", unit: "USD",
+      format: "usd", digits: 2,
+      tvSymbol: "COINBASE:ETHUSD",
+      geckoId: "ethereum", geckoSlug: "ethereum",
+      coinbaseProduct: "ETH-USD",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/ETH-USD/",
+        tv: "https://www.tradingview.com/symbols/ETHUSD/",
+        gecko: "https://www.coingecko.com/en/coins/ethereum"
+      },
+      snapshot: {"price": 2402.76, "changePct": -2.79, "changeDisplay": "−2.8% 24h · −3.8% 7d", "change24h": -2.79, "change7d": -3.76, "high24h": null, "low24h": null, "source": "Coinbase", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT"}
+    },
+    sol: {
+      id: "sol", name: "Solana", ticker: "SOL", kind: "crypto", unit: "USD",
+      format: "usd", digits: 2,
+      tvSymbol: "BINANCE:SOLUSDT",
+      geckoId: "solana", geckoSlug: "solana",
+      coinbaseProduct: "SOL-USD",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/SOL-USD/",
+        tv: "https://www.tradingview.com/symbols/SOLUSDT/",
+        gecko: "https://www.coingecko.com/en/coins/solana"
+      },
+      snapshot: {"price": 97.2, "changePct": -3.32, "changeDisplay": "−3.3% 24h · −6.7% 7d", "change24h": -3.32, "change7d": -6.67, "high24h": null, "low24h": null, "source": "Coinbase", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT"}
+    },
+    usdc: {
+      id: "usdc", name: "USD Coin", ticker: "USDC", kind: "crypto", unit: "USD",
+      format: "usd", digits: 4,
+      tvSymbol: "CRYPTO:USDCUSD",
+      geckoId: "usd-coin", geckoSlug: "usd-coin",
+      coinbaseProduct: null,
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/USDC-USD/",
+        tv: "https://www.tradingview.com/symbols/USDCUSD/",
+        gecko: "https://www.coingecko.com/en/coins/usd-coin"
+      },
+      snapshot: {"price": 1.0, "changePct": 0.0, "changeDisplay": "0.0% 24h · 0.0% 7d", "change24h": 0.0, "change7d": 0.0, "high24h": null, "low24h": null, "source": "Coinbase", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT"}
+    },
+    fet: {
+      id: "fet", name: "ASI Alliance (Fetch.ai)", ticker: "FET", kind: "crypto", unit: "USD",
+      format: "usd", digits: 4,
+      tvSymbol: "BINANCE:FETUSDT",
+      geckoId: "fetch-ai", geckoSlug: "fetch-ai",
+      geckoIdAlt: "artificial-superintelligence-alliance",
+      coinbaseProduct: "FET-USD",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/FET-USD/",
+        tv: "https://www.tradingview.com/symbols/FETUSDT/",
+        gecko: "https://www.coingecko.com/en/coins/artificial-superintelligence-alliance"
+      },
+      snapshot: {"price": 0.1508, "changePct": -4.56, "changeDisplay": "−4.6% 24h · −11.1% 7d", "change24h": -4.56, "change7d": -11.08, "high24h": null, "low24h": null, "source": "Coinbase", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT"}
+    },
+    near: {
+      id: "near", name: "NEAR Protocol", ticker: "NEAR", kind: "crypto", unit: "USD",
+      format: "usd", digits: 2,
+      tvSymbol: "BINANCE:NEARUSDT",
+      geckoId: "near", geckoSlug: "near",
+      coinbaseProduct: "NEAR-USD",
+      links: {
+        yahoo: "https://finance.yahoo.com/quote/NEAR-USD/",
+        tv: "https://www.tradingview.com/symbols/NEARUSDT/",
+        gecko: "https://www.coingecko.com/en/coins/near"
+      },
+      snapshot: {"price": 2.438, "changePct": 2.54, "changeDisplay": "2.5% 24h · −5.5% 7d", "change24h": 2.54, "change7d": -5.49, "high24h": null, "low24h": null, "source": "Coinbase", "asOfLabel": "Wed Sep 16, 2026 · 3:55 AM PT"}
+    }
+  };
+
+  var assetLive = {};
+  Object.keys(ASSETS).forEach(function (id) {
+    var s = ASSETS[id].snapshot || {};
+    assetLive[id] = {
+      price: s.price != null ? s.price : null,
+      changePct: s.changePct != null ? s.changePct : null,
+      change7d: s.change7d != null ? s.change7d : null,
+      changeDisplay: s.changeDisplay || null,
+      high24h: s.high24h != null ? s.high24h : null,
+      low24h: s.low24h != null ? s.low24h : null,
+      marketCap: s.marketCap != null ? s.marketCap : null,
+      ath: s.ath != null ? s.ath : null,
+      source: s.source || null,
+      asOfLabel: s.asOfLabel || null,
+      note: s.note || null,
+      live: false,
+      refreshing: false,
+      chartLoading: false
+    };
+  });
+
+  /* Back-compat alias used by BTC tile helpers */
+  var btcState = assetLive.btc;
+
+  var modalState = {
+    assetId: null,
+    tab: "spark",
+    open: false
+  };
+
+  function fmtUsd(n, digits) {
+    if (n == null || !isFinite(n)) return "—";
+    var d = digits != null ? digits : (Math.abs(n) >= 1000 ? 0 : 2);
+    try {
+      return "$" + Number(n).toLocaleString("en-US", {
+        minimumFractionDigits: d,
+        maximumFractionDigits: d
+      });
+    } catch (e) {
+      return "$" + Number(n).toFixed(d);
+    }
+  }
+
+  function fmtPct(n, digits) {
+    if (n == null || !isFinite(n)) return "—";
+    var d = digits != null ? digits : 2;
+    var abs = Math.abs(n).toFixed(d);
+    var sign = n > 0 ? "+" : (n < 0 ? "−" : "");
+    return sign + abs + "%";
+  }
+
+  function fmtMcap(n) {
+    if (n == null || !isFinite(n)) return "—";
+    if (n >= 1e12) return "$" + (n / 1e12).toFixed(2) + "T";
+    if (n >= 1e9) return "$" + (n / 1e9).toFixed(2) + "B";
+    return fmtUsd(n, 0);
+  }
+
+  function chgClass(n) {
+    if (n == null || !isFinite(n) || n === 0) return "flat";
+    return n > 0 ? "up" : "down";
+  }
+
+  function nowPtLabel() {
+    return new Date().toLocaleString("en-US", {
+      timeZone: "America/Vancouver",
+      weekday: "short", month: "short", day: "numeric",
+      hour: "numeric", minute: "2-digit"
+    }) + " PT";
+  }
+
+  function formatAssetPrice(asset, price) {
+    if (price == null || !isFinite(price)) return "—";
+    if (asset.format === "yield") {
+      return Number(price).toFixed(asset.digits != null ? asset.digits : 3) + "%";
+    }
+    if (asset.format === "index") {
+      try {
+        return Number(price).toLocaleString("en-US", {
+          minimumFractionDigits: asset.digits != null ? asset.digits : 2,
+          maximumFractionDigits: asset.digits != null ? asset.digits : 2
+        });
+      } catch (e) {
+        return Number(price).toFixed(2);
+      }
+    }
+    return fmtUsd(price, asset.digits);
+  }
+
+  function changeTextFor(asset, live) {
+    if (live.changeDisplay && !live.live) return live.changeDisplay;
+    if (live.changePct == null || !isFinite(live.changePct)) return "—";
+    var t = fmtPct(live.changePct);
+    if (asset.kind === "crypto") {
+      t += " 24h";
+      if (live.change7d != null && isFinite(live.change7d)) t += " · " + fmtPct(live.change7d, 1) + " 7d";
+    }
+    return t;
+  }
+
+  function externalLinksHtml(asset) {
+    var parts = [];
+    if (asset.links && asset.links.gecko) {
+      parts.push('<a href="' + asset.links.gecko + '" target="_blank" rel="noopener noreferrer">CoinGecko</a>');
+    }
+    if (asset.links && asset.links.tv) {
+      parts.push('<a href="' + asset.links.tv + '" target="_blank" rel="noopener noreferrer">TradingView</a>');
+    }
+    if (asset.links && asset.links.yahoo) {
+      parts.push('<a href="' + asset.links.yahoo + '" target="_blank" rel="noopener noreferrer">Yahoo</a>');
+    }
+    return parts.join(" · ");
+  }
+
+  function fetchJson(url) {
+    return fetch(url, { cache: "no-store" }).then(function (r) {
+      if (r.status === 429) {
+        var e = new Error("rate-limit");
+        e.status = 429;
+        throw e;
+      }
+      if (!r.ok) {
+        var e2 = new Error("http-" + r.status);
+        e2.status = r.status;
+        throw e2;
+      }
+      return r.json();
+    });
+  }
+
+  function setBtcButtonsBusy(busy) {
+    [
+      { id: "btn-btc-refresh", idle: "Refresh BTC" },
+      { id: "btn-btc-refresh-card", idle: "Refresh BTC" },
+      { id: "btn-btc-hero-refresh", idle: "Refresh" }
+    ].forEach(function (item) {
+      var b = document.getElementById(item.id);
+      if (!b) return;
+      b.disabled = !!busy;
+      if (busy) b.classList.add("busy");
+      else b.classList.remove("busy");
+      b.textContent = busy ? "Refreshing…" : item.idle;
+    });
+  }
+
+  function setBtcLiveStamp(text, fresh) {
+    ["btc-live-stamp", "btc-live-stamp-card", "btc-hero-stamp"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.textContent = text || "";
+      if (fresh) el.classList.add("fresh");
+      else el.classList.remove("fresh");
+    });
+  }
+
+  function applyAssetToSpotDom(id) {
+    var asset = ASSETS[id];
+    var live = assetLive[id];
+    if (!asset || !live) return;
+    var px = formatAssetPrice(asset, live.price);
+    var chgText = changeTextFor(asset, live);
+    var spotPx = document.getElementById(id + "-spot-px");
+    if (spotPx) spotPx.textContent = px;
+    var spotChg = document.getElementById(id + "-spot-chg");
+    if (spotChg) {
+      spotChg.textContent = chgText;
+      spotChg.className = "chg " + chgClass(live.changePct);
+    }
+    var meta = document.getElementById(id + "-spot-meta");
+    if (meta && live.live && live.asOfLabel) {
+      var note = live.note || "Client refresh — tasks/habits untouched";
+      meta.innerHTML = "<span>" + (live.source || "Live") + "</span> · " + live.asOfLabel + "<br>" + note;
+    }
+    /* Watchlist cells */
+    var wlPx = document.getElementById(id + "-wl-px");
+    if (wlPx) wlPx.textContent = px;
+    var wl24 = document.getElementById(id + "-wl-chg24");
+    if (wl24) {
+      wl24.textContent = fmtPct(live.changePct);
+      wl24.className = "chg " + chgClass(live.changePct);
+    }
+    var wl7 = document.getElementById(id + "-wl-chg7");
+    if (wl7 && live.change7d != null) {
+      wl7.textContent = fmtPct(live.change7d, 1);
+      wl7.className = "chg " + chgClass(live.change7d);
+    }
+    /* BTC investment stats + hero widget */
+    if (id === "btc") {
+      var statPx = document.getElementById("btc-stat-px");
+      if (statPx) statPx.textContent = px;
+      var statRange = document.getElementById("btc-stat-range");
+      if (statRange && live.low24h != null && live.high24h != null) {
+        statRange.textContent = fmtUsd(live.low24h, 0) + " – " + fmtUsd(live.high24h, 0);
+      }
+      var statMcap = document.getElementById("btc-stat-mcap");
+      if (statMcap && live.marketCap != null) statMcap.textContent = fmtMcap(live.marketCap);
+      updateBtcHeroWidget();
+    }
+  }
+
+  function updateBtcHeroWidget() {
+    var live = assetLive.btc;
+    var asset = ASSETS.btc;
+    if (!live || !asset) return;
+    var heroPx = document.getElementById("btc-hero-px");
+    if (heroPx && live.price != null) heroPx.textContent = formatAssetPrice(asset, live.price);
+    var heroChg = document.getElementById("btc-hero-chg");
+    if (heroChg) {
+      var pct = live.changePct;
+      heroChg.textContent = pct == null || !isFinite(pct) ? "—" : (fmtPct(pct) + " 24h");
+      heroChg.className = "chg btc-hero-chg " + chgClass(pct);
+    }
+    var heroStamp = document.getElementById("btc-hero-stamp");
+    if (heroStamp) {
+      var src = live.source || "Snapshot";
+      var asOf = live.asOfLabel || "";
+      heroStamp.textContent = asOf ? (src + " · " + asOf) : src;
+      if (live.live) heroStamp.classList.add("fresh");
+      else heroStamp.classList.remove("fresh");
+    }
+  }
+
+  function applyModalQuote(id) {
+    var asset = ASSETS[id];
+    var live = assetLive[id];
+    if (!asset || !live) return;
+    var px = formatAssetPrice(asset, live.price);
+    var elPx = document.getElementById("asset-modal-px");
+    var elLast = document.getElementById("asset-modal-last");
+    var elChg = document.getElementById("asset-modal-chg");
+    var elHi = document.getElementById("asset-modal-hi");
+    var elLo = document.getElementById("asset-modal-lo");
+    var elMeta = document.getElementById("asset-modal-meta");
+    if (elPx) elPx.textContent = px;
+    if (elLast) elLast.textContent = px;
+    if (elChg) {
+      elChg.textContent = changeTextFor(asset, live);
+      elChg.className = "chg " + chgClass(live.changePct);
+    }
+    if (elHi) elHi.textContent = live.high24h != null ? formatAssetPrice(asset, live.high24h) : "—";
+    if (elLo) elLo.textContent = live.low24h != null ? formatAssetPrice(asset, live.low24h) : "—";
+    if (elMeta) {
+      var src = live.source || "Snapshot";
+      var asOf = live.asOfLabel || "—";
+      var note = live.note ? " · " + live.note : "";
+      elMeta.innerHTML = "<span>" + src + "</span> · " + asOf + note;
+    }
+    var links = document.getElementById("asset-modal-links");
+    if (links) links.innerHTML = externalLinksHtml(asset);
+  }
+
+  function applyBtcToDom() {
+    applyAssetToSpotDom("btc");
+    if (modalState.open && modalState.assetId === "btc") applyModalQuote("btc");
+  }
+
+  /* —— Quote fetchers —— */
+  function applyGeckoMarketsRow(id, row) {
+    var live = assetLive[id];
+    if (!row || row.current_price == null) throw new Error("empty");
+    live.price = Number(row.current_price);
+    if (row.price_change_percentage_24h != null) live.changePct = Number(row.price_change_percentage_24h);
+    if (row.price_change_percentage_7d_in_currency != null) live.change7d = Number(row.price_change_percentage_7d_in_currency);
+    if (row.high_24h != null) live.high24h = Number(row.high_24h);
+    if (row.low_24h != null) live.low24h = Number(row.low_24h);
+    if (row.market_cap != null) live.marketCap = Number(row.market_cap);
+    if (row.ath != null) live.ath = Number(row.ath);
+    live.source = "CoinGecko live";
+    live.live = true;
+    live.changeDisplay = null;
+  }
+
+  function applyCoinbaseFallback(id, ticker, stats) {
+    var live = assetLive[id];
+    var price = ticker && ticker.price != null ? Number(ticker.price) : (stats && stats.last != null ? Number(stats.last) : null);
+    if (price == null || !isFinite(price)) throw new Error("empty");
+    live.price = price;
+    if (stats) {
+      if (stats.high != null) live.high24h = Number(stats.high);
+      if (stats.low != null) live.low24h = Number(stats.low);
+      if (stats.open != null && Number(stats.open) > 0) {
+        live.changePct = ((price - Number(stats.open)) / Number(stats.open)) * 100;
+      }
+    }
+    live.source = "Coinbase (fallback)";
+    live.live = true;
+    live.changeDisplay = null;
+  }
+
+  function fetchCryptoQuote(id) {
+    var asset = ASSETS[id];
+    var ids = asset.geckoId;
+    if (asset.geckoIdAlt) ids = asset.geckoId + "," + asset.geckoIdAlt;
+    var url = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=" + encodeURIComponent(ids) + "&price_change_percentage=7d";
+    return fetchJson(url).then(function (arr) {
+      if (!Array.isArray(arr) || !arr.length) throw new Error("empty");
+      var row = arr[0];
+      if (asset.geckoIdAlt && arr.length > 1) {
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i].id === asset.geckoId || arr[i].id === asset.geckoIdAlt) { row = arr[i]; break; }
+        }
+      }
+      applyGeckoMarketsRow(id, row);
+    }).catch(function () {
+      if (!asset.coinbaseProduct) throw new Error("no-fallback");
+      var base = "https://api.exchange.coinbase.com/products/" + asset.coinbaseProduct;
+      return Promise.all([fetchJson(base + "/ticker"), fetchJson(base + "/stats")]).then(function (pair) {
+        applyCoinbaseFallback(id, pair[0], pair[1]);
+      });
+    });
+  }
+
+  function fetchGoldApiQuote(id) {
+    var asset = ASSETS[id];
+    var sym = (asset.quote && asset.quote.symbol) || "XAU";
+    return fetchJson("https://api.gold-api.com/price/" + encodeURIComponent(sym)).then(function (data) {
+      if (!data || data.price == null) throw new Error("empty");
+      var live = assetLive[id];
+      var prev = live.price;
+      live.price = Number(data.price);
+      if (prev != null && isFinite(prev) && prev > 0) {
+        live.changePct = ((live.price - prev) / prev) * 100;
+      }
+      live.source = "gold-api.com";
+      live.live = true;
+      live.changeDisplay = null;
+      live.asOfLabel = nowPtLabel();
+      live.note = "Live spot via gold-api.com (CORS). Weekend tape may be thin.";
+    });
+  }
+
+  function fetchYahooQuote(id) {
+    var asset = ASSETS[id];
+    var sym = (asset.quote && asset.quote.symbol) || asset.yahooSymbol;
+    if (!sym) return Promise.reject(new Error("no-symbol"));
+    var url = "https://query1.finance.yahoo.com/v8/finance/chart/" + encodeURIComponent(sym) + "?interval=1d&range=5d";
+    return fetchJson(url).then(function (data) {
+      var res = data && data.chart && data.chart.result && data.chart.result[0];
+      if (!res || !res.meta) throw new Error("empty");
+      var meta = res.meta;
+      var live = assetLive[id];
+      var price = meta.regularMarketPrice != null ? Number(meta.regularMarketPrice) : null;
+      if (price == null || !isFinite(price)) throw new Error("empty");
+      live.price = price;
+      if (meta.regularMarketDayHigh != null) live.high24h = Number(meta.regularMarketDayHigh);
+      if (meta.regularMarketDayLow != null) live.low24h = Number(meta.regularMarketDayLow);
+      var prev = meta.chartPreviousClose != null ? Number(meta.chartPreviousClose) : (meta.previousClose != null ? Number(meta.previousClose) : null);
+      if (prev != null && prev > 0) live.changePct = ((price - prev) / prev) * 100;
+      live.source = "Yahoo Finance";
+      live.live = true;
+      live.changeDisplay = null;
+      live.asOfLabel = nowPtLabel();
+      live.note = "Browser quote (Yahoo). Often blocked by CORS — TradingView chart still works.";
+    });
+  }
+
+  function refreshAssetQuote(id, opts) {
+    opts = opts || {};
+    var asset = ASSETS[id];
+    var live = assetLive[id];
+    if (!asset || !live || live.refreshing) return Promise.resolve();
+    live.refreshing = true;
+    if (id === "btc") {
+      setBtcButtonsBusy(true);
+      setBtcLiveStamp("Fetching…", false);
+    }
+    var btn = document.getElementById("asset-modal-refresh");
+    if (modalState.open && modalState.assetId === id && btn) {
+      btn.disabled = true;
+      btn.classList.add("busy");
+      btn.textContent = "Refreshing…";
+    }
+
+    var p;
+    if (asset.kind === "crypto") {
+      p = fetchCryptoQuote(id);
+    } else if (asset.quote && asset.quote.type === "gold-api") {
+      p = fetchGoldApiQuote(id);
+    } else if (asset.quote && asset.quote.type === "yahoo") {
+      p = fetchYahooQuote(id).catch(function () {
+        /* CORS almost always fails in file:// / browsers — keep snapshot, still OK */
+        throw new Error("cors-or-network");
+      });
+    } else {
+      p = Promise.reject(new Error("no-quote"));
+    }
+
+    return p.then(function () {
+      live.asOfLabel = nowPtLabel();
+      live.live = true;
+      applyAssetToSpotDom(id);
+      if (modalState.open && modalState.assetId === id) applyModalQuote(id);
+      if (id === "btc") {
+        setBtcLiveStamp("BTC updated just now · " + live.asOfLabel, true);
+        updateBtcHeroWidget();
+        if (opts.toast !== false) {
+          showToast("Bitcoin refreshed · " + formatAssetPrice(asset, live.price) + " · " + (live.source || ""));
+        }
+      } else if (opts.toast !== false) {
+        showToast(asset.ticker + " refreshed · " + formatAssetPrice(asset, live.price));
+      }
+    }).catch(function (err) {
+      var msg = "Couldn’t refresh " + asset.ticker;
+      if (err && err.message === "rate-limit") msg = asset.ticker + " APIs rate-limited — try again shortly";
+      else if (err && err.message === "cors-or-network") msg = asset.ticker + " live quote blocked in-browser — using snapshot + TradingView";
+      else if (err && String(err.message).indexOf("http-") === 0) msg = asset.ticker + " API error (" + err.message.slice(5) + ")";
+      else if (typeof navigator !== "undefined" && navigator.onLine === false) msg = "Offline — refresh needs a network";
+      if (id === "btc") setBtcLiveStamp(msg, false);
+      if (opts.toast !== false) showToast(msg);
+      if (modalState.open && modalState.assetId === id) {
+        var stamp = document.getElementById("asset-modal-stamp");
+        if (stamp) stamp.textContent = msg;
+      }
+    }).then(function () {
+      live.refreshing = false;
+      if (id === "btc") setBtcButtonsBusy(false);
+      if (btn) {
+        btn.disabled = false;
+        btn.classList.remove("busy");
+        btn.textContent = "Refresh";
+      }
+    });
+  }
+
+  function refreshBtcLive() {
+    return refreshAssetQuote("btc");
+  }
+
+  /* —— Charts —— */
+  function buildSparklineSvg(prices, label) {
+    var w = 640, h = 180, padX = 8, padY = 14;
+    var vals = prices.map(function (p) { return p[1]; });
+    var min = Math.min.apply(null, vals);
+    var max = Math.max.apply(null, vals);
+    if (max === min) max = min + 1;
+    var n = prices.length;
+    var pts = [];
+    for (var i = 0; i < n; i++) {
+      var x = padX + (i / Math.max(n - 1, 1)) * (w - padX * 2);
+      var y = padY + (1 - (vals[i] - min) / (max - min)) * (h - padY * 2);
+      pts.push(x.toFixed(2) + "," + y.toFixed(2));
+    }
+    var line = pts.join(" ");
+    var last = prices[n - 1][1];
+    var first = prices[0][1];
+    var up = last >= first;
+    var stroke = up ? "#8eae86" : "#c48474";
+    var area = padX.toFixed(2) + "," + (h - padY).toFixed(2) + " " + line + " " +
+      (w - padX).toFixed(2) + "," + (h - padY).toFixed(2);
+    var lastX = padX + ((n - 1) / Math.max(n - 1, 1)) * (w - padX * 2);
+    var lastY = padY + (1 - (last - min) / (max - min)) * (h - padY * 2);
+    var gid = "sparkFill-" + String(label || "a").replace(/[^a-z0-9]/gi, "");
+    return (
+      '<svg viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="' + (label || "24h") + ' price chart">' +
+      '<defs><linearGradient id="' + gid + '" x1="0" y1="0" x2="0" y2="1">' +
+      '<stop offset="0%" stop-color="' + stroke + '" stop-opacity="0.35"/>' +
+      '<stop offset="100%" stop-color="' + stroke + '" stop-opacity="0"/>' +
+      '</linearGradient></defs>' +
+      '<polygon points="' + area + '" fill="url(#' + gid + ')"/>' +
+      '<polyline fill="none" stroke="' + stroke + '" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" points="' + line + '"/>' +
+      '<circle cx="' + lastX.toFixed(2) + '" cy="' + lastY.toFixed(2) + '" r="4" fill="' + stroke + '"/>' +
+      '</svg>'
+    );
+  }
+
+  function chartFallbackMsg(asset, reason) {
+    var extra = reason || "Chart API unavailable (rate limit, CORS, or network).";
+    return (
+      '<div class="chart-msg">' + extra +
+      '<br><br>Use the <strong>Interactive</strong> tab for a TradingView chart, or open externally:<br>' +
+      externalLinksHtml(asset) +
+      '</div>'
+    );
+  }
+
+  function renderSparkSeries(id, prices, sourceLabel) {
+    var asset = ASSETS[id];
+    var live = assetLive[id];
+    var vals = prices.map(function (p) { return p[1]; });
+    var hi = Math.max.apply(null, vals);
+    var lo = Math.min.apply(null, vals);
+    var last = vals[vals.length - 1];
+    live.high24h = hi;
+    live.low24h = lo;
+    live.price = last;
+    applyAssetToSpotDom(id);
+    if (modalState.open && modalState.assetId === id) applyModalQuote(id);
+    var wrap = document.getElementById("asset-chart-spark");
+    if (wrap) wrap.innerHTML = buildSparklineSvg(prices, asset.ticker);
+    var stamp = document.getElementById("asset-modal-stamp");
+    if (stamp) stamp.textContent = prices.length + " points · last 24h · " + sourceLabel;
+    var sub = document.getElementById("asset-modal-sub");
+    if (sub) sub.textContent = asset.ticker + " · " + (asset.unit || "") + " · " + sourceLabel;
+  }
+
+  function loadCryptoSpark(id) {
+    var asset = ASSETS[id];
+    var wrap = document.getElementById("asset-chart-spark");
+    var stamp = document.getElementById("asset-modal-stamp");
+    var live = assetLive[id];
+    if (!wrap || live.chartLoading) return;
+    live.chartLoading = true;
+    wrap.innerHTML = '<div class="chart-msg">Loading 24h series…</div>';
+    if (stamp) stamp.textContent = "Fetching…";
+    var geckoUrl = "https://api.coingecko.com/api/v3/coins/" + encodeURIComponent(asset.geckoId) + "/market_chart?vs_currency=usd&days=1";
+    var tryAlt = null;
+    if (asset.geckoIdAlt) {
+      tryAlt = function () {
+        return fetchJson("https://api.coingecko.com/api/v3/coins/" + encodeURIComponent(asset.geckoIdAlt) + "/market_chart?vs_currency=usd&days=1");
+      };
+    }
+    fetchJson(geckoUrl)
+      .then(function (data) {
+        var prices = data && data.prices;
+        if (!prices || !prices.length) throw new Error("empty");
+        renderSparkSeries(id, prices, "CoinGecko");
+      })
+      .catch(function () {
+        if (!tryAlt) throw new Error("no-alt");
+        return tryAlt().then(function (data) {
+          var prices = data && data.prices;
+          if (!prices || !prices.length) throw new Error("empty");
+          renderSparkSeries(id, prices, "CoinGecko");
+        });
+      })
+      .catch(function () {
+        if (!asset.coinbaseProduct) throw new Error("no-cb");
+        return fetchJson("https://api.exchange.coinbase.com/products/" + asset.coinbaseProduct + "/candles?granularity=900").then(function (candles) {
+          if (!Array.isArray(candles) || !candles.length) throw new Error("empty");
+          var slice = candles.slice(0, 96);
+          var prices = slice.map(function (c) {
+            return [Number(c[0]) * 1000, Number(c[4])];
+          }).reverse();
+          renderSparkSeries(id, prices, "Coinbase (fallback)");
+        });
+      })
+      .catch(function (err) {
+        var reason = "Couldn’t load the 24h SVG chart.";
+        if (err && err.message === "rate-limit") reason = "APIs rate-limited the chart request.";
+        else if (err && String(err.message).indexOf("http-") === 0) reason = "Chart API error (HTTP " + err.message.slice(5) + ").";
+        wrap.innerHTML = chartFallbackMsg(asset, reason);
+        if (stamp) stamp.textContent = "SVG unavailable — try Interactive";
+        /* Auto-hint: switch emphasis to TV for crypto failures */
+      })
+      .then(function () {
+        live.chartLoading = false;
+      });
+  }
+
+  function loadMacroSparkPlaceholder(id) {
+    var asset = ASSETS[id];
+    var wrap = document.getElementById("asset-chart-spark");
+    var stamp = document.getElementById("asset-modal-stamp");
+    if (!wrap) return;
+    wrap.innerHTML =
+      '<div class="chart-msg">No CORS-friendly 24h series for ' + asset.ticker +
+      ' in a file:// / browser-only setup.<br><br>Open the <strong>Interactive</strong> tab for a live TradingView chart, or use external links below.<br><br>' +
+      externalLinksHtml(asset) + '</div>';
+    if (stamp) stamp.textContent = "Use Interactive · TradingView " + asset.tvSymbol;
+  }
+
+  function tradingViewEmbedUrl(symbol) {
+    var params = [
+      "symbol=" + encodeURIComponent(symbol),
+      "interval=60",
+      "theme=dark",
+      "style=1",
+      "locale=en",
+      "toolbar_bg=%231a1814",
+      "enable_publishing=false",
+      "hide_top_toolbar=false",
+      "hide_legend=false",
+      "save_image=false",
+      "calendar=false",
+      "hideideas=1",
+      "withdateranges=1",
+      "timezone=" + encodeURIComponent("America/Vancouver")
+    ].join("&");
+    return "https://s.tradingview.com/widgetembed/?" + params;
+  }
+
+  function loadTradingView(id) {
+    var asset = ASSETS[id];
+    var wrap = document.getElementById("asset-chart-tv");
+    if (!wrap || !asset) return;
+    var src = tradingViewEmbedUrl(asset.tvSymbol);
+    wrap.innerHTML =
+      '<iframe title="' + asset.name + ' TradingView chart" src="' + src +
+      '" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+  }
+
+  function setModalTab(tab) {
+    modalState.tab = tab;
+    var sparkTab = document.getElementById("tab-spark");
+    var tvTab = document.getElementById("tab-tv");
+    var sparkPanel = document.getElementById("asset-chart-spark");
+    var tvPanel = document.getElementById("asset-chart-tv");
+    if (sparkTab) {
+      sparkTab.classList.toggle("is-active", tab === "spark");
+      sparkTab.setAttribute("aria-selected", tab === "spark" ? "true" : "false");
+    }
+    if (tvTab) {
+      tvTab.classList.toggle("is-active", tab === "tv");
+      tvTab.setAttribute("aria-selected", tab === "tv" ? "true" : "false");
+    }
+    if (sparkPanel) sparkPanel.hidden = tab !== "spark";
+    if (tvPanel) tvPanel.hidden = tab !== "tv";
+    if (tab === "tv" && modalState.assetId) loadTradingView(modalState.assetId);
+  }
+
+  function openAssetDetail(id) {
+    var asset = ASSETS[id];
+    if (!asset) return;
+    var modal = document.getElementById("asset-modal");
+    if (!modal) return;
+    modalState.assetId = id;
+    modalState.open = true;
+    var title = document.getElementById("asset-modal-title");
+    var sub = document.getElementById("asset-modal-sub");
+    if (title) title.textContent = asset.name;
+    if (sub) sub.textContent = asset.ticker + (asset.unit ? " · " + asset.unit : "") + " · " + (asset.tvSymbol || "");
+    applyModalQuote(id);
+    modal.hidden = false;
+    void modal.offsetWidth;
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+
+    /* Default tab: crypto → 24h SVG; macro → Interactive (TV) */
+    if (asset.kind === "crypto") {
+      setModalTab("spark");
+      loadCryptoSpark(id);
+    } else {
+      setModalTab("tv");
+      loadMacroSparkPlaceholder(id);
+    }
+    /* Refresh quote in background */
+    refreshAssetQuote(id, { toast: false });
+    var closeBtn = document.getElementById("asset-modal-close");
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function closeAssetDetail() {
+    var modal = document.getElementById("asset-modal");
+    if (!modal) return;
+    modal.classList.remove("open");
+    modal.hidden = true;
+    modalState.open = false;
+    modalState.assetId = null;
+    document.body.style.overflow = "";
+    var tv = document.getElementById("asset-chart-tv");
+    if (tv) tv.innerHTML = '<div class="chart-msg">TradingView loads when you open Interactive.</div>';
+  }
+
+  function openBtcChart() { openAssetDetail("btc"); }
+  function closeBtcChart() { closeAssetDetail(); }
+
+  function initAssetDetail() {
+    function onRefreshBtc(e) {
+      if (e) { e.preventDefault(); e.stopPropagation(); }
+      refreshBtcLive();
+    }
+    ["btn-btc-refresh", "btn-btc-refresh-card", "btn-btc-hero-refresh"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.addEventListener("click", onRefreshBtc, false);
+    });
+    var heroChart = document.getElementById("btn-btc-hero-chart");
+    if (heroChart) {
+      heroChart.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openAssetDetail("btc");
+      }, false);
+    }
+    var hero = document.getElementById("btc-hero");
+    if (hero) {
+      hero.addEventListener("click", function (e) {
+        if (e.target.closest("button")) return;
+        openAssetDetail("btc");
+      }, false);
+      hero.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openAssetDetail("btc");
+        }
+      }, false);
+    }
+    try { updateBtcHeroWidget(); } catch (e) {}
+    /* Auto-refresh BTC every 60s while page is open (no toast spam) */
+    if (!window._btcHeroAutoTimer) {
+      window._btcHeroAutoTimer = setInterval(function () {
+        refreshAssetQuote("btc", { toast: false });
+      }, 60000);
+      window.addEventListener("beforeunload", function () {
+        if (window._btcHeroAutoTimer) {
+          clearInterval(window._btcHeroAutoTimer);
+          window._btcHeroAutoTimer = null;
+        }
+      });
+    }
+
+    document.querySelectorAll(".btn-open-asset").forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var id = btn.getAttribute("data-asset");
+        if (id) openAssetDetail(id);
+      });
+    });
+
+    document.querySelectorAll(".spot[data-asset]").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        if (e.target.closest("button")) return;
+        var id = el.getAttribute("data-asset");
+        if (id) openAssetDetail(id);
+      });
+      el.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          var id = el.getAttribute("data-asset");
+          if (id) openAssetDetail(id);
+        }
+      });
+    });
+
+    document.querySelectorAll("tr.wl-row[data-asset]").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        if (e.target.closest("button")) return;
+        var id = el.getAttribute("data-asset");
+        if (id) openAssetDetail(id);
+      });
+      el.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          var id = el.getAttribute("data-asset");
+          if (id) openAssetDetail(id);
+        }
+      });
+    });
+
+    var modal = document.getElementById("asset-modal");
+    var closeBtn = document.getElementById("asset-modal-close");
+    if (closeBtn) closeBtn.addEventListener("click", closeAssetDetail);
+    if (modal) {
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) closeAssetDetail();
+      });
+    }
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        var m = document.getElementById("asset-modal");
+        if (m && m.classList.contains("open")) closeAssetDetail();
+      }
+    });
+
+    var refreshBtn = document.getElementById("asset-modal-refresh");
+    if (refreshBtn) {
+      refreshBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (modalState.assetId) refreshAssetQuote(modalState.assetId);
+      });
+    }
+
+    ["tab-spark", "tab-tv"].forEach(function (tid) {
+      var t = document.getElementById(tid);
+      if (!t) return;
+      t.addEventListener("click", function () {
+        var tab = t.getAttribute("data-tab");
+        if (!tab) return;
+        setModalTab(tab);
+        if (tab === "spark" && modalState.assetId) {
+          var a = ASSETS[modalState.assetId];
+          if (a && a.kind === "crypto") loadCryptoSpark(modalState.assetId);
+          else loadMacroSparkPlaceholder(modalState.assetId);
+        }
+      });
+    });
+  }
+
+
+  try {
+    initAssetDetail();
+  } catch (err) {
+    try { console.error("initAssetDetail", err); } catch (e) {}
+  }
+  try {
+    initEditable();
+
+  function tickLiveClock() {
+    try {
+      var now = new Date();
+      var dateEl = document.getElementById("live-date");
+      var clockEl = document.getElementById("live-clock");
+      var optsD = { timeZone: "America/Vancouver", weekday: "long", month: "long", day: "numeric", year: "numeric" };
+      var optsT = { timeZone: "America/Vancouver", hour: "numeric", minute: "2-digit", second: "2-digit", hour12: true };
+      if (dateEl) dateEl.textContent = new Intl.DateTimeFormat("en-CA", optsD).format(now);
+      if (clockEl) clockEl.textContent = new Intl.DateTimeFormat("en-CA", optsT).format(now);
+      document.title = "JPF · " + new Intl.DateTimeFormat("en-CA", { timeZone: "America/Vancouver", hour: "numeric", minute: "2-digit", hour12: true }).format(now);
+    } catch (e) {}
+  }
+  tickLiveClock();
+  setInterval(tickLiveClock, 1000);
+
+
+  function setKiosk(on) {
+    document.body.classList.toggle("kiosk", !!on);
+    var btn = document.getElementById("btn-kiosk");
+    if (btn) btn.textContent = on ? "Exit fullscreen" : "Fullscreen";
+    var hint = document.getElementById("kiosk-hint");
+    if (hint) hint.style.display = on ? "block" : "none";
+  }
+
+  function toggleKiosk() {
+    var root = document.documentElement;
+    if (!document.fullscreenElement) {
+      var req = root.requestFullscreen || root.webkitRequestFullscreen || root.msRequestFullscreen;
+      if (req) {
+        Promise.resolve(req.call(root)).then(function () { setKiosk(true); }).catch(function () {
+          setKiosk(true);
+          showToast("Browser blocked fullscreen — using board layout. Try View → Enter Full Screen on Mac.");
+        });
+      } else {
+        setKiosk(true);
+        showToast("Use Control-Command-F on Mac for true fullscreen.");
+      }
+    } else {
+      var exit = document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen;
+      if (exit) exit.call(document);
+      setKiosk(false);
+    }
+  }
+
+  (function wireKiosk() {
+    var btn = document.getElementById("btn-kiosk");
+    if (btn) btn.addEventListener("click", function (e) { e.preventDefault(); toggleKiosk(); });
+    document.addEventListener("fullscreenchange", function () {
+      setKiosk(!!document.fullscreenElement);
+    });
+    document.addEventListener("webkitfullscreenchange", function () {
+      setKiosk(!!document.webkitFullscreenElement);
+    });
+  })();
+
+  } catch (err) {
+    try { console.error("initEditable", err); } catch (e) {}
+  }
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    try { if (typeof renderWeekbar === "function") renderWeekbar({}); } catch (e) {}
+  });
+
+  tryFetch("calendar.json").then(hydrateCalendar).catch(function () {});
+  tryFetch("weather.json").then(hydrateWeather).catch(function () {
+    tryFetch("data.json").then(function (d) {
+      if (d && d.weather) hydrateWeather(d.weather);
+    }).catch(function () {});
+  });
+  /* last-updated UI removed */
+})();
+</script>
+</body>
+</html>
