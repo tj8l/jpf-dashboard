@@ -4,14 +4,14 @@
   "source": "Google Calendar (primary)",
   "range": {
     "start": "2026-09-22",
-    "end": "2026-10-06",
-    "label": "Sep 22–Oct 6"
+    "end": "2026-09-28",
+    "label": "Sep 22–28 (next 7 days)"
   },
   "notes": [
     "Today Tue Sep 22: early U15 C practice @ SPX 2 6:00–7:00 AM; U17 GAME vs Abbotsford 7:45–9:15 PM @ SPX 2 (confirmed live calendar).",
     "Thu Sep 24: U17 Practice 9:15–10:45 PM @ SPX 2.",
     "Sat Sep 26: MMA D vs U15 Eval 1:15–2:15 PM @ LEC 1 — book the day off (hard clash).",
-    "U15 C Draft Wed Sep 30; MMA A crew starts Mon Oct 5 (16:00–00:00).",
+    "Beyond 7-day day-list window: U15 C Draft Wed Sep 30; MMA A crew starts Mon Oct 5 (16:00–00:00) — still in calendar.json events.",
     "Gmail since Sep 20: no new Amanda/U17/U18 ice-time emails with times beyond calendar; LMHA Season Opening Puck Drop promo (Fri) noted, no new ice slot."
   ],
   "events": [
