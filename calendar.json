@@ -1,6 +1,6 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-24T06:45:44-07:00",
+  "fetchedAt": "2026-09-24T15:16:15-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
     "start": "2026-09-24",
@@ -10,10 +10,10 @@
   "notes": [
     "Today Thu Sep 24: U17 Practice · SPX 2 9:15 PM @ SPX 2.",
     "Fri Sep 25: clear (no calendar events).",
-    "Sat Sep 26: Work · MMA D 8:00 AM + U17 Practice · SPX 2 11:30 AM @ SPX 2 + U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15–2:15 PM @ LEC 1 + U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre — book the day off (MMA D clash with the U15 coaches eval scrimmage + TeamSnap U17).",
-    "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18), 7:00–8:00 PM via Zoom; applies to U15 C coaches.",
-    "Beyond 7-day day-list window: Thu Oct 1 (PCAHA Fraser Valley West “C” Coach/Manager Meeting 7:00–8:00 PM via Zoom + U17 Practice); Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work, U17 Practice); Tue Oct 6 (Work); Thu Oct 8 (PCAHA Presidents “C” U15 & U18 Coach/Manager Meeting 7:00–8:00 PM via Zoom, plus Work/U17 Practice) — still in calendar.json events.",
-    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates are from 2026–2027 Bulletin #5; Sep 17, 21, and 22 meetings were past and skipped."
+    "Sat Sep 26: Work · MMA D 8:00 AM + U17 Practice · SPX 2 11:30 AM @ SPX 2 + U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1 + U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre — book the day off (MMA D clash with U15 eval + TeamSnap U17).",
+    "Beyond 7-day day-list window: Thu Oct 1 (PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18), U17 Practice); Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work, U17 Practice); Tue Oct 6 (Work) — still in calendar.json events.",
+    "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
+    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates from 2026–2027 Bulletin #5."
   ],
   "events": [
     {

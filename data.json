@@ -1,9 +1,9 @@
 {
   "meta": {
     "timezone": "America/Vancouver",
-    "lastUpdated": "2026-09-24T06:45:53-07:00",
-    "lastUpdatedLabel": "Thu Sep 24, 2026 · 6:45 AM PT",
-    "updatedBy": "assistant-teamsnap-sync",
+    "lastUpdated": "2026-09-24T15:16:15-07:00",
+    "lastUpdatedLabel": "Thu Sep 24, 2026 · 3:16 PM PT",
+    "updatedBy": "assistant-teamsnap-resync",
     "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
   },
   "profile": {
@@ -271,7 +271,7 @@
       "url": "https://www.cnbc.com/quotes/.SPX"
     },
     {
-      "title": "TeamSnap U17 A1 schedule synced — practices, PreSeason Abbotsford Sat 26, Ridge Meadows Sun 27",
+      "title": "TeamSnap U17 A1 re-synced — board matches live ICS (practice tonight SPX2 9:15 PM)",
       "source": "TeamSnap / LMHA",
       "date": "2026-09-24",
       "dateLabel": "Sep 24",

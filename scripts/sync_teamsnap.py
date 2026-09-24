@@ -200,13 +200,24 @@ def iso_pt(dt: datetime | date) -> str:
 
 
 def is_amanda_u17_u18(ev: dict) -> bool:
-    """Google/Amanda-sourced U17/U18 events that TeamSnap replaces."""
+    """Google/Amanda-sourced U17/U18 ice events that TeamSnap replaces.
+
+    Do NOT treat PCAHA / coach-manager meetings as Amanda hockey just because
+    the title mentions U17/U18 age bands (e.g. U11–U18).
+    """
     eid = str(ev.get("id") or "")
-    if eid.startswith("ts-"):
-        return False  # already TeamSnap
+    if eid.startswith("ts-") or eid.startswith("pcaha-"):
+        return False  # TeamSnap or curated PCAHA
     summary = str(ev.get("summary") or "")
     low = summary.lower()
+    if "pcaha" in low or "coach/manager meeting" in low:
+        return False
     if re.search(r"\bu17\b", low) or re.search(r"\bu18\b", low):
+        # Admin/meeting titles that only mention age bands stay
+        if "meeting" in low and not re.search(
+            r"\b(practice|game|scrimmage|tryout|dryland|hold)\b", low
+        ):
+            return False
         return True
     if "tryout" in low and ("u17" in low or "u18" in low or "lmha" in low):
         return True
@@ -323,9 +334,26 @@ def build_notes(events: list[dict], today: date, window_end: date) -> list[str]:
             + " — still in calendar.json events."
         )
 
+    # Mention PCAHA meetings in-window (ids pcaha-*) so re-sync does not drop bulletin context
+    for e in events:
+        d = event_start_date(e)
+        eid = str(e.get("id") or "")
+        if not (d and today <= d <= window_end and eid.startswith("pcaha-")):
+            continue
+        when = ""
+        if "T" in e.get("start", ""):
+            dt = datetime.fromisoformat(e["start"]).astimezone(PACIFIC)
+            when = dt.strftime("%-I:%M %p").replace(" 0", " ")
+            if isinstance(e.get("end"), str) and "T" in e["end"]:
+                de = datetime.fromisoformat(e["end"]).astimezone(PACIFIC)
+                when = f"{when}–{de.strftime('%-I:%M %p').replace(' 0', ' ')}"
+        day = d.strftime("%a %b %-d").replace(" 0", " ")
+        loc = e.get("location") or "Zoom"
+        notes.append(f"{day}: {e.get('summary')}{(' ' + when) if when else ''} via {loc}.")
+
     notes.append(
         "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. "
-        "Non-U17 (MMA, U15 C) kept from Google Calendar."
+        "Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates from 2026–2027 Bulletin #5."
     )
     return notes
 
