@@ -1,9 +1,9 @@
 {
   "meta": {
     "timezone": "America/Vancouver",
-    "lastUpdated": "2026-09-24T05:16:00-07:00",
-    "lastUpdatedLabel": "Thu Sep 24, 2026 · 5:16 AM PT",
-    "updatedBy": "assistant-scheduled-refresh",
+    "lastUpdated": "2026-09-24T06:45:53-07:00",
+    "lastUpdatedLabel": "Thu Sep 24, 2026 · 6:45 AM PT",
+    "updatedBy": "assistant-teamsnap-sync",
     "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
   },
   "profile": {
@@ -165,8 +165,8 @@
   "tasks": [
     {
       "id": "book-off-sep26",
-      "title": "Book off Sat Sep 26 (U15 eval)",
-      "detail": "Hard conflict: MMA D 08:00–16:00 vs U15 Eval 1:15–2:15 PM @ LEC 1. Request the day off.",
+      "title": "Book off Sat Sep 26 (U15 eval + U17)",
+      "detail": "Hard conflict: MMA D 08:00–16:00 vs U15 Eval 1:15–2:15 PM @ LEC 1; also TeamSnap U17 morning skate SPX 2 11:30 AM–12:45 PM and U17 PreSeason vs Abbotsford 9:15–11:15 PM @ Abbotsford Rec. Request the day off.",
       "priority": "high",
       "done": false,
       "due": "2026-09-20"
@@ -271,8 +271,8 @@
       "url": "https://www.cnbc.com/quotes/.SPX"
     },
     {
-      "title": "LMHA: player assigned to U17 A1 — Brad Blatz to send ice times (Amanda fwd)",
-      "source": "Amanda / LMHA",
+      "title": "TeamSnap U17 A1 schedule synced — practices, PreSeason Abbotsford Sat 26, Ridge Meadows Sun 27",
+      "source": "TeamSnap / LMHA",
       "date": "2026-09-24",
       "dateLabel": "Sep 24",
       "url": "https://www.langleyminorhockey.ca/"
