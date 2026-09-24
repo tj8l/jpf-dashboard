@@ -1,96 +1,96 @@
 {
   "meta": {
     "timezone": "America/Vancouver",
-    "lastUpdated": "2026-09-23T05:27:00-07:00",
-    "lastUpdatedLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+    "lastUpdated": "2026-09-24T05:16:00-07:00",
+    "lastUpdatedLabel": "Thu Sep 24, 2026 · 5:16 AM PT",
     "updatedBy": "assistant-scheduled-refresh",
     "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
   },
   "profile": {
     "name": "Command Center",
     "title": "",
-    "bitcoinStance": "Long-term holder. DCAs Bitcoin on a regular cadence \u2014 not a trader."
+    "bitcoinStance": "Long-term holder. DCAs Bitcoin on a regular cadence — not a trader."
   },
   "primaryMarkets": [
     {
       "id": "xau",
       "label": "Spot gold",
       "ticker": "XAU",
-      "value": 4315.4,
-      "display": "$4,315",
+      "value": 4268.5,
+      "display": "$4,268",
       "unit": "USD/oz",
-      "change": -31.9,
-      "changePct": -0.73,
-      "changeDisplay": "-0.73% vs prior",
-      "asOf": "2026-09-23T05:27:00-07:00",
-      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+      "change": -46.9,
+      "changePct": -1.09,
+      "changeDisplay": "-1.09% vs prior",
+      "asOf": "2026-09-24T05:16:00-07:00",
+      "asOfLabel": "Thu Sep 24, 2026 · 5:16 AM PT",
       "source": "gold-api.com",
       "status": "live",
-      "note": "Live ~$4,315/oz."
+      "note": "Live ~$4,268/oz."
     },
     {
       "id": "wti",
       "label": "Spot oil",
-      "ticker": "CL \u00b7 WTI",
-      "value": 90.63,
-      "display": "$90.63",
+      "ticker": "CL · WTI",
+      "value": 93.72,
+      "display": "$93.72",
       "unit": "USD/bbl",
-      "change": -3.96,
-      "changePct": -4.19,
-      "changeDisplay": "-4.19% vs prior close",
-      "asOf": "2026-09-23T05:27:00-07:00",
-      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
-      "source": "Yahoo CL=F",
+      "change": 1.56,
+      "changePct": 1.69,
+      "changeDisplay": "+1.69% vs prior close",
+      "asOf": "2026-09-24T05:16:00-07:00",
+      "asOfLabel": "Thu Sep 24, 2026 · 5:16 AM PT",
+      "source": "CNBC @CL.1",
       "status": "live",
-      "note": "Live ~$90.63 (-4.19% vs prior close)."
+      "note": "Live ~$93.72 (+1.69% vs prior close; +3.41% vs Wed snap)."
     },
     {
       "id": "btc",
       "label": "Spot Bitcoin",
       "ticker": "BTC",
-      "value": 85474,
-      "display": "$85,474",
+      "value": 83508,
+      "display": "$83,508",
       "unit": "USD",
       "change": null,
-      "changePct": -0.63,
-      "changeDisplay": "-0.63% 24h",
-      "asOf": "2026-09-23T05:27:00-07:00",
-      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+      "changePct": -2.31,
+      "changeDisplay": "-2.31% 24h",
+      "asOf": "2026-09-24T05:16:00-07:00",
+      "asOfLabel": "Thu Sep 24, 2026 · 5:16 AM PT",
       "source": "Coinbase",
       "status": "live",
-      "note": "~$85,474 Coinbase live."
+      "note": "~$83,508 Coinbase live (-2.30% vs Wed snap)."
     },
     {
       "id": "spx",
       "label": "S&P 500",
       "ticker": "SPX",
-      "value": 7764.64,
-      "display": "7,764.64",
+      "value": 7706.03,
+      "display": "7,706.03",
       "unit": "index",
-      "change": null,
-      "changePct": 0.0,
-      "changeDisplay": "+0.00%",
-      "asOf": "2026-09-23T05:27:00-07:00",
-      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
-      "source": "Yahoo ^GSPC",
+      "change": -58.61,
+      "changePct": -0.75,
+      "changeDisplay": "-0.75%",
+      "asOf": "2026-09-24T05:16:00-07:00",
+      "asOfLabel": "Thu Sep 24, 2026 · 5:16 AM PT",
+      "source": "CNBC .SPX",
       "status": "live",
-      "note": "Session ~7,764.64."
+      "note": "Session close ~7,706.03."
     },
     {
       "id": "us10y",
       "label": "US 10-year",
       "ticker": "US10Y",
-      "value": 4.968,
-      "display": "4.968%",
+      "value": 5.118,
+      "display": "5.118%",
       "unit": "yield",
-      "change": 0.005,
-      "changePct": 0.1,
-      "changeDisplay": "flat vs Tue",
-      "asOf": "2026-09-23T05:27:00-07:00",
-      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
-      "source": "Yahoo ^TNX",
+      "change": 0.15,
+      "changePct": 3.02,
+      "changeDisplay": "+0.150 pts vs Wed",
+      "asOf": "2026-09-24T05:16:00-07:00",
+      "asOfLabel": "Thu Sep 24, 2026 · 5:16 AM PT",
+      "source": "CNBC US10Y",
       "status": "live",
-      "note": "~4.968%."
+      "note": "~5.118%."
     }
   ],
   "watchlist": [
@@ -99,22 +99,22 @@
       "symbol": "ETH",
       "name": "Ethereum",
       "role": "Primary L1 settlement for agents",
-      "price": 2724.27,
-      "change24h": -1.15,
+      "price": 2647.085,
+      "change24h": -2.83,
       "change7d": 6.61,
       "source": "Coinbase",
-      "asOf": "2026-09-23T05:27:00-07:00"
+      "asOf": "2026-09-24T05:16:00-07:00"
     },
     {
       "id": "sol",
       "symbol": "SOL",
       "name": "Solana",
       "role": "High-throughput agent txs",
-      "price": 117.03,
-      "change24h": -0.36,
+      "price": 113.505,
+      "change24h": -3.01,
       "change7d": 8.19,
       "source": "Coinbase",
-      "asOf": "2026-09-23T05:27:00-07:00"
+      "asOf": "2026-09-24T05:16:00-07:00"
     },
     {
       "id": "usdc",
@@ -125,48 +125,48 @@
       "change24h": 0.0,
       "change7d": 0.0,
       "source": "Coinbase",
-      "asOf": "2026-09-23T05:27:00-07:00"
+      "asOf": "2026-09-24T05:16:00-07:00"
     },
     {
       "id": "fet",
       "symbol": "FET",
       "name": "ASI Alliance (Fetch.ai)",
       "role": "Agent-economy token",
-      "price": 0.206675,
-      "change24h": -2.78,
+      "price": 0.198175,
+      "change24h": -4.11,
       "change7d": 23.47,
       "source": "Coinbase",
-      "asOf": "2026-09-23T05:27:00-07:00"
+      "asOf": "2026-09-24T05:16:00-07:00"
     },
     {
       "id": "near",
       "symbol": "NEAR",
       "name": "NEAR Protocol",
       "role": "Intents / agent protocol",
-      "price": 4.79025,
-      "change24h": 4.37,
+      "price": 4.3718,
+      "change24h": -8.74,
       "change7d": 28.14,
       "source": "Coinbase",
-      "asOf": "2026-09-23T05:27:00-07:00"
+      "asOf": "2026-09-24T05:16:00-07:00"
     }
   ],
   "bitcoinDetail": {
-    "price": 85474,
-    "change24h": -0.63,
+    "price": 83508,
+    "change24h": -2.31,
     "change7d": null,
-    "high24h": 87283,
-    "low24h": 85216,
+    "high24h": 85933,
+    "low24h": 82709,
     "marketCap": null,
     "ath": 126173,
     "athDate": "2025-10-06",
     "source": "Coinbase",
-    "asOf": "2026-09-23T05:27:00-07:00"
+    "asOf": "2026-09-24T05:16:00-07:00"
   },
   "tasks": [
     {
       "id": "book-off-sep26",
       "title": "Book off Sat Sep 26 (U15 eval)",
-      "detail": "Hard conflict: MMA D 08:00\u201316:00 vs U15 Eval 1:15\u20132:15 PM @ LEC 1. Request the day off.",
+      "detail": "Hard conflict: MMA D 08:00–16:00 vs U15 Eval 1:15–2:15 PM @ LEC 1. Request the day off.",
       "priority": "high",
       "done": false,
       "due": "2026-09-20"
@@ -198,7 +198,7 @@
     {
       "id": "exercise",
       "label": "Exercise",
-      "target": "Move the body \u2014 practice counts",
+      "target": "Move the body — practice counts",
       "week": [
         false,
         false,
@@ -250,79 +250,72 @@
   ],
   "news": [
     {
-      "title": "Dollar jumps to 8-week high as Fed rate-hike bets outweigh lower oil",
-      "source": "WSJ",
-      "date": "2026-09-23",
-      "dateLabel": "Sep 23",
-      "url": "https://www.wsj.com/"
-    },
-    {
-      "title": "BTC ~$85,474 (-0.63% 24h; -1.91% vs Tue snap); soft overnight",
+      "title": "BTC ~$83,508 (-2.31% 24h; -2.30% vs Wed snap) — soft overnight",
       "source": "Coinbase",
-      "date": "2026-09-23",
-      "dateLabel": "Sep 23",
+      "date": "2026-09-24",
+      "dateLabel": "Sep 24",
       "url": "https://www.coinbase.com/price/bitcoin"
     },
     {
-      "title": "WTI ~$90.63 (-4.19% vs prior close ~$94.59); gold ~$4,315",
-      "source": "Yahoo / gold-api",
-      "date": "2026-09-23",
-      "dateLabel": "Sep 23",
-      "url": "https://finance.yahoo.com/quote/CL=F"
+      "title": "WTI ~$93.72 (+1.69% vs prior close; +3.41% vs Wed snap); gold ~$4,268",
+      "source": "CNBC / gold-api",
+      "date": "2026-09-24",
+      "dateLabel": "Sep 24",
+      "url": "https://www.cnbc.com/quotes/@CL.1"
     },
     {
-      "title": "Corporate CFOs lift inflation outlook; rates remain a concern \u2014 Fed survey",
-      "source": "Reuters",
-      "date": "2026-09-23",
-      "dateLabel": "Sep 23",
-      "url": "https://www.reuters.com/"
+      "title": "US10Y ~5.118% (+0.150 pts vs Wed); SPX ~7,706 (-0.75%)",
+      "source": "CNBC",
+      "date": "2026-09-24",
+      "dateLabel": "Sep 24",
+      "url": "https://www.cnbc.com/quotes/.SPX"
     },
     {
-      "title": "SPX ~7,765 flat; US10Y ~4.968%",
-      "source": "Yahoo",
-      "date": "2026-09-23",
-      "dateLabel": "Sep 23",
-      "url": "https://finance.yahoo.com/quote/%5EGSPC"
+      "title": "LMHA: player assigned to U17 A1 — Brad Blatz to send ice times (Amanda fwd)",
+      "source": "Amanda / LMHA",
+      "date": "2026-09-24",
+      "dateLabel": "Sep 24",
+      "url": "https://www.langleyminorhockey.ca/"
     }
   ],
   "investmentNotes": [
     "Primary tape: gold, WTI, BTC, S&P 500, US 10-year. Crypto watchlist is secondary.",
     "BTC is a DCA long-term hold. Do not turn the CPI session into a trade.",
-    "ETH / SOL / USDC / FET / NEAR are the agent-settlement watchlist \u2014 payments rails, not a new core position."
+    "ETH / SOL / USDC / FET / NEAR are the agent-settlement watchlist — payments rails, not a new core position."
   ],
   "weather": {
     "location": "Langley, BC",
     "timezone": "America/Vancouver",
-    "date": "2026-09-23",
-    "dateLabel": "Wed Sep 23, 2026",
-    "conditions": "Early drizzle/overcast (~13\u00b0C); mild afternoon high ~17\u00b0C / low ~9\u00b0C; rain chance ~21%. Wetter Thu\u2013Fri ahead.",
-    "conditionsShort": "Drizzle / overcast",
+    "date": "2026-09-24",
+    "dateLabel": "Thu Sep 24, 2026",
+    "conditions": "Overcast morning (~11°C); high ~16°C / low ~10°C; rain chance ~87% (wet day). Fri cooler with showers (~11/8°C).",
+    "conditionsShort": "Overcast / wet",
     "temp": {
-      "highC": 17,
-      "lowC": 9,
-      "highF": 63,
-      "lowF": 48,
-      "displayC": "17\u00b0 / 9\u00b0C",
-      "displayF": "63\u00b0 / 48\u00b0F",
-      "currentC": 13,
-      "currentF": 55
+      "highC": 16,
+      "lowC": 10,
+      "highF": 61,
+      "lowF": 50,
+      "displayC": "16° / 10°C",
+      "displayF": "61° / 50°F",
+      "currentC": 11,
+      "currentF": 52
     },
-    "rainChancePct": 21,
+    "rainChancePct": 87,
     "wind": {
       "summary": "light",
-      "maxKmh": 14,
-      "display": "Light, up to ~14 km/h"
+      "maxKmh": 5,
+      "display": "Light, ~5 km/h"
     },
     "sun": {
-      "sunrise": "06:58",
+      "sunrise": "07:01",
       "sunset": "19:05",
-      "sunriseLabel": "6:58 AM",
+      "sunriseLabel": "7:01 AM",
       "sunsetLabel": "7:05 PM",
       "timezoneNote": "PT"
     },
-    "asOf": "2026-09-23T05:27:00-07:00",
-    "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
-    "source": "Open-Meteo + wttr.in (Langley BC)",
-    "lastUpdated": "2026-09-23T05:27:00-07:00"
+    "asOf": "2026-09-24T05:16:00-07:00",
+    "asOfLabel": "Thu Sep 24, 2026 · 5:16 AM PT",
+    "source": "wttr.in (Langley BC); Open-Meteo daily cap hit",
+    "lastUpdated": "2026-09-24T05:16:00-07:00"
   }
 }
