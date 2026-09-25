@@ -1,29 +1,21 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-24T15:16:15-07:00",
+  "fetchedAt": "2026-09-25T05:09:28-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
-    "start": "2026-09-24",
-    "end": "2026-09-30",
-    "label": "Sep 24–30 (next 7 days)"
+    "start": "2026-09-25",
+    "end": "2026-10-01",
+    "label": "Sep 25–Oct 1 (next 7 days)"
   },
   "notes": [
-    "Today Thu Sep 24: U17 Practice · SPX 2 9:15 PM @ SPX 2.",
-    "Fri Sep 25: clear (no calendar events).",
+    "Today Fri Sep 25: clear (no calendar events).",
     "Sat Sep 26: Work · MMA D 8:00 AM + U17 Practice · SPX 2 11:30 AM @ SPX 2 + U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1 + U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre — book the day off (MMA D clash with U15 eval + TeamSnap U17).",
-    "Beyond 7-day day-list window: Thu Oct 1 (PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18), U17 Practice); Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work, U17 Practice); Tue Oct 6 (Work) — still in calendar.json events.",
+    "Beyond 7-day day-list window: Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work, U17 Practice); Tue Oct 6 (Work); Wed Oct 7 (Work) — still in calendar.json events.",
     "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
+    "Thu Oct 1: PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
     "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates from 2026–2027 Bulletin #5."
   ],
   "events": [
-    {
-      "id": "ts-10808348-374188300",
-      "summary": "U17 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-09-24T21:15:00-07:00",
-      "end": "2026-09-24T22:45:00-07:00",
-      "whenLabel": "Thu Sep 24 · 9:15 PM–10:45 PM PT"
-    },
     {
       "id": "u6jofvdjsommsbs2b8both3o4s",
       "summary": "Work · MMA D",
@@ -289,12 +281,36 @@
       "whenLabel": "Thu Oct 22 · 9:15 PM–10:45 PM PT"
     },
     {
+      "id": "ts-10808348-374235553",
+      "summary": "U17 HOLD · Winfield Arena",
+      "location": "Winfield Arena",
+      "start": "2026-10-23T00:00:00-07:00",
+      "end": "2026-10-24T00:00:00-07:00",
+      "whenLabel": "Fri Oct 23 · 12:00 AM–12:00 AM PT"
+    },
+    {
       "id": "ts-10808348-374188825",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
       "start": "2026-10-23T20:30:00-07:00",
       "end": "2026-10-23T21:30:00-07:00",
       "whenLabel": "Fri Oct 23 · 8:30 PM–9:30 PM PT"
+    },
+    {
+      "id": "ts-10808348-374235554",
+      "summary": "U17 HOLD · Winfield Arena",
+      "location": "Winfield Arena",
+      "start": "2026-10-24T00:00:00-07:00",
+      "end": "2026-10-25T00:00:00-07:00",
+      "whenLabel": "Sat Oct 24 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "ts-10808348-374235555",
+      "summary": "U17 HOLD · Winfield Arena",
+      "location": "Winfield Arena",
+      "start": "2026-10-25T00:00:00-07:00",
+      "end": "2026-10-26T00:00:00-07:00",
+      "whenLabel": "Sun Oct 25 · 12:00 AM–12:00 AM PT"
     },
     {
       "id": "ts-10808348-374188665",
@@ -559,6 +575,38 @@
       "start": "2026-12-20T18:15:00-08:00",
       "end": "2026-12-20T20:15:00-08:00",
       "whenLabel": "Sun Dec 20 · 6:15 PM–8:15 PM PT"
+    },
+    {
+      "id": "ts-10808348-374256316",
+      "summary": "U17 HOLD · TBD",
+      "location": "TBD",
+      "start": "2026-12-27T00:00:00-08:00",
+      "end": "2026-12-28T00:00:00-08:00",
+      "whenLabel": "Sun Dec 27 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "ts-10808348-374256317",
+      "summary": "U17 HOLD · TBD",
+      "location": "TBD",
+      "start": "2026-12-28T00:00:00-08:00",
+      "end": "2026-12-29T00:00:00-08:00",
+      "whenLabel": "Mon Dec 28 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "ts-10808348-374256318",
+      "summary": "U17 HOLD · TBD",
+      "location": "TBD",
+      "start": "2026-12-29T00:00:00-08:00",
+      "end": "2026-12-30T00:00:00-08:00",
+      "whenLabel": "Tue Dec 29 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "ts-10808348-374256319",
+      "summary": "U17 HOLD · TBD",
+      "location": "TBD",
+      "start": "2026-12-30T00:00:00-08:00",
+      "end": "2026-12-31T00:00:00-08:00",
+      "whenLabel": "Wed Dec 30 · 12:00 AM–12:00 AM PT"
     }
   ]
 }
