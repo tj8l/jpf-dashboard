@@ -1,6 +1,6 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-25T05:09:28-07:00",
+  "fetchedAt": "2026-09-25T11:14:57-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
     "start": "2026-09-25",
@@ -9,7 +9,7 @@
   },
   "notes": [
     "Today Fri Sep 25: clear (no calendar events).",
-    "Sat Sep 26: Work · MMA D 8:00 AM + U17 Practice · SPX 2 11:30 AM @ SPX 2 + U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1 + U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre — book the day off (MMA D clash with U15 eval + TeamSnap U17).",
+    "Sat Sep 26: Work · MMA D 8:00 AM + U17 Practice · SPX 2 11:30 AM @ SPX 2 + U15 C Eval Scrimmage — Groups 1 & 2 12:00 PM @ LEC 1 + U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1 + U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre — book the day off (MMA D clash with U15 eval + TeamSnap U17).",
     "Beyond 7-day day-list window: Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work, U17 Practice); Tue Oct 6 (Work); Wed Oct 7 (Work) — still in calendar.json events.",
     "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
     "Thu Oct 1: PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
@@ -31,6 +31,14 @@
       "start": "2026-09-26T11:30:00-07:00",
       "end": "2026-09-26T12:45:00-07:00",
       "whenLabel": "Sat Sep 26 · 11:30 AM–12:45 PM PT"
+    },
+    {
+      "id": "u15-eval-groups-12-20260926",
+      "summary": "U15 C Eval Scrimmage — Groups 1 & 2",
+      "location": "LEC 1 (Langley Events Centre)",
+      "start": "2026-09-26T12:00:00-07:00",
+      "end": "2026-09-26T13:00:00-07:00",
+      "whenLabel": "Sat Sep 26 · 12:00 PM–1:00 PM PT"
     },
     {
       "id": "7kd04vb9g5u3pibs6ao7uq5c7k",
