@@ -1,14 +1,14 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-25T11:14:57-07:00",
+  "fetchedAt": "2026-09-26T05:10:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
-    "start": "2026-09-25",
-    "end": "2026-10-01",
-    "label": "Sep 25–Oct 1 (next 7 days)"
+    "start": "2026-09-26",
+    "end": "2026-10-02",
+    "label": "Sep 26–Oct 2 (next 7 days)"
   },
   "notes": [
-    "Today Fri Sep 25: clear (no calendar events).",
+    "Today Sat Sep 26: Work · MMA D 8:00 AM; U17 Practice · SPX 2 11:30 AM @ SPX 2; U15 C Eval Scrimmage — Groups 1 & 2 12:00 PM @ LEC 1; U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1; U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre.",
     "Sat Sep 26: Work · MMA D 8:00 AM + U17 Practice · SPX 2 11:30 AM @ SPX 2 + U15 C Eval Scrimmage — Groups 1 & 2 12:00 PM @ LEC 1 + U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1 + U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre — book the day off (MMA D clash with U15 eval + TeamSnap U17).",
     "Beyond 7-day day-list window: Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work, U17 Practice); Tue Oct 6 (Work); Wed Oct 7 (Work) — still in calendar.json events.",
     "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
@@ -33,7 +33,7 @@
       "whenLabel": "Sat Sep 26 · 11:30 AM–12:45 PM PT"
     },
     {
-      "id": "u15-eval-groups-12-20260926",
+      "id": "08lb598fj8odrnii8kjrk0ger0",
       "summary": "U15 C Eval Scrimmage — Groups 1 & 2",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-09-26T12:00:00-07:00",
@@ -377,6 +377,14 @@
       "whenLabel": "Thu Nov 5 · 9:15 PM–10:45 PM PT"
     },
     {
+      "id": "ts-10808348-374267016",
+      "summary": "U17 HOLD · Abbotsford",
+      "location": "Abbotsford Rec Centre",
+      "start": "2026-11-06T00:00:00-08:00",
+      "end": "2026-11-07T00:00:00-08:00",
+      "whenLabel": "Fri Nov 6 · 12:00 AM–12:00 AM PT"
+    },
+    {
       "id": "ts-10808348-374188829",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
@@ -385,12 +393,36 @@
       "whenLabel": "Fri Nov 6 · 8:30 PM–9:30 PM PT"
     },
     {
+      "id": "ts-10808348-374267017",
+      "summary": "U17 HOLD · Abbotsford",
+      "location": "Abbotsford Rec Centre",
+      "start": "2026-11-07T00:00:00-08:00",
+      "end": "2026-11-08T00:00:00-08:00",
+      "whenLabel": "Sat Nov 7 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "ts-10808348-374267018",
+      "summary": "U17 HOLD · Abbotsford",
+      "location": "Abbotsford Rec Centre",
+      "start": "2026-11-08T00:00:00-08:00",
+      "end": "2026-11-09T00:00:00-08:00",
+      "whenLabel": "Sun Nov 8 · 12:00 AM–12:00 AM PT"
+    },
+    {
       "id": "ts-10808348-374188667",
       "summary": "U17 HOLD · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-11-08T18:15:00-08:00",
       "end": "2026-11-08T20:15:00-08:00",
       "whenLabel": "Sun Nov 8 · 6:15 PM–8:15 PM PT"
+    },
+    {
+      "id": "ts-10808348-374267019",
+      "summary": "U17 HOLD · Abbotsford",
+      "location": "Abbotsford Rec Centre",
+      "start": "2026-11-09T00:00:00-08:00",
+      "end": "2026-11-10T00:00:00-08:00",
+      "whenLabel": "Mon Nov 9 · 12:00 AM–12:00 AM PT"
     },
     {
       "id": "ts-10808348-374188688",
