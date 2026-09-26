@@ -1,6 +1,6 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-26T05:10:00-07:00",
+  "fetchedAt": "2026-09-26T07:35:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
     "start": "2026-09-26",
@@ -10,9 +10,9 @@
   "notes": [
     "Today Sat Sep 26: Work · MMA D 8:00 AM; U17 Practice · SPX 2 11:30 AM @ SPX 2; U15 C Eval Scrimmage — Groups 1 & 2 12:00 PM @ LEC 1; U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1; U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre.",
     "Sat Sep 26: Work · MMA D 8:00 AM + U17 Practice · SPX 2 11:30 AM @ SPX 2 + U15 C Eval Scrimmage — Groups 1 & 2 12:00 PM @ LEC 1 + U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1 + U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre — book the day off (MMA D clash with U15 eval + TeamSnap U17).",
-    "Beyond 7-day day-list window: Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work, U17 Practice); Tue Oct 6 (Work); Wed Oct 7 (Work) — still in calendar.json events.",
+    "Beyond 7-day day-list window: Fri Oct 2–Sun Oct 4 off (no MMA); Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work · MMA A, U17 Practice); Tue–Sat Oct 6–10 (Work · MMA A) — still in calendar.json / Google.",
     "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
-    "Thu Oct 1: PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
+    "Thu Oct 1: Work · MMA D 8:00 AM–4:00 PM (dayshift blue); PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom; U17 Practice · SPX 2 9:15 PM. Then Fri Oct 2–Sun Oct 4 off before MMA A Mon Oct 5.",
     "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates from 2026–2027 Bulletin #5."
   ],
   "events": [
@@ -137,6 +137,14 @@
       "whenLabel": "Wed Sep 30 · 7:00 PM–8:00 PM PT"
     },
     {
+      "id": "9cjo74u3bjt6n716i0t7a4i4l4",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-10-01T08:00:00-07:00",
+      "end": "2026-10-01T16:00:00-07:00",
+      "whenLabel": "Thu Oct 1 · 8:00 AM–4:00 PM PT"
+    },
+    {
       "id": "pcaha-fvw-c-20261001",
       "summary": "PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18)",
       "location": "Zoom",
@@ -223,6 +231,14 @@
       "start": "2026-10-09T16:00:00-07:00",
       "end": "2026-10-10T00:00:00-07:00",
       "whenLabel": "Fri Oct 9 · 4:00 PM–12:00 AM PT"
+    },
+    {
+      "id": "mc1oohi60kb3459slr1425nn60",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-10-10T16:00:00-07:00",
+      "end": "2026-10-11T00:00:00-07:00",
+      "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "ts-10808348-374188821",
