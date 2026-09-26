@@ -4,7 +4,7 @@
     "lastUpdated": "2026-09-26T05:10:00-07:00",
     "lastUpdatedLabel": "Sat Sep 26, 2026 · 5:10 AM PT",
     "updatedBy": "assistant-scheduled-refresh",
-    "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
+    "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX/US10Y use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
   },
   "profile": {
     "name": "Command Center",
@@ -90,7 +90,7 @@
       "asOfLabel": "Sat Sep 26, 2026 · 5:10 AM PT",
       "source": "Yahoo ^TNX",
       "status": "live",
-      "note": "~5.184%."
+      "note": "~5.184% (Fri close). Client live: CNBC US10Y → Yahoo ^TNX."
     }
   ],
   "watchlist": [
