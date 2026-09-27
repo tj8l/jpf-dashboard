@@ -1,19 +1,19 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-26T07:35:00-07:00",
+  "fetchedAt": "2026-09-27T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
-    "start": "2026-09-26",
-    "end": "2026-10-02",
-    "label": "Sep 26–Oct 2 (next 7 days)"
+    "start": "2026-09-27",
+    "end": "2026-10-03",
+    "label": "Sep 27–Oct 3 (next 7 days)"
   },
   "notes": [
-    "Today Sat Sep 26: Work · MMA D 8:00 AM; U17 Practice · SPX 2 11:30 AM @ SPX 2; U15 C Eval Scrimmage — Groups 1 & 2 12:00 PM @ LEC 1; U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1; U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre.",
-    "Sat Sep 26: Work · MMA D 8:00 AM + U17 Practice · SPX 2 11:30 AM @ SPX 2 + U15 C Eval Scrimmage — Groups 1 & 2 12:00 PM @ LEC 1 + U15 C Coaches Eval Scrimmage — Groups 3 & 4 1:15 PM @ LEC 1 + U17 PreSeason · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre — book the day off (MMA D clash with U15 eval + TeamSnap U17).",
-    "Beyond 7-day day-list window: Fri Oct 2–Sun Oct 4 off (no MMA); Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work · MMA A, U17 Practice); Tue–Sat Oct 6–10 (Work · MMA A) — still in calendar.json / Google.",
-    "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom.",
+    "Today Sun Sep 27: Work · MMA D 8:00 AM–4:00 PM; U17 PreSeason · vs Ridge Meadows 7:00 PM–8:30 PM @ LEC 1.",
+    "Wed Sep 30: U15 C Draft (all day) + Work · MMA D + U17 Practice · LEC 2 7:00 PM. Gmail: protected-players list from under15@langleyminorhockey.ca overnight.",
     "Thu Oct 1: Work · MMA D 8:00 AM–4:00 PM (dayshift blue); PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom; U17 Practice · SPX 2 9:15 PM. Then Fri Oct 2–Sun Oct 4 off before MMA A Mon Oct 5.",
-    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates from 2026–2027 Bulletin #5."
+    "Beyond 7-day day-list window: Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work · MMA A, U17 Practice); Tue–Sat Oct 6–10 (Work · MMA A) — still in calendar.json / Google.",
+    "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom; U17 Practice · SPX 2 9:30 PM.",
+    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates from 2026–2027 Bulletin #5. TeamSnap vs prior: dropped past Sat Sep 26 U17 practice + PreSeason Abbotsford (before today cutoff); no new adds/moves."
   ],
   "events": [
     {
@@ -23,14 +23,6 @@
       "start": "2026-09-26T08:00:00-07:00",
       "end": "2026-09-26T16:00:00-07:00",
       "whenLabel": "Sat Sep 26 · 8:00 AM–4:00 PM PT"
-    },
-    {
-      "id": "ts-10808348-374188317",
-      "summary": "U17 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-09-26T11:30:00-07:00",
-      "end": "2026-09-26T12:45:00-07:00",
-      "whenLabel": "Sat Sep 26 · 11:30 AM–12:45 PM PT"
     },
     {
       "id": "08lb598fj8odrnii8kjrk0ger0",
@@ -47,14 +39,6 @@
       "start": "2026-09-26T13:15:00-07:00",
       "end": "2026-09-26T14:15:00-07:00",
       "whenLabel": "Sat Sep 26 · 1:15 PM–2:15 PM PT"
-    },
-    {
-      "id": "ts-10808348-374188262",
-      "summary": "U17 PreSeason · vs Abbotsford",
-      "location": "Abbotsford Rec Centre",
-      "start": "2026-09-26T21:15:00-07:00",
-      "end": "2026-09-26T23:15:00-07:00",
-      "whenLabel": "Sat Sep 26 · 9:15 PM–11:15 PM PT"
     },
     {
       "id": "sj2nkmc4gn80h6f2el1t226sgo",
@@ -233,20 +217,20 @@
       "whenLabel": "Fri Oct 9 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "mc1oohi60kb3459slr1425nn60",
-      "summary": "Work · MMA A",
-      "location": "",
-      "start": "2026-10-10T16:00:00-07:00",
-      "end": "2026-10-11T00:00:00-07:00",
-      "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
-    },
-    {
       "id": "ts-10808348-374188821",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
       "start": "2026-10-09T20:30:00-07:00",
       "end": "2026-10-09T21:30:00-07:00",
       "whenLabel": "Fri Oct 9 · 8:30 PM–9:30 PM PT"
+    },
+    {
+      "id": "mc1oohi60kb3459slr1425nn60",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-10-10T16:00:00-07:00",
+      "end": "2026-10-11T00:00:00-07:00",
+      "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "ts-10808348-374188663",
