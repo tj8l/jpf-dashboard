@@ -3149,10 +3149,14 @@ window.__JPF_BAKED__ = {"calendar.json": {"timezone": "America/Vancouver", "fetc
     return "cal-other";
   }
   function calLocalYmd(iso) {
+    // Date-only (all-day) strings are calendar dates — do not parse as UTC midnight
+    // or America/Vancouver shifts them back one day (e.g. 2026-09-30 → Tue Sep 29).
+    var s = String(iso || "");
+    if (s.indexOf("T") === -1) return s.slice(0, 10);
     try {
-      return new Date(iso).toLocaleDateString("en-CA", { timeZone: "America/Vancouver" });
+      return new Date(s).toLocaleDateString("en-CA", { timeZone: "America/Vancouver" });
     } catch (e) {
-      return String(iso || "").slice(0, 10);
+      return s.slice(0, 10);
     }
   }
   function calDayHeader(ymd) {
