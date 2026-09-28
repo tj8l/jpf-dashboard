@@ -1,19 +1,19 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-27T05:15:00-07:00",
+  "fetchedAt": "2026-09-28T05:12:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
-    "start": "2026-09-27",
-    "end": "2026-10-03",
-    "label": "Sep 27–Oct 3 (next 7 days)"
+    "start": "2026-09-28",
+    "end": "2026-10-04",
+    "label": "Sep 28–Oct 4 (next 7 days)"
   },
   "notes": [
-    "Today Sun Sep 27: Work · MMA D 8:00 AM–4:00 PM; U17 PreSeason · vs Ridge Meadows 7:00 PM–8:30 PM @ LEC 1.",
-    "Wed Sep 30: U15 C Draft (all day) + Work · MMA D + U17 Practice · LEC 2 7:00 PM. Gmail: protected-players list from under15@langleyminorhockey.ca overnight.",
-    "Thu Oct 1: Work · MMA D 8:00 AM–4:00 PM (dayshift blue); PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom; U17 Practice · SPX 2 9:15 PM. Then Fri Oct 2–Sun Oct 4 off before MMA A Mon Oct 5.",
-    "Beyond 7-day day-list window: Sun Oct 4 (U17 HOLD); Mon Oct 5 (Work · MMA A, U17 Practice); Tue–Sat Oct 6–10 (Work · MMA A) — still in calendar.json / Google.",
-    "Mon Sep 28: PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom; U17 Practice · SPX 2 9:30 PM.",
-    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates from 2026–2027 Bulletin #5. TeamSnap vs prior: dropped past Sat Sep 26 U17 practice + PreSeason Abbotsford (before today cutoff); no new adds/moves."
+    "Today Mon Sep 28: Work · MMA D 8:00 AM–4:00 PM; PCAHA Coach/Manager Meeting — Fraser Valley North “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom; U17 Practice · SPX 2 9:30 PM–11:00 PM.",
+    "Tue Sep 29: U15 C Practice — Group 4 (coach) 6:00–7:00 AM @ SPX 2 + Work · MMA D 8:00 AM–4:00 PM.",
+    "Wed Sep 30: U15 C Draft (all day) + Work · MMA D + U17 Practice · LEC 2 7:00 PM. Gmail: protected-players list from under15@langleyminorhockey.ca; equipment-pickup note from Ryan Steffens.",
+    "Thu Oct 1: Work · MMA D 8:00 AM–4:00 PM (dayshift blue); PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM–8:00 PM via Zoom; U17 Practice · SPX 2 9:15 PM. Then Fri Oct 2–Sat Oct 3 off; Sun Oct 4 U17 HOLD @ LEC 1 before MMA A Mon Oct 5.",
+    "Beyond 7-day day-list window: Mon Oct 5 (Work · MMA A, U17 Practice); Tue–Sat Oct 6–10 (Work · MMA A) — still in calendar.json / Google.",
+    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C, PCAHA) kept from Google Calendar / Bulletin #5. TeamSnap vs prior: dropped past Sun Sep 27 PreSeason vs Ridge Meadows (before today cutoff); no new adds/moves."
   ],
   "events": [
     {
@@ -47,14 +47,6 @@
       "start": "2026-09-27T08:00:00-07:00",
       "end": "2026-09-27T16:00:00-07:00",
       "whenLabel": "Sun Sep 27 · 8:00 AM–4:00 PM PT"
-    },
-    {
-      "id": "ts-10808348-374188750",
-      "summary": "U17 PreSeason · vs Ridge Meadows",
-      "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-09-27T19:00:00-07:00",
-      "end": "2026-09-27T20:30:00-07:00",
-      "whenLabel": "Sun Sep 27 · 7:00 PM–8:30 PM PT"
     },
     {
       "id": "k0emnnmcmquoh8g00c7ogpo6uc",
