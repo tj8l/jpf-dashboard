@@ -10,7 +10,7 @@
   "notes": [
     "Today Tue Sep 29: U15 C Practice \u2014 Group 4 (coach) 6:00\u20137:00 AM @ SPX 2 + Work \u00b7 MMA D 8:00 AM\u20134:00 PM.",
     "Wed Sep 30: U15 C Draft 7:30\u20138:45 PM @ LEC Video Room F (2nd floor) + Work \u00b7 MMA D + U17 Practice \u00b7 LEC 2 7:00 PM (overlaps draft window).",
-    "Thu Oct 1: Work \u00b7 MMA D 8:00 AM\u20134:00 PM (dayshift blue); PCAHA Coach/Manager Meeting \u2014 Fraser Valley West \u201cC\u201d League (U11\u2013U18) 7:00 PM Zoom; U17 Practice \u00b7 SPX 2 9:15 PM. Then Fri Oct 2\u2013Sat Oct 3 off.",
+    "Thu Oct 1: Work \u00b7 MMA D 8:00 AM\u20134:00 PM (dayshift blue); U15 C Jersey pickup after 6:30 PM; PCAHA Coach/Manager Meeting \u2014 Fraser Valley West \u201cC\u201d League (U11\u2013U18) 7:00 PM Zoom; U17 Practice \u00b7 SPX 2 9:15 PM. Then Fri Oct 2\u2013Sat Oct 3 off.",
     "Sun Oct 4 CLASH: U17 HOLD \u00b7 LEC 1 6:15\u20138:15 PM vs U15 C4 Game vs C2 7:00\u20138:30 PM @ LEC 2 (from Ryan Oct schedule; Paul = HC C4).",
     "Mon Oct 5: Work \u00b7 MMA A 4:00 PM\u201312:00 AM + U17 Practice \u00b7 SPX 2 9:30 PM. Tue Oct 6: U15 C4 Practice 6:00 AM @ SPX 2 + MMA A.",
     "Gmail: Ryan sent U15 C October schedule (interleague/practices/games) + Draft Details PDF; TeamSnap Winfield hotel note. No Amanda/TeamSnap ice-time overrides.",
@@ -82,15 +82,6 @@
       "whenLabel": "Tue Sep 29 \u00b7 8:00 AM\u20134:00 PM PT"
     },
     {
-      "id": "p97jq5rh1i9lomchpecn1o9cq4",
-      "summary": "U15 C Draft",
-      "location": "LEC Video Room F (2nd floor, Langley Events Centre)",
-      "start": "2026-09-30T19:30:00-07:00",
-      "end": "2026-09-30T20:45:00-07:00",
-      "whenLabel": "Wed Sep 30 \u00b7 7:30 PM\u20138:45 PM PT",
-      "description": "U15 C Draft \u2014 LEC Video Room F, 2nd floor. Window 7:30\u20138:45pm per Ryan Steffens Draft Rules PDF (Sep 28)."
-    },
-    {
       "id": "6au0kcg4hi796449pnmc0i038o",
       "summary": "Work \u00b7 MMA D",
       "location": "",
@@ -107,12 +98,30 @@
       "whenLabel": "Wed Sep 30 \u00b7 7:00 PM\u20138:00 PM PT"
     },
     {
+      "id": "p97jq5rh1i9lomchpecn1o9cq4",
+      "summary": "U15 C Draft",
+      "location": "LEC Video Room F (2nd floor, Langley Events Centre)",
+      "start": "2026-09-30T19:30:00-07:00",
+      "end": "2026-09-30T20:45:00-07:00",
+      "whenLabel": "Wed Sep 30 \u00b7 7:30 PM\u20138:45 PM PT",
+      "description": "U15 C Draft \u2014 LEC Video Room F, 2nd floor. Window 7:30\u20138:45pm per Ryan Steffens Draft Rules PDF (Sep 28)."
+    },
+    {
       "id": "9cjo74u3bjt6n716i0t7a4i4l4",
       "summary": "Work \u00b7 MMA D",
       "location": "",
       "start": "2026-10-01T08:00:00-07:00",
       "end": "2026-10-01T16:00:00-07:00",
       "whenLabel": "Thu Oct 1 \u00b7 8:00 AM\u20134:00 PM PT"
+    },
+    {
+      "id": "062p12nscfvg9cq2ch9mdd6bdk",
+      "summary": "U15 C Jersey pickup",
+      "location": "",
+      "start": "2026-10-01T18:30:00-07:00",
+      "end": "2026-10-01T19:00:00-07:00",
+      "whenLabel": "Thu Oct 1 \u00b7 6:30 PM\u20137:00 PM PT",
+      "description": "Jersey pickup Thursday after 6:30 PM (per Paul)."
     },
     {
       "id": "pcaha-fvw-c-20261001",
