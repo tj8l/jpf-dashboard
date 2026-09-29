@@ -1,8 +1,8 @@
 {
   "meta": {
     "timezone": "America/Vancouver",
-    "lastUpdated": "2026-09-28T05:12:00-07:00",
-    "lastUpdatedLabel": "Mon Sep 28, 2026 · 5:12 AM PT",
+    "lastUpdated": "2026-09-29T05:15:00-07:00",
+    "lastUpdatedLabel": "Tue Sep 29, 2026 · 5:15 AM PT",
     "updatedBy": "assistant-scheduled-refresh",
     "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX/US10Y use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
   },
@@ -16,81 +16,81 @@
       "id": "xau",
       "label": "Spot gold",
       "ticker": "XAU",
-      "value": 4164.0,
-      "display": "$4,164",
+      "value": 4157.2,
+      "display": "$4,157",
       "unit": "USD/oz",
-      "change": -122.2,
-      "changePct": -2.85,
-      "changeDisplay": "-2.85% vs prior snap",
-      "asOf": "2026-09-28T05:12:00-07:00",
-      "asOfLabel": "Mon Sep 28, 2026 · 5:12 AM PT",
+      "change": -6.8,
+      "changePct": -0.16,
+      "changeDisplay": "-0.16% vs prior snap",
+      "asOf": "2026-09-29T05:15:00-07:00",
+      "asOfLabel": "Tue Sep 29, 2026 · 5:15 AM PT",
       "source": "gold-api.com",
       "status": "live",
-      "note": "Live ~$4,164/oz (-2.85% vs Sun snap)."
+      "note": "Live ~$4,157/oz (-0.16% vs Mon snap)."
     },
     {
       "id": "wti",
       "label": "Spot oil",
       "ticker": "CL · WTI",
-      "value": 96.06,
-      "display": "$96.06",
+      "value": 91.27,
+      "display": "$91.27",
       "unit": "USD/bbl",
-      "change": 3.9,
-      "changePct": 4.23,
-      "changeDisplay": "+4.23% vs prior close",
-      "asOf": "2026-09-28T05:12:00-07:00",
-      "asOfLabel": "Mon Sep 28, 2026 · 5:12 AM PT",
+      "change": -3.34,
+      "changePct": -3.53,
+      "changeDisplay": "-3.53% vs prior close",
+      "asOf": "2026-09-29T05:15:00-07:00",
+      "asOfLabel": "Tue Sep 29, 2026 · 5:15 AM PT",
       "source": "Yahoo CL=F",
       "status": "live",
-      "note": "Live futures ~$96.06 (+4.23% vs prior close; +3.95% vs Sun snap)."
+      "note": "Live futures ~$91.27 (-3.53% vs prior close; -4.99% vs Mon snap)."
     },
     {
       "id": "btc",
       "label": "Spot Bitcoin",
       "ticker": "BTC",
-      "value": 83449,
-      "display": "$83,449",
+      "value": 84385,
+      "display": "$84,385",
       "unit": "USD",
       "change": null,
-      "changePct": -1.61,
-      "changeDisplay": "-1.61% 24h",
-      "asOf": "2026-09-28T05:12:00-07:00",
-      "asOfLabel": "Mon Sep 28, 2026 · 5:12 AM PT",
+      "changePct": 0.98,
+      "changeDisplay": "+0.98% 24h",
+      "asOf": "2026-09-29T05:15:00-07:00",
+      "asOfLabel": "Tue Sep 29, 2026 · 5:15 AM PT",
       "source": "Coinbase",
       "status": "live",
-      "note": "~$83,449 Coinbase live (-1.77% vs Sun snap)."
+      "note": "~$84,385 Coinbase live (+1.12% vs Mon snap)."
     },
     {
       "id": "spx",
       "label": "S&P 500",
       "ticker": "SPX",
-      "value": 7743.41,
-      "display": "7,743.41",
+      "value": 7683.69,
+      "display": "7,683.69",
       "unit": "index",
-      "change": 92.91,
-      "changePct": 1.21,
-      "changeDisplay": "+1.21%",
-      "asOf": "2026-09-28T05:12:00-07:00",
-      "asOfLabel": "Mon Sep 28, 2026 · 5:12 AM PT",
+      "change": -81.01,
+      "changePct": -1.04,
+      "changeDisplay": "-1.04%",
+      "asOf": "2026-09-29T05:15:00-07:00",
+      "asOfLabel": "Tue Sep 29, 2026 · 5:15 AM PT",
       "source": "Yahoo ^GSPC",
       "status": "live",
-      "note": "Last ~7,743.41 (Fri close; US cash not open yet Mon 5 AM PT)."
+      "note": "Last ~7,683.69 (Mon session; -0.77% vs Mon snap)."
     },
     {
       "id": "us10y",
       "label": "US 10-year",
       "ticker": "US10Y",
-      "value": 5.184,
-      "display": "5.184%",
+      "value": 5.24,
+      "display": "5.24%",
       "unit": "yield",
-      "change": 0.0,
-      "changePct": 0.0,
-      "changeDisplay": "flat vs Sun snap",
-      "asOf": "2026-09-28T05:12:00-07:00",
-      "asOfLabel": "Mon Sep 28, 2026 · 5:12 AM PT",
+      "change": 0.056,
+      "changePct": 1.08,
+      "changeDisplay": "+1.08% vs prior snap",
+      "asOf": "2026-09-29T05:15:00-07:00",
+      "asOfLabel": "Tue Sep 29, 2026 · 5:15 AM PT",
       "source": "Yahoo ^TNX",
       "status": "live",
-      "note": "~5.184% (Fri close). Client live: CNBC US10Y → Yahoo ^TNX."
+      "note": "~5.24% (Mon). Client live: CNBC US10Y → Yahoo ^TNX."
     }
   ],
   "watchlist": [
@@ -99,22 +99,22 @@
       "symbol": "ETH",
       "name": "Ethereum",
       "role": "Primary L1 settlement for agents",
-      "price": 2685.66,
-      "change24h": -0.83,
+      "price": 2731.82,
+      "change24h": 1.53,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-09-28T05:12:00-07:00"
+      "asOf": "2026-09-29T05:15:00-07:00"
     },
     {
       "id": "sol",
       "symbol": "SOL",
       "name": "Solana",
       "role": "High-throughput agent txs",
-      "price": 119.645,
-      "change24h": -3.06,
+      "price": 120.195,
+      "change24h": 0.15,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-09-28T05:12:00-07:00"
+      "asOf": "2026-09-29T05:15:00-07:00"
     },
     {
       "id": "usdc",
@@ -125,42 +125,42 @@
       "change24h": 0.0,
       "change7d": 0.0,
       "source": "Coinbase",
-      "asOf": "2026-09-28T05:12:00-07:00"
+      "asOf": "2026-09-29T05:15:00-07:00"
     },
     {
       "id": "fet",
       "symbol": "FET",
       "name": "ASI Alliance (Fetch.ai)",
       "role": "Agent-economy token",
-      "price": 0.23423,
-      "change24h": -3.52,
+      "price": 0.23655,
+      "change24h": 0.76,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-09-28T05:12:00-07:00"
+      "asOf": "2026-09-29T05:15:00-07:00"
     },
     {
       "id": "near",
       "symbol": "NEAR",
       "name": "NEAR Protocol",
       "role": "Intents / agent protocol",
-      "price": 5.19005,
-      "change24h": 0.06,
+      "price": 4.91075,
+      "change24h": -5.7,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-09-28T05:12:00-07:00"
+      "asOf": "2026-09-29T05:15:00-07:00"
     }
   ],
   "bitcoinDetail": {
-    "price": 83449,
-    "change24h": -1.61,
+    "price": 84385,
+    "change24h": 0.98,
     "change7d": null,
-    "high24h": 85158,
-    "low24h": 82550,
+    "high24h": 84483,
+    "low24h": 82510,
     "marketCap": null,
     "ath": 126173,
     "athDate": "2025-10-06",
     "source": "Coinbase",
-    "asOf": "2026-09-28T05:12:00-07:00"
+    "asOf": "2026-09-29T05:15:00-07:00"
   },
   "tasks": [
     {
@@ -250,31 +250,31 @@
   ],
   "news": [
     {
-      "title": "BTC ~$83,449 (-1.61% 24h; -1.77% vs Sun snap)",
+      "title": "BTC ~$84,385 (+0.98% 24h; +1.12% vs Mon snap)",
       "source": "Coinbase",
-      "date": "2026-09-28",
-      "dateLabel": "Sep 28",
+      "date": "2026-09-29",
+      "dateLabel": "Sep 29",
       "url": "https://www.coinbase.com/price/bitcoin"
     },
     {
-      "title": "Gold ~$4,164 (-2.85% vs Sun); WTI ~$96.06 (+3.95% vs Sun / +4.23% vs prior close)",
-      "source": "gold-api / Yahoo CL=F",
-      "date": "2026-09-28",
-      "dateLabel": "Sep 28",
+      "title": "WTI ~$91.27 (-4.99% vs Mon / -3.53% vs prior close); gold ~$4,157 (-0.16%)",
+      "source": "Yahoo CL=F / gold-api",
+      "date": "2026-09-29",
+      "dateLabel": "Sep 29",
       "url": "https://finance.yahoo.com/quote/CL=F"
     },
     {
-      "title": "SOL ~$119.64 (-3.68% vs Sun); FET ~$0.2342 (-4.21% vs Sun); NEAR ~$5.19",
-      "source": "Coinbase",
-      "date": "2026-09-28",
-      "dateLabel": "Sep 28",
-      "url": "https://www.coinbase.com/price/solana"
+      "title": "NEAR ~$4.91 (-5.70% 24h; -5.38% vs Mon); SPX ~7,684 (-1.04% Mon)",
+      "source": "Coinbase / Yahoo",
+      "date": "2026-09-29",
+      "dateLabel": "Sep 29",
+      "url": "https://www.coinbase.com/price/near-protocol"
     },
     {
-      "title": "U15 C Draft Wed Sep 30 — protected-players + equipment-pickup notes from under15@LMHA; TeamSnap U17 tonight Practice SPX 2 9:30 PM (no ice-time overrides)",
-      "source": "LMHA / TeamSnap",
-      "date": "2026-09-28",
-      "dateLabel": "Sep 28",
+      "title": "U15 C4 Oct schedule in from Ryan (Paul = HC C4); Sun Oct 4 C4 game vs C2 clashes U17 HOLD; Draft Wed + eligible list/PDF",
+      "source": "LMHA under15",
+      "date": "2026-09-29",
+      "dateLabel": "Sep 29",
       "url": "https://www.langleyminorhockey.ca/"
     }
   ],
@@ -286,36 +286,36 @@
   "weather": {
     "location": "Langley, BC",
     "timezone": "America/Vancouver",
-    "date": "2026-09-28",
-    "dateLabel": "Mon Sep 28, 2026",
-    "conditions": "Smoky haze morning (~8°C); high ~16°C / low ~8°C; rain chance ~35% peak. Tue wetter (~12/10°C, rain ~92%); Wed ~17/10°C, rain ~47%.",
-    "conditionsShort": "Smoky haze, showers possible",
+    "date": "2026-09-29",
+    "dateLabel": "Tue Sep 29, 2026",
+    "conditions": "Moderate rain morning (~14°C); high ~16°C / low ~9°C; rain chance ~100%. Wed clearer (~16/6°C, rain ~3%); Thu ~14/8°C, rain ~15%.",
+    "conditionsShort": "Rain, rain ~100%",
     "temp": {
       "highC": 16,
-      "lowC": 8,
+      "lowC": 9,
       "highF": 61,
-      "lowF": 46,
-      "displayC": "16° / 8°C",
-      "displayF": "61° / 46°F",
-      "currentC": 8,
-      "currentF": 46
+      "lowF": 48,
+      "displayC": "16° / 9°C",
+      "displayF": "61° / 48°F",
+      "currentC": 14,
+      "currentF": 57
     },
-    "rainChancePct": 35,
+    "rainChancePct": 100,
     "wind": {
-      "summary": "light",
-      "maxKmh": 5,
-      "display": "Light, ~5 km/h"
+      "summary": "breezy",
+      "maxKmh": 23,
+      "display": "Breezy, ~23 km/h"
     },
     "sun": {
       "sunrise": "07:07",
-      "sunset": "18:56",
+      "sunset": "18:53",
       "sunriseLabel": "7:07 AM",
-      "sunsetLabel": "6:56 PM",
+      "sunsetLabel": "6:53 PM",
       "timezoneNote": "PT"
     },
-    "asOf": "2026-09-28T05:12:00-07:00",
-    "asOfLabel": "Mon Sep 28, 2026 · 5:12 AM PT",
-    "source": "wttr.in (Langley BC; Open-Meteo daily limit hit)",
-    "lastUpdated": "2026-09-28T05:12:00-07:00"
+    "asOf": "2026-09-29T05:15:00-07:00",
+    "asOfLabel": "Tue Sep 29, 2026 · 5:15 AM PT",
+    "source": "Open-Meteo (Langley BC)",
+    "lastUpdated": "2026-09-29T05:15:00-07:00"
   }
 }
