@@ -1,60 +1,60 @@
 {
-  "asOf": "2026-09-30T05:07:31-07:00",
-  "note": "Wed morning PT — gold live gold-api; WTI/SPX/US10Y Yahoo (Tue session / live); BTC Coinbase",
+  "asOf": "2026-10-01T05:12:08-07:00",
+  "note": "Thu morning PT \u2014 gold live gold-api; WTI/SPX/US10Y Yahoo; BTC Coinbase",
   "spots": [
     {
       "id": "gold",
       "name": "Spot gold",
       "symbol": "XAU",
-      "value": 4189.5,
+      "value": 4182.0,
       "unit": "USD/oz",
-      "change": "+0.78% vs prior snap",
+      "change": "-0.18% vs prior snap",
       "source": "gold-api.com",
-      "asOf": "2026-09-30",
+      "asOf": "2026-10-01",
       "status": "live"
     },
     {
       "id": "oil",
       "name": "Spot oil (WTI)",
       "symbol": "CL",
-      "value": 90.79,
+      "value": 91.57,
       "unit": "USD/bbl",
-      "change": "+1.58% vs prior close",
+      "change": "-1.11% vs prior close",
       "source": "Yahoo CL=F",
-      "asOf": "2026-09-30",
+      "asOf": "2026-10-01",
       "status": "live"
     },
     {
       "id": "btc",
       "name": "Spot BTC",
       "symbol": "BTC",
-      "value": 83811,
+      "value": 83911,
       "unit": "USD",
-      "change": "-0.59% 24h",
+      "change": "-1.58% 24h",
       "source": "Coinbase",
-      "asOf": "2026-09-30",
+      "asOf": "2026-10-01",
       "status": "live"
     },
     {
       "id": "spx",
       "name": "S&P 500",
       "symbol": "SPX",
-      "value": 7670.84,
+      "value": 7651.54,
       "unit": "index",
-      "change": "-0.17% vs prior close (Tue)",
+      "change": "-0.71% vs prior close",
       "source": "Yahoo ^GSPC",
-      "asOf": "2026-09-30",
+      "asOf": "2026-10-01",
       "status": "live"
     },
     {
       "id": "us10y",
       "name": "US 10-year Treasury",
       "symbol": "US10Y",
-      "value": 5.255,
+      "value": 5.293,
       "unit": "%",
-      "change": "+0.29% vs prior snap",
+      "change": "+0.72% vs prior snap",
       "source": "Yahoo ^TNX",
-      "asOf": "2026-09-30",
+      "asOf": "2026-10-01",
       "status": "live"
     }
   ]

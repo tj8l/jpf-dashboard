@@ -1,19 +1,19 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-09-30T05:07:31-07:00",
-  "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LMHA U15 C4 Oct schedule (Gmail)",
+  "fetchedAt": "2026-10-01T05:12:08-07:00",
+  "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LMHA U15 C4 (Google)",
   "range": {
-    "start": "2026-09-30",
-    "end": "2026-10-06",
-    "label": "Sep 30–Oct 6 (next 7 days)"
+    "start": "2026-10-01",
+    "end": "2026-10-07",
+    "label": "Oct 1–7 (next 7 days)"
   },
   "notes": [
-    "Today Wed Sep 30: Work · MMA D 8:00 AM–4:00 PM + U17 Practice · LEC 2 7:00–8:00 PM + U15 C Draft 7:30–8:45 PM @ LEC Video Room F (draft overlaps U17 window).",
-    "Thu Oct 1: Work · MMA D 8:00 AM–4:00 PM (dayshift blue); U15 C Jersey pickup after 6:30 PM; PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM Zoom; U17 Practice · SPX 2 9:15 PM. Fri Oct 2–Sat Oct 3 off.",
-    "Sun Oct 4 CLASH: U17 PreSeason · vs North Vancouver 6:15–8:15 PM @ LEC 1 (TeamSnap upgraded from HOLD) vs U15 C4 Game vs C2 7:00–8:30 PM @ LEC 2 (Paul = HC C4).",
-    "Mon Oct 5: Work · MMA A 4:00 PM–12:00 AM + U17 Practice · SPX 2 9:30 PM. Tue Oct 6: U15 C4 Practice 6:00 AM @ SPX 2 + MMA A.",
-    "Gmail skim: TeamSnap reminder confirms Thu Oct 1 practice 9:15–10:45 PM; Eric Paquette accepted U15 C4 assistant outreach (draft tonight); Ryan jersey pickup Thu after 6:30 already on board; no Amanda/Brad ice-time overrides (TeamSnap feed healthy).",
-    "TeamSnap LANGLEY MHA U17 A1 source of truth for U17; vs prior snap: Sun Oct 4 HOLD · LEC 1 → PreSeason vs North Vancouver (same 6:15–8:15 PM slot); no other future ice adds/moves/cancels."
+    "Today Thu Oct 1: Work · MMA D 8:00 AM; U15 C4 jersey + gear pickup 6:30 PM @ Confirm with Ryan / equipment; PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM @ Zoom; U17 Practice · SPX 2 9:15 PM @ SPX 2 (dayshift blue wins weekbar).",
+    "Fri Oct 2–Sat Oct 3: clear (no calendar events).",
+    "Sun Oct 4 CLASH: U17 PreSeason · vs North Vancouver 6:15–8:15 PM @ LEC 1 vs U15 C4 Game vs C2 7:00–8:30 PM @ LEC 2 (Paul = HC C4).",
+    "Mon Oct 5: Work · MMA A 4:00 PM–12:00 AM + U17 Practice · SPX 2 9:30 PM. Tue Oct 6: U15 C4 Practice 6:00 AM @ SPX 2 + MMA A. Wed Oct 7: MMA A.",
+    "Gmail skim: PCAHA Scorekeeper Mentor follow-up (U15 C); Ryan Draft Day + PCAHA FV West meeting tonight 7 PM Zoom; TeamSnap U15 C4 team created; TeamSnap U17 reminder confirms tonight practice 9:15–10:45 PM SPX 2; no Amanda/Brad ice-time overrides (TeamSnap feed healthy — no future ice adds/moves/cancels vs Wed snap).",
+    "Google Calendar: jersey pickup retitled “U15 C4 jersey + gear pickup”; PCAHA FV West now on Google calendar; U15 C4 Oct ice synced from Google (replaces prior synthetic u15-c4-* ids). TeamSnap = U17 A1 source of truth."
   ],
   "events": [
     {
@@ -89,14 +89,6 @@
       "whenLabel": "Wed Sep 30 · 8:00 AM–4:00 PM PT"
     },
     {
-      "id": "ts-10808348-374188591",
-      "summary": "U17 Practice · LEC 2",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-09-30T19:00:00-07:00",
-      "end": "2026-09-30T20:00:00-07:00",
-      "whenLabel": "Wed Sep 30 · 7:00 PM–8:00 PM PT"
-    },
-    {
       "id": "p97jq5rh1i9lomchpecn1o9cq4",
       "summary": "U15 C Draft",
       "location": "LEC Video Room F (2nd floor, Langley Events Centre)",
@@ -115,20 +107,21 @@
     },
     {
       "id": "062p12nscfvg9cq2ch9mdd6bdk",
-      "summary": "U15 C Jersey pickup",
-      "location": "",
+      "summary": "U15 C4 jersey + gear pickup",
+      "location": "Confirm with Ryan / equipment (GPRC vs LEC)",
       "start": "2026-10-01T18:30:00-07:00",
       "end": "2026-10-01T19:00:00-07:00",
       "whenLabel": "Thu Oct 1 · 6:30 PM–7:00 PM PT",
-      "description": "Jersey pickup Thursday after 6:30 PM (per Paul)."
+      "description": "Game jerseys (post-draft). Someone from team must pick up — weekend games coming. Also C kit = puck bag + first aid; return Group 4 gear and re-sign under C4."
     },
     {
-      "id": "pcaha-fvw-c-20261001",
+      "id": "pcogvc3upo97dv4uucul94d10k",
       "summary": "PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18)",
       "location": "Zoom",
       "start": "2026-10-01T19:00:00-07:00",
       "end": "2026-10-01T20:00:00-07:00",
-      "whenLabel": "Thu Oct 1 · 7:00 PM–8:00 PM PT"
+      "whenLabel": "Thu Oct 1 · 7:00 PM–8:00 PM PT",
+      "description": "At least one team official must attend."
     },
     {
       "id": "ts-10808348-374188586",
@@ -147,7 +140,7 @@
       "whenLabel": "Sun Oct 4 · 6:15 PM–8:15 PM PT"
     },
     {
-      "id": "u15-c4-oct-game-1004",
+      "id": "puq4ncl1mbe2cpoqdvn4pmfeno",
       "summary": "U15 C4 Game — vs C2",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-10-04T19:00:00-07:00",
@@ -171,7 +164,7 @@
       "whenLabel": "Mon Oct 5 · 9:30 PM–11:00 PM PT"
     },
     {
-      "id": "u15-c4-oct-prac-1006",
+      "id": "mf18feail8p078rnmp643ajfto_20261006T130000Z",
       "summary": "U15 C4 Practice",
       "location": "SPX 2 (Langley)",
       "start": "2026-10-06T06:00:00-07:00",
@@ -227,7 +220,7 @@
       "whenLabel": "Fri Oct 9 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "u15-c4-oct-il-1009",
+      "id": "hd3m0ie43pvoq5cegrmmqikdkc",
       "summary": "U15 C4 Interleague — vs C3",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-10-09T19:00:00-07:00",
@@ -243,7 +236,7 @@
       "whenLabel": "Fri Oct 9 · 8:30 PM–9:30 PM PT"
     },
     {
-      "id": "u15-c4-oct-dev-1010",
+      "id": "nas48g7dbsek4dh4mhl40f1n7o",
       "summary": "U15 C4 Development — with C1",
       "location": "LEC 3 (Langley Events Centre)",
       "start": "2026-10-10T10:45:00-07:00",
@@ -259,7 +252,7 @@
       "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "u15-c4-oct-game-1011",
+      "id": "qqrap8bdt22chavb8k3ckkvajk",
       "summary": "U15 C4 Game — vs C1",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-10-11T17:15:00-07:00",
@@ -283,7 +276,7 @@
       "whenLabel": "Mon Oct 12 · 9:30 PM–11:00 PM PT"
     },
     {
-      "id": "u15-c4-oct-prac-1013",
+      "id": "mf18feail8p078rnmp643ajfto_20261013T130000Z",
       "summary": "U15 C4 Practice",
       "location": "SPX 2 (Langley)",
       "start": "2026-10-13T06:00:00-07:00",
@@ -323,7 +316,7 @@
       "whenLabel": "Mon Oct 19 · 9:30 PM–11:00 PM PT"
     },
     {
-      "id": "u15-c4-oct-prac-1020",
+      "id": "mf18feail8p078rnmp643ajfto_20261020T130000Z",
       "summary": "U15 C4 Practice",
       "location": "SPX 2 (Langley)",
       "start": "2026-10-20T06:00:00-07:00",
@@ -347,8 +340,8 @@
       "whenLabel": "Fri Oct 23 · 12:00 AM–12:00 AM PT"
     },
     {
-      "id": "u15-c4-oct-il-1023",
-      "summary": "U15 C4 Interleague — vs C1",
+      "id": "s7k3oiqtkf6hpvqpsq3icr6lgg",
+      "summary": "U15 C4 Interleague — vs C1 (HOME)",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-10-23T19:00:00-07:00",
       "end": "2026-10-23T20:30:00-07:00",
@@ -371,7 +364,7 @@
       "whenLabel": "Sat Oct 24 · 12:00 AM–12:00 AM PT"
     },
     {
-      "id": "u15-c4-oct-dev-1024",
+      "id": "5b98ffi9ji60pcv0etplh4tpto",
       "summary": "U15 C4 Development — with C3",
       "location": "LEC 3 (Langley Events Centre)",
       "start": "2026-10-24T10:45:00-07:00",
@@ -403,7 +396,7 @@
       "whenLabel": "Mon Oct 26 · 9:30 PM–11:00 PM PT"
     },
     {
-      "id": "u15-c4-oct-prac-1027",
+      "id": "mf18feail8p078rnmp643ajfto_20261027T130000Z",
       "summary": "U15 C4 Practice",
       "location": "SPX 2 (Langley)",
       "start": "2026-10-27T06:00:00-07:00",
@@ -443,6 +436,22 @@
       "whenLabel": "Mon Nov 2 · 9:30 PM–11:00 PM PT"
     },
     {
+      "id": "d475ldado8uqjogvs8uggn7vpc",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-11-04T17:00:00-07:00",
+      "end": "2026-11-05T01:00:00-07:00",
+      "whenLabel": "Wed Nov 4 · 4:00 PM–12:00 AM PT"
+    },
+    {
+      "id": "9nmptn2nvp5tmrnucgptpqo6ao",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-11-05T17:00:00-07:00",
+      "end": "2026-11-06T01:00:00-07:00",
+      "whenLabel": "Thu Nov 5 · 4:00 PM–12:00 AM PT"
+    },
+    {
       "id": "ts-10808348-374188725",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
@@ -457,6 +466,14 @@
       "start": "2026-11-06T00:00:00-08:00",
       "end": "2026-11-07T00:00:00-08:00",
       "whenLabel": "Fri Nov 6 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "gfsk6c9dldfto7n32mkkq8d6k0",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-11-06T17:00:00-07:00",
+      "end": "2026-11-07T01:00:00-07:00",
+      "whenLabel": "Fri Nov 6 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "ts-10808348-374188829",
@@ -475,12 +492,28 @@
       "whenLabel": "Sat Nov 7 · 12:00 AM–12:00 AM PT"
     },
     {
+      "id": "c1omq1j81qd1qqsm832gaq62hk",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-11-07T17:00:00-07:00",
+      "end": "2026-11-08T01:00:00-07:00",
+      "whenLabel": "Sat Nov 7 · 4:00 PM–12:00 AM PT"
+    },
+    {
       "id": "ts-10808348-374267018",
       "summary": "U17 HOLD · Abbotsford",
       "location": "Abbotsford Rec Centre",
       "start": "2026-11-08T00:00:00-08:00",
       "end": "2026-11-09T00:00:00-08:00",
       "whenLabel": "Sun Nov 8 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "mr8509qth1bm8hve3i8djsa1ho",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-11-08T17:00:00-07:00",
+      "end": "2026-11-09T01:00:00-07:00",
+      "whenLabel": "Sun Nov 8 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "ts-10808348-374188667",
