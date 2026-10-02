@@ -1,19 +1,19 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-01T05:12:08-07:00",
+  "fetchedAt": "2026-10-02T05:17:31-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LMHA U15 C4 (Google)",
   "range": {
-    "start": "2026-10-01",
-    "end": "2026-10-07",
-    "label": "Oct 1–7 (next 7 days)"
+    "start": "2026-10-02",
+    "end": "2026-10-08",
+    "label": "Oct 2–8 (next 7 days)"
   },
   "notes": [
-    "Today Thu Oct 1: Work · MMA D 8:00 AM; U15 C4 jersey + gear pickup 6:30 PM @ Confirm with Ryan / equipment; PCAHA Coach/Manager Meeting — Fraser Valley West “C” League (U11–U18) 7:00 PM @ Zoom; U17 Practice · SPX 2 9:15 PM @ SPX 2 (dayshift blue wins weekbar).",
-    "Fri Oct 2–Sat Oct 3: clear (no calendar events).",
+    "Today Fri Oct 2: clear (no calendar events).",
+    "Sat Oct 3: clear (no calendar events).",
     "Sun Oct 4 CLASH: U17 PreSeason · vs North Vancouver 6:15–8:15 PM @ LEC 1 vs U15 C4 Game vs C2 7:00–8:30 PM @ LEC 2 (Paul = HC C4).",
-    "Mon Oct 5: Work · MMA A 4:00 PM–12:00 AM + U17 Practice · SPX 2 9:30 PM. Tue Oct 6: U15 C4 Practice 6:00 AM @ SPX 2 + MMA A. Wed Oct 7: MMA A.",
-    "Gmail skim: PCAHA Scorekeeper Mentor follow-up (U15 C); Ryan Draft Day + PCAHA FV West meeting tonight 7 PM Zoom; TeamSnap U15 C4 team created; TeamSnap U17 reminder confirms tonight practice 9:15–10:45 PM SPX 2; no Amanda/Brad ice-time overrides (TeamSnap feed healthy — no future ice adds/moves/cancels vs Wed snap).",
-    "Google Calendar: jersey pickup retitled “U15 C4 jersey + gear pickup”; PCAHA FV West now on Google calendar; U15 C4 Oct ice synced from Google (replaces prior synthetic u15-c4-* ids). TeamSnap = U17 A1 source of truth."
+    "Mon Oct 5: Work · MMA A 4:00 PM–12:00 AM + U17 Practice · SPX 2 9:30 PM. Tue Oct 6: U15 C4 Practice 6:00 AM @ SPX 2 + MMA A. Wed Oct 7: MMA A. Thu Oct 8: MMA A + PCAHA Presidents “C” Zoom 7:00 PM + U17 Practice 9:15 PM.",
+    "TeamSnap U17 A1: no future ice adds/moves/cancels vs Thu snap (past Thu Oct 1 practice dropped by today cutoff). U15 C4 ICS still NOT in teamsnap.json — BLOCKER; U15 Oct ice preserved from Google/Ryan.",
+    "Google Calendar: merged 6 missing Dec MMA A afternoon shifts (Dec 3–8). U15 C4 Oct ice unchanged. TeamSnap = U17 A1 source of truth."
   ],
   "events": [
     {
@@ -122,14 +122,6 @@
       "end": "2026-10-01T20:00:00-07:00",
       "whenLabel": "Thu Oct 1 · 7:00 PM–8:00 PM PT",
       "description": "At least one team official must attend."
-    },
-    {
-      "id": "ts-10808348-374188586",
-      "summary": "U17 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-10-01T21:15:00-07:00",
-      "end": "2026-10-01T22:45:00-07:00",
-      "whenLabel": "Thu Oct 1 · 9:15 PM–10:45 PM PT"
     },
     {
       "id": "ts-10808348-374468337",
@@ -636,12 +628,30 @@
       "whenLabel": "Mon Nov 30 · 9:30 PM–11:00 PM PT"
     },
     {
+      "id": "bk4lfhhc7akqdj3vo8p4o7f1k4",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-12-03T17:00:00-07:00",
+      "end": "2026-12-04T01:00:00-07:00",
+      "whenLabel": "Thu Dec 3 · 4:00 PM–12:00 AM PT",
+      "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
+    },
+    {
       "id": "ts-10808348-374188729",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2026-12-03T21:15:00-08:00",
       "end": "2026-12-03T22:45:00-08:00",
       "whenLabel": "Thu Dec 3 · 9:15 PM–10:45 PM PT"
+    },
+    {
+      "id": "fr0bmmkprsedkp091m9r9f2jt4",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-12-04T17:00:00-07:00",
+      "end": "2026-12-05T01:00:00-07:00",
+      "whenLabel": "Fri Dec 4 · 4:00 PM–12:00 AM PT",
+      "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
     {
       "id": "ts-10808348-374188838",
@@ -652,6 +662,24 @@
       "whenLabel": "Fri Dec 4 · 8:30 PM–9:30 PM PT"
     },
     {
+      "id": "a1jif73f4l6ugvhbt8l2mi3f3c",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-12-05T17:00:00-07:00",
+      "end": "2026-12-06T01:00:00-07:00",
+      "whenLabel": "Sat Dec 5 · 4:00 PM–12:00 AM PT",
+      "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
+    },
+    {
+      "id": "9fec3idqnc2tjr5squrrivm9cs",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-12-06T17:00:00-07:00",
+      "end": "2026-12-07T01:00:00-07:00",
+      "whenLabel": "Sun Dec 6 · 4:00 PM–12:00 AM PT",
+      "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
+    },
+    {
       "id": "ts-10808348-374188671",
       "summary": "U17 HOLD · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
@@ -660,12 +688,30 @@
       "whenLabel": "Sun Dec 6 · 6:15 PM–8:15 PM PT"
     },
     {
+      "id": "d2jnqme6h096afu1jbd8fn9suk",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-12-07T17:00:00-07:00",
+      "end": "2026-12-08T01:00:00-07:00",
+      "whenLabel": "Mon Dec 7 · 4:00 PM–12:00 AM PT",
+      "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
+    },
+    {
       "id": "ts-10808348-374188692",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2026-12-07T21:30:00-08:00",
       "end": "2026-12-07T23:00:00-08:00",
       "whenLabel": "Mon Dec 7 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "gb4orqv0uh5gtmvlfncm0pj3b4",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-12-08T17:00:00-07:00",
+      "end": "2026-12-09T01:00:00-07:00",
+      "whenLabel": "Tue Dec 8 · 4:00 PM–12:00 AM PT",
+      "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
     {
       "id": "ts-10808348-374188730",
