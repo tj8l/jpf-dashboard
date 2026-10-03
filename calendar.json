@@ -1,19 +1,18 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-02T05:17:31-07:00",
-  "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LMHA U15 C4 (Google)",
+  "fetchedAt": "2026-10-03T05:10:56-07:00",
+  "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
-    "start": "2026-10-02",
-    "end": "2026-10-08",
-    "label": "Oct 2–8 (next 7 days)"
+    "start": "2026-10-03",
+    "end": "2026-10-09",
+    "label": "Oct 3–9 (next 7 days)"
   },
   "notes": [
-    "Today Fri Oct 2: clear (no calendar events).",
-    "Sat Oct 3: clear (no calendar events).",
-    "Sun Oct 4 CLASH: U17 PreSeason · vs North Vancouver 6:15–8:15 PM @ LEC 1 vs U15 C4 Game vs C2 7:00–8:30 PM @ LEC 2 (Paul = HC C4).",
-    "Mon Oct 5: Work · MMA A 4:00 PM–12:00 AM + U17 Practice · SPX 2 9:30 PM. Tue Oct 6: U15 C4 Practice 6:00 AM @ SPX 2 + MMA A. Wed Oct 7: MMA A. Thu Oct 8: MMA A + PCAHA Presidents “C” Zoom 7:00 PM + U17 Practice 9:15 PM.",
-    "TeamSnap U17 A1: no future ice adds/moves/cancels vs Thu snap (past Thu Oct 1 practice dropped by today cutoff). U15 C4 ICS still NOT in teamsnap.json — BLOCKER; U15 Oct ice preserved from Google/Ryan.",
-    "Google Calendar: merged 6 missing Dec MMA A afternoon shifts (Dec 3–8). U15 C4 Oct ice unchanged. TeamSnap = U17 A1 source of truth."
+    "Today Sat Oct 3: clear (no calendar events).",
+    "CLASH Sun Oct 4: U17 PreSeason · vs North Vancouver 6:15 PM–8:15 PM PT @ LEC 1 (Langley Events Centre) vs U15 C4 Game — vs C2 7:00 PM–8:30 PM PT @ LEC 2 (Langley Events Centre)",
+    "Beyond 7-day day-list window: Sat Oct 10 (U15 C4 Development — with C1, Work, U17 Practice); Sun Oct 11 (U15 C4 Game — vs C1, U17 Practice); Mon Oct 12 (U17 Practice); Tue Oct 13 (U15 C4 Practice) — still in calendar.json events.",
+    "Thu Oct 8: PCAHA Coach/Manager Meeting — Presidents “C” League (U15 & U18) 7:00 PM–8:00 PM PT via Zoom.",
+    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17; Amanda/Google U17 practices replaced. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA meeting dates from 2026–2027 Bulletin #5. U15 C4 ICS still missing — syncing U17 only."
   ],
   "events": [
     {
@@ -244,6 +243,14 @@
       "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
     },
     {
+      "id": "ts-10808348-374635826",
+      "summary": "U17 Practice · Abbotsford",
+      "location": "Abbotsford Rec Centre",
+      "start": "2026-10-10T21:15:00-07:00",
+      "end": "2026-10-10T23:15:00-07:00",
+      "whenLabel": "Sat Oct 10 · 9:15 PM–11:15 PM PT"
+    },
+    {
       "id": "qqrap8bdt22chavb8k3ckkvajk",
       "summary": "U15 C4 Game — vs C1",
       "location": "LEC 2 (Langley Events Centre)",
@@ -252,8 +259,8 @@
       "whenLabel": "Sun Oct 11 · 5:15 PM–6:45 PM PT"
     },
     {
-      "id": "ts-10808348-374188663",
-      "summary": "U17 HOLD · LEC 1",
+      "id": "ts-10808348-374635855",
+      "summary": "U17 Practice · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-10-11T18:15:00-07:00",
       "end": "2026-10-11T20:15:00-07:00",
@@ -284,16 +291,16 @@
       "whenLabel": "Thu Oct 15 · 9:15 PM–10:45 PM PT"
     },
     {
-      "id": "ts-10808348-374188823",
-      "summary": "U17 Dryland · Aim Athletic",
-      "location": "Aim Athletic (Langley)",
-      "start": "2026-10-16T20:30:00-07:00",
-      "end": "2026-10-16T21:30:00-07:00",
-      "whenLabel": "Fri Oct 16 · 8:30 PM–9:30 PM PT"
+      "id": "ts-10808348-374642772",
+      "summary": "U17 Practice · Cloverdale Sport and Ice Complex - Blue Rink",
+      "location": "Cloverdale Sport and Ice Complex - Blue Rink",
+      "start": "2026-10-16T20:45:00-07:00",
+      "end": "2026-10-16T22:15:00-07:00",
+      "whenLabel": "Fri Oct 16 · 8:45 PM–10:15 PM PT"
     },
     {
-      "id": "ts-10808348-374188664",
-      "summary": "U17 HOLD · LEC 1",
+      "id": "ts-10808348-374642855",
+      "summary": "U17 Practice · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-10-18T18:15:00-07:00",
       "end": "2026-10-18T20:15:00-07:00",
@@ -340,14 +347,6 @@
       "whenLabel": "Fri Oct 23 · 7:00 PM–8:30 PM PT"
     },
     {
-      "id": "ts-10808348-374188825",
-      "summary": "U17 Dryland · Aim Athletic",
-      "location": "Aim Athletic (Langley)",
-      "start": "2026-10-23T20:30:00-07:00",
-      "end": "2026-10-23T21:30:00-07:00",
-      "whenLabel": "Fri Oct 23 · 8:30 PM–9:30 PM PT"
-    },
-    {
       "id": "ts-10808348-374235554",
       "summary": "U17 HOLD · Winfield Arena",
       "location": "Winfield Arena",
@@ -370,14 +369,6 @@
       "start": "2026-10-25T00:00:00-07:00",
       "end": "2026-10-26T00:00:00-07:00",
       "whenLabel": "Sun Oct 25 · 12:00 AM–12:00 AM PT"
-    },
-    {
-      "id": "ts-10808348-374188665",
-      "summary": "U17 HOLD · LEC 1",
-      "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-10-25T18:15:00-07:00",
-      "end": "2026-10-25T20:15:00-07:00",
-      "whenLabel": "Sun Oct 25 · 6:15 PM–8:15 PM PT"
     },
     {
       "id": "ts-10808348-374188686",
@@ -412,17 +403,17 @@
       "whenLabel": "Fri Oct 30 · 8:30 PM–9:30 PM PT"
     },
     {
-      "id": "ts-10808348-374188666",
-      "summary": "U17 HOLD · LEC 1",
+      "id": "ts-10808348-374642952",
+      "summary": "U17 Practice · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-11-01T18:15:00-08:00",
       "end": "2026-11-01T20:15:00-08:00",
       "whenLabel": "Sun Nov 1 · 6:15 PM–8:15 PM PT"
     },
     {
-      "id": "ts-10808348-374188687",
-      "summary": "U17 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
+      "id": "ts-10808348-374642990",
+      "summary": "U17 Practice · Sungod Recreation Centre",
+      "location": "Sungod Recreation Centre",
       "start": "2026-11-02T21:30:00-08:00",
       "end": "2026-11-02T23:00:00-08:00",
       "whenLabel": "Mon Nov 2 · 9:30 PM–11:00 PM PT"
@@ -468,14 +459,6 @@
       "whenLabel": "Fri Nov 6 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-10808348-374188829",
-      "summary": "U17 Dryland · Aim Athletic",
-      "location": "Aim Athletic (Langley)",
-      "start": "2026-11-06T20:30:00-08:00",
-      "end": "2026-11-06T21:30:00-08:00",
-      "whenLabel": "Fri Nov 6 · 8:30 PM–9:30 PM PT"
-    },
-    {
       "id": "ts-10808348-374267017",
       "summary": "U17 HOLD · Abbotsford",
       "location": "Abbotsford Rec Centre",
@@ -508,14 +491,6 @@
       "whenLabel": "Sun Nov 8 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-10808348-374188667",
-      "summary": "U17 HOLD · LEC 1",
-      "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-11-08T18:15:00-08:00",
-      "end": "2026-11-08T20:15:00-08:00",
-      "whenLabel": "Sun Nov 8 · 6:15 PM–8:15 PM PT"
-    },
-    {
       "id": "ts-10808348-374267019",
       "summary": "U17 HOLD · Abbotsford",
       "location": "Abbotsford Rec Centre",
@@ -532,7 +507,7 @@
       "whenLabel": "Mon Nov 9 · 9:30 PM–11:00 PM PT"
     },
     {
-      "id": "ts-10808348-374188726",
+      "id": "ts-10808348-374642927",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2026-11-12T21:15:00-08:00",
@@ -548,12 +523,20 @@
       "whenLabel": "Fri Nov 13 · 8:30 PM–9:30 PM PT"
     },
     {
-      "id": "ts-10808348-374188668",
-      "summary": "U17 HOLD · LEC 1",
+      "id": "ts-10808348-374643036",
+      "summary": "U17 Practice · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-11-15T18:15:00-08:00",
       "end": "2026-11-15T20:15:00-08:00",
       "whenLabel": "Sun Nov 15 · 6:15 PM–8:15 PM PT"
+    },
+    {
+      "id": "ts-10808348-374643526",
+      "summary": "U17 Practice · Ladner Leisure Centre",
+      "location": "Ladner Leisure Centre",
+      "start": "2026-11-16T21:00:00-08:00",
+      "end": "2026-11-16T22:30:00-08:00",
+      "whenLabel": "Mon Nov 16 · 9:00 PM–10:30 PM PT"
     },
     {
       "id": "ts-10808348-374188689",
@@ -580,8 +563,8 @@
       "whenLabel": "Fri Nov 20 · 8:30 PM–9:30 PM PT"
     },
     {
-      "id": "ts-10808348-374188669",
-      "summary": "U17 HOLD · LEC 1",
+      "id": "ts-10808348-374643572",
+      "summary": "U17 Practice · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-11-22T18:15:00-08:00",
       "end": "2026-11-22T20:15:00-08:00",
@@ -596,9 +579,9 @@
       "whenLabel": "Mon Nov 23 · 9:30 PM–11:00 PM PT"
     },
     {
-      "id": "ts-10808348-374188728",
-      "summary": "U17 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
+      "id": "ts-10808348-374643606",
+      "summary": "U17 Practice · Richmond Ice Centre - Coliseum Rink",
+      "location": "Richmond Ice Centre - Coliseum Rink",
       "start": "2026-11-26T21:15:00-08:00",
       "end": "2026-11-26T22:45:00-08:00",
       "whenLabel": "Thu Nov 26 · 9:15 PM–10:45 PM PT"
@@ -612,8 +595,8 @@
       "whenLabel": "Fri Nov 27 · 8:30 PM–9:30 PM PT"
     },
     {
-      "id": "ts-10808348-374188670",
-      "summary": "U17 HOLD · LEC 1",
+      "id": "ts-10808348-374643623",
+      "summary": "U17 Practice · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-11-29T18:15:00-08:00",
       "end": "2026-11-29T20:15:00-08:00",
