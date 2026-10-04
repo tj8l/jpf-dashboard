@@ -137,9 +137,9 @@ def rink_short(desc: str, loc: str, summary: str) -> tuple[str, str]:
 
 def opponent_from_summary(summary: str) -> str | None:
     s = summary
-    # "PreSeason at Abbotsford U17 A1" / "Preseason vs Ridge Meadows U17 A1"
+    # "PreSeason at Abbotsford U17 A1" / "League vs Vancouver TBirds U17 A1"
     m = re.search(
-        r"(?i)(?:pre-?season|game|scrimmage)\s+(?:at|vs\.?|versus)\s+(.+)$", s
+        r"(?i)(?:pre-?season|league|game|scrimmage)\s+(?:at|vs\.?|versus)\s+(.+)$", s
     )
     if not m:
         m = re.search(r"(?i)\bat\s+([A-Za-z].+)$", s)
@@ -163,6 +163,11 @@ def normalize_title(summary: str, rink_token: str) -> str:
         if opp:
             return f"U17 PreSeason · vs {opp}"
         return f"U17 PreSeason · {rink_token}"
+    if re.search(r"(?i)\bleague\b", s) and "practice" not in low:
+        opp = opponent_from_summary(s)
+        if opp:
+            return f"U17 League · vs {opp}"
+        return f"U17 League · {rink_token}"
     if re.search(r"(?i)\b(game|scrimmage)\b", s) and "practice" not in low:
         opp = opponent_from_summary(s)
         if opp:

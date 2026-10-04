@@ -1,35 +1,35 @@
 {
   "location": "Langley, BC",
   "timezone": "America/Vancouver",
-  "date": "2026-10-03",
-  "dateLabel": "Sat Oct 3, 2026",
-  "conditions": "Overcast morning (~12\u00b0C); high ~22\u00b0C / low ~11\u00b0C; rain chance ~29%. Sun ~23/11\u00b0C, rain ~1%.",
-  "conditionsShort": "Overcast, rain ~29%",
+  "date": "2026-10-04",
+  "dateLabel": "Sun Oct 4, 2026",
+  "conditions": "Fog morning (~11°C); high ~20°C / low ~10°C; rain chance ~0%. Mon ~19/10°C, rain ~1%.",
+  "conditionsShort": "Fog, dry",
   "temp": {
-    "highC": 22,
-    "lowC": 11,
-    "highF": 72,
-    "lowF": 52,
-    "displayC": "22\u00b0 / 11\u00b0C",
-    "displayF": "72\u00b0 / 52\u00b0F",
-    "currentC": 12,
-    "currentF": 54
+    "highC": 20,
+    "lowC": 10,
+    "highF": 68,
+    "lowF": 50,
+    "displayC": "20° / 10°C",
+    "displayF": "68° / 50°F",
+    "currentC": 11,
+    "currentF": 52
   },
-  "rainChancePct": 29,
+  "rainChancePct": 0,
   "wind": {
     "summary": "light",
-    "maxKmh": 4,
-    "display": "Light, ~4 km/h"
+    "maxKmh": 9,
+    "display": "Light, ~9 km/h"
   },
   "sun": {
     "sunrise": "07:14",
-    "sunset": "18:45",
+    "sunset": "18:42",
     "sunriseLabel": "7:14 AM",
-    "sunsetLabel": "6:45 PM",
+    "sunsetLabel": "6:42 PM",
     "timezoneNote": "PT"
   },
-  "asOf": "2026-10-03T05:10:56-07:00",
-  "asOfLabel": "Sat Oct 3, 2026 \u00b7 5:10 AM PT",
+  "asOf": "2026-10-04T05:08:59-07:00",
+  "asOfLabel": "Sun Oct 4, 2026 · 5:08 AM PT",
   "source": "Open-Meteo + wttr.in (Langley BC)",
-  "lastUpdated": "2026-10-03T05:10:56-07:00"
+  "lastUpdated": "2026-10-04T05:08:59-07:00"
 }
