@@ -1,18 +1,19 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-04T05:08:00-07:00",
+  "fetchedAt": "2026-10-05T05:14:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
-    "start": "2026-10-04",
-    "end": "2026-10-10",
-    "label": "Oct 4–10 (next 7 days)"
+    "start": "2026-10-05",
+    "end": "2026-10-11",
+    "label": "Oct 5–11 (next 7 days)"
   },
   "notes": [
-    "Today Sun Oct 4 CLASH: U17 PreSeason · vs North Vancouver 6:15 PM–8:15 PM PT @ LEC 1 vs U15 C4 Game — vs C2 7:00 PM–8:30 PM PT @ LEC 2.",
-    "Weekbar Sun Oct 4–Sat Oct 10: MMA A Mon–Sat afternoons (green); U17 yellow (PreSeason Sun, practices Mon/Thu, Dryland Fri, League Abbotsford Sat); U15 orange (Game Sun, Practice Tue, Interleague Fri, Development Sat); PCAHA Presidents C Thu 7pm Zoom.",
-    "Beyond 7-day day-list window: Sun Oct 11 (U15 C4 Game — vs C1, U17 League vs Abbotsford); Mon Oct 12 (U17 Practice); Tue Oct 13 (U15 C4 Practice); Thu Oct 15 (U17 Practice) — still in calendar.json events.",
-    "Thu Oct 8: PCAHA Coach/Manager Meeting — Presidents “C” League (U15 & U18) 7:00 PM–8:00 PM PT via Zoom.",
-    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17 (League games now labeled correctly; Oct 19 vs Vancouver TBirds + Nov 11 at Ridge Meadows added). Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA from Bulletin #5. U15 C4 ICS still missing from teamsnap.json — syncing U17 only; U15 Oct ice preserved from Google."
+    "Today Mon Oct 5: Work · MMA A 4:00 PM–12:00 AM; U17 Practice · SPX 2 9:30–11:00 PM (during shift).",
+    "Sun Oct 11 CLASH: U15 C4 Game — vs C1 5:15–6:45 PM PT @ LEC 2 overlaps U17 League · vs Abbotsford 6:15–8:15 PM PT @ LEC 1.",
+    "Weekbar Mon Oct 5–Sun Oct 11: MMA A Mon–Sat afternoons (green); U17 yellow (practices Mon/Thu, Dryland Fri, League Abbotsford Sat + Sun); U15 orange (Practice Tue, Interleague Fri, Development Sat, Game Sun); PCAHA Presidents C Thu 7pm Zoom.",
+    "Beyond 7-day day-list window: Mon Oct 12 (U17 Practice); Tue Oct 13 (U15 C4 Practice); Thu Oct 15 (U17 Practice); Fri Oct 16 (U17 League) — still in calendar.json events.",
+    "No MMA shifts on Google Calendar after Sat Oct 10 yet.",
+    "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA from Bulletin #5. U15 C4 ICS still missing from teamsnap.json — syncing U17 only; U15 Oct ice preserved from Google."
   ],
   "events": [
     {
@@ -121,14 +122,6 @@
       "end": "2026-10-01T20:00:00-07:00",
       "whenLabel": "Thu Oct 1 · 7:00 PM–8:00 PM PT",
       "description": "At least one team official must attend."
-    },
-    {
-      "id": "ts-10808348-374468337",
-      "summary": "U17 PreSeason · vs North Vancouver",
-      "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-10-04T18:15:00-07:00",
-      "end": "2026-10-04T20:15:00-07:00",
-      "whenLabel": "Sun Oct 4 · 6:15 PM–8:15 PM PT"
     },
     {
       "id": "puq4ncl1mbe2cpoqdvn4pmfeno",
