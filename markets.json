@@ -1,60 +1,60 @@
 {
-  "asOf": "2026-10-05T05:14:00-07:00",
-  "note": "Mon pre-market PT — gold live gold-api; WTI Yahoo (live futures); SPX/US10Y Yahoo (Fri close); BTC Coinbase",
+  "asOf": "2026-10-06T05:12:00-07:00",
+  "note": "Tue pre-market PT — gold live gold-api; WTI Yahoo (live futures); SPX/US10Y Yahoo (Mon close); BTC Coinbase",
   "spots": [
     {
       "id": "gold",
       "name": "Spot gold",
       "symbol": "XAU",
-      "value": 4158.1,
+      "value": 4178.3,
       "unit": "USD/oz",
-      "change": "+0.39% vs prior snap",
+      "change": "+0.49% vs prior snap",
       "source": "gold-api.com",
-      "asOf": "2026-10-05",
+      "asOf": "2026-10-06",
       "status": "live"
     },
     {
       "id": "oil",
       "name": "Spot oil (WTI)",
       "symbol": "CL",
-      "value": 89.98,
+      "value": 87.2,
       "unit": "USD/bbl",
-      "change": "-1.24% vs prior close",
+      "change": "-2.49% vs prior close",
       "source": "Yahoo CL=F",
-      "asOf": "2026-10-05",
+      "asOf": "2026-10-06",
       "status": "live"
     },
     {
       "id": "btc",
       "name": "Spot BTC",
       "symbol": "BTC",
-      "value": 86087,
+      "value": 86313,
       "unit": "USD",
-      "change": "+0.88% vs prior snap",
+      "change": "+0.26% vs prior snap",
       "source": "Coinbase",
-      "asOf": "2026-10-05",
+      "asOf": "2026-10-06",
       "status": "live"
     },
     {
       "id": "spx",
       "name": "S&P 500",
       "symbol": "SPX",
-      "value": 7722.72,
+      "value": 7773.95,
       "unit": "index",
-      "change": "+0.73% vs prior close",
+      "change": "+0.66% vs prior close",
       "source": "Yahoo ^GSPC",
-      "asOf": "2026-10-05",
+      "asOf": "2026-10-06",
       "status": "live"
     },
     {
       "id": "us10y",
       "name": "US 10-year Treasury",
       "symbol": "US10Y",
-      "value": 5.277,
+      "value": 5.311,
       "unit": "%",
-      "change": "+0.00% vs prior snap",
+      "change": "+0.03 pts vs prior close",
       "source": "Yahoo ^TNX",
-      "asOf": "2026-10-05",
+      "asOf": "2026-10-06",
       "status": "live"
     }
   ]
