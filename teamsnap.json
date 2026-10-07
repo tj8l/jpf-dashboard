@@ -1,6 +1,25 @@
 {
-  "team": "LANGLEY MHA U17 A1",
-  "icsUrl": "https://ical-cdn.teamsnap.com/team_schedule/66125cfe-c4ca-41d1-82be-22e2be9960bf.ics",
+  "teams": [
+    {
+      "id": "u17a1",
+      "team": "LANGLEY MHA U17 A1",
+      "labelPrefix": "U17",
+      "colorHint": "yellow",
+      "icsUrl": "https://ical-cdn.teamsnap.com/team_schedule/66125cfe-c4ca-41d1-82be-22e2be9960bf.ics",
+      "icsFile": "teamsnap-u17a1.ics",
+      "idPrefix": "ts-u17-"
+    },
+    {
+      "id": "u15c4",
+      "team": "LANGLEY MHA U15 C4",
+      "labelPrefix": "U15 C4",
+      "colorHint": "orange",
+      "icsUrl": "https://ical-cdn.teamsnap.com/team_schedule/b62cb7d3-dd0f-4fb8-8140-927018c2e0a8.ics",
+      "icsFile": "teamsnap-u15c4.ics",
+      "idPrefix": "ts-u15-"
+    }
+  ],
   "activeOnly": true,
-  "note": "Only sync this team."
+  "syncThrough": "2027-03-20",
+  "note": "Sync U17 A1 + U15 C4 from TeamSnap through 2027-03-20. TeamSnap is source of truth for both."
 }
