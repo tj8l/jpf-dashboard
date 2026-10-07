@@ -1,19 +1,20 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-06T05:12:00-07:00",
+  "fetchedAt": "2026-10-07T05:14:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1",
   "range": {
-    "start": "2026-10-06",
-    "end": "2026-10-12",
-    "label": "Oct 6–12 (next 7 days)"
+    "start": "2026-10-07",
+    "end": "2026-10-13",
+    "label": "Oct 7–13 (next 7 days)"
   },
   "notes": [
-    "Today Tue Oct 6: U15 C4 Practice 6:00–7:00 AM @ SPX 2; Work · MMA A 4:00 PM–12:00 AM.",
-    "Sun Oct 11 CLASH: U15 C4 Game — vs C1 5:15–6:45 PM PT @ LEC 2 overlaps U17 League · vs Abbotsford 6:15–8:15 PM PT @ LEC 1.",
-    "Weekbar Tue Oct 6–Mon Oct 12: MMA A Tue–Sat afternoons (green); U17 yellow (Practice Thu + Mon, Dryland Fri, League Abbotsford Sat + Sun); U15 orange (Practice Tue, Interleague Fri, Development Sat, Game Sun); PCAHA Presidents C Thu 7pm Zoom.",
-    "New: Sat Oct 17 U15 C4 Game — at Cloverdale C3 5:30–7:00 PM PT (arrive 4:45) @ Cloverdale Rink 1 (Blue), game U15Q6076.",
-    "Beyond 7-day day-list window: Tue Oct 13 (U15 C4 Practice); Thu Oct 15 (U17 Practice); Fri Oct 16 (U17 League); Sat Oct 17 (U15 C4 Game) — still in calendar.json events.",
-    "No MMA shifts on Google Calendar after Sat Oct 10 yet.",
+    "Today Wed Oct 7: Work · MMA A 4:00 PM–12:00 AM.",
+    "Sun Oct 11 CLASH: U15 C4 Game — vs C1 5:15–6:45 PM PT @ LEC 2 overlaps U17 League · vs Abbotsford 6:15–8:15 PM PT.",
+    "Weekbar Wed Oct 7–Tue Oct 13: MMA A Wed–Sat afternoons (green); U17 yellow (Practice Thu + Mon, Dryland Fri, League Abbotsford Sat + Sun); U15 orange (Interleague Fri, Development Sat, Game Sun, Practice Tue); PCAHA Presidents C Thu 7pm Zoom.",
+    "New: Sun Oct 25 U15 C4 vs South Delta C1 (HOME) 7:00–8:30 PM PT @ LEC (arrive 6:15) — same weekend as U17 Winfield tournament HOLD Oct 23–25 (Lake Country).",
+    "New: Wed Oct 28 U15 C4 at Semiahmoo C4 7:45–9:15 PM PT @ Newton Arena (arrive 7:00).",
+    "Beyond 7-day day-list window: Thu Oct 15 (U17 Practice); Fri Oct 16 (U17 League); Sat Oct 17 (U15 C4 at Cloverdale C3) — still in calendar.json events.",
+    "No MMA shifts on Google Calendar after Sat Oct 10 until Nov 4.",
     "TeamSnap LANGLEY MHA U17 A1 is source of truth for U17. Non-U17 (MMA, U15 C) kept from Google Calendar. PCAHA from Bulletin #5. U15 C4 ICS still missing from teamsnap.json — syncing U17 only; U15 ice preserved from Google."
   ],
   "events": [
@@ -366,6 +367,15 @@
       "whenLabel": "Sun Oct 25 · 12:00 AM–12:00 AM PT"
     },
     {
+      "id": "k25vomtn45f2be51piomtt3ivs",
+      "summary": "U15 C4 Game — vs South Delta C1 (HOME)",
+      "location": "LEC (The Arenas at Langley Events Centre)",
+      "start": "2026-10-25T19:00:00-07:00",
+      "end": "2026-10-25T20:30:00-07:00",
+      "whenLabel": "Sun Oct 25 · 7:00 PM–8:30 PM PT",
+      "description": "Game U15Q6079. Arrive 6:15 PM. From TeamSnap (via Google Calendar)."
+    },
+    {
       "id": "ts-10808348-374188686",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
@@ -380,6 +390,15 @@
       "start": "2026-10-27T06:00:00-07:00",
       "end": "2026-10-27T07:00:00-07:00",
       "whenLabel": "Tue Oct 27 · 6:00 AM–7:00 AM PT"
+    },
+    {
+      "id": "fi7468294jbsbb80h762r3sfqc",
+      "summary": "U15 C4 Game — at Semiahmoo C4",
+      "location": "Newton Arena (Surrey), Main Rink",
+      "start": "2026-10-28T19:45:00-07:00",
+      "end": "2026-10-28T21:15:00-07:00",
+      "whenLabel": "Wed Oct 28 · 7:45 PM–9:15 PM PT",
+      "description": "Game U15Q6080. Arrive 7:00 PM. Newton Arena, 7120 136B Street, Surrey. From TeamSnap (via Google Calendar)."
     },
     {
       "id": "ts-10808348-374188724",
