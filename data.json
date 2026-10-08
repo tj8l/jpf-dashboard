@@ -171,6 +171,14 @@
       "priority": "high",
       "done": false,
       "due": "2026-10-08"
+    },
+    {
+      "id": "kb-carry-5pm-oct8",
+      "title": "5 PM kettlebell carry — 30 min @ 70 lb",
+      "detail": "Thu Oct 8, 5:00 PM",
+      "priority": "normal",
+      "done": false,
+      "due": "2026-10-08"
     }
   ],
   "habits": [
