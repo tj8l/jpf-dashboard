@@ -1,60 +1,60 @@
 {
-  "asOf": "2026-10-07T05:14:00-07:00",
-  "note": "Wed pre-market PT — gold live gold-api; WTI Yahoo (live futures); SPX/US10Y Yahoo (Tue close); BTC Coinbase",
+  "asOf": "2026-10-08T05:12:00-07:00",
+  "note": "Wed pre-market PT — gold live gold-api; WTI Yahoo (live futures); SPX/US10Y Yahoo (Wed close); BTC Coinbase",
   "spots": [
     {
       "id": "gold",
       "name": "Spot gold",
       "symbol": "XAU",
-      "value": 4123.6,
+      "value": 4125.5,
       "unit": "USD/oz",
-      "change": "-1.31% vs prior snap",
+      "change": "+0.05% vs prior snap",
       "source": "gold-api.com",
-      "asOf": "2026-10-07",
+      "asOf": "2026-10-08",
       "status": "live"
     },
     {
       "id": "oil",
       "name": "Spot oil (WTI)",
       "symbol": "CL",
-      "value": 89.81,
+      "value": 92.21,
       "unit": "USD/bbl",
-      "change": "+0.41% vs prior close",
+      "change": "+4.45% vs prior close",
       "source": "Yahoo CL=F",
-      "asOf": "2026-10-07",
+      "asOf": "2026-10-08",
       "status": "live"
     },
     {
       "id": "btc",
       "name": "Spot BTC",
       "symbol": "BTC",
-      "value": 83581,
+      "value": 82339,
       "unit": "USD",
-      "change": "-3.16% vs prior snap",
+      "change": "-1.49% vs prior snap",
       "source": "Coinbase",
-      "asOf": "2026-10-07",
+      "asOf": "2026-10-08",
       "status": "live"
     },
     {
       "id": "spx",
       "name": "S&P 500",
       "symbol": "SPX",
-      "value": 7818.93,
+      "value": 7801.77,
       "unit": "index",
-      "change": "+0.58% vs prior close",
+      "change": "-0.22% vs prior close",
       "source": "Yahoo ^GSPC",
-      "asOf": "2026-10-07",
+      "asOf": "2026-10-08",
       "status": "live"
     },
     {
       "id": "us10y",
       "name": "US 10-year Treasury",
       "symbol": "US10Y",
-      "value": 5.269,
+      "value": 5.277,
       "unit": "%",
-      "change": "-0.04 pts vs prior close",
+      "change": "+0.01 pts vs prior close",
       "source": "Yahoo ^TNX",
-      "asOf": "2026-10-07",
+      "asOf": "2026-10-08",
       "status": "live"
     }
   ]

@@ -1,17 +1,22 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-07T09:56:47-07:00",
+  "fetchedAt": "2026-10-08T05:12:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-07",
-    "end": "2026-10-13",
-    "label": "Oct 7–13 (next 7 days)"
+    "start": "2026-10-08",
+    "end": "2026-10-14",
+    "label": "Oct 8–14 (next 7 days)"
   },
   "notes": [
-    "Today Wed Oct 7: Work · MMA A 4:00 PM.",
-    "Beyond 7-day day-list window: Thu Oct 15 (U17 Practice); Fri Oct 16 (U17 League); Sat Oct 17 (U15 C4 Game); Sun Oct 18 (U17 League) — still in calendar.json events.",
-    "Thu Oct 8: PCAHA Coach/Manager Meeting — Presidents “C” League (U15 & U18) 7:00 PM–8:00 PM via Zoom.",
-    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5."
+    "Today Thu Oct 8: 6 AM alarm (transfer money); Work · MMA A 4:00 PM–12:00 AM; PCAHA Presidents “C” Coach/Manager Zoom 7:00 PM; U17 Practice SPX 2 9:15 PM.",
+    "Sun Oct 11 CLASH: U15 C4 Game at C1 5:15–6:45 PM PT @ LEC 2 overlaps U17 League vs Abbotsford 6:15–8:15 PM PT.",
+    "New from TeamSnap U17: weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2, Oct 14 through Dec 16 (10 sessions).",
+    "New clashes from U17 Development: Wed Oct 28 overlaps U15 C4 at Semiahmoo C4 (7:45 PM, arrive 7:00, Newton Arena); Wed Nov 4 during MMA A shift; Wed Nov 11 runs right before U17 League vs Ridge Meadows 8:45 PM.",
+    "New from TeamSnap U17: Sat Dec 5 U17 League vs North Vancouver 4:45–6:15 PM PT @ Harry Jerome Rec Centre — overlaps MMA A shift that day.",
+    "Weekbar Thu Oct 8–Wed Oct 14: MMA A Thu–Sat afternoons (green); U17 yellow (Practice Thu + Mon, Dryland Fri, League Abbotsford Sat + Sun, Development Wed); U15 C4 orange (Game Fri at C3, Development Sat, Game Sun at C1, Practice Tue 6 AM).",
+    "Beyond 7-day window: Thu Oct 15 (U17 Practice); Fri Oct 16 (U17 League vs Cloverdale); Sat Oct 17 (U15 C4 at Cloverdale C3); Sun Oct 18 (U17 League vs South Delta).",
+    "No MMA shifts on Google Calendar after Sat Oct 10 until Wed Nov 4.",
+    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
     {
@@ -162,6 +167,15 @@
       "whenLabel": "Wed Oct 7 · 4:00 PM–12:00 AM PT"
     },
     {
+      "id": "co9j8sc0lfm6f4k325iej20qdk",
+      "summary": "⏰ 6 AM alarm — transfer money",
+      "location": "",
+      "start": "2026-10-08T06:00:00-07:00",
+      "end": "2026-10-08T06:15:00-07:00",
+      "whenLabel": "Thu Oct 8 · 6:00 AM–6:15 AM PT",
+      "description": "One-time 6 AM reminder (Google Calendar popup)."
+    },
+    {
       "id": "s5ub5l5126sebnjru29flu4quk",
       "summary": "Work · MMA A",
       "location": "",
@@ -266,6 +280,14 @@
       "whenLabel": "Tue Oct 13 · 6:00 AM PT"
     },
     {
+      "id": "ts-u17-10808348-374863308",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-10-14T19:00:00-07:00",
+      "end": "2026-10-14T20:00:00-07:00",
+      "whenLabel": "Wed Oct 14 · 7:00 PM–8:00 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374188722",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
@@ -312,6 +334,14 @@
       "start": "2026-10-20T06:00:00-07:00",
       "end": "2026-10-20T06:00:00-07:00",
       "whenLabel": "Tue Oct 20 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u17-10808348-374863309",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-10-21T19:00:00-07:00",
+      "end": "2026-10-21T20:00:00-07:00",
+      "whenLabel": "Wed Oct 21 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188723",
@@ -386,6 +416,14 @@
       "whenLabel": "Tue Oct 27 · 6:00 AM PT"
     },
     {
+      "id": "ts-u17-10808348-374863310",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-10-28T19:00:00-07:00",
+      "end": "2026-10-28T20:00:00-07:00",
+      "whenLabel": "Wed Oct 28 · 7:00 PM–8:00 PM PT"
+    },
+    {
       "id": "ts-u15-10816643-374741526",
       "summary": "U15 C4 Game · at Semiahmoo C4",
       "location": "Newton Arena (Surrey)",
@@ -432,6 +470,14 @@
       "start": "2026-11-04T17:00:00-07:00",
       "end": "2026-11-05T01:00:00-07:00",
       "whenLabel": "Wed Nov 4 · 4:00 PM–12:00 AM PT"
+    },
+    {
+      "id": "ts-u17-10808348-374863311",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-04T19:00:00-08:00",
+      "end": "2026-11-04T20:00:00-08:00",
+      "whenLabel": "Wed Nov 4 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "9nmptn2nvp5tmrnucgptpqo6ao",
@@ -514,6 +560,14 @@
       "whenLabel": "Mon Nov 9 · 9:30 PM–11:00 PM PT"
     },
     {
+      "id": "ts-u17-10808348-374863312",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-11T19:00:00-08:00",
+      "end": "2026-11-11T20:00:00-08:00",
+      "whenLabel": "Wed Nov 11 · 7:00 PM–8:00 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374671289",
       "summary": "U17 League · vs Ridge Meadows",
       "location": "Ridge Meadows",
@@ -562,6 +616,14 @@
       "whenLabel": "Mon Nov 16 · 9:30 PM–11:00 PM PT"
     },
     {
+      "id": "ts-u17-10808348-374863313",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-18T19:00:00-08:00",
+      "end": "2026-11-18T20:00:00-08:00",
+      "whenLabel": "Wed Nov 18 · 7:00 PM–8:00 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374188727",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
@@ -592,6 +654,14 @@
       "start": "2026-11-23T21:30:00-08:00",
       "end": "2026-11-23T23:00:00-08:00",
       "whenLabel": "Mon Nov 23 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "ts-u17-10808348-374863314",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-25T19:00:00-08:00",
+      "end": "2026-11-25T20:00:00-08:00",
+      "whenLabel": "Wed Nov 25 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374643606",
@@ -626,6 +696,14 @@
       "whenLabel": "Mon Nov 30 · 9:30 PM–11:00 PM PT"
     },
     {
+      "id": "ts-u17-10808348-374863315",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-12-02T19:00:00-08:00",
+      "end": "2026-12-02T20:00:00-08:00",
+      "whenLabel": "Wed Dec 2 · 7:00 PM–8:00 PM PT"
+    },
+    {
       "id": "bk4lfhhc7akqdj3vo8p4o7f1k4",
       "summary": "Work · MMA A",
       "location": "",
@@ -658,6 +736,14 @@
       "start": "2026-12-04T20:30:00-08:00",
       "end": "2026-12-04T21:30:00-08:00",
       "whenLabel": "Fri Dec 4 · 8:30 PM–9:30 PM PT"
+    },
+    {
+      "id": "ts-u17-10808348-374870961",
+      "summary": "U17 League · vs North Vancouver",
+      "location": "Harry Jerome Recreation Centre",
+      "start": "2026-12-05T16:45:00-08:00",
+      "end": "2026-12-05T18:15:00-08:00",
+      "whenLabel": "Sat Dec 5 · 4:45 PM–6:15 PM PT"
     },
     {
       "id": "a1jif73f4l6ugvhbt8l2mi3f3c",
@@ -712,6 +798,14 @@
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
     {
+      "id": "ts-u17-10808348-374863316",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-12-09T19:00:00-08:00",
+      "end": "2026-12-09T20:00:00-08:00",
+      "whenLabel": "Wed Dec 9 · 7:00 PM–8:00 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374188730",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
@@ -742,6 +836,14 @@
       "start": "2026-12-14T21:30:00-08:00",
       "end": "2026-12-14T23:00:00-08:00",
       "whenLabel": "Mon Dec 14 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "ts-u17-10808348-374863317",
+      "summary": "U17 Development · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-12-16T19:00:00-08:00",
+      "end": "2026-12-16T20:00:00-08:00",
+      "whenLabel": "Wed Dec 16 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188731",
