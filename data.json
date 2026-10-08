@@ -198,7 +198,7 @@
         false,
         false,
         false,
-        false,
+        true,
         false
       ]
     },
@@ -292,5 +292,13 @@
     "rainChancePct": 2,
     "asOf": "2026-10-08T05:12:00-07:00",
     "asOfLabel": "Thu Oct 8, 2026 · 5:12 AM PT"
-  }
+  },
+  "workoutLog": [
+    {
+      "date": "2026-10-08",
+      "exercise": "Kettlebell carry",
+      "duration": "30 min",
+      "weight": "70 lb"
+    }
+  ]
 }
