@@ -163,6 +163,14 @@
       "priority": "high",
       "done": false,
       "due": "2026-09-30"
+    },
+    {
+      "id": "transfer-money-6am",
+      "title": "6 AM transfer money",
+      "detail": "6:00 AM",
+      "priority": "high",
+      "done": false,
+      "due": "2026-10-08"
     }
   ],
   "habits": [
