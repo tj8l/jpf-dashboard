@@ -1,20 +1,19 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-09T05:40:00-07:00",
+  "fetchedAt": "2026-10-10T05:12:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-09",
-    "end": "2026-10-15",
-    "label": "Oct 9–15 (next 7 days)"
+    "start": "2026-10-10",
+    "end": "2026-10-16",
+    "label": "Oct 10–16 (next 7 days)"
   },
   "notes": [
-    "Today Fri Oct 9: Work · MMA A 4:00 PM–12:00 AM overlaps U15 C4 Interleague at C3 7:00–8:30 PM @ LEC 2; U17 Dryland Aim Athletic in the evening.",
-    "Sun Oct 11 CLASH: U15 C4 Game at C1 5:15–6:45 PM PT @ LEC 2 overlaps U17 League vs Abbotsford 6:15–8:15 PM PT.",
-    "New from TeamSnap U17: Sat Oct 31 U17 League vs Vancouver TBirds 5:00–7:00 PM PT @ Hillcrest Centre Arena (no clash).",
+    "Today Sat Oct 10: U15 C4 Development with C1 10:45–11:45 AM @ LEC 3; Work · MMA A 4:00 PM–12:00 AM overlaps U17 League at Abbotsford 9:15–11:15 PM (Abbotsford Rec Centre).",
+    "Sun Oct 11 CLASH: U15 C4 Game at C1 5:15–6:45 PM PT @ LEC 2 overlaps U17 League vs Abbotsford 6:15–8:15 PM PT @ LEC 1.",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2, Oct 14 through Dec 16; Wed Oct 28 overlaps U15 C4 at Semiahmoo C4 (7:45 PM, Newton Arena); Wed Nov 4 during MMA A shift.",
     "Sat Dec 5 U17 League vs North Vancouver 4:45–6:15 PM PT @ Harry Jerome overlaps MMA A shift.",
-    "Weekbar Fri Oct 9–Thu Oct 15: MMA A Fri–Sat afternoons (green); U15 C4 orange (Game Fri at C3, Development Sat, Game Sun at C1, Practice Tue 6 AM); U17 yellow (Dryland Fri, League Abbotsford Sat + Sun, Practice Mon + Thu, Development Wed).",
-    "No MMA shifts on Google Calendar after Sat Oct 10 until Wed Nov 4.",
+    "Weekbar Sat Oct 10–Fri Oct 16: MMA A Sat (green); U15 C4 orange (Development Sat, Game Sun at C1, Practice Tue 6 AM); U17 yellow (League Abbotsford Sat + Sun, Practice Mon + Thu, Development Wed, League at Cloverdale Fri 8:45 PM).",
+    "No MMA shifts on Google Calendar after Sat Oct 10 until Wed Nov 4. Wed Oct 21 502 General Meeting 6–7 PM.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
@@ -197,22 +196,6 @@
       "start": "2026-10-09T16:00:00-07:00",
       "end": "2026-10-10T00:00:00-07:00",
       "whenLabel": "Fri Oct 9 · 4:00 PM–12:00 AM PT"
-    },
-    {
-      "id": "ts-u15-10816643-374736145",
-      "summary": "U15 C4 Game · at C3",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-10-09T19:00:00-07:00",
-      "end": "2026-10-09T20:30:00-07:00",
-      "whenLabel": "Fri Oct 9 · 7:00 PM–8:30 PM PT"
-    },
-    {
-      "id": "ts-u17-10808348-374188821",
-      "summary": "U17 Dryland · Aim Athletic",
-      "location": "Aim Athletic (Langley)",
-      "start": "2026-10-09T20:30:00-07:00",
-      "end": "2026-10-09T21:30:00-07:00",
-      "whenLabel": "Fri Oct 9 · 8:30 PM–9:30 PM PT"
     },
     {
       "id": "ts-u15-10816643-374604787",
