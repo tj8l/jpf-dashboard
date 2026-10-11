@@ -1,16 +1,19 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-10T23:03:46-07:00",
+  "fetchedAt": "2026-10-11T05:14:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-10",
-    "end": "2026-10-16",
-    "label": "Oct 10–16 (next 7 days)"
+    "start": "2026-10-11",
+    "end": "2026-10-17",
+    "label": "Oct 11–17 (next 7 days)"
   },
   "notes": [
-    "Today Sat Oct 10: U15 C4 Development · with C1 10:45 AM @ LEC 3; Work · MMA A 4:00 PM; U17 League · vs Abbotsford 9:15 PM @ Abbotsford Rec Centre.",
-    "Beyond 7-day day-list window: Sat Oct 17 (U15 C4 Game); Sun Oct 18 (U17 League); Mon Oct 19 (U17 League); Tue Oct 20 (U15 C4 Practice) — still in calendar.json events.",
-    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5."
+    "Today Sun Oct 11 CLASH: U15 C4 Game at C1 5:15–6:45 PM PT @ LEC 2 overlaps U17 League vs Abbotsford 6:15–8:15 PM PT @ LEC 1.",
+    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2, Oct 14 through Dec 16; Wed Oct 28 overlaps U15 C4 at Semiahmoo C4 (7:45 PM, Newton Arena); Wed Nov 4 during MMA A shift.",
+    "Sat Dec 5 U17 League vs North Vancouver 4:45–6:15 PM PT @ Harry Jerome overlaps MMA A shift.",
+    "Weekbar Sun Oct 11–Sat Oct 17: U15 C4 orange (Game Sun at C1, Practice Tue 6 AM, Practice Thu 6:45 PM Twin Rinks, Sat at Cloverdale C3 5:30 PM); U17 yellow (League Sun, Practice Mon + Thu, Development Wed, League at Cloverdale Fri 8:45 PM).",
+    "No MMA shifts on Google Calendar until Wed Nov 4. Wed Oct 21 502 General Meeting 6–7 PM.",
+    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
     {
@@ -194,28 +197,12 @@
       "whenLabel": "Fri Oct 9 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u15-10816643-374604787",
-      "summary": "U15 C4 Development · with C1",
-      "location": "LEC 3 (Langley Events Centre)",
-      "start": "2026-10-10T10:45:00-07:00",
-      "end": "2026-10-10T10:45:00-07:00",
-      "whenLabel": "Sat Oct 10 · 10:45 AM PT"
-    },
-    {
       "id": "mc1oohi60kb3459slr1425nn60",
       "summary": "Work · MMA A",
       "location": "",
       "start": "2026-10-10T16:00:00-07:00",
       "end": "2026-10-11T00:00:00-07:00",
       "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
-    },
-    {
-      "id": "ts-u17-10808348-374635826",
-      "summary": "U17 League · vs Abbotsford",
-      "location": "Abbotsford Rec Centre",
-      "start": "2026-10-10T21:15:00-07:00",
-      "end": "2026-10-10T23:15:00-07:00",
-      "whenLabel": "Sat Oct 10 · 9:15 PM–11:15 PM PT"
     },
     {
       "id": "ts-u15-10816643-374736182",
