@@ -2019,8 +2019,7 @@ window.__JPF_BAKED__ = {"calendar.json": {"timezone": "America/Vancouver", "fetc
       </section>
 
 <section class="card card-full" id="calendar">
-        <h2>Calendar &amp; schedule</h2>
-        <p class="lede">Events grouped into day blocks from Google Calendar + TeamSnap U17 A1 (<code>calendar.json</code>). Color legend shows shift and hockey types.</p>
+        <h2>Calendar</h2>
         <div class="cal-legend" aria-label="Event color legend">
           <span class="leg"><i class="cal-swatch cal-dayshift" aria-hidden="true"></i>Dayshift</span>
           <span class="leg"><i class="cal-swatch cal-afternoon" aria-hidden="true"></i>Afternoon</span>
@@ -2039,7 +2038,7 @@ window.__JPF_BAKED__ = {"calendar.json": {"timezone": "America/Vancouver", "fetc
         </div>
 
 <div class="today-banner">Today · Sunday — CLASH: U15 C4 Game at C1 LEC 2 5:15–6:45 PM vs U17 League vs Abbotsford LEC 1 6:15–8:15 PM. Mon U17 practice 9:30 PM; Tue U15 C4 practice 6 AM; Wed U17 Development LEC 2 7 PM; Thu U15 C4 practice Twin Rinks 6:45 PM + U17 practice 9:15 PM; Fri U17 at Cloverdale 8:45 PM; Sat U15 C4 at Cloverdale C3 5:30 PM. Clear and sunny today.</div>
-        <div class="cal-label">By day</div>
+        <div class="cal-label cal-hint">Tap a day to open it</div>
                                                                 <div class="cal-days" id="cal-days">
         <div class="cal-day-block is-today" data-date="2026-10-03">
           <div class="cal-day-head">
@@ -4369,6 +4368,53 @@ window.__JPF_BAKED__ = {"calendar.json": {"timezone": "America/Vancouver", "fetc
     }).catch(function () {});
   });
   /* last-updated UI removed */
+})();
+</script>
+
+<style id="cal-compact-css">
+  #calendar .cal-legend { gap: 4px 10px; font-size: 11px; margin: 4px 0 6px; }
+  #calendar .weekbar { margin: 6px 0; }
+  #calendar .weekbar .dow { cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; }
+  #calendar .weekbar .dow.open { outline: 2px solid rgba(255,255,255,0.65); outline-offset: -2px; }
+  #calendar .today-banner { font-size: 12px; padding: 6px 10px; margin: 4px 0; }
+  #calendar .cal-hint { font-size: 11px; opacity: .6; margin: 2px 0 4px; }
+  #calendar .cal-day-block { display: none; margin-top: 6px; }
+  #calendar .cal-day-block.open { display: block; }
+</style>
+
+<script id="cal-compact-js">
+(function(){
+  var openYmd = null;
+  function apply(){
+    var host=document.getElementById("calendar"); if(!host) return;
+    host.querySelectorAll(".cal-day-block").forEach(function(b){
+      b.classList.toggle("open", !!openYmd && b.getAttribute("data-date")===openYmd);
+    });
+    host.querySelectorAll(".weekbar .dow").forEach(function(d){
+      d.classList.toggle("open", !!openYmd && d.getAttribute("data-date")===openYmd);
+      d.setAttribute("role","button"); d.setAttribute("tabindex","0");
+      d.setAttribute("aria-expanded", (openYmd && d.getAttribute("data-date")===openYmd) ? "true":"false");
+    });
+  }
+  function toggle(d){
+    var ymd=d.getAttribute("data-date");
+    openYmd = (openYmd===ymd) ? null : ymd;
+    apply();
+    if(openYmd){ var b=document.querySelector('#calendar .cal-day-block[data-date="'+openYmd+'"]'); if(b && b.scrollIntoView) b.scrollIntoView({block:"nearest",behavior:"smooth"}); }
+  }
+  document.addEventListener("click",function(e){
+    var d=e.target.closest && e.target.closest("#calendar .weekbar .dow"); if(d) toggle(d);
+  });
+  document.addEventListener("keydown",function(e){
+    if(e.key!=="Enter" && e.key!==" ") return;
+    var d=e.target.closest && e.target.closest("#calendar .weekbar .dow"); if(d){ e.preventDefault(); toggle(d); }
+  });
+  function watch(){
+    var host=document.getElementById("calendar"); if(!host) return;
+    new MutationObserver(function(){ apply(); }).observe(host,{childList:true,subtree:true});
+    apply();
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",watch); else watch();
 })();
 </script>
 </body>
