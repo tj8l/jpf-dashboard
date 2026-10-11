@@ -4417,5 +4417,139 @@ window.__JPF_BAKED__ = {"calendar.json": {"timezone": "America/Vancouver", "fetc
   if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",watch); else watch();
 })();
 </script>
+
+<style id="cal-month-css">
+  #calendar .cal-views { display:flex; gap:6px; margin:6px 0; }
+  #calendar .cal-views button { background:transparent; color:inherit; border:1px solid rgba(255,255,255,.25); border-radius:999px; padding:4px 12px; font-size:12px; cursor:pointer; }
+  #calendar .cal-views button.on { background:rgba(255,255,255,.14); border-color:rgba(255,255,255,.6); }
+  #cal-month { display:none; }
+  #calendar.view-month #cal-month { display:block; }
+  #calendar.view-month .weekbar, #calendar.view-month .cal-days, #calendar.view-month .cal-hint, #calendar.view-month .today-banner { display:none !important; }
+  #cal-month .m-nav { display:flex; align-items:center; justify-content:space-between; margin:4px 0 8px; font-size:13px; }
+  #cal-month .m-nav button { background:transparent; color:inherit; border:1px solid rgba(255,255,255,.25); border-radius:6px; padding:2px 10px; cursor:pointer; }
+  #cal-month .m-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  @media (max-width:760px){ #cal-month .m-grid { grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:420px){ #cal-month .m-grid { grid-template-columns:1fr; } }
+  #cal-month .m { border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:6px; }
+  #cal-month .m h4 { margin:0 0 4px; font-size:12px; letter-spacing:.04em; }
+  #cal-month .m table { width:100%; border-collapse:collapse; table-layout:fixed; }
+  #cal-month .m th { font-size:9px; opacity:.55; font-weight:500; padding:1px 0; }
+  #cal-month .m td { text-align:center; padding:1px; }
+  #cal-month .m td span { display:block; font-size:11px; line-height:22px; border-radius:5px; border:1px solid transparent; }
+  #cal-month .m td span.has { cursor:pointer; font-weight:600; }
+  #cal-month .m td span.k-dayshift { background:rgba(74,143,212,.35); }
+  #cal-month .m td span.k-afternoon { background:rgba(95,173,110,.35); }
+  #cal-month .m td span.k-graveyard { background:rgba(196,92,74,.35); }
+  #cal-month .m td span.k-u15 { background:rgba(212,137,58,.35); }
+  #cal-month .m td span.k-u17, #cal-month .m td span.k-u18 { background:rgba(212,184,74,.35); }
+  #cal-month .m td span.k-other { background:rgba(255,255,255,.14); }
+  #cal-month .m td span.today { border-color:#fff; }
+  #cal-month .m td span.sel { outline:2px solid #fff; }
+  #cal-month .m-detail { margin-top:10px; border:1px solid rgba(255,255,255,.2); border-radius:8px; padding:8px 10px; font-size:13px; display:none; }
+  #cal-month .m-detail.show { display:block; }
+  #cal-month .m-detail h5 { margin:0 0 6px; font-size:13px; }
+  #cal-month .m-detail .ev { padding:3px 0; border-top:1px solid rgba(255,255,255,.08); }
+  #cal-month .m-detail .ev:first-of-type { border-top:0; }
+  #cal-month .m-detail .t { opacity:.7; font-size:12px; }
+</style>
+
+<script id="cal-month-js">
+(function(){
+  var MN=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var state={start:null,sel:null,events:[]};
+  function pad(n){return String(n).padStart(2,"0");}
+  function today(){return new Date().toLocaleDateString("en-CA",{timeZone:"America/Vancouver"});}
+  function esc(s){return String(s||"").replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+  function cls(sum){
+    var s=String(sum||"").toLowerCase().replace(/[\u00b7\u2022\u2013\u2014]/g," ").replace(/\s+/g," ");
+    if(/\bmma\s*d\b/.test(s)||s.indexOf("day shift")>=0||s.indexOf("dayshift")>=0) return "dayshift";
+    if(/\bmma\s*a\b/.test(s)||s.indexOf("afternoon")>=0) return "afternoon";
+    if(/\bmma\s*n\b/.test(s)||s.indexOf("graveyard")>=0) return "graveyard";
+    if(s.indexOf("u15")>=0||s.indexOf("group 4")>=0) return "u15";
+    if(s.indexOf("u17")>=0) return "u17";
+    if(s.indexOf("u18")>=0||s.indexOf("jamboree")>=0) return "u18";
+    return "other";
+  }
+  var RANK={dayshift:1,afternoon:2,graveyard:3,u15:4,u17:5,u18:6,other:9};
+  function byDay(){
+    var m={};
+    state.events.forEach(function(e){ if(!e||!e.start) return; var k=String(e.start).slice(0,10); (m[k]=m[k]||[]).push(e); });
+    Object.keys(m).forEach(function(k){m[k].sort(function(a,b){return String(a.start).localeCompare(String(b.start));});});
+    return m;
+  }
+  function dayClass(evs){
+    if(evs.some(function(e){return /draft/i.test(e.summary||"");})) return "u15";
+    var best="other",r=99; evs.forEach(function(e){var c=cls(e.summary);if(RANK[c]<r){r=RANK[c];best=c;}}); return best;
+  }
+  function timeOf(e){
+    if(String(e.start).length<=10) return "All day";
+    function f(iso){ try{return new Date(iso).toLocaleTimeString("en-US",{timeZone:"America/Vancouver",hour:"numeric",minute:"2-digit"});}catch(x){return "";} }
+    var a=f(e.start), b=e.end&&String(e.end).length>10?f(e.end):"";
+    return b&&b!==a?a+"\u2013"+b:a;
+  }
+  function render(){
+    var host=document.getElementById("cal-month"); if(!host) return;
+    var bd=byDay(), t=today();
+    var sy=state.start.y, sm=state.start.m;
+    var endM=new Date(Date.UTC(sy,sm+11,1));
+    var html='<div class="m-nav"><button type="button" data-nav="-12" aria-label="Previous 12 months">\u2039</button><strong>'+MN[sm].slice(0,3)+" "+sy+" \u2013 "+MN[endM.getUTCMonth()].slice(0,3)+" "+endM.getUTCFullYear()+'</strong><button type="button" data-nav="12" aria-label="Next 12 months">\u203A</button></div><div class="m-grid">';
+    for(var i=0;i<12;i++){
+      var d0=new Date(Date.UTC(sy,sm+i,1)), y=d0.getUTCFullYear(), m=d0.getUTCMonth();
+      var first=d0.getUTCDay(), days=new Date(Date.UTC(y,m+1,0)).getUTCDate();
+      html+='<div class="m"><h4>'+MN[m]+" "+y+'</h4><table><thead><tr>'+["S","M","T","W","T","F","S"].map(function(x){return "<th>"+x+"</th>";}).join("")+'</tr></thead><tbody><tr>';
+      var c=0; for(;c<first;c++) html+="<td></td>";
+      for(var d=1;d<=days;d++){
+        var ymd=y+"-"+pad(m+1)+"-"+pad(d), evs=bd[ymd]||[];
+        var k=evs.length?" has k-"+dayClass(evs):"";
+        if(ymd===t) k+=" today"; if(ymd===state.sel) k+=" sel";
+        html+='<td><span class="'+k.trim()+'" data-ymd="'+ymd+'">'+d+"</span></td>";
+        c++; if(c%7===0 && d<days) html+="</tr><tr>";
+      }
+      while(c%7!==0){html+="<td></td>";c++;}
+      html+="</tr></tbody></table></div>";
+    }
+    html+='</div><div class="m-detail" id="m-detail"></div>';
+    host.innerHTML=html;
+    showDetail();
+  }
+  function showDetail(){
+    var el=document.getElementById("m-detail"); if(!el) return;
+    if(!state.sel){el.className="m-detail";el.innerHTML="";return;}
+    var evs=byDay()[state.sel]||[];
+    var dt=new Date(state.sel+"T12:00:00Z").toLocaleDateString("en-US",{timeZone:"UTC",weekday:"long",month:"long",day:"numeric",year:"numeric"});
+    el.className="m-detail show";
+    el.innerHTML="<h5>"+esc(dt)+"</h5>"+(evs.length?evs.map(function(e){return '<div class="ev"><div class="t">'+esc(timeOf(e))+"</div><div>"+esc(e.summary)+"</div>"+(e.location?'<div class="t">'+esc(e.location)+"</div>":"")+"</div>";}).join(""):"<div class=\"t\">Nothing scheduled</div>");
+  }
+  function load(){
+    var b=window.__JPF_BAKED__&&window.__JPF_BAKED__["calendar.json"];
+    if(b&&b.events) state.events=b.events;
+    fetch("calendar.json",{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(j){ if(j&&j.events){state.events=j.events; if(document.getElementById("calendar").classList.contains("view-month")) render();} }).catch(function(){});
+  }
+  function setView(v){
+    var host=document.getElementById("calendar"); if(!host) return;
+    host.classList.toggle("view-month", v==="month");
+    host.querySelectorAll(".cal-views button").forEach(function(b){b.classList.toggle("on", b.getAttribute("data-view")===v);});
+    if(v==="month"){
+      if(!state.start){var p=today().split("-"); state.start={y:+p[0],m:+p[1]-1};}
+      render();
+    }
+  }
+  function init(){
+    var host=document.getElementById("calendar"); if(!host||document.getElementById("cal-month")) return;
+    var bar=document.createElement("div"); bar.className="cal-views";
+    bar.innerHTML='<button type="button" class="on" data-view="week">Next 7 days</button><button type="button" data-view="month">By month</button>';
+    var m=document.createElement("div"); m.id="cal-month";
+    var h2=host.querySelector("h2"); h2.parentNode.insertBefore(bar,h2.nextSibling);
+    var anchor=host.querySelector(".src-note"); if(anchor) host.insertBefore(m,anchor); else host.appendChild(m);
+    bar.addEventListener("click",function(e){var b=e.target.closest("button[data-view]"); if(b) setView(b.getAttribute("data-view"));});
+    m.addEventListener("click",function(e){
+      var n=e.target.closest("[data-nav]"); if(n){ var s=state.start, d=new Date(Date.UTC(s.y,s.m+(+n.getAttribute("data-nav")),1)); state.start={y:d.getUTCFullYear(),m:d.getUTCMonth()}; state.sel=null; render(); return; }
+      var s2=e.target.closest("span[data-ymd]"); if(s2){ var y=s2.getAttribute("data-ymd"); state.sel=(state.sel===y)?null:y; render(); var dd=document.getElementById("m-detail"); if(state.sel&&dd&&dd.scrollIntoView) dd.scrollIntoView({block:"nearest",behavior:"smooth"}); }
+    });
+    load();
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
+})();
+</script>
 </body>
 </html>
