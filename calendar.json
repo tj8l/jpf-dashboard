@@ -1,20 +1,21 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-13T05:10:00-07:00",
+  "fetchedAt": "2026-10-14T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-13",
-    "end": "2026-10-19",
-    "label": "Oct 13–19 (next 7 days)"
+    "start": "2026-10-14",
+    "end": "2026-10-20",
+    "label": "Oct 14–20 (next 7 days)"
   },
   "notes": [
-    "Today Tue Oct 13: U15 C4 Practice 6:00 AM PT @ SPX 2. No clashes in the next 7 days.",
-    "NEW (TeamSnap U15 C4): Mission tournament games Fri Nov 6, Sat Nov 7, Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM). Clashes with U17 HOLD · Abbotsford Nov 6–9 and MMA A shifts Nov 6–8 (4 PM–12 AM).",
+    "Today Wed Oct 14: U17 Development 7:00–8:00 PM PT @ LEC 2 (first weekly session). No clashes in the next 7 days.",
+    "CANCELLED: U15 C4 vs C1 (Interleague, home) Fri Oct 23 7:00 PM @ LEC 2 is gone from TeamSnap and Google Calendar.",
+    "U15 C4 Mission tournament games Fri Nov 6, Sat Nov 7, Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM). Clashes with U17 HOLD · Abbotsford Nov 6–9 and MMA A shifts Nov 6–8 (4 PM–12 AM).",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2, Oct 14 through Dec 16; Wed Oct 28 overlaps U15 C4 at Semiahmoo C4 (7:45 PM, Newton Arena); Wed Nov 4 during MMA A shift.",
-    "Oct 23–25 U17 HOLD · Winfield overlaps U15 C4 vs C1 Fri Oct 23, Development Sat Oct 24, and vs South Delta C1 Sun Oct 25.",
+    "Oct 23–25 U17 HOLD · Winfield overlaps U15 C4 Development Sat Oct 24 and vs South Delta C1 Sun Oct 25.",
     "MMA A block Nov 4–8 overlaps U17 Development Wed Nov 4 + Practice Thu Nov 5, Abbotsford HOLD Nov 6–9 and the U15 C4 Mission games Nov 6–8; MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Tue Oct 13–Mon Oct 19: U15 C4 orange (Practice Tue 6 AM SPX 2, Practice Thu 6:45 PM Twin Rinks, Sat at Cloverdale C3 5:30 PM); U17 yellow (Development Wed 7 PM LEC 2, Practice Thu 9:15 PM, League vs Cloverdale Fri 8:45 PM, League vs South Delta Sun 6:15 PM LEC 1, League vs Vancouver TBirds Mon 9:30 PM SPX 2).",
+    "Weekbar Wed Oct 14–Tue Oct 20: U17 yellow (Development Wed 7 PM LEC 2, Practice Thu 9:15 PM SPX 2, League vs Cloverdale Fri 8:45 PM, League vs South Delta Sun 6:15 PM LEC 1, League vs Vancouver TBirds Mon 9:30 PM SPX 2); U15 C4 orange (Practice Thu 6:45 PM Twin Rinks, Sat at Cloverdale C3 5:30 PM, Practice Tue Oct 20 6 AM SPX 2).",
     "No MMA shifts on Google Calendar until Wed Nov 4. Wed Oct 21 502 General Meeting 6–7 PM.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
@@ -208,14 +209,6 @@
       "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u15-10816643-374604840",
-      "summary": "U15 C4 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-10-13T06:00:00-07:00",
-      "end": "2026-10-13T06:00:00-07:00",
-      "whenLabel": "Tue Oct 13 · 6:00 AM PT"
-    },
-    {
       "id": "ts-u17-10808348-374863308",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
@@ -310,14 +303,6 @@
       "start": "2026-10-23T00:00:00-07:00",
       "end": "2026-10-24T00:00:00-07:00",
       "whenLabel": "Fri Oct 23 · 12:00 AM–12:00 AM PT"
-    },
-    {
-      "id": "ts-u15-10816643-374736216",
-      "summary": "U15 C4 Game · vs C1",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-10-23T19:00:00-07:00",
-      "end": "2026-10-23T19:00:00-07:00",
-      "whenLabel": "Fri Oct 23 · 7:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374235554",
@@ -722,14 +707,6 @@
       "whenLabel": "Fri Dec 4 · 8:30 PM–9:30 PM PT"
     },
     {
-      "id": "ts-u17-10808348-374870961",
-      "summary": "U17 League · vs North Vancouver",
-      "location": "Harry Jerome Recreation Centre",
-      "start": "2026-12-05T16:45:00-08:00",
-      "end": "2026-12-05T18:15:00-08:00",
-      "whenLabel": "Sat Dec 5 · 4:45 PM–6:15 PM PT"
-    },
-    {
       "id": "a1jif73f4l6ugvhbt8l2mi3f3c",
       "summary": "Work · MMA A",
       "location": "",
@@ -737,6 +714,14 @@
       "end": "2026-12-06T00:00:00-08:00",
       "whenLabel": "Sat Dec 5 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
+    },
+    {
+      "id": "ts-u17-10808348-374870961",
+      "summary": "U17 League · vs North Vancouver",
+      "location": "Harry Jerome Recreation Centre",
+      "start": "2026-12-05T16:45:00-08:00",
+      "end": "2026-12-05T18:15:00-08:00",
+      "whenLabel": "Sat Dec 5 · 4:45 PM–6:15 PM PT"
     },
     {
       "id": "9fec3idqnc2tjr5squrrivm9cs",
