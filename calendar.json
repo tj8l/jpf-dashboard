@@ -1,22 +1,22 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-14T05:15:00-07:00",
+  "fetchedAt": "2026-10-15T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-14",
-    "end": "2026-10-20",
-    "label": "Oct 14–20 (next 7 days)"
+    "start": "2026-10-15",
+    "end": "2026-10-21",
+    "label": "Oct 15–21 (next 7 days)"
   },
   "notes": [
-    "Today Wed Oct 14: U17 Development 7:00–8:00 PM PT @ LEC 2 (first weekly session). No clashes in the next 7 days.",
-    "CANCELLED: U15 C4 vs C1 (Interleague, home) Fri Oct 23 7:00 PM @ LEC 2 is gone from TeamSnap and Google Calendar.",
+    "Today Thu Oct 15: U15 C4 Practice 6:45–8:05 PM PT @ Twin Rinks Rink 2, then U17 Practice 9:15–10:45 PM @ SPX 2. No clashes in the next 7 days.",
+    "NEW (TeamSnap): U17 Winfield tournament (Lake Country/Kelowna) Oct 23–25 now has games: Fri Oct 23 11:00 AM vs Victoria Admirals; team dinner 5:45 PM Park Inn by Radisson, Kelowna; Sat Oct 24 6:30 AM vs North Delta and 4:45 PM vs New Westminster; Sun Oct 25 holds for semifinals (6:00 / 8:15 AM), 5th/6th (10:30 AM) and gold medal game (12:45–2:45 PM), all @ Winfield Arena.",
+    "CLASH: Sat Oct 24 U15 C4 Development 10:45 AM @ LEC 3 (Langley) falls between U17 games at 6:30 AM and 4:45 PM in Lake Country. Sun Oct 25 U15 C4 vs South Delta C1 7:00 PM @ LEC 2 comes right after U17 tournament holds that run to 2:45 PM in Lake Country (about a 4-hour drive).",
     "U15 C4 Mission tournament games Fri Nov 6, Sat Nov 7, Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM). Clashes with U17 HOLD · Abbotsford Nov 6–9 and MMA A shifts Nov 6–8 (4 PM–12 AM).",
-    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2, Oct 14 through Dec 16; Wed Oct 28 overlaps U15 C4 at Semiahmoo C4 (7:45 PM, Newton Arena); Wed Nov 4 during MMA A shift.",
-    "Oct 23–25 U17 HOLD · Winfield overlaps U15 C4 Development Sat Oct 24 and vs South Delta C1 Sun Oct 25.",
+    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16; Wed Oct 28 overlaps U15 C4 at Semiahmoo C4 (7:45 PM, Newton Arena); Wed Nov 4 during MMA A shift.",
     "MMA A block Nov 4–8 overlaps U17 Development Wed Nov 4 + Practice Thu Nov 5, Abbotsford HOLD Nov 6–9 and the U15 C4 Mission games Nov 6–8; MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Wed Oct 14–Tue Oct 20: U17 yellow (Development Wed 7 PM LEC 2, Practice Thu 9:15 PM SPX 2, League vs Cloverdale Fri 8:45 PM, League vs South Delta Sun 6:15 PM LEC 1, League vs Vancouver TBirds Mon 9:30 PM SPX 2); U15 C4 orange (Practice Thu 6:45 PM Twin Rinks, Sat at Cloverdale C3 5:30 PM, Practice Tue Oct 20 6 AM SPX 2).",
-    "No MMA shifts on Google Calendar until Wed Nov 4. Wed Oct 21 502 General Meeting 6–7 PM.",
+    "Weekbar Thu Oct 15–Wed Oct 21: U15 C4 orange (Practice Thu 6:45 PM Twin Rinks, Sat at Cloverdale C3 5:30 PM, Practice Tue Oct 20 6 AM SPX 2); U17 yellow (Practice Thu 9:15 PM SPX 2, League vs Cloverdale Fri 8:45 PM, League vs South Delta Sun 6:15 PM LEC 1, League vs Vancouver TBirds Mon 9:30 PM SPX 2, Development Wed 7 PM LEC 2). Wed Oct 21 502 General Meeting 6–7 PM.",
+    "No MMA shifts on Google Calendar until Wed Nov 4.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
@@ -209,14 +209,6 @@
       "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u17-10808348-374863308",
-      "summary": "U17 Development · LEC 2",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-10-14T19:00:00-07:00",
-      "end": "2026-10-14T20:00:00-07:00",
-      "whenLabel": "Wed Oct 14 · 7:00 PM–8:00 PM PT"
-    },
-    {
       "id": "ts-u15-10816643-374988032",
       "summary": "U15 C4 Practice · Twin Rinks - Rink 2 - Rink 2",
       "location": "Twin Rinks - Rink 2 - Rink 2",
@@ -297,20 +289,28 @@
       "whenLabel": "Thu Oct 22 · 9:15 PM–10:45 PM PT"
     },
     {
-      "id": "ts-u17-10808348-374235553",
-      "summary": "U17 HOLD · Winfield Arena",
-      "location": "Winfield Arena",
-      "start": "2026-10-23T00:00:00-07:00",
-      "end": "2026-10-24T00:00:00-07:00",
-      "whenLabel": "Fri Oct 23 · 12:00 AM–12:00 AM PT"
+      "id": "ts-u17-10808348-375167688",
+      "summary": "U17 Tournament #1 · vs Victoria Admirals",
+      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
+      "start": "2026-10-23T11:00:00-07:00",
+      "end": "2026-10-23T13:00:00-07:00",
+      "whenLabel": "Fri Oct 23 · 11:00 AM–1:00 PM PT (arrive 10:00 AM, Maroon)"
     },
     {
-      "id": "ts-u17-10808348-374235554",
-      "summary": "U17 HOLD · Winfield Arena",
-      "location": "Winfield Arena",
-      "start": "2026-10-24T00:00:00-07:00",
-      "end": "2026-10-25T00:00:00-07:00",
-      "whenLabel": "Sat Oct 24 · 12:00 AM–12:00 AM PT"
+      "id": "ts-u17-10808348-375168061",
+      "summary": "U17 HOLD · Team dinner (Kelowna)",
+      "location": "Park Inn by Radisson (365 Mills Rd, Kelowna)",
+      "start": "2026-10-23T17:45:00-07:00",
+      "end": "2026-10-23T19:45:00-07:00",
+      "whenLabel": "Fri Oct 23 · 5:45 PM–7:45 PM PT (details to come)"
+    },
+    {
+      "id": "ts-u17-10808348-375167739",
+      "summary": "U17 Tournament #2 · vs North Delta",
+      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
+      "start": "2026-10-24T06:30:00-07:00",
+      "end": "2026-10-24T08:30:00-07:00",
+      "whenLabel": "Sat Oct 24 · 6:30 AM–8:30 AM PT (arrive 5:45 AM, White)"
     },
     {
       "id": "ts-u15-10816643-374605108",
@@ -321,12 +321,44 @@
       "whenLabel": "Sat Oct 24 · 10:45 AM PT"
     },
     {
-      "id": "ts-u17-10808348-374235555",
-      "summary": "U17 HOLD · Winfield Arena",
-      "location": "Winfield Arena",
-      "start": "2026-10-25T00:00:00-07:00",
-      "end": "2026-10-26T00:00:00-07:00",
-      "whenLabel": "Sun Oct 25 · 12:00 AM–12:00 AM PT"
+      "id": "ts-u17-10808348-375167827",
+      "summary": "U17 Tournament #3 · vs New Westminster (U18 A1)",
+      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
+      "start": "2026-10-24T16:45:00-07:00",
+      "end": "2026-10-24T18:45:00-07:00",
+      "whenLabel": "Sat Oct 24 · 4:45 PM–6:45 PM PT (arrive 3:45 PM, Maroon)"
+    },
+    {
+      "id": "ts-u17-10808348-375167894",
+      "summary": "U17 HOLD · Semifinal (1st vs 4th)",
+      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
+      "start": "2026-10-25T06:00:00-07:00",
+      "end": "2026-10-25T08:00:00-07:00",
+      "whenLabel": "Sun Oct 25 · 6:00 AM–8:00 AM PT (arrive 5:00 AM)"
+    },
+    {
+      "id": "ts-u17-10808348-375167921",
+      "summary": "U17 HOLD · Semifinal (2nd vs 3rd)",
+      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
+      "start": "2026-10-25T08:15:00-07:00",
+      "end": "2026-10-25T10:15:00-07:00",
+      "whenLabel": "Sun Oct 25 · 8:15 AM–10:15 AM PT (arrive 7:15 AM)"
+    },
+    {
+      "id": "ts-u17-10808348-375167954",
+      "summary": "U17 HOLD · 5th/6th place game",
+      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
+      "start": "2026-10-25T10:30:00-07:00",
+      "end": "2026-10-25T12:30:00-07:00",
+      "whenLabel": "Sun Oct 25 · 10:30 AM–12:30 PM PT (arrive 9:30 AM)"
+    },
+    {
+      "id": "ts-u17-10808348-375167995",
+      "summary": "U17 HOLD · Gold Medal Game",
+      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
+      "start": "2026-10-25T12:45:00-07:00",
+      "end": "2026-10-25T14:45:00-07:00",
+      "whenLabel": "Sun Oct 25 · 12:45 PM–2:45 PM PT (arrive 11:45 AM)"
     },
     {
       "id": "ts-u15-10816643-374741425",
