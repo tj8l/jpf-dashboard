@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-30",
+  "weekbar": "Wed Sep 30\u2013Tue Oct 6",
+  "teamsnap": "Sun Oct 4 HOLD LEC 1 \u2192 PreSeason vs North Vancouver (same 6:15\u20138:15 PM); no other future ice adds/moves/cancels",
+  "clashes_7d": [
+    "Wed Sep 30: U17 Practice LEC 2 7:00\u20138:00 PM overlaps U15 C Draft 7:30\u20138:45 PM",
+    "Sun Oct 4: U17 PreSeason vs North Vancouver 6:15\u20138:15 PM LEC 1 vs U15 C4 Game vs C2 7:00\u20138:30 PM LEC 2"
+  ],
+  "markets": {
+    "btc": 83811,
+    "gold": 4189.5,
+    "wti": 90.79,
+    "spx": 7670.84,
+    "us10y": 5.255
+  },
+  "weather": {
+    "short": "Mist, rain ~39%",
+    "hi": 17,
+    "lo": 8,
+    "cur": 8,
+    "rain": 39
+  },
+  "material": true,
+  "tasks_preserved": [
+    "book-off-sep26",
+    "pay-silverstar-winter-passes"
+  ],
+  "errors": [
+    "Open-Meteo daily limit exceeded \u2014 used wttr.in",
+    "list_calendars MCP 403 once; list_events on primary succeeded"
+  ]
+}

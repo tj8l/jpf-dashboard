@@ -1,0 +1,35 @@
+{
+  "location": "Langley, BC",
+  "timezone": "America/Vancouver",
+  "date": "2026-09-30",
+  "dateLabel": "Wed Sep 30, 2026",
+  "conditions": "Mist morning (~8°C); high ~17°C / low ~8°C; rain chance ~39%. Thu clearer (~18/8°C, rain ~27%); Fri ~19/9°C, rain ~24%.",
+  "conditionsShort": "Mist, rain ~39%",
+  "temp": {
+    "highC": 17,
+    "lowC": 8,
+    "highF": 63,
+    "lowF": 46,
+    "displayC": "17° / 8°C",
+    "displayF": "63° / 46°F",
+    "currentC": 8,
+    "currentF": 46
+  },
+  "rainChancePct": 39,
+  "wind": {
+    "summary": "light",
+    "maxKmh": 4,
+    "display": "Light, ~4 km/h"
+  },
+  "sun": {
+    "sunrise": "07:10",
+    "sunset": "18:52",
+    "sunriseLabel": "7:10 AM",
+    "sunsetLabel": "6:52 PM",
+    "timezoneNote": "PT"
+  },
+  "asOf": "2026-09-30T05:07:31-07:00",
+  "asOfLabel": "Wed Sep 30, 2026 · 5:07 AM PT",
+  "source": "wttr.in (Langley BC; Open-Meteo daily limit exceeded)",
+  "lastUpdated": "2026-09-30T05:07:31-07:00"
+}

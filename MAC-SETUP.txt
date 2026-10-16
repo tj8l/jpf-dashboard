@@ -1,0 +1,17 @@
+JPF Dashboard — Mac setup (do this once)
+========================================
+
+EASIEST PATH
+1. Unzip this whole package (keep all files together).
+2. Right-click Install-On-This-Mac.command → Open → Open.
+3. When Login Items opens, click + and add “JPF Dashboard”.
+4. Done. On next login it should open the board in Chrome.
+
+Folder used: Documents/JPF-Dashboard
+
+If double-click does nothing:
+• Right-click JPF Dashboard.app → Open (once).
+• System Settings → Privacy & Security → Open Anyway (if shown).
+• Check Documents/JPF-Dashboard/jpf-dashboard-opener.log for errors.
+
+Still stuck: open Chrome → File → Open File → index.html → click Fullscreen.

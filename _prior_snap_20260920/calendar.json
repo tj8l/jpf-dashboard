@@ -1,0 +1,179 @@
+{
+  "timezone": "America/Vancouver",
+  "fetchedAt": "2026-09-20T05:15:00-07:00",
+  "source": "Google Calendar (primary)",
+  "range": {
+    "start": "2026-09-20",
+    "end": "2026-10-01",
+    "label": "Sep 20–Oct 1"
+  },
+  "notes": [
+    "Today Sun Sep 20: MMA D 8:00 AM–4:00 PM; U18 jamboree @ RM A3 1:15–2:45 PM @ CSIC #1 (overlaps work); U15 C practice 7:00–8:30 PM @ LEC 1; TODO reminder to book off Sat Sep 26.",
+    "Mon Sep 21: PCAHA Coach/Manager Meeting 7:00–8:00 PM PT (Zoom).",
+    "Tue Sep 22: early U15 @ SPX 2 6–7 AM; U17 GAME vs Abbotsford 7:45–9:15 PM @ SPX 2.",
+    "Sat Sep 26: MMA D vs U15 Eval 1:15–2:15 PM @ LEC 1 — book the day off (hard clash).",
+    "U15 C Draft Wed Sep 30; regular season ice from Sat Oct 3 (times TBD). MMA A crew starts Mon Oct 5."
+  ],
+  "events": [
+    {
+      "id": "sq4ka9sdodfj6lqrtmqjg5gnlc",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-20T08:00:00-07:00",
+      "end": "2026-09-20T16:00:00-07:00",
+      "whenLabel": "Sun Sep 20 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "35l1i08v92d73t4rel349710fc",
+      "summary": "TODO: Book off Sat Sep 26",
+      "location": "",
+      "start": "2026-09-20T09:00:00-07:00",
+      "end": "2026-09-20T17:00:00-07:00",
+      "whenLabel": "Sun Sep 20 · 9:00 AM–5:00 PM PT"
+    },
+    {
+      "id": "ikvdu8sj1fl8jiplna4g1tmfs4",
+      "summary": "U18 Jamboree · @ RM A3",
+      "location": "CSIC #1 (Cloverdale Sport & Ice Complex)",
+      "start": "2026-09-20T13:15:00-07:00",
+      "end": "2026-09-20T14:45:00-07:00",
+      "whenLabel": "Sun Sep 20 · 1:15 PM–2:45 PM PT"
+    },
+    {
+      "id": "ca14p4msq3f01a0lo7v6b58shk",
+      "summary": "U15 C Practice — Group 4 (coach)",
+      "location": "LEC 1 (Langley Events Centre)",
+      "start": "2026-09-20T19:00:00-07:00",
+      "end": "2026-09-20T20:30:00-07:00",
+      "whenLabel": "Sun Sep 20 · 7:00 PM–8:30 PM PT"
+    },
+    {
+      "id": "a3ohllho421jpn1r3h98idfmgk",
+      "summary": "PCAHA Coach/Manager Meeting",
+      "location": "Zoom",
+      "start": "2026-09-21T19:00:00-07:00",
+      "end": "2026-09-21T20:00:00-07:00",
+      "whenLabel": "Mon Sep 21 · 7:00 PM–8:00 PM PT"
+    },
+    {
+      "id": "6obhmmmfv8gmhimraj1k3k8jp8",
+      "summary": "U15 C Practice — Group 4 (coach)",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-09-22T06:00:00-07:00",
+      "end": "2026-09-22T07:00:00-07:00",
+      "whenLabel": "Tue Sep 22 · 6:00 AM–7:00 AM PT"
+    },
+    {
+      "id": "hjcmbub7ktecqbagebiasauc7g",
+      "summary": "U17 Game · vs Abbotsford U17",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-09-22T19:45:00-07:00",
+      "end": "2026-09-22T21:15:00-07:00",
+      "whenLabel": "Tue Sep 22 · 7:45 PM–9:15 PM PT"
+    },
+    {
+      "id": "1qqj5pq2l64pp9tm7nofnrn838",
+      "summary": "U17 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-09-24T21:15:00-07:00",
+      "end": "2026-09-24T22:45:00-07:00",
+      "whenLabel": "Thu Sep 24 · 9:15 PM–10:45 PM PT"
+    },
+    {
+      "id": "u6jofvdjsommsbs2b8both3o4s",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-26T08:00:00-07:00",
+      "end": "2026-09-26T16:00:00-07:00",
+      "whenLabel": "Sat Sep 26 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "7kd04vb9g5u3pibs6ao7uq5c7k",
+      "summary": "U15 C Eval — Groups 3 & 4",
+      "location": "LEC 1 (Langley Events Centre)",
+      "start": "2026-09-26T13:15:00-07:00",
+      "end": "2026-09-26T14:15:00-07:00",
+      "whenLabel": "Sat Sep 26 · 1:15 PM–2:15 PM PT"
+    },
+    {
+      "id": "sj2nkmc4gn80h6f2el1t226sgo",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-27T08:00:00-07:00",
+      "end": "2026-09-27T16:00:00-07:00",
+      "whenLabel": "Sun Sep 27 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "e4sl40ju6ob9n0ndt1th87uii0",
+      "summary": "U17 Practice · LEC 1",
+      "location": "LEC 1 (Langley Events Centre)",
+      "start": "2026-09-27T19:00:00-07:00",
+      "end": "2026-09-27T20:30:00-07:00",
+      "whenLabel": "Sun Sep 27 · 7:00 PM–8:30 PM PT"
+    },
+    {
+      "id": "k0emnnmcmquoh8g00c7ogpo6uc",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-28T08:00:00-07:00",
+      "end": "2026-09-28T16:00:00-07:00",
+      "whenLabel": "Mon Sep 28 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "6mrrrh8sf2ceu1b9lspu4v4gq4",
+      "summary": "U17 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-09-28T21:30:00-07:00",
+      "end": "2026-09-28T23:00:00-07:00",
+      "whenLabel": "Mon Sep 28 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "e41uqd9bifi3350aogin33buro",
+      "summary": "U15 C Practice — Group 4 (coach)",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-09-29T06:00:00-07:00",
+      "end": "2026-09-29T07:00:00-07:00",
+      "whenLabel": "Tue Sep 29 · 6:00 AM–7:00 AM PT"
+    },
+    {
+      "id": "n4bgolc1n74ftvv4pejq60rksc",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-29T08:00:00-07:00",
+      "end": "2026-09-29T16:00:00-07:00",
+      "whenLabel": "Tue Sep 29 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "k0ff6aoc6p0se04bpv9noeculo",
+      "summary": "U15 C Draft",
+      "location": "",
+      "start": "2026-09-30",
+      "end": "2026-10-01",
+      "whenLabel": "Wed Sep 30 · all day"
+    },
+    {
+      "id": "6au0kcg4hi796449pnmc0i038o",
+      "summary": "Work · MMA D",
+      "location": "",
+      "start": "2026-09-30T08:00:00-07:00",
+      "end": "2026-09-30T16:00:00-07:00",
+      "whenLabel": "Wed Sep 30 · 8:00 AM–4:00 PM PT"
+    },
+    {
+      "id": "94jqceoni4rnsatpr3iuiqe6s4",
+      "summary": "U17 Practice · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-09-30T19:00:00-07:00",
+      "end": "2026-09-30T20:00:00-07:00",
+      "whenLabel": "Wed Sep 30 · 7:00 PM–8:00 PM PT"
+    },
+    {
+      "id": "m8n62rb0i261m3le8b6bldca1o",
+      "summary": "U17 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-10-01T21:15:00-07:00",
+      "end": "2026-10-01T22:45:00-07:00",
+      "whenLabel": "Thu Oct 1 · 9:15 PM–10:45 PM PT"
+    }
+  ]
+}

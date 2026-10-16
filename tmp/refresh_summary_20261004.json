@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-04",
+  "weekbar": "Sun Oct 4\u2013Sat Oct 10",
+  "weekbar_colors": {
+    "Sun Oct 4": "orange u15 (also U17 PreSeason clash)",
+    "Mon Oct 5": "green MMA A (+ U17 practice)",
+    "Tue Oct 6": "green MMA A (+ U15 practice)",
+    "Wed Oct 7": "green MMA A",
+    "Thu Oct 8": "green MMA A (+ PCAHA + U17 practice)",
+    "Fri Oct 9": "green MMA A (+ U15 interleague + U17 dryland)",
+    "Sat Oct 10": "green MMA A (+ U15 development + U17 League Abbotsford)"
+  },
+  "teamsnap": "League labeling fix (Practice\u2192League for ICS League games); NEW League vs Vancouver TBirds Mon Oct 19 SPX 2; NEW League at Ridge Meadows Wed Nov 11; Oct 19 prior Practice UID replaced",
+  "u15_c4_ics": "BLOCKER \u2014 not in teamsnap.json; syncing U17 only; U15 Oct ice preserved from Google",
+  "gcal": "No new merges needed; all primary events already on board; 0 adds",
+  "clashes_7d": [
+    "Sun Oct 4: U17 PreSeason vs North Vancouver 6:15\u20138:15 PM LEC 1 vs U15 C4 Game vs C2 7:00\u20138:30 PM LEC 2"
+  ],
+  "markets": {
+    "btc": 85337,
+    "btc_vs_prior_pct": 0.77,
+    "gold": 4141.8,
+    "gold_vs_prior_pct": -0.0,
+    "wti": 91.11,
+    "wti_vs_prior_pct": 0.0,
+    "wti_vs_close_pct": -1.9,
+    "spx": 7722.72,
+    "spx_vs_prior_pct": 0.0,
+    "us10y": 5.277,
+    "us10y_vs_prior_pct": -0.0,
+    "eth": 2700.3,
+    "eth_vs_prior_pct": 0.6,
+    "eth_24h": 0.68,
+    "sol": 121.39,
+    "sol_vs_prior_pct": 1.64,
+    "sol_24h": 1.63,
+    "fet": 0.2358,
+    "fet_vs_prior_pct": 4.49,
+    "fet_24h": 4.77,
+    "near": 4.88445,
+    "near_vs_prior_pct": 4.73,
+    "near_24h": 4.75
+  },
+  "weather": {
+    "short": "Fog, dry",
+    "hi": 20,
+    "lo": 10,
+    "cur": 11,
+    "rain": 0
+  },
+  "material": true,
+  "material_reason": "TeamSnap League title corrections + new League games Oct 19 / Nov 11; continuing Sun Oct 4 U17/U15 clash; FET/NEAR ~+4.5\u20134.8%; U15 C4 ICS still missing",
+  "tasks_preserved": [
+    "book-off-sep26",
+    "pay-silverstar-winter-passes"
+  ],
+  "errors": [],
+  "commit": "d2d4e43",
+  "board_url": "https://tj8l.github.io/jpf-dashboard/"
+}

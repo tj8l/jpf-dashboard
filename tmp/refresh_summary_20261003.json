@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-03",
+  "weekbar": "Sat Oct 3–Fri Oct 9",
+  "teamsnap": "Future ice changed vs Fri snap: HOLDs→Practice (LEC 1 Oct 11/18, Nov 1/15/22/29); new practices (Abbotsford Oct 10, Cloverdale Oct 16, Sungod Nov 2, Ladner Nov 16, Richmond Nov 26); Dryland Aim cancelled Oct 16/23 & Nov 6; SPX→Sungod Nov 2; Oct 25 HOLD dropped",
+  "u15_c4_ics": "BLOCKER — not in teamsnap.json; syncing U17 only; U15 Oct ice preserved from Google",
+  "gcal": "No new merges needed; U15/work/Dec MMA A already on board; 0 adds/updates",
+  "clashes_7d": [
+    "Sun Oct 4: U17 PreSeason vs North Vancouver 6:15–8:15 PM LEC 1 vs U15 C4 Game vs C2 7:00–8:30 PM LEC 2"
+  ],
+  "markets": {
+    "btc": 84685,
+    "btc_vs_prior_pct": -2.14,
+    "gold": 4141.8,
+    "gold_vs_prior_pct": -0.89,
+    "wti": 91.11,
+    "wti_vs_prior_pct": 1.48,
+    "spx": 7722.72,
+    "spx_vs_prior_pct": 0.73,
+    "us10y": 5.277,
+    "us10y_vs_prior_pct": 0.76,
+    "eth": 2684.18,
+    "sol": 119.44,
+    "fet": 0.22567,
+    "near": 4.66365,
+    "sol_vs_prior_pct": -2.05,
+    "fet_vs_prior_pct": -2.5,
+    "near_vs_prior_pct": -4.35,
+    "eth_vs_prior_pct": -2.36
+  },
+  "weather": {
+    "short": "Overcast, rain ~29%",
+    "hi": 22,
+    "lo": 11,
+    "cur": 12,
+    "rain": 29
+  },
+  "material": true,
+  "material_reason": "TeamSnap U17 schedule reshuffle (HOLD→Practice, new venues, dryland drops); BTC −2.1% / NEAR −4.4%; continuing U15 C4 ICS blocker",
+  "tasks_preserved": [
+    "book-off-sep26",
+    "pay-silverstar-winter-passes"
+  ],
+  "errors": [],
+  "commit": "f6abf49"
+}

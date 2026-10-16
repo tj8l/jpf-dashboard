@@ -1,0 +1,35 @@
+{
+  "asOf": "2026-09-28T05:12:00-07:00",
+  "btc": 83449,
+  "btc_24": -1.61,
+  "btc_vs_prior": -1.77,
+  "gold": 4164.0,
+  "gold_vs_prior": -2.85,
+  "wti": 96.06,
+  "wti_vs_prior": 3.95,
+  "wti_chg_close": 4.23,
+  "spx": 7743.41,
+  "spx_vs_prior": 0.0,
+  "us10y": 5.184,
+  "eth": 2685.66,
+  "eth_vs_prior": -1.01,
+  "sol": 119.645,
+  "sol_vs_prior": -3.68,
+  "fet": 0.23423,
+  "fet_vs_prior": -4.21,
+  "near": 5.19005,
+  "near_vs_prior": -0.18,
+  "weather": {
+    "short": "Smoky haze, showers possible",
+    "hi": 16,
+    "lo": 8,
+    "cur": 8,
+    "rain": 35
+  },
+  "teamsnap": "dropped past Sun Sep 27 PreSeason vs Ridge Meadows; no new adds/moves",
+  "weekbar": "Mon Sep 28\u2013Sun Oct 4",
+  "tasks_preserved": [
+    "book-off-sep26",
+    "pay-silverstar-winter-passes"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "asOf": "2026-09-29T05:15:00-07:00",
+  "btc": 84385,
+  "btc_24": 0.98,
+  "btc_vs_prior": 1.12,
+  "gold": 4157.2,
+  "gold_vs_prior": -0.16,
+  "wti": 91.27,
+  "wti_vs_prior": -4.99,
+  "wti_chg_close": -3.53,
+  "spx": 7683.69,
+  "spx_vs_prior": -0.77,
+  "us10y": 5.24,
+  "eth": 2731.82,
+  "eth_vs_prior": 1.72,
+  "sol": 120.195,
+  "sol_vs_prior": 0.46,
+  "fet": 0.23655,
+  "fet_vs_prior": 0.99,
+  "near": 4.91075,
+  "near_vs_prior": -5.38,
+  "weather": {
+    "short": "Rain, rain ~100%",
+    "hi": 16,
+    "lo": 9,
+    "cur": 14,
+    "rain": 100
+  },
+  "teamsnap": "dropped past Mon Sep 28 Practice SPX 2; no new adds/moves/cancels of future ice",
+  "weekbar": "Tue Sep 29\u2013Mon Oct 5",
+  "tasks_preserved": [
+    "book-off-sep26",
+    "pay-silverstar-winter-passes"
+  ],
+  "new_clash": "Sun Oct 4 U17 HOLD LEC1 6:15\u20138:15 vs U15 C4 Game vs C2 LEC2 7:00\u20138:30",
+  "material": true,
+  "material_reasons": [
+    "WTI ~-5% vs prior snap",
+    "NEAR ~-5.4% vs prior snap",
+    "Weather shift: rain ~100% / moderate rain vs prior smoky haze ~35%",
+    "New calendar clash Sun Oct 4 (U17 HOLD vs U15 C4 game)",
+    "U15 C4 October schedule added from Gmail"
+  ]
+}

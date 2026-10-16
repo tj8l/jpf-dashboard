@@ -1,0 +1,78 @@
+LIVE URL (use this everywhere)
+--------------------------------
+https://tj8l.github.io/jpf-dashboard/
+Chrome scheme for Shortcuts:
+googlechromes://tj8l.github.io/jpf-dashboard/
+
+NOTE: This Pages site is PUBLIC (repo tj8l/jpf-dashboard). Anyone with the link can open it.
+If that is not OK, say so and we will switch to a private host.
+
+JPF Dashboard on iPhone (Chrome)
+================================
+
+Reality check
+-------------
+iPhone cannot auto-open anything on Unlock. Apple blocks that trigger.
+Closest options (pick one):
+
+A) BEST DAILY DRIVER — Lock Screen one-tap (1 second)
+B) NEAR-AUTO — NFC sticker inside your case (fires when you wake the phone)
+C) Action Button (15 Pro / 16 Pro) — hold to open board
+
+You need a LIVE https link for Chrome. Local chat .html shows as text.
+Once GitHub Pages (or any host) is live, use that URL below.
+
+
+1) Create the Shortcut
+----------------------
+Shortcuts app → + → New Shortcut → rename "JPF Board"
+
+Add action: Open URLs
+URL (use YOUR live https URL, Chrome scheme):
+  googlechromes://tj8l.github.io/jpf-dashboard/
+
+(If that scheme fails on your iOS version, use plain:
+  https://tj8l.github.io/jpf-dashboard/
+and set Chrome as the opener / default browser.)
+
+Turn off "Show in Share Sheet" noise. Save.
+
+
+2A) Lock Screen button
+----------------------
+Lock phone → long-press Lock Screen → Customize → Lock Screen
+Add widget → Shortcuts → pick "JPF Board"
+Unlock → one tap the widget → Chrome opens the board.
+
+
+2B) NFC in case (closest to "every unlock")
+-------------------------------------------
+1. Get any cheap NFC NTAG sticker.
+2. Before sticking it: Shortcuts → Automation → + → NFC
+   → Scan tag → Run Immediately (ask before running: OFF)
+   → Open URLs → same googlechromes://… URL as above
+3. Stick the tag inside the case (back of phone).
+Waking/unlocking often rescans the tag → board opens.
+
+
+2C) Action Button
+-----------------
+Settings → Action Button → Shortcut → JPF Board
+
+
+3) Add to Home Screen (optional)
+--------------------------------
+Open the https board in Chrome once → Share → Add to Home Screen
+(or open in Safari once for the cleanest home-screen web app).
+
+
+Keeping it fresh
+----------------
+When the assistant refreshes the dashboard, the live Pages URL updates
+(after we push). Your Shortcut URL stays the same.
+
+
+Mac still?
+----------
+Mac Login Items opener is separate (Documents/JPF-Dashboard).
+Phone path = live URL + Shortcut/NFC.

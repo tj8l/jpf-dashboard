@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-01",
+  "weekbar": "Thu Oct 1\u2013Wed Oct 7",
+  "teamsnap": "No future ice adds/moves/cancels vs Wed snap (past Wed Sep 30 practice dropped by today cutoff)",
+  "gcal": "Jersey retitled; PCAHA FV West on Google; U15 C4 Oct events use Google ids (replacing synthetic u15-c4-*)",
+  "clashes_7d": [
+    "Sun Oct 4: U17 PreSeason vs North Vancouver 6:15\u20138:15 PM LEC 1 vs U15 C4 Game vs C2 7:00\u20138:30 PM LEC 2"
+  ],
+  "markets": {
+    "btc": 83911,
+    "gold": 4182.0,
+    "wti": 91.57,
+    "spx": 7651.54,
+    "us10y": 5.293,
+    "fet": 0.23708,
+    "near": 5.09715,
+    "fet_vs_prior_pct": 6.34,
+    "near_vs_prior_pct": -3.76
+  },
+  "weather": {
+    "short": "Drizzle, rain ~29%",
+    "hi": 14,
+    "lo": 9,
+    "cur": 10,
+    "rain": 29
+  },
+  "material": true,
+  "tasks_preserved": [
+    "book-off-sep26",
+    "pay-silverstar-winter-passes"
+  ],
+  "errors": []
+}

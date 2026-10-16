@@ -1,0 +1,28 @@
+#!/bin/bash
+FOLDER="$(cd "$(dirname "$0")/../../.." && pwd)"
+HTML="$FOLDER/index.html"
+LOG="$FOLDER/jpf-dashboard-opener.log"
+
+{
+  echo "---- $(date) ----"
+  echo "FOLDER=$FOLDER"
+  echo "HTML=$HTML"
+} >> "$LOG" 2>&1
+
+if [[ ! -f "$HTML" ]]; then
+  osascript -e 'display alert "JPF Dashboard" message "Put this app in Documents/JPF-Dashboard next to index.html (or run Install-On-This-Mac.command)."'
+  echo "MISSING html" >> "$LOG"
+  exit 1
+fi
+
+# Escape spaces for file URL
+FILE_URL="file://${HTML}"
+
+if [[ -d "/Applications/Google Chrome.app" ]]; then
+  open -na "Google Chrome" --args --new-window --app="$FILE_URL" >>"$LOG" 2>&1
+  exit 0
+fi
+
+open -a "Safari" "$FILE_URL" >>"$LOG" 2>&1
+sleep 1.2
+osascript -e 'tell application "Safari" to activate' -e 'tell application "System Events" to keystroke "f" using {control down, command down}' >>"$LOG" 2>&1 || true

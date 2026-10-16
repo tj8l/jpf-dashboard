@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "timezone": "America/Vancouver",
+    "lastUpdated": "2026-09-23T05:27:00-07:00",
+    "lastUpdatedLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+    "updatedBy": "assistant-scheduled-refresh",
+    "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
+  },
+  "profile": {
+    "name": "Command Center",
+    "title": "",
+    "bitcoinStance": "Long-term holder. DCAs Bitcoin on a regular cadence \u2014 not a trader."
+  },
+  "primaryMarkets": [
+    {
+      "id": "xau",
+      "label": "Spot gold",
+      "ticker": "XAU",
+      "value": 4315.4,
+      "display": "$4,315",
+      "unit": "USD/oz",
+      "change": -31.9,
+      "changePct": -0.73,
+      "changeDisplay": "-0.73% vs prior",
+      "asOf": "2026-09-23T05:27:00-07:00",
+      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+      "source": "gold-api.com",
+      "status": "live",
+      "note": "Live ~$4,315/oz."
+    },
+    {
+      "id": "wti",
+      "label": "Spot oil",
+      "ticker": "CL \u00b7 WTI",
+      "value": 90.63,
+      "display": "$90.63",
+      "unit": "USD/bbl",
+      "change": -3.96,
+      "changePct": -4.19,
+      "changeDisplay": "-4.19% vs prior close",
+      "asOf": "2026-09-23T05:27:00-07:00",
+      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+      "source": "Yahoo CL=F",
+      "status": "live",
+      "note": "Live ~$90.63 (-4.19% vs prior close)."
+    },
+    {
+      "id": "btc",
+      "label": "Spot Bitcoin",
+      "ticker": "BTC",
+      "value": 85474,
+      "display": "$85,474",
+      "unit": "USD",
+      "change": null,
+      "changePct": -0.63,
+      "changeDisplay": "-0.63% 24h",
+      "asOf": "2026-09-23T05:27:00-07:00",
+      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+      "source": "Coinbase",
+      "status": "live",
+      "note": "~$85,474 Coinbase live."
+    },
+    {
+      "id": "spx",
+      "label": "S&P 500",
+      "ticker": "SPX",
+      "value": 7764.64,
+      "display": "7,764.64",
+      "unit": "index",
+      "change": null,
+      "changePct": 0.0,
+      "changeDisplay": "+0.00%",
+      "asOf": "2026-09-23T05:27:00-07:00",
+      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+      "source": "Yahoo ^GSPC",
+      "status": "live",
+      "note": "Session ~7,764.64."
+    },
+    {
+      "id": "us10y",
+      "label": "US 10-year",
+      "ticker": "US10Y",
+      "value": 4.968,
+      "display": "4.968%",
+      "unit": "yield",
+      "change": 0.005,
+      "changePct": 0.1,
+      "changeDisplay": "flat vs Tue",
+      "asOf": "2026-09-23T05:27:00-07:00",
+      "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+      "source": "Yahoo ^TNX",
+      "status": "live",
+      "note": "~4.968%."
+    }
+  ],
+  "watchlist": [
+    {
+      "id": "eth",
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "role": "Primary L1 settlement for agents",
+      "price": 2724.27,
+      "change24h": -1.15,
+      "change7d": 6.61,
+      "source": "Coinbase",
+      "asOf": "2026-09-23T05:27:00-07:00"
+    },
+    {
+      "id": "sol",
+      "symbol": "SOL",
+      "name": "Solana",
+      "role": "High-throughput agent txs",
+      "price": 117.03,
+      "change24h": -0.36,
+      "change7d": 8.19,
+      "source": "Coinbase",
+      "asOf": "2026-09-23T05:27:00-07:00"
+    },
+    {
+      "id": "usdc",
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "role": "Stable unit for on-chain payments",
+      "price": 1.0,
+      "change24h": 0.0,
+      "change7d": 0.0,
+      "source": "Coinbase",
+      "asOf": "2026-09-23T05:27:00-07:00"
+    },
+    {
+      "id": "fet",
+      "symbol": "FET",
+      "name": "ASI Alliance (Fetch.ai)",
+      "role": "Agent-economy token",
+      "price": 0.206675,
+      "change24h": -2.78,
+      "change7d": 23.47,
+      "source": "Coinbase",
+      "asOf": "2026-09-23T05:27:00-07:00"
+    },
+    {
+      "id": "near",
+      "symbol": "NEAR",
+      "name": "NEAR Protocol",
+      "role": "Intents / agent protocol",
+      "price": 4.79025,
+      "change24h": 4.37,
+      "change7d": 28.14,
+      "source": "Coinbase",
+      "asOf": "2026-09-23T05:27:00-07:00"
+    }
+  ],
+  "bitcoinDetail": {
+    "price": 85474,
+    "change24h": -0.63,
+    "change7d": null,
+    "high24h": 87283,
+    "low24h": 85216,
+    "marketCap": null,
+    "ath": 126173,
+    "athDate": "2025-10-06",
+    "source": "Coinbase",
+    "asOf": "2026-09-23T05:27:00-07:00"
+  },
+  "tasks": [
+    {
+      "id": "book-off-sep26",
+      "title": "Book off Sat Sep 26 (U15 eval)",
+      "detail": "Hard conflict: MMA D 08:00\u201316:00 vs U15 Eval 1:15\u20132:15 PM @ LEC 1. Request the day off.",
+      "priority": "high",
+      "done": false,
+      "due": "2026-09-20"
+    },
+    {
+      "id": "pay-silverstar-winter-passes",
+      "title": "Pay for SilverStar winter passes",
+      "detail": "Complete payment for SilverStar winter passes.",
+      "priority": "high",
+      "done": false,
+      "due": "2026-09-30"
+    }
+  ],
+  "habits": [
+    {
+      "id": "sleep",
+      "label": "Sleep",
+      "target": "In bed at a sane hour",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "exercise",
+      "label": "Exercise",
+      "target": "Move the body \u2014 practice counts",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "meditation",
+      "label": "Meditation",
+      "target": "Ten quiet minutes",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "reading",
+      "label": "Reading",
+      "target": "A few pages, not a feed",
+      "week": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  ],
+  "habitWeekStart": "2026-09-20",
+  "habitWeekDays": [
+    "Sat",
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri"
+  ],
+  "news": [
+    {
+      "title": "Dollar jumps to 8-week high as Fed rate-hike bets outweigh lower oil",
+      "source": "WSJ",
+      "date": "2026-09-23",
+      "dateLabel": "Sep 23",
+      "url": "https://www.wsj.com/"
+    },
+    {
+      "title": "BTC ~$85,474 (-0.63% 24h; -1.91% vs Tue snap); soft overnight",
+      "source": "Coinbase",
+      "date": "2026-09-23",
+      "dateLabel": "Sep 23",
+      "url": "https://www.coinbase.com/price/bitcoin"
+    },
+    {
+      "title": "WTI ~$90.63 (-4.19% vs prior close ~$94.59); gold ~$4,315",
+      "source": "Yahoo / gold-api",
+      "date": "2026-09-23",
+      "dateLabel": "Sep 23",
+      "url": "https://finance.yahoo.com/quote/CL=F"
+    },
+    {
+      "title": "Corporate CFOs lift inflation outlook; rates remain a concern \u2014 Fed survey",
+      "source": "Reuters",
+      "date": "2026-09-23",
+      "dateLabel": "Sep 23",
+      "url": "https://www.reuters.com/"
+    },
+    {
+      "title": "SPX ~7,765 flat; US10Y ~4.968%",
+      "source": "Yahoo",
+      "date": "2026-09-23",
+      "dateLabel": "Sep 23",
+      "url": "https://finance.yahoo.com/quote/%5EGSPC"
+    }
+  ],
+  "investmentNotes": [
+    "Primary tape: gold, WTI, BTC, S&P 500, US 10-year. Crypto watchlist is secondary.",
+    "BTC is a DCA long-term hold. Do not turn the CPI session into a trade.",
+    "ETH / SOL / USDC / FET / NEAR are the agent-settlement watchlist \u2014 payments rails, not a new core position."
+  ],
+  "weather": {
+    "location": "Langley, BC",
+    "timezone": "America/Vancouver",
+    "date": "2026-09-23",
+    "dateLabel": "Wed Sep 23, 2026",
+    "conditions": "Early drizzle/overcast (~13\u00b0C); mild afternoon high ~17\u00b0C / low ~9\u00b0C; rain chance ~21%. Wetter Thu\u2013Fri ahead.",
+    "conditionsShort": "Drizzle / overcast",
+    "temp": {
+      "highC": 17,
+      "lowC": 9,
+      "highF": 63,
+      "lowF": 48,
+      "displayC": "17\u00b0 / 9\u00b0C",
+      "displayF": "63\u00b0 / 48\u00b0F",
+      "currentC": 13,
+      "currentF": 55
+    },
+    "rainChancePct": 21,
+    "wind": {
+      "summary": "light",
+      "maxKmh": 14,
+      "display": "Light, up to ~14 km/h"
+    },
+    "sun": {
+      "sunrise": "06:58",
+      "sunset": "19:05",
+      "sunriseLabel": "6:58 AM",
+      "sunsetLabel": "7:05 PM",
+      "timezoneNote": "PT"
+    },
+    "asOf": "2026-09-23T05:27:00-07:00",
+    "asOfLabel": "Wed Sep 23, 2026 \u00b7 5:27 AM PT",
+    "source": "Open-Meteo + wttr.in (Langley BC)",
+    "lastUpdated": "2026-09-23T05:27:00-07:00"
+  }
+}

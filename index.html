@@ -4552,5 +4552,7 @@ window.__JPF_BAKED__ = {"calendar.json": {"timezone": "America/Vancouver", "fetc
 })();
 </script>
 <style id="cal-hide-text">#calendar .today-banner, #calendar .src-note { display:none !important; }</style>
+<style id="westshore-btn-css">#calendar .ws-link{display:inline-block;margin:4px 0 8px;padding:6px 12px;border-radius:8px;background:#2563eb;color:#fff;text-decoration:none;font-weight:600;font-size:14px}</style>
+<script id="westshore-btn-js">(function(){function add(){var c=document.getElementById('calendar');if(!c||c.querySelector('.ws-link'))return;var a=document.createElement('a');a.className='ws-link';a.href='westshore-2026.png';a.target='_blank';a.textContent='2026 Westshore';var h=c.querySelector('h2');h?h.insertAdjacentElement('afterend',a):c.prepend(a);}add();new MutationObserver(add).observe(document.body,{childList:true,subtree:true});})();</script>
 </body>
 </html>

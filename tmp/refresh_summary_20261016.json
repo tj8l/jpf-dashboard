@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-16",
+  "weekbar": "Fri Oct 16\u2013Thu Oct 22",
+  "teamsnap": "no adds/moves/cancels; Winfield tournament + Mission location/label patches reapplied after sync reset; U17 63, U15 C4 9 upcoming through 2027-03-20 (Thu Oct 15 practice rolled off)",
+  "gcal": "unchanged; MMA A Nov/Dec aligned to Google dateTimes (\u221207:00); U15 Google duplicates left to TeamSnap; 502 General Meeting Oct 21 preserved",
+  "clashes": {
+    "next7d": "none",
+    "oct24": "U15 C4 Development 10:45 LEC 3 vs U17 Winfield games Lake Country 6:30 AM/4:45 PM (known)",
+    "oct25": "U17 holds to 2:45 PM Lake Country vs U15 C4 vs South Delta 7 PM LEC 2 (known)",
+    "later": "Oct 28 U17 Dev vs U15 Semiahmoo; Nov 4\u20138 MMA A; Nov 6\u20139 Abbotsford HOLD + U15 Mission; Dec 3\u20138 MMA A"
+  },
+  "markets": "BTC 82352 +1.88% (24h +2.33%); gold 4175 +0.68%; WTI 96.57 -1.43%; SPX 7744.06 +0.33%; US10Y 5.09% (-0.10 pts); NEAR +15.55%, FET +6.8%, ETH +5.22%, SOL +4.5% 24h",
+  "weather": "Langley dry/mild 22/6 C, rain 12%; Sat showers 74%",
+  "material": false,
+  "commit": "4d58840",
+  "pushed": true
+}

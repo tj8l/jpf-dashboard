@@ -1,0 +1,61 @@
+{
+  "asOf": "2026-09-22T21:51:44-07:00",
+  "note": "Tue evening PT \u2014 gold live gold-api; WTI/SPX via CNBC; BTC Coinbase",
+  "spots": [
+    {
+      "id": "gold",
+      "name": "Spot gold",
+      "symbol": "XAU",
+      "value": 4347.3,
+      "unit": "USD/oz",
+      "change": "live",
+      "source": "gold-api.com",
+      "asOf": "2026-09-22",
+      "status": "live"
+    },
+    {
+      "id": "oil",
+      "name": "Spot oil (WTI)",
+      "symbol": "CL",
+      "value": 88.98,
+      "unit": "USD/bbl",
+      "change": "-1.70% vs prior close",
+      "source": "CNBC @CL.1",
+      "asOf": "2026-09-22",
+      "status": "live"
+    },
+    {
+      "id": "btc",
+      "name": "Spot BTC",
+      "symbol": "BTC",
+      "value": 87137,
+      "unit": "USD",
+      "change": "+1.99% 24h",
+      "source": "Coinbase",
+      "asOf": "2026-09-22",
+      "status": "live"
+    },
+    {
+      "id": "spx",
+      "name": "S&P 500",
+      "symbol": "SPX",
+      "value": 7764.64,
+      "unit": "index",
+      "change": "+0.00%",
+      "source": "CNBC .SPX",
+      "asOf": "2026-09-22",
+      "status": "live"
+    },
+    {
+      "id": "us10y",
+      "name": "US 10-year Treasury",
+      "symbol": "US10Y",
+      "value": 4.968,
+      "unit": "%",
+      "change": "Yahoo ^TNX",
+      "source": "Yahoo ^TNX",
+      "asOf": "2026-09-22",
+      "status": "live"
+    }
+  ]
+}

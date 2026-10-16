@@ -1,0 +1,25 @@
+{
+  "btc": 84685,
+  "btc_vs_prior_pct": -2.14,
+  "gold": 4141.8,
+  "gold_vs_prior_pct": -0.89,
+  "wti": 91.11,
+  "wti_vs_prior_pct": 1.48,
+  "spx": 7722.72,
+  "spx_vs_prior_pct": 0.73,
+  "us10y": 5.277,
+  "us10y_vs_prior_pct": 0.76,
+  "eth": 2684.18,
+  "sol": 119.44,
+  "fet": 0.22567,
+  "near": 4.66365,
+  "sol_vs_prior_pct": -2.05,
+  "fet_vs_prior_pct": -2.5,
+  "near_vs_prior_pct": -4.35,
+  "eth_vs_prior_pct": -2.36,
+  "clashes": [
+    "Sun Oct 4: U17 PreSeason vs North Vancouver 6:15\u20138:15 PM LEC 1 vs U15 C4 Game vs C2 7:00\u20138:30 PM LEC 2"
+  ],
+  "gcal_added": 0,
+  "gcal_updated": 0
+}

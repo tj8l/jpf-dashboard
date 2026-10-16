@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-02",
+  "weekbar": "Fri Oct 2\u2013Thu Oct 8",
+  "teamsnap": "No future ice adds/moves/cancels vs Thu snap (past Thu Oct 1 practice dropped by today cutoff)",
+  "u15_c4_ics": "BLOCKER \u2014 not in teamsnap.json; syncing U17 only; U15 Oct ice preserved from Google",
+  "gcal": "Merged 6 missing Dec MMA A shifts; U15/work Oct unchanged",
+  "clashes_7d": [
+    "Sun Oct 4: U17 PreSeason vs North Vancouver 6:15\u20138:15 PM LEC 1 vs U15 C4 Game vs C2 7:00\u20138:30 PM LEC 2"
+  ],
+  "markets": {
+    "btc": 86541,
+    "btc_vs_prior_pct": 3.13,
+    "gold": 4178.9,
+    "gold_vs_prior_pct": -0.07,
+    "wti": 89.78,
+    "wti_vs_prior_pct": -1.95,
+    "spx": 7666.45,
+    "spx_vs_prior_pct": 0.19,
+    "us10y": 5.237,
+    "us10y_vs_prior_pct": -1.06,
+    "eth": 2749.08,
+    "sol": 121.94,
+    "fet": 0.23144,
+    "near": 4.87555,
+    "sol_vs_prior_pct": 3.4,
+    "fet_vs_prior_pct": -2.38,
+    "near_vs_prior_pct": -4.35
+  },
+  "weather": {
+    "short": "Overcast, rain ~19%",
+    "hi": 19,
+    "lo": 13,
+    "cur": 14,
+    "rain": 19
+  },
+  "material": true,
+  "tasks_preserved": [
+    "book-off-sep26",
+    "pay-silverstar-winter-passes"
+  ],
+  "errors": []
+}
