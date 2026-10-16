@@ -1,21 +1,22 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-15T05:15:00-07:00",
+  "fetchedAt": "2026-10-16T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-15",
-    "end": "2026-10-21",
-    "label": "Oct 15–21 (next 7 days)"
+    "start": "2026-10-16",
+    "end": "2026-10-22",
+    "label": "Oct 16–22 (next 7 days)"
   },
   "notes": [
-    "Today Thu Oct 15: U15 C4 Practice 6:45–8:05 PM PT @ Twin Rinks Rink 2, then U17 Practice 9:15–10:45 PM @ SPX 2. No clashes in the next 7 days.",
-    "NEW (TeamSnap): U17 Winfield tournament (Lake Country/Kelowna) Oct 23–25 now has games: Fri Oct 23 11:00 AM vs Victoria Admirals; team dinner 5:45 PM Park Inn by Radisson, Kelowna; Sat Oct 24 6:30 AM vs North Delta and 4:45 PM vs New Westminster; Sun Oct 25 holds for semifinals (6:00 / 8:15 AM), 5th/6th (10:30 AM) and gold medal game (12:45–2:45 PM), all @ Winfield Arena.",
-    "CLASH: Sat Oct 24 U15 C4 Development 10:45 AM @ LEC 3 (Langley) falls between U17 games at 6:30 AM and 4:45 PM in Lake Country. Sun Oct 25 U15 C4 vs South Delta C1 7:00 PM @ LEC 2 comes right after U17 tournament holds that run to 2:45 PM in Lake Country (about a 4-hour drive).",
-    "U15 C4 Mission tournament games Fri Nov 6, Sat Nov 7, Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM). Clashes with U17 HOLD · Abbotsford Nov 6–9 and MMA A shifts Nov 6–8 (4 PM–12 AM).",
+    "Today Fri Oct 16: U17 League vs Cloverdale 8:45–10:15 PM PT @ Cloverdale Sport & Ice Complex. No U15 ice tonight. No clashes in the next 7 days.",
+    "Week: Sat U15 C4 at Cloverdale C3 5:30 PM (arrive 4:45); Sun U17 League vs South Delta 6:15 PM @ LEC 1; Mon U17 League vs Vancouver TBirds 9:30 PM @ SPX 2; Tue U15 C4 Practice 6:00 AM @ SPX 2; Wed 502 General Meeting 6–7 PM then U17 Development 7–8 PM @ LEC 2; Thu U17 Practice 9:15 PM @ SPX 2.",
+    "Known (unchanged): U17 Winfield tournament (Lake Country/Kelowna) Oct 23–25 — Fri 11:00 AM vs Victoria Admirals; dinner 5:45 PM Park Inn Kelowna; Sat 6:30 AM vs North Delta and 4:45 PM vs New Westminster; Sun holds for semis/5th–6th/gold through 2:45 PM @ Winfield Arena.",
+    "CLASH (unchanged): Sat Oct 24 U15 C4 Development 10:45 AM @ LEC 3 falls between U17 Winfield games; Sun Oct 25 U15 C4 vs South Delta 7:00 PM @ LEC 2 after U17 holds that run to ~2:45 PM in Lake Country (~4 hr drive).",
+    "U15 C4 Mission tournament Fri Nov 6–Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM). Clashes with U17 HOLD · Abbotsford Nov 6–9 and MMA A shifts Nov 6–8 (4 PM–12 AM).",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16; Wed Oct 28 overlaps U15 C4 at Semiahmoo C4 (7:45 PM, Newton Arena); Wed Nov 4 during MMA A shift.",
-    "MMA A block Nov 4–8 overlaps U17 Development Wed Nov 4 + Practice Thu Nov 5, Abbotsford HOLD Nov 6–9 and the U15 C4 Mission games Nov 6–8; MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
+    "MMA A block Nov 4–8 overlaps U17 Development Wed Nov 4 + Practice Thu Nov 5, Abbotsford HOLD Nov 6–9 and U15 C4 Mission Nov 6–8; MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Thu Oct 15–Wed Oct 21: U15 C4 orange (Practice Thu 6:45 PM Twin Rinks, Sat at Cloverdale C3 5:30 PM, Practice Tue Oct 20 6 AM SPX 2); U17 yellow (Practice Thu 9:15 PM SPX 2, League vs Cloverdale Fri 8:45 PM, League vs South Delta Sun 6:15 PM LEC 1, League vs Vancouver TBirds Mon 9:30 PM SPX 2, Development Wed 7 PM LEC 2). Wed Oct 21 502 General Meeting 6–7 PM.",
+    "Weekbar Fri Oct 16–Thu Oct 22: U17 yellow (League Fri Cloverdale 8:45 PM, League Sun South Delta LEC 1 6:15 PM, League Mon TBirds SPX 2 9:30 PM, Development Wed 7 PM LEC 2, Practice Thu 9:15 PM SPX 2); U15 orange (Sat at Cloverdale C3 5:30 PM, Practice Tue 6 AM SPX 2). Wed Oct 21 502 General Meeting 6–7 PM.",
     "No MMA shifts on Google Calendar until Wed Nov 4.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
@@ -207,22 +208,6 @@
       "start": "2026-10-10T16:00:00-07:00",
       "end": "2026-10-11T00:00:00-07:00",
       "whenLabel": "Sat Oct 10 · 4:00 PM–12:00 AM PT"
-    },
-    {
-      "id": "ts-u15-10816643-374988032",
-      "summary": "U15 C4 Practice · Twin Rinks - Rink 2 - Rink 2",
-      "location": "Twin Rinks - Rink 2 - Rink 2",
-      "start": "2026-10-15T18:45:00-07:00",
-      "end": "2026-10-15T20:05:00-07:00",
-      "whenLabel": "Thu Oct 15 · 6:45 PM–8:05 PM PT"
-    },
-    {
-      "id": "ts-u17-10808348-374188722",
-      "summary": "U17 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-10-15T21:15:00-07:00",
-      "end": "2026-10-15T22:45:00-07:00",
-      "whenLabel": "Thu Oct 15 · 9:15 PM–10:45 PM PT"
     },
     {
       "id": "ts-u17-10808348-374642772",
@@ -444,8 +429,8 @@
       "id": "d475ldado8uqjogvs8uggn7vpc",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-04T16:00:00-08:00",
-      "end": "2026-11-05T00:00:00-08:00",
+      "start": "2026-11-04T17:00:00-07:00",
+      "end": "2026-11-05T01:00:00-07:00",
       "whenLabel": "Wed Nov 4 · 4:00 PM–12:00 AM PT"
     },
     {
@@ -460,8 +445,8 @@
       "id": "9nmptn2nvp5tmrnucgptpqo6ao",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-05T16:00:00-08:00",
-      "end": "2026-11-06T00:00:00-08:00",
+      "start": "2026-11-05T17:00:00-07:00",
+      "end": "2026-11-06T01:00:00-07:00",
       "whenLabel": "Thu Nov 5 · 4:00 PM–12:00 AM PT"
     },
     {
@@ -492,8 +477,8 @@
       "id": "gfsk6c9dldfto7n32mkkq8d6k0",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-06T16:00:00-08:00",
-      "end": "2026-11-07T00:00:00-08:00",
+      "start": "2026-11-06T17:00:00-07:00",
+      "end": "2026-11-07T01:00:00-07:00",
       "whenLabel": "Fri Nov 6 · 4:00 PM–12:00 AM PT"
     },
     {
@@ -516,8 +501,8 @@
       "id": "c1omq1j81qd1qqsm832gaq62hk",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-07T16:00:00-08:00",
-      "end": "2026-11-08T00:00:00-08:00",
+      "start": "2026-11-07T17:00:00-07:00",
+      "end": "2026-11-08T01:00:00-07:00",
       "whenLabel": "Sat Nov 7 · 4:00 PM–12:00 AM PT"
     },
     {
@@ -540,8 +525,8 @@
       "id": "mr8509qth1bm8hve3i8djsa1ho",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-08T16:00:00-08:00",
-      "end": "2026-11-09T00:00:00-08:00",
+      "start": "2026-11-08T17:00:00-07:00",
+      "end": "2026-11-09T01:00:00-07:00",
       "whenLabel": "Sun Nov 8 · 4:00 PM–12:00 AM PT"
     },
     {
@@ -708,8 +693,8 @@
       "id": "bk4lfhhc7akqdj3vo8p4o7f1k4",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-03T16:00:00-08:00",
-      "end": "2026-12-04T00:00:00-08:00",
+      "start": "2026-12-03T17:00:00-07:00",
+      "end": "2026-12-04T01:00:00-07:00",
       "whenLabel": "Thu Dec 3 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -725,8 +710,8 @@
       "id": "fr0bmmkprsedkp091m9r9f2jt4",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-04T16:00:00-08:00",
-      "end": "2026-12-05T00:00:00-08:00",
+      "start": "2026-12-04T17:00:00-07:00",
+      "end": "2026-12-05T01:00:00-07:00",
       "whenLabel": "Fri Dec 4 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -742,8 +727,8 @@
       "id": "a1jif73f4l6ugvhbt8l2mi3f3c",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-05T16:00:00-08:00",
-      "end": "2026-12-06T00:00:00-08:00",
+      "start": "2026-12-05T17:00:00-07:00",
+      "end": "2026-12-06T01:00:00-07:00",
       "whenLabel": "Sat Dec 5 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -759,8 +744,8 @@
       "id": "9fec3idqnc2tjr5squrrivm9cs",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-06T16:00:00-08:00",
-      "end": "2026-12-07T00:00:00-08:00",
+      "start": "2026-12-06T17:00:00-07:00",
+      "end": "2026-12-07T01:00:00-07:00",
       "whenLabel": "Sun Dec 6 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -776,8 +761,8 @@
       "id": "d2jnqme6h096afu1jbd8fn9suk",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-07T16:00:00-08:00",
-      "end": "2026-12-08T00:00:00-08:00",
+      "start": "2026-12-07T17:00:00-07:00",
+      "end": "2026-12-08T01:00:00-07:00",
       "whenLabel": "Mon Dec 7 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -793,8 +778,8 @@
       "id": "gb4orqv0uh5gtmvlfncm0pj3b4",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-08T16:00:00-08:00",
-      "end": "2026-12-09T00:00:00-08:00",
+      "start": "2026-12-08T17:00:00-07:00",
+      "end": "2026-12-09T01:00:00-07:00",
       "whenLabel": "Tue Dec 8 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
