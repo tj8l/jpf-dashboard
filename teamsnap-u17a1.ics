@@ -7,7 +7,7 @@ X-WR-CALNAME:LANGLEY MHA U17 A1
 X-WR-CALDESC:The event schedule for the LANGLEY MHA U17 A1 Ice Hockey team
 X-WR-TIMEZONE:America/Los_Angeles
 X-PUBLISHED-TTL:PT1H
-X-TS-TIMESTAMP:2026-10-16 11:18:39
+X-TS-TIMESTAMP:2026-10-17 11:52:01
 BEGIN:VTIMEZONE
 TZID:America/Los_Angeles
 BEGIN:DAYLIGHT
@@ -594,14 +594,14 @@ SEQUENCE:0
 SUMMARY:LANGLEY MHA U17 A1 League vs Abbotsford U17 A1
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20261002T183513
+DTSTAMP:20261016T221405
 UID:10808348-374642772
 DTSTART;TZID=America/Los_Angeles:20261016T204500
 DTEND;TZID=America/Los_Angeles:20261016T221500
 DESCRIPTION:Location: Cloverdale Sport and Ice Complex - Blue Rink\n U17L22
  10 -  \n Uniform: White\, but bring both (Arrival Time:  7:45 PM (Pacific 
  Time (US & Canada))) 
-LAST-MODIFIED:20261002T183513
+LAST-MODIFIED:20261016T221405
 LOCATION:6336 177b St\, Surrey\, BC V3S 1Z3
 SEQUENCE:0
 SUMMARY:LANGLEY MHA U17 A1 League at Cloverdale U17 A1
@@ -613,7 +613,7 @@ DTSTART;TZID=America/Los_Angeles:20261018T181500
 DTEND;TZID=America/Los_Angeles:20261018T201500
 DESCRIPTION:Location: ARENAS at LEC - Rink 1\n U17L2213 -  \n Uniform: Maro
  on\, but bring both (Arrival Time:  5:15 PM (Pacific Time (US & Canada))) 
- \n\nAssignments:\n\nMusic : Unassigned\n\n
+ \n\nAssignments:\n\nMusic : Lucas Lanser\n\n
 LAST-MODIFIED:20261002T183652
 LOCATION:7888 200 St Langley\, BC\, Canada
 SEQUENCE:0
@@ -1002,5 +1002,19 @@ LAST-MODIFIED:20261014T171312
 LOCATION:365 Mills Rd\, Kelowna\, BC V1X 4G9
 SEQUENCE:0
 SUMMARY:LANGLEY MHA U17 A1 - HOLD for team dinner
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20261016T131952
+UID:10808348-375253591
+DTSTART;TZID=America/Los_Angeles:20261101T120000
+DTEND;TZID=America/Los_Angeles:20261101T123000
+DESCRIPTION:Arrive noon\nMaroon jerseys\n\nPlayers must wear their regular 
+ hockey gear\, including their jersey\, and bring their stick. No skates\, 
+ helmets or neck guards.  (Arrival Time: 12:00 PM (Pacific Time (US & Canad
+ a))) 
+LAST-MODIFIED:20261016T131952
+LOCATION:George Preston Recreation Centre
+SEQUENCE:0
+SUMMARY:LANGLEY MHA U17 A1 - TEAM PHOTO
 END:VEVENT
 END:VCALENDAR
