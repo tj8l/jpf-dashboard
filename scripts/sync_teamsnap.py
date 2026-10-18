@@ -270,6 +270,8 @@ def normalize_title(summary: str, rink_token: str, team: dict) -> str:
 
     if "parent" in low and "meeting" in low:
         return f"{prefix} Parent's Meeting · {rink_token}"
+    if "photo" in low:
+        return f"{prefix} Team Photo · {rink_token}"
     if "hold" in low:
         return f"{prefix} HOLD · {rink_token}"
     if "dryland" in low:
