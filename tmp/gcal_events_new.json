@@ -1,0 +1,508 @@
+{
+  "summary": "paulfraser888@gmail.com",
+  "updated": "2026-10-14T01:42:08Z",
+  "timeZone": "America/Los_Angeles",
+  "accessRole": "owner",
+  "defaultReminders": [
+    {
+      "method": "email",
+      "minutes": 30
+    },
+    {
+      "method": "popup",
+      "minutes": 30
+    }
+  ],
+  "events": [
+    {
+      "id": "mf18feail8p078rnmp643ajfto_20261020T130000Z",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=bWYxOGZlYWlsOHAwNzhybm1wNjQzYWpmdG9fMjAyNjEwMjBUMTMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+      "created": "2026-09-30T21:56:00Z",
+      "updated": "2026-09-30T21:56:01Z",
+      "summary": "LMHA U15 C4 Practice \u00b7 SPX 2",
+      "description": "Static Tuesday practice (Ryan Oct schedule). Enter in TeamSnap once Matt has admin.",
+      "location": "SPX 2",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-10-20T06:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-10-20T07:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "recurringEventId": "mf18feail8p078rnmp643ajfto",
+      "originalStartTime": {
+        "dateTime": "2026-10-20T06:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "38blc5rc4124tj8vo8gbblkiek",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=MzhibGM1cmM0MTI0dGo4dm84Z2JibGtpZWsgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-10-09T17:37:46Z",
+      "updated": "2026-10-09T17:37:46Z",
+      "summary": "502 General Meeting",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-10-21T18:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-10-21T19:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "5b98ffi9ji60pcv0etplh4tpto",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=NWI5OGZmaTlqaTYwcGN2MGV0cGxoNHRwdG8gcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-30T21:56:02Z",
+      "updated": "2026-09-30T21:56:02Z",
+      "summary": "LMHA U15 C4 Development \u00b7 LEC 3 (with C3)",
+      "description": "Shared development ice C3/C4.",
+      "location": "LEC 3",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-10-24T10:45:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-10-24T11:45:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "k25vomtn45f2be51piomtt3ivs",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=azI1dm9tdG40NWYyYmU1MXBpb210dDNpdnMgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-10-05T21:06:32Z",
+      "updated": "2026-10-05T21:06:32Z",
+      "summary": "LMHA U15 C4 vs South Delta C1 (HOME)",
+      "description": "Game U15Q6079. Arrive 6:15 PM. From TeamSnap.",
+      "location": "The Arenas at Langley Events Centre",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-10-25T19:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-10-25T20:30:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "mf18feail8p078rnmp643ajfto_20261027T130000Z",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=bWYxOGZlYWlsOHAwNzhybm1wNjQzYWpmdG9fMjAyNjEwMjdUMTMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+      "created": "2026-09-30T21:56:00Z",
+      "updated": "2026-09-30T21:56:01Z",
+      "summary": "LMHA U15 C4 Practice \u00b7 SPX 2",
+      "description": "Static Tuesday practice (Ryan Oct schedule). Enter in TeamSnap once Matt has admin.",
+      "location": "SPX 2",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-10-27T06:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-10-27T07:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "recurringEventId": "mf18feail8p078rnmp643ajfto",
+      "originalStartTime": {
+        "dateTime": "2026-10-27T06:00:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "fi7468294jbsbb80h762r3sfqc",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=Zmk3NDY4Mjk0amJzYmI4MGg3NjJyM3NmcWMgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-10-05T21:06:33Z",
+      "updated": "2026-10-05T21:06:33Z",
+      "summary": "LMHA U15 C4 at Semiahmoo C4 (away)",
+      "description": "Game U15Q6080. Main Rink. Arrive 7:00 PM. From TeamSnap.",
+      "location": "Newton Arena, 7120 136B Street, Surrey BC V3W 5E6",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-10-28T19:45:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-10-28T21:15:00-07:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "d475ldado8uqjogvs8uggn7vpc",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=ZDQ3NWxkYWRvOHVxam9ndnM4dWdnbjd2cGMgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:09Z",
+      "updated": "2026-09-14T17:33:29Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-11-04T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-11-05T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "9nmptn2nvp5tmrnucgptpqo6ao",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=OW5tcHRuMm52cDV0bXJudWNncHRwcW82YW8gcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:11Z",
+      "updated": "2026-09-14T17:33:25Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-11-05T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-11-06T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "gfsk6c9dldfto7n32mkkq8d6k0",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=Z2ZzazZjOWRsZGZ0bzduMzJta2txOGQ2azAgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:11Z",
+      "updated": "2026-09-14T17:33:38Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-11-06T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-11-07T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "c1omq1j81qd1qqsm832gaq62hk",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=YzFvbXExajgxcWQxcXFzbTgzMmdhcTYyaGsgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:31Z",
+      "updated": "2026-09-14T17:33:32Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-11-07T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-11-08T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "mr8509qth1bm8hve3i8djsa1ho",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=bXI4NTA5cXRoMWJtOGh2ZTNpOGRqc2ExaG8gcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:32Z",
+      "updated": "2026-09-14T17:33:32Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-11-08T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-11-09T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "bk4lfhhc7akqdj3vo8p4o7f1k4",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=Yms0bGZoaGM3YWtxZGozdm84cDRvN2YxazQgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:31Z",
+      "updated": "2026-09-14T17:33:31Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-12-03T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-12-04T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "fr0bmmkprsedkp091m9r9f2jt4",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=ZnIwYm1ta3Byc2Vka3AwOTFtOXI5ZjJqdDQgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:32Z",
+      "updated": "2026-09-14T17:33:32Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-12-04T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-12-05T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "a1jif73f4l6ugvhbt8l2mi3f3c",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=YTFqaWY3M2Y0bDZ1Z3ZoYnQ4bDJtaTNmM2MgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:31Z",
+      "updated": "2026-09-14T17:33:32Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-12-05T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-12-06T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "9fec3idqnc2tjr5squrrivm9cs",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=OWZlYzNpZHFuYzJ0anI1c3F1cnJpdm05Y3MgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:31Z",
+      "updated": "2026-09-14T17:33:32Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-12-06T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-12-07T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "d2jnqme6h096afu1jbd8fn9suk",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=ZDJqbnFtZTZoMDk2YWZ1MWpiZDhmbjlzdWsgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:39Z",
+      "updated": "2026-09-14T17:33:39Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-12-07T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-12-08T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    },
+    {
+      "id": "gb4orqv0uh5gtmvlfncm0pj3b4",
+      "status": "confirmed",
+      "htmlLink": "https://www.google.com/calendar/event?eid=Z2I0b3JxdjB1aDVndG12bGZuY20wcGozYjQgcGF1bGZyYXNlcjg4OEBt",
+      "created": "2026-09-14T17:33:39Z",
+      "updated": "2026-09-14T17:33:39Z",
+      "summary": "Work \u00b7 MMA A",
+      "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet.",
+      "creator": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "organizer": {
+        "email": "paulfraser888@gmail.com",
+        "self": true
+      },
+      "start": {
+        "dateTime": "2026-12-08T16:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "end": {
+        "dateTime": "2026-12-09T00:00:00-08:00",
+        "timeZone": "America/Vancouver"
+      },
+      "eventType": "DEFAULT",
+      "conferenceData": {},
+      "useDefaultReminders": true
+    }
+  ]
+}

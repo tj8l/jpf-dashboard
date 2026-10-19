@@ -1,38 +1,38 @@
 {
-  "asOf": "2026-10-18T05:10:00-07:00",
-  "note": "Sun PT (markets closed) — gold gold-api; WTI/SPX/US10Y Yahoo (Fri close vs prior close); BTC Coinbase",
+  "asOf": "2026-10-19T05:08:00-07:00",
+  "note": "Mon pre-open PT — gold gold-api; WTI/SPX/US10Y Yahoo (Fri close vs prior close); BTC Coinbase",
   "spots": [
     {
       "id": "gold",
       "name": "Spot gold",
       "symbol": "XAU",
-      "value": 4166.1,
+      "value": 4163.3,
       "unit": "USD/oz",
-      "change": "+0.00% vs prior snap",
+      "change": "-0.07% vs prior snap",
       "source": "gold-api.com",
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "status": "live"
     },
     {
       "id": "oil",
       "name": "Spot oil (WTI)",
       "symbol": "CL",
-      "value": 99.02,
+      "value": 98.21,
       "unit": "USD/bbl",
-      "change": "+1.07% vs prior close",
+      "change": "-3.16% vs prior close",
       "source": "Yahoo CL=F",
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "status": "live"
     },
     {
       "id": "btc",
       "name": "Spot BTC",
       "symbol": "BTC",
-      "value": 81917,
+      "value": 82277,
       "unit": "USD",
-      "change": "+0.54% vs prior snap",
+      "change": "+0.44% vs prior snap",
       "source": "Coinbase",
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "status": "live"
     },
     {
@@ -43,7 +43,7 @@
       "unit": "index",
       "change": "-1.09% vs prior close",
       "source": "Yahoo ^GSPC",
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "status": "live"
     },
     {
@@ -54,7 +54,7 @@
       "unit": "%",
       "change": "+0.01 pts vs prior close",
       "source": "Yahoo ^TNX",
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "status": "live"
     }
   ]

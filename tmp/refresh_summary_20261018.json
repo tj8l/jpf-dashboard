@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-18",
+  "weekbar": "Sun Oct 18\u2013Sat Oct 24",
+  "teamsnap": "U15 C4 added Practice Sun Nov 1 1:20 PM George Preston Rec Centre (same day as U17 Team Photo noon); Cloverdale Oct 17 rolled off; Winfield/Mission/Team Photo patches reapplied; U17 63, U15 C4 9 upcoming",
+  "gcal": "unchanged except Oct 17 Cloverdale Google mirror rolled off (17 events); MMA A Nov/Dec same instants",
+  "clashes": {
+    "next7d": "Sat Oct 24 U15 C4 Development 10:45 AM LEC 3 between U17 Winfield #2 6:30 AM and #3 4:45 PM",
+    "new": "Sat Oct 24 clash entered rolling next-7d window (was outside Oct 17 weekbar)"
+  },
+  "markets": "BTC 81917 +0.54% vs prior snap (24h +0.63%); gold 4166.1 +0.00% vs prior snap; WTI 99.02 +1.07% vs prior close; SPX 7659.44 -1.09% vs prior close; US10Y 5.10%; FET -0.77%, NEAR -3.62% 24h",
+  "weather": "Langley Clear, cool rain 0% 15/4 C; Mon\u2013Thu dry",
+  "material": true,
+  "commit": "ad27e8d",
+  "pushed": true,
+  "materialReasons": [
+    "TeamSnap add: U15 C4 Practice Sun Nov 1 1:20 PM @ George Preston Rec Centre",
+    "Clash Sat Oct 24 U15 Development vs U17 Winfield now inside next-7d weekbar"
+  ]
+}
