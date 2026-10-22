@@ -1,25 +1,26 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-21T05:10:00-07:00",
+  "fetchedAt": "2026-10-22T05:10:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-21",
-    "end": "2026-10-27",
-    "label": "Oct 21–27 (next 7 days)"
+    "start": "2026-10-22",
+    "end": "2026-10-28",
+    "label": "Oct 22–28 (next 7 days)"
   },
   "notes": [
-    "Today Wed Oct 21: 502 General Meeting 6–7 PM, then U17 Development 7–8 PM @ LEC 2.",
-    "NEW from TeamSnap: U15 C4 Practice Sun Nov 1 11:15 AM–12:45 PM @ George Preston Rec Centre (arrive 10:45 AM) — overlaps U17 Team Photo 12:00–12:30 PM at the same venue; U15 C4 Team Photo follows at 1:20 PM.",
-    "CLASH Fri Oct 23: U15 C4 home game vs Cloverdale 7:00 PM @ LEC 2 (Langley) vs U17 Winfield opener 11:00 AM (Lake Country) + U17 team dinner 5:45 PM Park Inn Kelowna — can't do both (~4 hr drive).",
-    "CLASH Sat Oct 24: U15 C4 Development 10:45 AM @ LEC 3 sits between U17 Winfield games (6:30 AM vs North Delta, 4:45 PM vs New Westminster). Sun Oct 25: U15 C4 vs South Delta 7:00 PM @ LEC 2 after U17 holds that run to ~2:45 PM in Lake Country.",
-    "Week: Wed 502 General Meeting 6–7 PM then U17 Development 7–8 PM @ LEC 2; Thu clear; Fri U17 Winfield opener 11 AM + dinner 5:45 PM Kelowna, U15 C4 vs Cloverdale 7 PM LEC 2; Sat Winfield #2 6:30 AM / #3 4:45 PM + U15 Development 10:45 AM; Sun U17 holds to 2:45 PM, U15 C4 vs South Delta 7 PM LEC 2; Mon U17 Practice 9:30 PM SPX 2; Tue Oct 27 U15 C4 Practice 6 AM SPX 2.",
-    "U17 Winfield tournament (Lake Country/Kelowna) Oct 23–25 — Fri 11:00 AM vs Victoria Admirals; dinner 5:45 PM Park Inn Kelowna; Sat 6:30 AM vs North Delta and 4:45 PM vs New Westminster; Sun holds for semis/5th–6th/gold through 2:45 PM @ Winfield Arena.",
+    "POSTPONED: U15 C4 home game vs Cloverdale C4 (Fri Oct 23, 7 PM @ LEC 2) is off TeamSnap — postponed per Matt's Oct 21 TeamSnap message, to be rescheduled later in the season. That clears the Fri clash with U17 Winfield.",
+    "NEW from TeamSnap: U17 Abbotsford tournament games replace the Nov 6–8 HOLDs — Fri Nov 6 2:45 PM vs Penticton U18 A2 @ Matsqui Rec Centre (arrive 1:45, White); Sat Nov 7 10:15 AM vs Squamish U18 A2 @ MSA Arena (arrive 9:15, Maroon); Sun Nov 8 7:15 AM vs West Kelowna U18 A2 @ Summit Centre West (arrive 6:15, White).",
+    "Abbotsford clashes: Fri Nov 6 game 2:45–4:45 PM runs into MMA A shift (4 PM); Sat Nov 7 10:15 AM and Sun Nov 8 7:15 AM overlap U15 C4 Mission tournament days (times TBD); MMA A shifts 4 PM–12 AM all three days.",
+    "NEW on Google: Zoom call with Bruce Wed Nov 4 4–5 PM PT — overlaps MMA A shift (4 PM–12 AM) and comes before U17 Development 7 PM.",
+    "U17 Winfield tournament (Lake Country/Kelowna) Oct 23–25 — Fri 11:00 AM vs Victoria Admirals; team dinner 5:45 PM Park Inn Kelowna with parent meeting after; Sat 6:30 AM vs North Delta and 4:45 PM vs New Westminster; Sun holds for semis/5th–6th/gold through 2:45 PM @ Winfield Arena.",
+    "CLASH Sat Oct 24: U15 C4 Development 10:45 AM @ LEC 3 sits between U17 Winfield games. Sun Oct 25: U15 C4 vs South Delta 7:00 PM @ LEC 2 after U17 holds that run to ~2:45 PM in Lake Country.",
+    "Week: Thu clear; Fri U17 Winfield opener 11 AM + dinner 5:45 PM Kelowna; Sat Winfield 6:30 AM / 4:45 PM + U15 Development 10:45 AM LEC 3; Sun U17 holds to 2:45 PM, U15 C4 vs South Delta 7 PM LEC 2; Mon U17 Practice 9:30 PM SPX 2; Tue U15 C4 Practice 6 AM SPX 2; Wed Oct 28 U17 Development 7 PM LEC 2 overlaps U15 C4 at Semiahmoo C4 7:45 PM Newton Arena.",
     "Sun Nov 1: U15 C4 Practice 11:15 AM–12:45 PM, U17 Team Photo 12:00–12:30 PM (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard), U15 C4 Team Photo 1:20 PM — all George Preston Rec Centre; U17 League vs Richmond 6:15 PM @ LEC 1.",
-    "U15 C4 Mission tournament Fri Nov 6–Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM). Clashes with U17 HOLD · Abbotsford Nov 6–9 and MMA A shifts Nov 6–8 (4 PM–12 AM).",
-    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16; Wed Oct 28 overlaps U15 C4 at Semiahmoo C4 (7:45 PM, Newton Arena); Wed Nov 4 during MMA A shift.",
-    "MMA A block Nov 4–8 overlaps U17 Development Wed Nov 4 + Practice Thu Nov 5, Abbotsford HOLD Nov 6–9 and U15 C4 Mission Nov 6–8; MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
+    "U15 C4 Mission tournament Fri Nov 6–Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM).",
+    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16; Wed Nov 4 during MMA A shift.",
+    "MMA A block Nov 4–8 overlaps U17 Development Wed Nov 4 + Practice Thu Nov 5, Abbotsford games Nov 6–8 and U15 C4 Mission Nov 6–8; MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Wed Oct 21–Tue Oct 27: U15 orange (vs Cloverdale Fri 7 PM LEC 2, Development Sat 10:45 AM LEC 3, vs South Delta Sun 7 PM LEC 2, Practice Tue 6 AM SPX 2); U17 yellow (Development Wed 7 PM LEC 2, Winfield Fri–Sun, Practice Mon 9:30 PM SPX 2). Wed 502 General Meeting 6–7 PM.",
+    "Weekbar Thu Oct 22–Wed Oct 28: U15 orange (Development Sat 10:45 AM LEC 3, vs South Delta Sun 7 PM LEC 2, Practice Tue 6 AM SPX 2, at Semiahmoo Wed 7:45 PM); U17 yellow (Winfield Fri–Sun, Practice Mon 9:30 PM SPX 2, Development Wed 7 PM LEC 2).",
     "No MMA shifts on Google Calendar until Wed Nov 4.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
@@ -221,14 +222,6 @@
       "whenLabel": "Wed Oct 21 · 6:00 PM–7:00 PM PT"
     },
     {
-      "id": "ts-u17-10808348-374863309",
-      "summary": "U17 Development · LEC 2",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-10-21T19:00:00-07:00",
-      "end": "2026-10-21T20:00:00-07:00",
-      "whenLabel": "Wed Oct 21 · 7:00 PM–8:00 PM PT"
-    },
-    {
       "id": "ts-u17-10808348-375167688",
       "summary": "U17 Tournament #1 · vs Victoria Admirals",
       "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
@@ -238,19 +231,11 @@
     },
     {
       "id": "ts-u17-10808348-375168061",
-      "summary": "U17 HOLD · Team dinner (Kelowna)",
-      "location": "Park Inn by Radisson (365 Mills Rd, Kelowna)",
+      "summary": "U17 Team dinner + parent meeting (Kelowna)",
+      "location": "Park Inn by Radisson, Meeting Room (365 Mills Rd, Kelowna)",
       "start": "2026-10-23T17:45:00-07:00",
       "end": "2026-10-23T19:45:00-07:00",
-      "whenLabel": "Fri Oct 23 · 5:45 PM–7:45 PM PT (details to come)"
-    },
-    {
-      "id": "ts-u15-10816643-375370961",
-      "summary": "U15 C4 Game · vs Cloverdale C4 (HOME)",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-10-23T19:00:00-07:00",
-      "end": "2026-10-23T19:00:00-07:00",
-      "whenLabel": "Fri Oct 23 · 7:00 PM PT (arrive 7:00 PM per TeamSnap; end time not posted)"
+      "whenLabel": "Fri Oct 23 · 5:45 PM–7:45 PM PT (burrito bar; parent meeting after)"
     },
     {
       "id": "ts-u17-10808348-375167739",
@@ -378,7 +363,7 @@
       "location": "George Preston Recreation Centre (20699 42 Ave, Langley)",
       "start": "2026-11-01T11:15:00-08:00",
       "end": "2026-11-01T12:45:00-08:00",
-      "whenLabel": "Sun Nov 1 · 11:15 AM–12:45 PM PT (NEW — arrive 10:45 AM; overlaps U17 Team Photo 12:00 same venue)"
+      "whenLabel": "Sun Nov 1 · 11:15 AM–12:45 PM PT (arrive 10:45 AM; overlaps U17 Team Photo 12:00 same venue)"
     },
     {
       "id": "ts-u17-10808348-375253591",
@@ -421,6 +406,14 @@
       "whenLabel": "Wed Nov 4 · 4:00 PM–12:00 AM PT"
     },
     {
+      "id": "7vco3epcilqssjvuctejjun98g",
+      "summary": "Zoom call with Bruce (Your Life Is the Ceremony)",
+      "location": "Zoom / Skool",
+      "start": "2026-11-04T16:00:00-08:00",
+      "end": "2026-11-04T17:00:00-08:00",
+      "whenLabel": "Wed Nov 4 · 4:00 PM–5:00 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374863311",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
@@ -445,20 +438,20 @@
       "whenLabel": "Thu Nov 5 · 9:15 PM–10:45 PM PT"
     },
     {
-      "id": "ts-u17-10808348-374267016",
-      "summary": "U17 HOLD · Abbotsford",
-      "location": "Abbotsford Rec Centre",
-      "start": "2026-11-06T00:00:00-08:00",
-      "end": "2026-11-07T00:00:00-08:00",
-      "whenLabel": "Fri Nov 6 · 12:00 AM–12:00 AM PT"
-    },
-    {
       "id": "ts-u15-10816643-375076076",
       "summary": "U15 C4 Game · vs TBD",
       "location": "Mission Leisure Centre (7650 Grand St, Mission)",
       "start": "2026-11-06T00:00:00-08:00",
       "end": "2026-11-07T00:00:00-08:00",
       "whenLabel": "Fri Nov 6 · time TBD (arrive 12:00 PM) PT"
+    },
+    {
+      "id": "ts-u17-10808348-375456255",
+      "summary": "U17 Abbotsford #1 · vs Penticton U18 A2",
+      "location": "Matsqui Recreation Centre (3106 Clearbrook Rd, Abbotsford)",
+      "start": "2026-11-06T14:45:00-08:00",
+      "end": "2026-11-06T16:45:00-08:00",
+      "whenLabel": "Fri Nov 6 · 2:45 PM–4:45 PM PT (arrive 1:45 PM, White — bring both)"
     },
     {
       "id": "gfsk6c9dldfto7n32mkkq8d6k0",
@@ -469,20 +462,20 @@
       "whenLabel": "Fri Nov 6 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u17-10808348-374267017",
-      "summary": "U17 HOLD · Abbotsford",
-      "location": "Abbotsford Rec Centre",
-      "start": "2026-11-07T00:00:00-08:00",
-      "end": "2026-11-08T00:00:00-08:00",
-      "whenLabel": "Sat Nov 7 · 12:00 AM–12:00 AM PT"
-    },
-    {
       "id": "ts-u15-10816643-375076087",
       "summary": "U15 C4 Game · vs TBD",
       "location": "Mission Leisure Centre (7650 Grand St, Mission)",
       "start": "2026-11-07T00:00:00-08:00",
       "end": "2026-11-08T00:00:00-08:00",
       "whenLabel": "Sat Nov 7 · time TBD (arrive 12:00 PM) PT"
+    },
+    {
+      "id": "ts-u17-10808348-375456336",
+      "summary": "U17 Abbotsford #2 · vs Squamish U18 A2",
+      "location": "MSA Arena (2323 Emerson St, Abbotsford)",
+      "start": "2026-11-07T10:15:00-08:00",
+      "end": "2026-11-07T12:15:00-08:00",
+      "whenLabel": "Sat Nov 7 · 10:15 AM–12:15 PM PT (arrive 9:15 AM, Maroon — bring both)"
     },
     {
       "id": "c1omq1j81qd1qqsm832gaq62hk",
@@ -493,20 +486,20 @@
       "whenLabel": "Sat Nov 7 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u17-10808348-374267018",
-      "summary": "U17 HOLD · Abbotsford",
-      "location": "Abbotsford Rec Centre",
-      "start": "2026-11-08T00:00:00-08:00",
-      "end": "2026-11-09T00:00:00-08:00",
-      "whenLabel": "Sun Nov 8 · 12:00 AM–12:00 AM PT"
-    },
-    {
       "id": "ts-u15-10816643-375076091",
       "summary": "U15 C4 Game · vs TBD",
       "location": "Mission Leisure Centre (7650 Grand St, Mission)",
       "start": "2026-11-08T00:00:00-08:00",
       "end": "2026-11-09T00:00:00-08:00",
       "whenLabel": "Sun Nov 8 · time TBD (arrive 12:00 PM) PT"
+    },
+    {
+      "id": "ts-u17-10808348-375456404",
+      "summary": "U17 Abbotsford #3 · vs West Kelowna U18 A2",
+      "location": "Summit Centre – West (3600 Townline Rd, Abbotsford)",
+      "start": "2026-11-08T07:15:00-08:00",
+      "end": "2026-11-08T09:15:00-08:00",
+      "whenLabel": "Sun Nov 8 · 7:15 AM–9:15 AM PT (arrive 6:15 AM, White — bring both)"
     },
     {
       "id": "mr8509qth1bm8hve3i8djsa1ho",
