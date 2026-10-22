@@ -193,6 +193,13 @@
       "detail": "https://www.instagram.com/reel/Dd5-Oy5smT9/ (added Oct 17)",
       "priority": "normal",
       "done": false
+    },
+    {
+      "id": "ledn-loan-renew",
+      "title": "Renew loan with Ledn",
+      "detail": "Bitcoin-backed loan. Added Oct 22, no due date.",
+      "priority": "normal",
+      "done": false
     }
   ],
   "habits": [
