@@ -1,26 +1,25 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-22T05:10:00-07:00",
+  "fetchedAt": "2026-10-23T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-22",
-    "end": "2026-10-28",
-    "label": "Oct 22–28 (next 7 days)"
+    "start": "2026-10-23",
+    "end": "2026-10-29",
+    "label": "Oct 23–29 (next 7 days)"
   },
   "notes": [
-    "POSTPONED: U15 C4 home game vs Cloverdale C4 (Fri Oct 23, 7 PM @ LEC 2) is off TeamSnap — postponed per Matt's Oct 21 TeamSnap message, to be rescheduled later in the season. That clears the Fri clash with U17 Winfield.",
-    "NEW from TeamSnap: U17 Abbotsford tournament games replace the Nov 6–8 HOLDs — Fri Nov 6 2:45 PM vs Penticton U18 A2 @ Matsqui Rec Centre (arrive 1:45, White); Sat Nov 7 10:15 AM vs Squamish U18 A2 @ MSA Arena (arrive 9:15, Maroon); Sun Nov 8 7:15 AM vs West Kelowna U18 A2 @ Summit Centre West (arrive 6:15, White).",
-    "Abbotsford clashes: Fri Nov 6 game 2:45–4:45 PM runs into MMA A shift (4 PM); Sat Nov 7 10:15 AM and Sun Nov 8 7:15 AM overlap U15 C4 Mission tournament days (times TBD); MMA A shifts 4 PM–12 AM all three days.",
-    "NEW on Google: Zoom call with Bruce Wed Nov 4 4–5 PM PT — overlaps MMA A shift (4 PM–12 AM) and comes before U17 Development 7 PM.",
-    "U17 Winfield tournament (Lake Country/Kelowna) Oct 23–25 — Fri 11:00 AM vs Victoria Admirals; team dinner 5:45 PM Park Inn Kelowna with parent meeting after; Sat 6:30 AM vs North Delta and 4:45 PM vs New Westminster; Sun holds for semis/5th–6th/gold through 2:45 PM @ Winfield Arena.",
-    "CLASH Sat Oct 24: U15 C4 Development 10:45 AM @ LEC 3 sits between U17 Winfield games. Sun Oct 25: U15 C4 vs South Delta 7:00 PM @ LEC 2 after U17 holds that run to ~2:45 PM in Lake Country.",
-    "Week: Thu clear; Fri U17 Winfield opener 11 AM + dinner 5:45 PM Kelowna; Sat Winfield 6:30 AM / 4:45 PM + U15 Development 10:45 AM LEC 3; Sun U17 holds to 2:45 PM, U15 C4 vs South Delta 7 PM LEC 2; Mon U17 Practice 9:30 PM SPX 2; Tue U15 C4 Practice 6 AM SPX 2; Wed Oct 28 U17 Development 7 PM LEC 2 overlaps U15 C4 at Semiahmoo C4 7:45 PM Newton Arena.",
+    "Today Fri Oct 23: U17 Winfield tournament opener 11:00 AM vs Victoria Admirals @ Winfield Arena (arrive 10:00, Maroon); team dinner 5:45 PM Park Inn Kelowna with parent meeting after. U15 C4 vs Cloverdale (7 PM LEC 2) remains POSTPONED — to be rescheduled.",
+    "CLASH Sat Oct 24: U15 C4 Development 10:45 AM @ LEC 3 sits between U17 Winfield games (6:30 AM vs North Delta, 4:45 PM vs New Westminster). Sun Oct 25: U15 C4 vs South Delta 7:00 PM @ LEC 2 after U17 holds that run to ~2:45 PM in Lake Country.",
+    "Week: Fri–Sun U17 Winfield; Mon U17 Practice 9:30 PM SPX 2; Tue U15 C4 Practice 6 AM SPX 2; Wed Oct 28 U17 Development 7 PM LEC 2 overlaps U15 C4 at Semiahmoo C4 7:45 PM Newton Arena; Thu Oct 29 U17 Practice 9:15 PM SPX 2.",
+    "U17 Abbotsford tournament Nov 6–8 — Fri 2:45 PM vs Penticton U18 A2 @ Matsqui Rec (arrive 1:45, White); Sat 10:15 AM vs Squamish U18 A2 @ MSA Arena (arrive 9:15, Maroon); Sun 7:15 AM vs West Kelowna U18 A2 @ Summit Centre West (arrive 6:15, White).",
+    "Abbotsford clashes: Fri Nov 6 game 2:45–4:45 PM runs into MMA A shift (4 PM); Sat Nov 7 and Sun Nov 8 overlap U15 C4 Mission tournament days (times TBD); MMA A shifts 4 PM–12 AM all three days.",
+    "Zoom call with Bruce Wed Nov 4 4–5 PM PT — overlaps MMA A shift (4 PM–12 AM) and comes before U17 Development 7 PM.",
     "Sun Nov 1: U15 C4 Practice 11:15 AM–12:45 PM, U17 Team Photo 12:00–12:30 PM (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard), U15 C4 Team Photo 1:20 PM — all George Preston Rec Centre; U17 League vs Richmond 6:15 PM @ LEC 1.",
     "U15 C4 Mission tournament Fri Nov 6–Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM).",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16; Wed Nov 4 during MMA A shift.",
     "MMA A block Nov 4–8 overlaps U17 Development Wed Nov 4 + Practice Thu Nov 5, Abbotsford games Nov 6–8 and U15 C4 Mission Nov 6–8; MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Thu Oct 22–Wed Oct 28: U15 orange (Development Sat 10:45 AM LEC 3, vs South Delta Sun 7 PM LEC 2, Practice Tue 6 AM SPX 2, at Semiahmoo Wed 7:45 PM); U17 yellow (Winfield Fri–Sun, Practice Mon 9:30 PM SPX 2, Development Wed 7 PM LEC 2).",
+    "Weekbar Fri Oct 23–Thu Oct 29: U15 orange (Development Sat 10:45 AM LEC 3, vs South Delta Sun 7 PM LEC 2, Practice Tue 6 AM SPX 2, at Semiahmoo Wed 7:45 PM); U17 yellow (Winfield Fri–Sun, Practice Mon 9:30 PM + Thu 9:15 PM SPX 2, Development Wed 7 PM LEC 2).",
     "No MMA shifts on Google Calendar until Wed Nov 4.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
