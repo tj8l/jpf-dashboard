@@ -1,25 +1,26 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-24T05:15:00-07:00",
+  "fetchedAt": "2026-10-25T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-24",
-    "end": "2026-10-30",
-    "label": "Oct 24–30 (next 7 days)"
+    "start": "2026-10-25",
+    "end": "2026-10-31",
+    "label": "Oct 25–31 (next 7 days)"
   },
   "notes": [
-    "Today Sat Oct 24: U17 Winfield #2 vs North Delta 6:30 AM (arrive 5:45, White) and #3 vs New Westminster 4:45 PM (arrive 3:45, Maroon) @ Winfield Arena; U15 C4 Development (with C3) 10:45 AM @ LEC 3 — clash with the Winfield trip.",
-    "Sun Oct 25: U17 Winfield semis/placement holds 6:00 AM–2:45 PM in Lake Country; U15 C4 vs South Delta C1 7:00 PM @ LEC 2 (arrive 6:15). U15 C4 vs Cloverdale (was Fri Oct 23) remains POSTPONED — to be rescheduled.",
-    "Week: Mon U17 Practice 9:30 PM SPX 2; Tue U15 C4 Practice 6 AM SPX 2; Wed Oct 28 U17 Development 7 PM LEC 2 overlaps U15 C4 at Semiahmoo C4 7:45 PM Newton Arena; Thu U17 Practice 9:15 PM SPX 2; Fri Oct 30 U17 Dryland 8:30 PM Aim Athletic.",
+    "Today Sun Oct 25: U17 Winfield vs TriCity U18 A2 6:00 AM (arrive 5:15, Maroon — semifinal slot) and Gold Medal HOLD 12:45 PM in Lake Country; U15 C4 vs South Delta C1 7:00 PM @ LEC 2 (arrive 6:15). U15 C4 vs Cloverdale (was Fri Oct 23) remains POSTPONED.",
+    "Week: Mon U17 Practice 9:30 PM SPX 2; Tue U15 C4 Practice 6 AM SPX 2; Wed Oct 28 U17 Development 7 PM LEC 2 overlaps U15 C4 at Semiahmoo C4 7:45 PM Newton Arena; Thu U17 Practice 9:15 PM SPX 2; Fri U17 Dryland 8:30 PM Aim Athletic; Sat Oct 31 U17 League vs Vancouver TBirds 5 PM Hillcrest.",
+    "NEW from TeamSnap (U15 C4 Nov schedule): Sun Nov 1 at C1 7 PM LEC 2; Tue practices 6 AM SPX 2 Nov 3/10/17; Fri Nov 6 vs C3 7 PM LEC 2; Sat Nov 7 + Nov 21 Development with C1 10:45 AM LEC 3; Fri Nov 13 vs C2 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 7 PM LEC 2.",
+    "New U15 clashes: Sun Nov 1 U15 at C1 7 PM LEC 2 overlaps U17 League vs Richmond 6:15 PM LEC 1 (same building); Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 vs C2 7–8:30 PM runs into U17 Dryland 8:30 PM.",
+    "Nov 6–8 pileup: Fri Nov 6 U15 vs C3 7 PM LEC 2 + U15 Mission tournament + U17 Abbotsford vs Penticton 2:45 PM + MMA A 4 PM–12 AM; Sat Nov 7 U15 Development 10:45 AM LEC 3 vs U17 Abbotsford vs Squamish 10:15 AM + Mission + MMA A; Sun Nov 8 U17 vs West Kelowna 7:15 AM + Mission + MMA A.",
+    "Google Calendar also has U15 items TeamSnap doesn't yet: C3/C4 game slots (TBD) Sun Nov 8 and Nov 29 7 PM LEC 2, practices Tue Nov 24 and Dec 1 6 AM SPX 2 — not on the board until TeamSnap posts them.",
     "U17 Abbotsford tournament Nov 6–8 — Fri 2:45 PM vs Penticton U18 A2 @ Matsqui Rec (arrive 1:45, White); Sat 10:15 AM vs Squamish U18 A2 @ MSA Arena (arrive 9:15, Maroon); Sun 7:15 AM vs West Kelowna U18 A2 @ Summit Centre West (arrive 6:15, White).",
-    "Abbotsford clashes: Fri Nov 6 game 2:45–4:45 PM runs into MMA A shift (4 PM); Sat Nov 7 and Sun Nov 8 overlap U15 C4 Mission tournament days (times TBD); MMA A shifts 4 PM–12 AM all three days.",
     "Zoom call with Bruce Wed Nov 4 4–5 PM PT — overlaps MMA A shift (4 PM–12 AM) and comes before U17 Development 7 PM.",
-    "Sun Nov 1: U15 C4 Practice 11:15 AM–12:45 PM, U17 Team Photo 12:00–12:30 PM (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard), U15 C4 Team Photo 1:20 PM — all George Preston Rec Centre; U17 League vs Richmond 6:15 PM @ LEC 1.",
-    "U15 C4 Mission tournament Fri Nov 6–Sun Nov 8 @ Mission Leisure Centre vs TBD (times TBD, arrive 12:00 PM).",
+    "Sun Nov 1: U15 C4 Practice 11:15 AM–12:45 PM, U17 Team Photo 12:00–12:30 PM (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard), U15 C4 Team Photo 1:20 PM — all George Preston Rec Centre; U17 League vs Richmond 6:15 PM @ LEC 1; U15 at C1 7 PM @ LEC 2.",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16; Wed Nov 4 during MMA A shift.",
-    "MMA A block Nov 4–8 overlaps U17 Development Wed Nov 4 + Practice Thu Nov 5, Abbotsford games Nov 6–8 and U15 C4 Mission Nov 6–8; MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
+    "MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Sat Oct 24–Fri Oct 30: U15 orange (Development Sat 10:45 AM LEC 3, vs South Delta Sun 7 PM LEC 2, Practice Tue 6 AM SPX 2, at Semiahmoo Wed 7:45 PM); U17 yellow (Winfield Sat–Sun, Practice Mon 9:30 PM + Thu 9:15 PM SPX 2, Development Wed 7 PM LEC 2, Dryland Fri 8:30 PM).",
+    "Weekbar Sun Oct 25–Sat Oct 31: U15 orange (vs South Delta Sun 7 PM LEC 2, Practice Tue 6 AM SPX 2, at Semiahmoo Wed 7:45 PM); U17 yellow (Winfield Sun, Practice Mon + Thu SPX 2, Development Wed 7 PM, Dryland Fri 8:30 PM, vs TBirds Sat 5 PM).",
     "No MMA shifts on Google Calendar until Wed Nov 4.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
@@ -221,52 +222,12 @@
       "whenLabel": "Wed Oct 21 · 6:00 PM–7:00 PM PT"
     },
     {
-      "id": "ts-u17-10808348-375167739",
-      "summary": "U17 Tournament #2 · vs North Delta",
-      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
-      "start": "2026-10-24T06:30:00-07:00",
-      "end": "2026-10-24T08:30:00-07:00",
-      "whenLabel": "Sat Oct 24 · 6:30 AM–8:30 AM PT (arrive 5:45 AM, White)"
-    },
-    {
-      "id": "ts-u15-10816643-374605108",
-      "summary": "U15 C4 Development · with C3",
-      "location": "LEC 3 (Langley Events Centre)",
-      "start": "2026-10-24T10:45:00-07:00",
-      "end": "2026-10-24T10:45:00-07:00",
-      "whenLabel": "Sat Oct 24 · 10:45 AM PT"
-    },
-    {
-      "id": "ts-u17-10808348-375167827",
-      "summary": "U17 Tournament #3 · vs New Westminster (U18 A1)",
-      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
-      "start": "2026-10-24T16:45:00-07:00",
-      "end": "2026-10-24T18:45:00-07:00",
-      "whenLabel": "Sat Oct 24 · 4:45 PM–6:45 PM PT (arrive 3:45 PM, Maroon)"
-    },
-    {
-      "id": "ts-u17-10808348-375167894",
-      "summary": "U17 HOLD · Semifinal (1st vs 4th)",
+      "id": "ts-u17-10808348-375563260",
+      "summary": "U17 Winfield · vs TriCity U18 A2 (semifinal slot)",
       "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
       "start": "2026-10-25T06:00:00-07:00",
       "end": "2026-10-25T08:00:00-07:00",
-      "whenLabel": "Sun Oct 25 · 6:00 AM–8:00 AM PT (arrive 5:00 AM)"
-    },
-    {
-      "id": "ts-u17-10808348-375167921",
-      "summary": "U17 HOLD · Semifinal (2nd vs 3rd)",
-      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
-      "start": "2026-10-25T08:15:00-07:00",
-      "end": "2026-10-25T10:15:00-07:00",
-      "whenLabel": "Sun Oct 25 · 8:15 AM–10:15 AM PT (arrive 7:15 AM)"
-    },
-    {
-      "id": "ts-u17-10808348-375167954",
-      "summary": "U17 HOLD · 5th/6th place game",
-      "location": "Winfield Arena (9830 Bottom Wood Lake Rd, Lake Country)",
-      "start": "2026-10-25T10:30:00-07:00",
-      "end": "2026-10-25T12:30:00-07:00",
-      "whenLabel": "Sun Oct 25 · 10:30 AM–12:30 PM PT (arrive 9:30 AM)"
+      "whenLabel": "Sun Oct 25 · 6:00 AM–8:00 AM PT (arrive 5:15 AM, Maroon)"
     },
     {
       "id": "ts-u17-10808348-375167995",
@@ -373,12 +334,28 @@
       "whenLabel": "Sun Nov 1 · 6:15 PM–8:15 PM PT"
     },
     {
+      "id": "ts-u15-10816643-375553616",
+      "summary": "U15 C4 Game · at C1",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-01T19:00:00-08:00",
+      "end": "2026-11-01T20:30:00-08:00",
+      "whenLabel": "Sun Nov 1 · 7:00 PM–8:30 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374642990",
       "summary": "U17 League · vs North Delta",
       "location": "Sungod Recreation Centre",
       "start": "2026-11-02T21:30:00-08:00",
       "end": "2026-11-02T23:00:00-08:00",
       "whenLabel": "Mon Nov 2 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-375553453",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-11-03T06:00:00-08:00",
+      "end": "2026-11-03T07:00:00-08:00",
+      "whenLabel": "Tue Nov 3 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "d475ldado8uqjogvs8uggn7vpc",
@@ -445,6 +422,14 @@
       "whenLabel": "Fri Nov 6 · 4:00 PM–12:00 AM PT"
     },
     {
+      "id": "ts-u15-10816643-375553788",
+      "summary": "U15 C4 Game · vs C3",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-06T19:00:00-08:00",
+      "end": "2026-11-06T20:30:00-08:00",
+      "whenLabel": "Fri Nov 6 · 7:00 PM–8:30 PM PT"
+    },
+    {
       "id": "ts-u15-10816643-375076087",
       "summary": "U15 C4 Game · vs TBD",
       "location": "Mission Leisure Centre (7650 Grand St, Mission)",
@@ -459,6 +444,14 @@
       "start": "2026-11-07T10:15:00-08:00",
       "end": "2026-11-07T12:15:00-08:00",
       "whenLabel": "Sat Nov 7 · 10:15 AM–12:15 PM PT (arrive 9:15 AM, Maroon — bring both)"
+    },
+    {
+      "id": "ts-u15-10816643-375553693",
+      "summary": "U15 C4 Development · with C1",
+      "location": "LEC 3 (Langley Events Centre)",
+      "start": "2026-11-07T10:45:00-08:00",
+      "end": "2026-11-07T11:45:00-08:00",
+      "whenLabel": "Sat Nov 7 · 10:45 AM–11:45 AM PT"
     },
     {
       "id": "c1omq1j81qd1qqsm832gaq62hk",
@@ -509,6 +502,14 @@
       "whenLabel": "Mon Nov 9 · 9:30 PM–11:00 PM PT"
     },
     {
+      "id": "ts-u15-10816643-375553471",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-11-10T06:00:00-08:00",
+      "end": "2026-11-10T07:00:00-08:00",
+      "whenLabel": "Tue Nov 10 · 6:00 AM–7:00 AM PT"
+    },
+    {
       "id": "ts-u17-10808348-374863312",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
@@ -533,6 +534,14 @@
       "whenLabel": "Thu Nov 12 · 9:15 PM–10:45 PM PT"
     },
     {
+      "id": "ts-u15-10816643-375553804",
+      "summary": "U15 C4 Game · vs C2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-13T19:00:00-08:00",
+      "end": "2026-11-13T20:30:00-08:00",
+      "whenLabel": "Fri Nov 13 · 7:00 PM–8:30 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374188831",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
@@ -549,6 +558,14 @@
       "whenLabel": "Sun Nov 15 · 6:15 PM–8:15 PM PT"
     },
     {
+      "id": "ts-u15-10816643-375553645",
+      "summary": "U15 C4 Game · vs C3",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-15T19:00:00-08:00",
+      "end": "2026-11-15T20:30:00-08:00",
+      "whenLabel": "Sun Nov 15 · 7:00 PM–8:30 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374643526",
       "summary": "U17 League · vs South Delta",
       "location": "South Delta",
@@ -563,6 +580,14 @@
       "start": "2026-11-16T21:30:00-08:00",
       "end": "2026-11-16T23:00:00-08:00",
       "whenLabel": "Mon Nov 16 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-375553537",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-11-17T06:00:00-08:00",
+      "end": "2026-11-17T07:00:00-08:00",
+      "whenLabel": "Tue Nov 17 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863313",
@@ -589,12 +614,28 @@
       "whenLabel": "Fri Nov 20 · 8:30 PM–9:30 PM PT"
     },
     {
+      "id": "ts-u15-10816643-375553747",
+      "summary": "U15 C4 Development · with C1",
+      "location": "LEC 3 (Langley Events Centre)",
+      "start": "2026-11-21T10:45:00-08:00",
+      "end": "2026-11-21T11:45:00-08:00",
+      "whenLabel": "Sat Nov 21 · 10:45 AM–11:45 AM PT"
+    },
+    {
       "id": "ts-u17-10808348-374643572",
       "summary": "U17 League · vs North Vancouver",
       "location": "LEC 1 (Langley Events Centre)",
       "start": "2026-11-22T18:15:00-08:00",
       "end": "2026-11-22T20:15:00-08:00",
       "whenLabel": "Sun Nov 22 · 6:15 PM–8:15 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-375553658",
+      "summary": "U15 C4 Game · vs C3",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-22T19:00:00-08:00",
+      "end": "2026-11-22T20:30:00-08:00",
+      "whenLabel": "Sun Nov 22 · 7:00 PM–8:30 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188690",
