@@ -206,7 +206,8 @@
       "title": "Fill out game roster for Wednesday's U15 game",
       "detail": "U15 C4 at Semiahmoo, Wed Oct 28, 7:45 PM PT, Newton Arena.",
       "priority": "normal",
-      "done": false
+      "done": false,
+      "due": "2026-10-28"
     }
   ],
   "habits": [
