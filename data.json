@@ -200,6 +200,13 @@
       "detail": "Bitcoin-backed loan. Added Oct 22, no due date.",
       "priority": "normal",
       "done": false
+    },
+    {
+      "id": "u15-roster-oct28",
+      "title": "Fill out game roster for Wednesday's U15 game",
+      "detail": "U15 C4 at Semiahmoo, Wed Oct 28, 7:45 PM PT, Newton Arena.",
+      "priority": "normal",
+      "done": false
     }
   ],
   "habits": [
