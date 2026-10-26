@@ -208,6 +208,14 @@
       "priority": "normal",
       "done": false,
       "due": "2026-10-28"
+    },
+    {
+      "id": "vancity-team-acct-oct27",
+      "title": "Vancity appointment with Stephanie Kingdon: open U15 C4 team account",
+      "detail": "Tue Oct 27, afternoon (exact time TBC). Vancity Walnut Grove, 103E-20159 88th Ave, Langley.",
+      "priority": "high",
+      "due": "2026-10-27",
+      "done": false
     }
   ],
   "habits": [
