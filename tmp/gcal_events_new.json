@@ -3,27 +3,6 @@
  "timeZone": "America/Los_Angeles",
  "events": [
   {
-   "id": "k25vomtn45f2be51piomtt3ivs",
-   "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=azI1dm9tdG40NWYyYmU1MXBpb210dDNpdnMgcGF1bGZyYXNlcjg4OEBt",
-   "summary": "LMHA U15 C4 vs South Delta C1 (HOME)",
-   "location": "The Arenas at Langley Events Centre",
-   "start": {
-    "dateTime": "2026-10-25T19:00:00-07:00",
-    "timeZone": "America/Vancouver"
-   },
-   "end": {
-    "dateTime": "2026-10-25T20:30:00-07:00",
-    "timeZone": "America/Vancouver"
-   },
-   "organizer": {
-    "email": "paulfraser888@gmail.com",
-    "self": true
-   },
-   "eventType": "default",
-   "description": "Game U15Q6079. Arrive 6:15 PM. From TeamSnap."
-  },
-  {
    "id": "mf18feail8p078rnmp643ajfto_20261027T130000Z",
    "status": "confirmed",
    "htmlLink": "https://www.google.com/calendar/event?eid=bWYxOGZlYWlsOHAwNzhybm1wNjQzYWpmdG9fMjAyNjEwMjdUMTMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
@@ -73,12 +52,12 @@
    "summary": "LMHA U15 C4 Practice \u00b7 George Preston",
    "location": "George Preston Rec Centre, 20699 42 Ave, Langley",
    "start": {
-    "dateTime": "2026-11-01T11:15:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-01T10:15:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-01T12:45:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-01T11:45:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -94,12 +73,12 @@
    "summary": "LMHA U15 C4 at C1 (visitors)",
    "location": "The Arenas at Langley Events Centre, Rink 2",
    "start": {
-    "dateTime": "2026-11-01T19:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-01T18:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-01T20:30:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-01T19:30:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -109,18 +88,18 @@
    "description": "From Ryan's U15 C November schedule email (Oct 24)."
   },
   {
-   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261103T140000Z",
+   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261103T130000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjExMDNUMTQwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjExMDNUMTMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C4 Practice \u00b7 SPX 2",
    "location": "SPX 2",
    "start": {
-    "dateTime": "2026-11-03T06:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-03T05:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-03T07:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-03T06:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -218,12 +197,12 @@
    "summary": "LMHA U15 C4 vs C3 (HOME)",
    "location": "The Arenas at Langley Events Centre, Rink 2",
    "start": {
-    "dateTime": "2026-11-06T19:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-06T18:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-06T20:30:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-06T19:30:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -239,12 +218,12 @@
    "summary": "LMHA U15 C4 Development \u00b7 LEC 3 (with C1)",
    "location": "LEC 3",
    "start": {
-    "dateTime": "2026-11-07T10:45:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-07T09:45:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-07T11:45:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-07T10:45:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -294,18 +273,18 @@
    "description": "Work \u00b7 MMA A shift (16:00\u201300:00). From 2026 crew rotation spreadsheet."
   },
   {
-   "id": "6r7i0u3shj8alb37tgmq7ksko0_20261109T030000Z",
+   "id": "6r7i0u3shj8alb37tgmq7ksko0_20261109T020000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=NnI3aTB1M3NoajhhbGIzN3RnbXE3a3NrbzBfMjAyNjExMDlUMDMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NnI3aTB1M3NoajhhbGIzN3RnbXE3a3NrbzBfMjAyNjExMDlUMDIwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C3/C4 game slot (TBD)",
    "location": "The Arenas at Langley Events Centre, Rink 2",
    "start": {
-    "dateTime": "2026-11-08T19:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-08T18:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-08T20:30:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-08T19:30:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -316,18 +295,18 @@
    "description": "Sunday slot shared between C3 and C4, opponent TBD (Nov 8, 15, 22, 29). From Ryan's November schedule."
   },
   {
-   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261110T140000Z",
+   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261110T130000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjExMTBUMTQwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjExMTBUMTMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C4 Practice \u00b7 SPX 2",
    "location": "SPX 2",
    "start": {
-    "dateTime": "2026-11-10T06:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-10T05:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-10T07:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-10T06:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -344,12 +323,12 @@
    "summary": "LMHA U15 C4 vs C2 (HOME)",
    "location": "The Arenas at Langley Events Centre, Rink 2",
    "start": {
-    "dateTime": "2026-11-13T19:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-13T18:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-13T20:30:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-13T19:30:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -359,18 +338,18 @@
    "description": "From Ryan's November schedule."
   },
   {
-   "id": "6r7i0u3shj8alb37tgmq7ksko0_20261116T030000Z",
+   "id": "6r7i0u3shj8alb37tgmq7ksko0_20261116T020000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=NnI3aTB1M3NoajhhbGIzN3RnbXE3a3NrbzBfMjAyNjExMTZUMDMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NnI3aTB1M3NoajhhbGIzN3RnbXE3a3NrbzBfMjAyNjExMTZUMDIwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C3/C4 game slot (TBD)",
    "location": "The Arenas at Langley Events Centre, Rink 2",
    "start": {
-    "dateTime": "2026-11-15T19:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-15T18:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-15T20:30:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-15T19:30:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -381,18 +360,18 @@
    "description": "Sunday slot shared between C3 and C4, opponent TBD (Nov 8, 15, 22, 29). From Ryan's November schedule."
   },
   {
-   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261117T140000Z",
+   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261117T130000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjExMTdUMTQwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjExMTdUMTMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C4 Practice \u00b7 SPX 2",
    "location": "SPX 2",
    "start": {
-    "dateTime": "2026-11-17T06:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-17T05:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-17T07:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-17T06:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -409,12 +388,12 @@
    "summary": "LMHA U15 C4 Development \u00b7 LEC 3 (with C1)",
    "location": "LEC 3",
    "start": {
-    "dateTime": "2026-11-21T10:45:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-21T09:45:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-21T11:45:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-21T10:45:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -424,18 +403,18 @@
    "description": "Shared development ice with C1. From Ryan's November schedule."
   },
   {
-   "id": "6r7i0u3shj8alb37tgmq7ksko0_20261123T030000Z",
+   "id": "6r7i0u3shj8alb37tgmq7ksko0_20261123T020000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=NnI3aTB1M3NoajhhbGIzN3RnbXE3a3NrbzBfMjAyNjExMjNUMDMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NnI3aTB1M3NoajhhbGIzN3RnbXE3a3NrbzBfMjAyNjExMjNUMDIwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C3/C4 game slot (TBD)",
    "location": "The Arenas at Langley Events Centre, Rink 2",
    "start": {
-    "dateTime": "2026-11-22T19:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-22T18:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-22T20:30:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-22T19:30:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -446,18 +425,18 @@
    "description": "Sunday slot shared between C3 and C4, opponent TBD (Nov 8, 15, 22, 29). From Ryan's November schedule."
   },
   {
-   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261124T140000Z",
+   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261124T130000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjExMjRUMTQwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjExMjRUMTMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C4 Practice \u00b7 SPX 2",
    "location": "SPX 2",
    "start": {
-    "dateTime": "2026-11-24T06:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-24T05:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-24T07:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-24T06:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -468,18 +447,18 @@
    "description": "Tuesday practice, Nov 3 to Dec 1. From Ryan's November schedule."
   },
   {
-   "id": "6r7i0u3shj8alb37tgmq7ksko0_20261130T030000Z",
+   "id": "6r7i0u3shj8alb37tgmq7ksko0_20261130T020000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=NnI3aTB1M3NoajhhbGIzN3RnbXE3a3NrbzBfMjAyNjExMzBUMDMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=NnI3aTB1M3NoajhhbGIzN3RnbXE3a3NrbzBfMjAyNjExMzBUMDIwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C3/C4 game slot (TBD)",
    "location": "The Arenas at Langley Events Centre, Rink 2",
    "start": {
-    "dateTime": "2026-11-29T19:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-29T18:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-11-29T20:30:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-11-29T19:30:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
@@ -490,18 +469,18 @@
    "description": "Sunday slot shared between C3 and C4, opponent TBD (Nov 8, 15, 22, 29). From Ryan's November schedule."
   },
   {
-   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261201T140000Z",
+   "id": "kfqpe2nd6vb66ej6nblc6ntui8_20261201T130000Z",
    "status": "confirmed",
-   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjEyMDFUMTQwMDAwWiBwYXVsZnJhc2VyODg4QG0",
+   "htmlLink": "https://www.google.com/calendar/event?eid=a2ZxcGUybmQ2dmI2NmVqNm5ibGM2bnR1aThfMjAyNjEyMDFUMTMwMDAwWiBwYXVsZnJhc2VyODg4QG0",
    "summary": "LMHA U15 C4 Practice \u00b7 SPX 2",
    "location": "SPX 2",
    "start": {
-    "dateTime": "2026-12-01T06:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-12-01T05:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "end": {
-    "dateTime": "2026-12-01T07:00:00-08:00",
-    "scheduledTimeZone": "America/Vancouver"
+    "dateTime": "2026-12-01T06:00:00-08:00",
+    "scheduledTimeZone": "Etc/GMT+7"
    },
    "organizer": {
     "email": "paulfraser888@gmail.com",
