@@ -1,15 +1,16 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-26T05:15:00-07:00",
+  "fetchedAt": "2026-10-27T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-26",
-    "end": "2026-11-01",
-    "label": "Oct 26–Nov 1 (next 7 days)"
+    "start": "2026-10-27",
+    "end": "2026-11-02",
+    "label": "Oct 27–Nov 2 (next 7 days)"
   },
   "notes": [
-    "Today Mon Oct 26: U17 Practice 9:30 PM at SPX 2 is GONE from TeamSnap (looks cancelled). U17 reached the Winfield Gold Medal Game Sun vs New Westminster. U15 C4 vs Cloverdale (was Fri Oct 23) remains POSTPONED.",
-    "Week: Tue U15 C4 Practice 6 AM SPX 2; Wed Oct 28 U17 Development 7 PM LEC 2 overlaps U15 C4 at Semiahmoo C4 7:45 PM Newton Arena; Thu U17 Practice 9:15 PM SPX 2; Fri U17 Dryland 8:30 PM Aim Athletic; Sat Oct 31 U17 League vs Vancouver TBirds 5 PM Hillcrest.",
+    "Today Tue Oct 27: U15 C4 Practice 6 AM SPX 2; Vancity team-account appointment 4 PM at Willowbrook (to-do). Roster for Wednesday's U15 game due Wed Oct 28.",
+    "TeamSnap change: U17 Development Wed Nov 11 7 PM LEC 2 REMOVED (Remembrance Day); U17 League vs Ridge Meadows 8:45 PM that night remains.",
+    "Week: Wed Oct 28 U17 Development 7 PM LEC 2 overlaps U15 C4 at Semiahmoo C4 7:45 PM Newton Arena; Thu U17 Practice 9:15 PM SPX 2; Fri U17 Dryland 8:30 PM Aim Athletic; Sat Oct 31 U17 League vs Vancouver TBirds 5 PM Hillcrest; Mon Nov 2 U17 League vs North Delta 9:30 PM Sungod.",
     "Sun Nov 1: U15 C4 Practice 11:15 AM–12:45 PM, U17 Team Photo 12:00–12:30 PM (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard), U15 C4 Team Photo 1:20 PM — all George Preston Rec Centre; U17 League vs Richmond 6:15 PM @ LEC 1 overlaps U15 at C1 7 PM @ LEC 2 (same building).",
     "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 3/10/17; Fri Nov 6 vs C3 7 PM LEC 2; Sat Nov 7 + Nov 21 Development with C1 10:45 AM LEC 3; Fri Nov 13 vs C2 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 7 PM LEC 2.",
     "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 vs C2 7–8:30 PM runs into U17 Dryland 8:30 PM.",
@@ -17,10 +18,10 @@
     "Google Calendar also has U15 items TeamSnap doesn't yet: C3/C4 game slots (TBD) Sun Nov 8 and Nov 29 7 PM LEC 2, practices Tue Nov 24 and Dec 1 6 AM SPX 2 — not on the board until TeamSnap posts them.",
     "U17 Abbotsford tournament Nov 6–8 — Fri 2:45 PM vs Penticton U18 A2 @ Matsqui Rec (arrive 1:45, White); Sat 10:15 AM vs Squamish U18 A2 @ MSA Arena (arrive 9:15, Maroon); Sun 7:15 AM vs West Kelowna U18 A2 @ Summit Centre West (arrive 6:15, White).",
     "Zoom call with Bruce Wed Nov 4 4–5 PM PT — overlaps MMA A shift (4 PM–12 AM) and comes before U17 Development 7 PM.",
-    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16; Wed Nov 4 during MMA A shift.",
+    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16 (no session Nov 11); Wed Nov 4 during MMA A shift.",
     "MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Mon Oct 26–Sun Nov 1: U15 orange (Practice Tue 6 AM SPX 2, at Semiahmoo Wed 7:45 PM, Practice + Team Photo + at C1 Sun); U17 yellow (Development Wed 7 PM, Practice Thu SPX 2, Dryland Fri 8:30 PM, vs TBirds Sat 5 PM, Team Photo + vs Richmond Sun).",
+    "Weekbar Tue Oct 27–Mon Nov 2: U15 orange (Practice Tue 6 AM SPX 2, at Semiahmoo Wed 7:45 PM, Practice + Team Photo + at C1 Sun); U17 yellow (Development Wed 7 PM, Practice Thu SPX 2, Dryland Fri 8:30 PM, vs TBirds Sat 5 PM, Team Photo + vs Richmond Sun, vs North Delta Mon 9:30 PM).",
     "No MMA shifts on Google Calendar until Wed Nov 4.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
@@ -476,14 +477,6 @@
       "start": "2026-11-10T06:00:00-08:00",
       "end": "2026-11-10T07:00:00-08:00",
       "whenLabel": "Tue Nov 10 · 6:00 AM–7:00 AM PT"
-    },
-    {
-      "id": "ts-u17-10808348-374863312",
-      "summary": "U17 Development · LEC 2",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-11T19:00:00-08:00",
-      "end": "2026-11-11T20:00:00-08:00",
-      "whenLabel": "Wed Nov 11 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374671289",

@@ -1,35 +1,35 @@
 {
   "location": "Langley, BC",
   "timezone": "America/Vancouver",
-  "date": "2026-10-26",
-  "dateLabel": "Mon Oct 26, 2026",
-  "conditions": "Mostly dry today: high ~12°C / low ~6°C, rain ~19%, light wind (~7 km/h). Wet Tue–Thu (rain 85–97% Tue–Wed, highs 9–11°C); dry and colder Fri–Sun with lows near 0°C.",
-  "conditionsShort": "Cloudy, mostly dry",
+  "date": "2026-10-27",
+  "dateLabel": "Tue Oct 27, 2026",
+  "conditions": "Drizzle today: high ~10°C / low ~7°C, rain ~48%, light wind (~10 km/h). Wed rain (66%, high 9°C, breezier ~15 km/h) for the U15 game night; Thu cloudy 12°C; Fri cool 6°C with light drizzle; dry Sat–Mon, highs 11–12°C, lows ~2°C.",
+  "conditionsShort": "Drizzle, mild",
   "temp": {
-    "highC": 12,
-    "lowC": 6,
-    "highF": 54,
-    "lowF": 43,
-    "displayC": "12° / 6°C",
-    "displayF": "54° / 43°F",
-    "currentC": 7,
-    "currentF": 45
+    "highC": 10,
+    "lowC": 7,
+    "highF": 50,
+    "lowF": 45,
+    "displayC": "10° / 7°C",
+    "displayF": "50° / 45°F",
+    "currentC": 9,
+    "currentF": 48
   },
-  "rainChancePct": 19,
+  "rainChancePct": 48,
   "wind": {
     "summary": "light",
-    "maxKmh": 7,
-    "display": "Light, ~7 km/h"
+    "maxKmh": 10,
+    "display": "Light, ~10 km/h"
   },
   "sun": {
-    "sunrise": "07:48",
-    "sunset": "17:59",
-    "sunriseLabel": "7:48 AM",
-    "sunsetLabel": "5:59 PM",
+    "sunrise": "07:50",
+    "sunset": "17:57",
+    "sunriseLabel": "7:50 AM",
+    "sunsetLabel": "5:57 PM",
     "timezoneNote": "PT"
   },
-  "asOf": "2026-10-26T05:15:00-07:00",
-  "asOfLabel": "Mon Oct 26, 2026 · 5:15 AM PT",
+  "asOf": "2026-10-27T05:15:00-07:00",
+  "asOfLabel": "Tue Oct 27, 2026 · 5:15 AM PT",
   "source": "Open-Meteo (Langley BC)",
-  "lastUpdated": "2026-10-26T05:15:00-07:00"
+  "lastUpdated": "2026-10-27T05:15:00-07:00"
 }
