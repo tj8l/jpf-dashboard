@@ -1,28 +1,27 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-29T05:15:00-07:00",
+  "fetchedAt": "2026-10-30T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-29",
-    "end": "2026-11-04",
-    "label": "Oct 29–Nov 4 (next 7 days)"
+    "start": "2026-10-30",
+    "end": "2026-11-05",
+    "label": "Oct 30–Nov 5 (next 7 days)"
   },
   "notes": [
-    "Today Thu Oct 29: U17 Practice 9:15–10:30 PM @ SPX 2.",
-    "No TeamSnap or Google Calendar changes since yesterday.",
-    "Week: Fri U17 Dryland 8:30 PM Aim Athletic; Sat Oct 31 U17 League vs Vancouver TBirds 5 PM Hillcrest; Mon Nov 2 U17 League vs North Delta 9:30 PM Sungod; Tue Nov 3 U15 C4 Practice 6 AM SPX 2; Wed Nov 4 MMA A 4 PM + Zoom with Bruce 4 PM + U17 Development 7 PM LEC 2.",
+    "Today Fri Oct 30: U17 Dryland 8:30–9:30 PM @ Aim Athletic.",
+    "TeamSnap change: U17 Abbotsford #3 vs West Kelowna U18 A2 Sun Nov 8 moved from 7:15 AM to 9:00–11:00 AM @ Summit Centre West (arrive 8:00 AM, White). Google Calendar unchanged.",
+    "Week: Sat Oct 31 U17 League vs Vancouver TBirds 5 PM Hillcrest; Sun Nov 1 photos + games; Mon Nov 2 U17 League vs North Delta 9:30 PM Sungod; Tue Nov 3 U15 C4 Practice 6 AM SPX 2; Wed Nov 4 MMA A 4 PM + Zoom with Bruce 4 PM + U17 Development 7 PM LEC 2; Thu Nov 5 MMA A 4 PM + U17 Practice 9:15 PM SPX 2.",
     "Sun Nov 1: U15 C4 Practice 11:15 AM–12:45 PM, U17 Team Photo 12:00–12:30 PM (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard), U15 C4 Team Photo 1:20 PM — all George Preston Rec Centre; U17 League vs Richmond 6:15 PM @ LEC 1 overlaps U15 at C1 7 PM @ LEC 2 (same building).",
     "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 3/10/17; Fri Nov 6 vs C3 7 PM LEC 2; Sat Nov 7 + Nov 21 Development with C1 10:45 AM LEC 3; Fri Nov 13 vs C2 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 7 PM LEC 2.",
-    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 vs C2 7–8:30 PM runs into U17 Dryland 8:30 PM.",
-    "Nov 6–8 pileup: Fri Nov 6 U15 vs C3 7 PM LEC 2 + U15 Mission tournament + U17 Abbotsford vs Penticton 2:45 PM + MMA A 4 PM–12 AM; Sat Nov 7 U15 Development 10:45 AM LEC 3 vs U17 Abbotsford vs Squamish 10:15 AM + Mission + MMA A; Sun Nov 8 U17 vs West Kelowna 7:15 AM + Mission + MMA A.",
+    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 vs C2 7–8:30 PM runs into U17 Dryland 8:30 PM; Thu Nov 5 U17 Practice 9:15 PM during MMA A shift.",
+    "Nov 6–8 pileup: Fri Nov 6 U15 vs C3 7 PM LEC 2 + U15 Mission tournament + U17 Abbotsford vs Penticton 2:45 PM + MMA A 4 PM–12 AM; Sat Nov 7 U15 Development 10:45 AM LEC 3 vs U17 Abbotsford vs Squamish 10:15 AM + Mission + MMA A; Sun Nov 8 U17 vs West Kelowna 9:00 AM + Mission + MMA A 4 PM.",
     "Google Calendar also has U15 items TeamSnap doesn't yet: C3/C4 game slots (TBD) Sun Nov 8 and Nov 29 7 PM LEC 2, practices Tue Nov 24 and Dec 1 6 AM SPX 2 — not on the board until TeamSnap posts them.",
-    "U17 Abbotsford tournament Nov 6–8 — Fri 2:45 PM vs Penticton U18 A2 @ Matsqui Rec (arrive 1:45, White); Sat 10:15 AM vs Squamish U18 A2 @ MSA Arena (arrive 9:15, Maroon); Sun 7:15 AM vs West Kelowna U18 A2 @ Summit Centre West (arrive 6:15, White).",
+    "U17 Abbotsford tournament Nov 6–8 — Fri 2:45 PM vs Penticton U18 A2 @ Matsqui Rec (arrive 1:45, White); Sat 10:15 AM vs Squamish U18 A2 @ MSA Arena (arrive 9:15, Maroon); Sun 9:00 AM vs West Kelowna U18 A2 @ Summit Centre West (arrive 8:00, White).",
     "Zoom call with Bruce Wed Nov 4 4–5 PM PT — overlaps MMA A shift (4 PM–12 AM) and comes before U17 Development 7 PM.",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16 (no session Nov 11); Wed Nov 4 during MMA A shift.",
     "MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Thu Oct 29–Wed Nov 4: U17 yellow (Practice Thu SPX 2, Dryland Fri 8:30 PM, vs TBirds Sat 5 PM, vs North Delta Mon 9:30 PM); U15 orange (Practice + Team Photo + at C1 Sun, Practice Tue 6 AM SPX 2); MMA A green Wed Nov 4.",
-    "No MMA shifts on Google Calendar until Wed Nov 4.",
+    "Weekbar Fri Oct 30–Thu Nov 5: U17 yellow (Dryland Fri, vs TBirds Sat 5 PM, vs North Delta Mon 9:30 PM); U15 orange (Practice + Team Photo + at C1 Sun, Practice Tue 6 AM SPX 2); MMA A green Wed–Thu.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
@@ -223,14 +222,6 @@
       "whenLabel": "Wed Oct 21 · 6:00 PM–7:00 PM PT"
     },
     {
-      "id": "ts-u17-10808348-374188724",
-      "summary": "U17 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-10-29T21:15:00-07:00",
-      "end": "2026-10-29T22:45:00-07:00",
-      "whenLabel": "Thu Oct 29 · 9:15 PM–10:45 PM PT"
-    },
-    {
       "id": "ts-u17-10808348-374188827",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
@@ -418,9 +409,9 @@
       "id": "ts-u17-10808348-375456404",
       "summary": "U17 Abbotsford #3 · vs West Kelowna U18 A2",
       "location": "Summit Centre – West (3600 Townline Rd, Abbotsford)",
-      "start": "2026-11-08T07:15:00-08:00",
-      "end": "2026-11-08T09:15:00-08:00",
-      "whenLabel": "Sun Nov 8 · 7:15 AM–9:15 AM PT (arrive 6:15 AM, White — bring both)"
+      "start": "2026-11-08T09:00:00-08:00",
+      "end": "2026-11-08T11:00:00-08:00",
+      "whenLabel": "Sun Nov 8 · 9:00 AM–11:00 AM PT (arrive 8:00 AM, White — bring both)"
     },
     {
       "id": "mr8509qth1bm8hve3i8djsa1ho",

@@ -146,7 +146,9 @@ def parse_ics_dt(params: str, val: str) -> datetime | date:
     m = re.search(r"TZID=([^;:]+)", params)
     if m:
         try:
-            tz = ZoneInfo(m.group(1))
+            tzid = m.group(1)
+            # Box tzdata for America/Vancouver is wrong after Nov 2026; Pacific wall times match LA.
+            tz = LA if tzid in ("America/Vancouver", "Canada/Pacific") else ZoneInfo(tzid)
         except Exception:
             tz = LA
     if val.endswith("Z"):
