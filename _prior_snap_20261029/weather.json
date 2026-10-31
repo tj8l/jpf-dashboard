@@ -1,0 +1,35 @@
+{
+  "location": "Langley, BC",
+  "timezone": "America/Vancouver",
+  "date": "2026-10-28",
+  "dateLabel": "Wed Oct 28, 2026",
+  "conditions": "Rain today: high ~10°C / low ~5°C, rain ~79%, light wind (~12 km/h) — wet drive to Newton for the U15 game. Thu showers (58%, 9°C, breezier ~16 km/h); Fri–Sat cool 9°C with light drizzle; dry Sun–Tue, highs 11–12°C.",
+  "conditionsShort": "Rain, cool",
+  "temp": {
+    "highC": 10,
+    "lowC": 5,
+    "highF": 50,
+    "lowF": 41,
+    "displayC": "10° / 5°C",
+    "displayF": "50° / 41°F",
+    "currentC": 6,
+    "currentF": 43
+  },
+  "rainChancePct": 79,
+  "wind": {
+    "summary": "light",
+    "maxKmh": 12,
+    "display": "Light, ~12 km/h"
+  },
+  "sun": {
+    "sunrise": "07:52",
+    "sunset": "17:56",
+    "sunriseLabel": "7:52 AM",
+    "sunsetLabel": "5:56 PM",
+    "timezoneNote": "PT"
+  },
+  "asOf": "2026-10-28T05:15:00-07:00",
+  "asOfLabel": "Wed Oct 28, 2026 · 5:15 AM PT",
+  "source": "Open-Meteo (Langley BC)",
+  "lastUpdated": "2026-10-28T05:15:00-07:00"
+}

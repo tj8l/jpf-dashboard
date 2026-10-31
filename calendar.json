@@ -1,27 +1,29 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-10-30T05:15:00-07:00",
+  "fetchedAt": "2026-10-31T05:15:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-10-30",
-    "end": "2026-11-05",
-    "label": "Oct 30–Nov 5 (next 7 days)"
+    "start": "2026-10-31",
+    "end": "2026-11-06",
+    "label": "Oct 31–Nov 6 (next 7 days)"
   },
   "notes": [
-    "Today Fri Oct 30: U17 Dryland 8:30–9:30 PM @ Aim Athletic.",
-    "TeamSnap change: U17 Abbotsford #3 vs West Kelowna U18 A2 Sun Nov 8 moved from 7:15 AM to 9:00–11:00 AM @ Summit Centre West (arrive 8:00 AM, White). Google Calendar unchanged.",
-    "Week: Sat Oct 31 U17 League vs Vancouver TBirds 5 PM Hillcrest; Sun Nov 1 photos + games; Mon Nov 2 U17 League vs North Delta 9:30 PM Sungod; Tue Nov 3 U15 C4 Practice 6 AM SPX 2; Wed Nov 4 MMA A 4 PM + Zoom with Bruce 4 PM + U17 Development 7 PM LEC 2; Thu Nov 5 MMA A 4 PM + U17 Practice 9:15 PM SPX 2.",
-    "Sun Nov 1: U15 C4 Practice 11:15 AM–12:45 PM, U17 Team Photo 12:00–12:30 PM (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard), U15 C4 Team Photo 1:20 PM — all George Preston Rec Centre; U17 League vs Richmond 6:15 PM @ LEC 1 overlaps U15 at C1 7 PM @ LEC 2 (same building).",
-    "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 3/10/17; Fri Nov 6 vs C3 7 PM LEC 2; Sat Nov 7 + Nov 21 Development with C1 10:45 AM LEC 3; Fri Nov 13 vs C2 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 7 PM LEC 2.",
+    "Today Sat Oct 31: U17 League vs Vancouver TBirds 5:00–7:00 PM @ Hillcrest Centre Arena. Clear and cool, 12°/3°C.",
+    "TeamSnap change: U15 C4 Fallen Stars tournament (Mission Leisure Centre) games posted — Fri Nov 6 6:15 PM vs Vancouver Thunderbirds U15C6 (South, arrive 5:30); Sat Nov 7 9:15 AM at Port Coquitlam U15C3 (North, arrive 8:30) and 1:45 PM at Vancouver C1 (North, arrive 1:00). Sun Nov 8 still TBD (arrive noon).",
+    "TeamSnap removed: U15 C4 vs C3 Fri Nov 6 7 PM LEC 2 and U15 Development with C1 Sat Nov 7 10:45 AM LEC 3.",
+    "Google Calendar's new Fallen Stars entries and 'C4 Team Photo' are one hour early (saved at UTC-7 instead of PST); TeamSnap times are on the board.",
+    "Sun Nov 1: U15 C4 Practice 11:15 AM–12:45 PM, U17 Team Photo 12:00–12:30 PM (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard), U15 C4 Team Photo 1:20 PM (arrive 1:00) — all George Preston Rec Centre; U17 League vs Richmond 6:15 PM @ LEC 1 overlaps U15 at C1 7 PM @ LEC 2 (same building).",
+    "Week: Mon Nov 2 U17 League vs North Delta 9:30 PM Sungod; Tue Nov 3 U15 C4 Practice 6 AM SPX 2; Wed Nov 4 MMA A 4 PM + Zoom with Bruce 4 PM + U17 Development 7 PM LEC 2; Thu Nov 5 MMA A 4 PM + U17 Practice 9:15 PM SPX 2; Fri Nov 6 Dentist 9:20 AM Fort Langley Dental.",
+    "Nov 6–8 pileup: Fri Nov 6 U17 Abbotsford vs Penticton 2:45 PM + MMA A 4 PM–12 AM + U15 Mission vs TBirds 6:15 PM; Sat Nov 7 U15 Mission 9:15 AM + U17 Abbotsford vs Squamish 10:15 AM + U15 Mission 1:45 PM + MMA A 4 PM; Sun Nov 8 U17 vs West Kelowna 9:00 AM + U15 Mission TBD + MMA A 4 PM.",
+    "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 3/10/17; Fri Nov 13 vs C2 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 7 PM LEC 2; Sat Nov 21 Development with C1 10:45 AM LEC 3.",
     "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 vs C2 7–8:30 PM runs into U17 Dryland 8:30 PM; Thu Nov 5 U17 Practice 9:15 PM during MMA A shift.",
-    "Nov 6–8 pileup: Fri Nov 6 U15 vs C3 7 PM LEC 2 + U15 Mission tournament + U17 Abbotsford vs Penticton 2:45 PM + MMA A 4 PM–12 AM; Sat Nov 7 U15 Development 10:45 AM LEC 3 vs U17 Abbotsford vs Squamish 10:15 AM + Mission + MMA A; Sun Nov 8 U17 vs West Kelowna 9:00 AM + Mission + MMA A 4 PM.",
     "Google Calendar also has U15 items TeamSnap doesn't yet: C3/C4 game slots (TBD) Sun Nov 8 and Nov 29 7 PM LEC 2, practices Tue Nov 24 and Dec 1 6 AM SPX 2 — not on the board until TeamSnap posts them.",
     "U17 Abbotsford tournament Nov 6–8 — Fri 2:45 PM vs Penticton U18 A2 @ Matsqui Rec (arrive 1:45, White); Sat 10:15 AM vs Squamish U18 A2 @ MSA Arena (arrive 9:15, Maroon); Sun 9:00 AM vs West Kelowna U18 A2 @ Summit Centre West (arrive 8:00, White).",
     "Zoom call with Bruce Wed Nov 4 4–5 PM PT — overlaps MMA A shift (4 PM–12 AM) and comes before U17 Development 7 PM.",
-    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16 (no session Nov 11); Wed Nov 4 during MMA A shift.",
+    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16 (no session Nov 11).",
     "MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Fri Oct 30–Thu Nov 5: U17 yellow (Dryland Fri, vs TBirds Sat 5 PM, vs North Delta Mon 9:30 PM); U15 orange (Practice + Team Photo + at C1 Sun, Practice Tue 6 AM SPX 2); MMA A green Wed–Thu.",
+    "Weekbar Sat Oct 31–Fri Nov 6: U17 yellow (vs TBirds Sat 5 PM, vs North Delta Mon 9:30 PM); U15 orange (Practice + Team Photo + at C1 Sun, Practice Tue 6 AM SPX 2); MMA A green Wed–Fri.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
@@ -222,14 +224,6 @@
       "whenLabel": "Wed Oct 21 · 6:00 PM–7:00 PM PT"
     },
     {
-      "id": "ts-u17-10808348-374188827",
-      "summary": "U17 Dryland · Aim Athletic",
-      "location": "Aim Athletic (Langley)",
-      "start": "2026-10-30T20:30:00-07:00",
-      "end": "2026-10-30T21:30:00-07:00",
-      "whenLabel": "Fri Oct 30 · 8:30 PM–9:30 PM PT"
-    },
-    {
       "id": "ts-u17-10808348-374925625",
       "summary": "U17 League · vs Vancouver TBirds",
       "location": "Hillcrest Centre Arena",
@@ -248,7 +242,7 @@
     {
       "id": "ts-u17-10808348-375253591",
       "summary": "U17 Team Photo",
-      "location": "George Preston Recreation Centre (Langley)",
+      "location": "George Preston Recreation Centre (20699 42 Ave, Langley)",
       "start": "2026-11-01T12:00:00-08:00",
       "end": "2026-11-01T12:30:00-08:00",
       "whenLabel": "Sun Nov 1 · 12:00 PM–12:30 PM PT (arrive noon, Maroon, full gear + stick, no skates/helmet/neck guard)"
@@ -259,7 +253,7 @@
       "location": "George Preston Rec Centre",
       "start": "2026-11-01T13:20:00-08:00",
       "end": "2026-11-01T13:20:00-08:00",
-      "whenLabel": "Sun Nov 1 · 1:20 PM PT"
+      "whenLabel": "Sun Nov 1 · 1:20 PM PT (arrive 1:00 PM)"
     },
     {
       "id": "ts-u17-10808348-374642952",
@@ -275,7 +269,7 @@
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-11-01T19:00:00-08:00",
       "end": "2026-11-01T20:30:00-08:00",
-      "whenLabel": "Sun Nov 1 · 7:00 PM–8:30 PM PT"
+      "whenLabel": "Sun Nov 1 · 7:00 PM–8:30 PM PT (arrive 6:15 PM)"
     },
     {
       "id": "ts-u17-10808348-374642990",
@@ -334,12 +328,12 @@
       "whenLabel": "Thu Nov 5 · 9:15 PM–10:45 PM PT"
     },
     {
-      "id": "ts-u15-10816643-375076076",
-      "summary": "U15 C4 Game · vs TBD",
-      "location": "Mission Leisure Centre (7650 Grand St, Mission)",
-      "start": "2026-11-06T00:00:00-08:00",
-      "end": "2026-11-07T00:00:00-08:00",
-      "whenLabel": "Fri Nov 6 · time TBD (arrive 12:00 PM) PT"
+      "id": "klvm6aqf51ag0j0prntpijgasc",
+      "summary": "Dentist – Fort Langley Dental Office",
+      "location": "Fort Langley Dental Office",
+      "start": "2026-11-06T09:20:00-08:00",
+      "end": "2026-11-06T10:20:00-08:00",
+      "whenLabel": "Fri Nov 6 · 9:20 AM–10:20 AM PT (confirm by text reply or 604-888-3811)"
     },
     {
       "id": "ts-u17-10808348-375456255",
@@ -358,20 +352,20 @@
       "whenLabel": "Fri Nov 6 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u15-10816643-375553788",
-      "summary": "U15 C4 Game · vs C3",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-06T19:00:00-08:00",
-      "end": "2026-11-06T20:30:00-08:00",
-      "whenLabel": "Fri Nov 6 · 7:00 PM–8:30 PM PT"
+      "id": "ts-u15-10816643-375830212",
+      "summary": "U15 C4 Fallen Stars (Mission) · vs Vancouver Thunderbirds U15C6",
+      "location": "Mission Leisure Centre (7650 Grand St, Mission) – South",
+      "start": "2026-11-06T18:15:00-08:00",
+      "end": "2026-11-06T19:30:00-08:00",
+      "whenLabel": "Fri Nov 6 · 6:15 PM–7:30 PM PT (arrive 5:30 PM)"
     },
     {
-      "id": "ts-u15-10816643-375076087",
-      "summary": "U15 C4 Game · vs TBD",
-      "location": "Mission Leisure Centre (7650 Grand St, Mission)",
-      "start": "2026-11-07T00:00:00-08:00",
-      "end": "2026-11-08T00:00:00-08:00",
-      "whenLabel": "Sat Nov 7 · time TBD (arrive 12:00 PM) PT"
+      "id": "ts-u15-10816643-375830324",
+      "summary": "U15 C4 Fallen Stars (Mission) · at Port Coquitlam U15C3",
+      "location": "Mission Leisure Centre (7650 Grand St, Mission) – North",
+      "start": "2026-11-07T09:15:00-08:00",
+      "end": "2026-11-07T10:30:00-08:00",
+      "whenLabel": "Sat Nov 7 · 9:15 AM–10:30 AM PT (arrive 8:30 AM)"
     },
     {
       "id": "ts-u17-10808348-375456336",
@@ -382,12 +376,12 @@
       "whenLabel": "Sat Nov 7 · 10:15 AM–12:15 PM PT (arrive 9:15 AM, Maroon — bring both)"
     },
     {
-      "id": "ts-u15-10816643-375553693",
-      "summary": "U15 C4 Development · with C1",
-      "location": "LEC 3 (Langley Events Centre)",
-      "start": "2026-11-07T10:45:00-08:00",
-      "end": "2026-11-07T11:45:00-08:00",
-      "whenLabel": "Sat Nov 7 · 10:45 AM–11:45 AM PT"
+      "id": "ts-u15-10816643-375830513",
+      "summary": "U15 C4 Fallen Stars (Mission) · at Vancouver C1",
+      "location": "Mission Leisure Centre (7650 Grand St, Mission) – North",
+      "start": "2026-11-07T13:45:00-08:00",
+      "end": "2026-11-07T15:00:00-08:00",
+      "whenLabel": "Sat Nov 7 · 1:45 PM–3:00 PM PT (arrive 1:00 PM)"
     },
     {
       "id": "c1omq1j81qd1qqsm832gaq62hk",

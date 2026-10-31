@@ -1,0 +1,11 @@
+Downloading [u17a1] https://ical-cdn.teamsnap.com/team_schedule/66125cfe-c4ca-41d1-82be-22e2be9960bf.ics
+  Parsed 76 VEVENTs
+  Keeping 46 events from 2026-10-31 through 2027-03-20
+Downloading [u15c4] https://ical-cdn.teamsnap.com/team_schedule/b62cb7d3-dd0f-4fb8-8140-927018c2e0a8.ics
+  Parsed 30 VEVENTs
+  Keeping 14 events from 2026-10-31 through 2027-03-20
+Removing 0 Amanda/Google U17/U18 events:
+Removing 0 Google U15 C/C4 ice events:
+Wrote calendar.json: 96 events (ts-u17=46, ts-u15=14, legacy-ts=0, other=36)
+Per-team incoming counts: {'u17a1': 46, 'u15c4': 14}
+syncThrough=2027-03-20 removedGoogleU15Ice=0
