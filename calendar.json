@@ -1,26 +1,26 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-02T06:10:00-08:00",
+  "fetchedAt": "2026-11-03T05:10:00-08:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-02",
-    "end": "2026-11-08",
-    "label": "Nov 2–8 (next 7 days)"
+    "start": "2026-11-03",
+    "end": "2026-11-09",
+    "label": "Nov 3–9 (next 7 days)"
   },
   "notes": [
-    "Today Mon Nov 2: U17 League vs North Delta 9:30–11:00 PM @ Sungod Recreation Centre. Sunny after a frosty start, 13°/1°C.",
-    "TeamSnap change: U15 C4 Fri Nov 13 7 PM LEC 2 opponent now listed as Pink Pigeons (was C2); time and rink unchanged.",
-    "Week: Tue Nov 3 U15 C4 Practice 6 AM SPX 2; Wed Nov 4 MMA A 4 PM + Zoom with Bruce 4 PM + U17 Development 7 PM LEC 2; Thu Nov 5 MMA A 4 PM + U17 Practice 9:15 PM SPX 2; Fri Nov 6 Dentist 9:20 AM Fort Langley Dental.",
+    "Today Tue Nov 3: U15 C4 Practice 6:00 AM @ SPX 2. Cloudy and dry, 14°/5°C; rain arrives Wed and sticks around through Sun.",
+    "TeamSnap change: U15 C4's opponent C3 is now listed as LANGLEY C3 – Havoc (Sun Nov 15 + Nov 22, 7 PM LEC 2); times and rinks unchanged.",
+    "Week: Wed Nov 4 MMA A 4 PM + Zoom with Bruce 4 PM + U17 Development 7 PM LEC 2; Thu Nov 5 MMA A 4 PM + U17 Practice 9:15 PM SPX 2; Fri Nov 6 Dentist 9:20 AM Fort Langley Dental.",
     "Nov 6–8 pileup: Fri Nov 6 U17 Abbotsford vs Penticton 2:45 PM (Matsqui, arrive 1:45, White) + MMA A 4 PM–12 AM + U15 Mission vs TBirds 6:15 PM; Sat Nov 7 U15 Mission 9:15 AM + U17 vs Squamish 10:15 AM (MSA) + U15 Mission 1:45 PM + MMA A 4 PM; Sun Nov 8 U17 vs West Kelowna 9:00 AM (Summit West) + U15 Mission TBD (arrive noon) + MMA A 4 PM.",
-    "Mon Nov 9: U17 Abbotsford playoff day 7:45 AM–7:45 PM (Matsqui; semis 12:15–2:15 MRC/Summit West; gold 5–7 PM MSA).",
-    "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 3/10/17; Fri Nov 13 vs Pink Pigeons (C2) 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 7 PM LEC 2; Sat Nov 21 Development with C1 10:45 AM LEC 3.",
+    "Mon Nov 9: U17 Abbotsford playoff day 7:45 AM–7:45 PM (Matsqui; semis 12:15–2:15 MRC/Summit West; gold 5–7 PM MSA), then U17 Practice 9:30 PM SPX 2.",
+    "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 3/10/17; Fri Nov 13 vs Pink Pigeons (C2) 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 Havoc 7 PM LEC 2; Sat Nov 21 Development with C1 10:45 AM LEC 3.",
     "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 7–8:30 PM runs into U17 Dryland 8:30 PM; Thu Nov 5 U17 Practice 9:15 PM during MMA A shift; Wed Nov 4 Zoom with Bruce overlaps MMA A.",
     "Google Calendar still has stale U15 items TeamSnap dropped or hasn't posted (Fri Nov 6 vs C3, Sat Nov 7 Development, C3/C4 slots Nov 8/29, practices Nov 24 and Dec 1), and its Fallen Stars and practice entries read one hour early — TeamSnap times are on the board.",
-    "Added from Google: Abbotsford Winter Extreme Ski & Board Sale, Sat–Sun Nov 14–15, Ag-Rec Centre (hours not posted).",
+    "Abbotsford Winter Extreme Ski & Board Sale, Sat–Sun Nov 14–15, Ag-Rec Centre (hours not posted).",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16 (no session Nov 11).",
     "MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Mon Nov 2–Sun Nov 8: U17 yellow Mon; U15 orange Tue; MMA A green Wed–Sun (U17/U15 tournament games Fri–Sun).",
+    "Weekbar Tue Nov 3–Mon Nov 9: U15 orange Tue; MMA A green Wed–Sun (U17/U15 tournament games Fri–Sun); U17 yellow Mon.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
@@ -219,14 +219,6 @@
       "start": "2026-10-21T18:00:00-07:00",
       "end": "2026-10-21T19:00:00-07:00",
       "whenLabel": "Wed Oct 21 · 6:00 PM–7:00 PM PT"
-    },
-    {
-      "id": "ts-u17-10808348-374642990",
-      "summary": "U17 League · vs North Delta",
-      "location": "Sungod Recreation Centre",
-      "start": "2026-11-02T21:30:00-08:00",
-      "end": "2026-11-02T23:00:00-08:00",
-      "whenLabel": "Mon Nov 2 · 9:30 PM–11:00 PM PT"
     },
     {
       "id": "ts-u15-10816643-375553453",
@@ -438,7 +430,7 @@
     },
     {
       "id": "ts-u15-10816643-375553645",
-      "summary": "U15 C4 Game · vs C3",
+      "summary": "U15 C4 Game · vs C3 (Havoc)",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-11-15T19:00:00-08:00",
       "end": "2026-11-15T20:30:00-08:00",
@@ -510,7 +502,7 @@
     },
     {
       "id": "ts-u15-10816643-375553658",
-      "summary": "U15 C4 Game · vs C3",
+      "summary": "U15 C4 Game · vs C3 (Havoc)",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-11-22T19:00:00-08:00",
       "end": "2026-11-22T20:30:00-08:00",
