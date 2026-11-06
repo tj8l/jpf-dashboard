@@ -1,26 +1,26 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-05T05:15:00-08:00",
+  "fetchedAt": "2026-11-06T05:15:00-08:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-05",
-    "end": "2026-11-11",
-    "label": "Nov 5–11 (next 7 days)"
+    "start": "2026-11-06",
+    "end": "2026-11-12",
+    "label": "Nov 6–12 (next 7 days)"
   },
   "notes": [
-    "Today Thu Nov 5: MMA A 4 PM–12 AM + U17 Practice 9:15 PM SPX 2 (during shift). Clear-cool morning, ~13°/6°C, light drizzle chance.",
-    "Fri Nov 6: Dentist 9:20 AM Fort Langley Dental, then tournament weekend starts — U17 Abbotsford vs Penticton 2:45 PM (Matsqui, arrive 1:45, White) + MMA A 4 PM + U15 Fallen Stars vs TBirds U15C6 6:15 PM Mission South.",
-    "Nov 6–8 pileup: Sat Nov 7 U15 Mission 9:15 AM (PoCo C3) + U17 vs Squamish 10:15 AM (MSA) + U15 Mission 1:45 PM (Vancouver C1) + NEW U15 Practice 3:30 PM Mission Spring Brewing Co. + MMA A 4 PM; Sun Nov 8 U17 vs West Kelowna 9:00 AM (Summit West) + U15 Mission crossover TBD (arrive noon) + MMA A 4 PM.",
-    "Mon Nov 9: U17 Abbotsford playoff day 7:45 AM–7:45 PM (Matsqui; semis 12:15–2:15 MRC/Summit West; gold 5–7 PM MSA), then U17 Practice 9:30 PM SPX 2. Tue Nov 10: U15 C4 Practice 6 AM SPX 2. Wed Nov 11: U17 League vs Ridge Meadows 8:45 PM (no Development this Wed).",
-    "TeamSnap today: added U15 C4 Practice Sat Nov 7 3:30 PM @ Mission Spring Brewing Co.; collapsed Abbotsford rink names to “Abbotsford Rec Centre” and stripped Fallen Stars / Abbotsford # labels (restored on board); renamed Fri Nov 13 opponent to Pink Pigeons and Nov 15/22 to LANGLEY C3 - Havoc (board keeps C2/C3 short labels).",
+    "Today Fri Nov 6: Dentist 9:20 AM Fort Langley Dental, then tournament weekend — U17 Abbotsford #1 vs Penticton 2:45 PM (Matsqui, arrive 1:45, White) + MMA A 4 PM + U15 Fallen Stars vs TBirds U15C6 6:15 PM Mission South (arrive 5:30). Wet day, high ~12°C / low ~9°C, rain ~100%, windy ~29 km/h.",
+    "Sat Nov 7 pileup: U15 Mission 9:15 AM (PoCo C3, arrive 8:30) + U17 vs Squamish 10:15 AM (MSA, arrive 9:15, Maroon) + U15 Mission 1:45 PM (Vancouver C1, arrive 1:00) + U15 Practice 3:30 PM Mission Spring Brewing Co. + MMA A 4 PM. Still wet/windy (rain ~96%, wind ~34 km/h).",
+    "Sun Nov 8: U17 vs West Kelowna 9:00 AM (Summit West, arrive 8:00, White) + U15 Mission crossover TBD (arrive noon) + MMA A 4 PM. Cooler, showers (high ~12°C / low ~5°C).",
+    "Mon Nov 9: U17 Abbotsford playoff day 7:45 AM–7:45 PM (Matsqui; semis 12:15–2:15 MRC/Summit West; gold 5–7 PM MSA), then U17 Practice 9:30 PM SPX 2. Tue Nov 10: U15 C4 Practice 6 AM SPX 2. Wed Nov 11: U17 League vs Ridge Meadows 8:45 PM (away). Thu Nov 12: U17 League vs Ridge Meadows 9:15 PM SPX 2.",
+    "TeamSnap overnight: ICS unchanged vs Thu (no adds/moves/cancels). Stripped Fallen Stars / Abbotsford # labels and collapsed rink names to “Abbotsford Rec Centre” again (restored on board). Mission Spring practice Sat 3:30 PM still present. Upcoming: U17 40, U15 C4 11.",
     "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 10/17; Fri Nov 13 vs Pink Pigeons (C2) 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 Havoc 7 PM LEC 2; Sat Nov 21 Development with C1 10:45 AM LEC 3.",
-    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 7–8:30 PM runs into U17 Dryland 8:30 PM; Thu Nov 5 U17 Practice 9:15 PM during MMA A shift.",
-    "Google Calendar unchanged vs Wed; still has stale U15 items TeamSnap dropped (Fri Nov 6 vs C3, Sat Nov 7 Development, C3/C4 slots Nov 8/29, practices Nov 24 and Dec 1) and Fallen Stars entries one hour early listing Fri opponent as TBirds U15C7 (TeamSnap says U15C6) — TeamSnap stays on the board.",
+    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 7–8:30 PM runs into U17 Dryland 8:30 PM.",
+    "Google Calendar unchanged vs Thu; still has stale U15 items TeamSnap dropped (Fri Nov 6 vs C3, Sat Nov 7 Development, C3/C4 slots Nov 8/29, practices Nov 24 and Dec 1) and Fallen Stars entries one hour early listing Fri opponent as TBirds U15C7 (TeamSnap says U15C6) — TeamSnap stays on the board.",
     "Abbotsford Winter Extreme Ski & Board Sale, Sat–Sun Nov 14–15, Ag-Rec Centre (hours not posted).",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16 (no session Nov 11).",
     "MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Thu Nov 5–Wed Nov 11: MMA A green Thu–Sun (U17/U15 tournament Fri–Sun); U17 yellow Mon + Wed; U15 orange Tue.",
+    "Weekbar Fri Nov 6–Thu Nov 12: MMA A green Fri–Sun (U17/U15 tournament); U17 yellow Mon + Wed + Thu; U15 orange Tue.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
@@ -243,14 +243,6 @@
       "start": "2026-11-05T16:00:00-08:00",
       "end": "2026-11-06T00:00:00-08:00",
       "whenLabel": "Thu Nov 5 · 4:00 PM–12:00 AM PT"
-    },
-    {
-      "id": "ts-u17-10808348-374188725",
-      "summary": "U17 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-11-05T21:15:00-08:00",
-      "end": "2026-11-05T22:45:00-08:00",
-      "whenLabel": "Thu Nov 5 · 9:15 PM–10:45 PM PT"
     },
     {
       "id": "klvm6aqf51ag0j0prntpijgasc",
