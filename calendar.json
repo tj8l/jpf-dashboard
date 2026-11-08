@@ -1,25 +1,24 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-07T05:15:00-08:00",
+  "fetchedAt": "2026-11-08T05:15:00-08:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-07",
-    "end": "2026-11-13",
-    "label": "Nov 7–13 (next 7 days)"
+    "start": "2026-11-08",
+    "end": "2026-11-14",
+    "label": "Nov 8–14 (next 7 days)"
   },
   "notes": [
-    "Today Sat Nov 7 pileup: U15 Mission 9:15 AM (PoCo C3, arrive 8:30) + U17 vs Squamish 10:15 AM (MSA, arrive 9:15, Maroon) + U15 Mission 1:45 PM (Vancouver C1, arrive 1:00) + U15 Practice 3:30 PM Mission Spring Brewing Co. + MMA A 4 PM. Wet/windy (rain ~98%, wind ~32 km/h, high ~15°C / low ~8°C).",
-    "Sun Nov 8: U17 vs West Kelowna 9:00 AM (Summit West, arrive 8:00, White) + U15 Mission crossover TBD (arrive noon) + MMA A 4 PM. Cooler, showers (high ~11°C / low ~6°C), still breezy (~29 km/h).",
-    "Mon Nov 9: U17 Abbotsford playoff day 7:45 AM–7:45 PM (Matsqui; semis 12:15–2:15 MRC/Summit West; gold 5–7 PM MSA), then U17 Practice 9:30 PM SPX 2. Tue Nov 10: U15 C4 Practice 6 AM SPX 2. Wed Nov 11: U17 League vs Ridge Meadows 8:45 PM (away). Thu Nov 12: U17 League vs Ridge Meadows 9:15 PM SPX 2. Fri Nov 13: U15 vs Pink Pigeons (C2) 7 PM LEC 2, then U17 Dryland 8:30 PM.",
-    "TeamSnap overnight: added U15 C4 Development with C2, Sat Nov 28 10:45–11:45 AM @ LEC 3. U17 unchanged (Friday’s Abbotsford #1 aged out of the window). Stripped Fallen Stars / Abbotsford # labels and collapsed rink names to “Abbotsford Rec Centre” again (restored on board). Mission Spring practice Sat 3:30 PM still present. Upcoming: U17 39, U15 C4 11.",
-    "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 10/17; Fri Nov 13 vs Pink Pigeons (C2) 7 PM LEC 2; Sun Nov 15 + Nov 22 vs C3 Havoc 7 PM LEC 2; Sat Nov 21 Development with C1 10:45 AM LEC 3; Sat Nov 28 Development with C2 10:45 AM LEC 3.",
-    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 7–8:30 PM runs into U17 Dryland 8:30 PM.",
-    "Google Calendar unchanged vs Fri; still has stale U15 items TeamSnap dropped or replaced (Sat Nov 7 Development with C1 during tournament ice, C3/C4 slots Nov 8/29, practices Nov 24 and Dec 1) and Fallen Stars entries one hour early — TeamSnap stays on the board. Google does not yet list the new Nov 28 Development with C2.",
+    "Today Sun Nov 8: U17 Abbotsford vs West Kelowna 9:00 AM (Summit West, arrive 8:00, White) + U15 Fallen Stars vs Semiahmoo C2 1:00–2:15 PM (Mission Leisure Centre South, arrive 12:15) + MMA A 4 PM. Cooler with showers (rain ~71%, wind ~29 km/h, high ~12°C / low ~5°C).",
+    "Mon Nov 9: U17 Abbotsford playoff day 7:45 AM–7:45 PM (Matsqui; semis 12:15–2:15 MRC/Summit West; gold 5–7 PM MSA), then U17 Practice 9:30 PM SPX 2. Tue Nov 10: U15 C4 Practice 6 AM SPX 2. Wed Nov 11: U17 League vs Ridge Meadows 8:45 PM (away). Thu Nov 12: U17 League vs Ridge Meadows 9:15 PM SPX 2. Fri Nov 13: U15 vs Pink Pigeons (C2) 7 PM LEC 2, then U17 Dryland 8:30 PM. Sat Nov 14: U15 at Semiahmoo C3 8:00 PM South Surrey Arena (arrive 7:15).",
+    "TeamSnap overnight: replaced the all-day U15 Fallen Stars TBD crossover with a timed game vs Semiahmoo C2, Sun Nov 8 1:00–2:15 PM @ Mission Leisure Centre South (arrive 12:15). Added U15 at Semiahmoo C3, Sat Nov 14 8:00–9:15 PM @ South Surrey Arena (arrive 7:15), and U15 at South Delta C3, Sat Nov 21 4:30–6:00 PM @ South Delta Rec Centre Main (arrive 3:45). U17 unchanged (Saturday’s vs Squamish aged out). Stripped Fallen Stars / Abbotsford # labels and collapsed rink names again (restored on board). Upcoming: U17 38, U15 C4 10.",
+    "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 10/17; Fri Nov 13 vs Pink Pigeons (C2) 7 PM LEC 2; Sat Nov 14 at Semiahmoo C3 8 PM South Surrey Arena; Sun Nov 15 + Nov 22 vs C3 Havoc 7 PM LEC 2; Sat Nov 21 Development with C1 10:45 AM LEC 3 and at South Delta C3 4:30 PM; Sat Nov 28 Development with C2 10:45 AM LEC 3.",
+    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 7–8:30 PM runs into U17 Dryland 8:30 PM. Sat Nov 21 is a double for U15 (development morning, South Delta afternoon) but the times do not overlap.",
+    "Google Calendar unchanged vs Sat aside from Saturday items aging out; still has the all-day Fallen Stars crossover TBD (TeamSnap now has the 1:00 PM Semiahmoo C2 game), stale U15 items TeamSnap dropped or replaced (C3/C4 slots Nov 8/29, practices Nov 24 and Dec 1, times one hour early) — TeamSnap stays on the board. Google does not yet list the new Nov 14 Semiahmoo C3 or Nov 21 South Delta C3 games, or the Nov 28 Development with C2.",
     "Abbotsford Winter Extreme Ski & Board Sale, Sat–Sun Nov 14–15, Ag-Rec Centre (hours not posted).",
     "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16 (no session Nov 11).",
     "MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
     "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
-    "Weekbar Sat Nov 7–Fri Nov 13: MMA A green Sat–Sun (U17/U15 tournament); U17 yellow Mon + Wed + Thu; U15 orange Tue + Fri.",
+    "Weekbar Sun Nov 8–Sat Nov 14: MMA A green Sunday (U17/U15 tournament); U17 yellow Mon + Wed + Thu; U15 orange Tue + Fri + Sat.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
@@ -260,38 +259,6 @@
       "whenLabel": "Fri Nov 6 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u15-10816643-375830324",
-      "summary": "U15 C4 Fallen Stars (Mission) · at Port Coquitlam U15C3",
-      "location": "Mission Leisure Centre (7650 Grand St, Mission) – North",
-      "start": "2026-11-07T09:15:00-08:00",
-      "end": "2026-11-07T10:30:00-08:00",
-      "whenLabel": "Sat Nov 7 · 9:15 AM–10:30 AM PT (arrive 8:30 AM)"
-    },
-    {
-      "id": "ts-u17-10808348-375456336",
-      "summary": "U17 Abbotsford #2 · vs Squamish U18 A2",
-      "location": "MSA Arena (2323 Emerson St, Abbotsford)",
-      "start": "2026-11-07T10:15:00-08:00",
-      "end": "2026-11-07T12:15:00-08:00",
-      "whenLabel": "Sat Nov 7 · 10:15 AM–12:15 PM PT (arrive 9:15 AM, Maroon — bring both)"
-    },
-    {
-      "id": "ts-u15-10816643-375830513",
-      "summary": "U15 C4 Fallen Stars (Mission) · at Vancouver C1",
-      "location": "Mission Leisure Centre (7650 Grand St, Mission) – North",
-      "start": "2026-11-07T13:45:00-08:00",
-      "end": "2026-11-07T15:00:00-08:00",
-      "whenLabel": "Sat Nov 7 · 1:45 PM–3:00 PM PT (arrive 1:00 PM)"
-    },
-    {
-      "id": "ts-u15-10816643-376072338",
-      "summary": "U15 C4 Practice · Mission Spring Brewing Co.",
-      "location": "Mission Spring Brewing Co.",
-      "start": "2026-11-07T15:30:00-08:00",
-      "end": "2026-11-07T15:30:00-08:00",
-      "whenLabel": "Sat Nov 7 · 3:30 PM PT"
-    },
-    {
       "id": "c1omq1j81qd1qqsm832gaq62hk",
       "summary": "Work · MMA A",
       "location": "",
@@ -300,20 +267,20 @@
       "whenLabel": "Sat Nov 7 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u15-10816643-375076091",
-      "summary": "U15 C4 Fallen Stars (Mission) · vs TBD (crossover)",
-      "location": "Mission Leisure Centre (7650 Grand St, Mission)",
-      "start": "2026-11-08T00:00:00-08:00",
-      "end": "2026-11-09T00:00:00-08:00",
-      "whenLabel": "Sun Nov 8 · time TBD (arrive 12:00 PM) PT"
-    },
-    {
       "id": "ts-u17-10808348-375456404",
       "summary": "U17 Abbotsford #3 · vs West Kelowna U18 A2",
       "location": "Summit Centre – West (3600 Townline Rd, Abbotsford)",
       "start": "2026-11-08T09:00:00-08:00",
       "end": "2026-11-08T11:00:00-08:00",
       "whenLabel": "Sun Nov 8 · 9:00 AM–11:00 AM PT (arrive 8:00 AM, White — bring both)"
+    },
+    {
+      "id": "ts-u15-10816643-376175568",
+      "summary": "U15 C4 Fallen Stars (Mission) · vs Semiahmoo C2",
+      "location": "Mission Leisure Centre (7650 Grand St, Mission) – South",
+      "start": "2026-11-08T13:00:00-08:00",
+      "end": "2026-11-08T14:15:00-08:00",
+      "whenLabel": "Sun Nov 8 · 1:00 PM–2:15 PM PT (arrive 12:15 PM)"
     },
     {
       "id": "mr8509qth1bm8hve3i8djsa1ho",
@@ -388,6 +355,14 @@
       "whenLabel": "Sat Nov 14 – Sun Nov 15 · all day (hours not posted; check before going)"
     },
     {
+      "id": "ts-u15-10816643-376174991",
+      "summary": "U15 C4 Game · at Semiahmoo C3",
+      "location": "South Surrey Arena (2199 148 St, Surrey)",
+      "start": "2026-11-14T20:00:00-08:00",
+      "end": "2026-11-14T21:15:00-08:00",
+      "whenLabel": "Sat Nov 14 · 8:00 PM–9:15 PM PT (arrive 7:15 PM)"
+    },
+    {
       "id": "ts-u17-10808348-374643036",
       "summary": "U17 League · vs Cloverdale",
       "location": "LEC 1 (Langley Events Centre)",
@@ -458,6 +433,14 @@
       "start": "2026-11-21T10:45:00-08:00",
       "end": "2026-11-21T11:45:00-08:00",
       "whenLabel": "Sat Nov 21 · 10:45 AM–11:45 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376175057",
+      "summary": "U15 C4 Game · at South Delta C3",
+      "location": "South Delta Rec Centre – Main Rink (1720 56th St, Delta)",
+      "start": "2026-11-21T16:30:00-08:00",
+      "end": "2026-11-21T18:00:00-08:00",
+      "whenLabel": "Sat Nov 21 · 4:30 PM–6:00 PM PT (arrive 3:45 PM)"
     },
     {
       "id": "ts-u17-10808348-374643572",

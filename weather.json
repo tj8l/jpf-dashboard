@@ -1,35 +1,35 @@
 {
   "location": "Langley, BC",
   "timezone": "America/Vancouver",
-  "date": "2026-11-07",
-  "dateLabel": "Sat Nov 7, 2026",
-  "conditions": "Wet and windy tournament Saturday: high ~14°C / low ~8°C, rain ~98%, wind ~32 km/h. Sun cooler with showers (rain ~81%, wind ~29 km/h, high ~11°C / low ~6°C); Mon–Tue lingering showers, highs ~11°C; Wed milder, high ~17°C.",
-  "conditionsShort": "Wet, windy, rain near certain",
+  "date": "2026-11-08",
+  "dateLabel": "Sun Nov 8, 2026",
+  "conditions": "Cooler Sunday with showers: high ~12°C / low ~5°C, rain ~71%, wind ~29 km/h. Mon–Tue wetter (rain ~96–97%, highs ~10°C); Wed milder, high ~15°C still a good chance of rain; Thu–Sat lingering showers.",
+  "conditionsShort": "Cooler, showers, breezy",
   "temp": {
-    "highC": 14,
-    "lowC": 8,
-    "highF": 57,
-    "lowF": 46,
-    "displayC": "14° / 8°C",
-    "displayF": "57° / 46°F",
-    "currentC": 8,
-    "currentF": 46
+    "highC": 12,
+    "lowC": 5,
+    "highF": 54,
+    "lowF": 41,
+    "displayC": "12° / 5°C",
+    "displayF": "54° / 41°F",
+    "currentC": 11,
+    "currentF": 52
   },
-  "rainChancePct": 98,
+  "rainChancePct": 71,
   "wind": {
-    "summary": "windy",
-    "maxKmh": 32,
-    "display": "Windy, ~32 km/h"
+    "summary": "breezy",
+    "maxKmh": 29,
+    "display": "Breezy, ~29 km/h"
   },
   "sun": {
-    "sunrise": "07:08",
-    "sunset": "16:39",
-    "sunriseLabel": "7:08 AM",
-    "sunsetLabel": "4:39 PM",
+    "sunrise": "07:09",
+    "sunset": "16:38",
+    "sunriseLabel": "7:09 AM",
+    "sunsetLabel": "4:38 PM",
     "timezoneNote": "PT"
   },
-  "asOf": "2026-11-07T05:15:00-08:00",
-  "asOfLabel": "Sat Nov 7, 2026 · ~5:15 AM PT",
+  "asOf": "2026-11-08T05:15:00-08:00",
+  "asOfLabel": "Sun Nov 8, 2026 · ~5:15 AM PT",
   "source": "Open-Meteo (Langley BC)",
-  "lastUpdated": "2026-11-07T05:15:00-08:00"
+  "lastUpdated": "2026-11-08T05:15:00-08:00"
 }
