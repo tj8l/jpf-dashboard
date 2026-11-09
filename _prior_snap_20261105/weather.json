@@ -1,0 +1,35 @@
+{
+  "location": "Langley, BC",
+  "timezone": "America/Vancouver",
+  "date": "2026-11-04",
+  "dateLabel": "Wed Nov 4, 2026",
+  "conditions": "Light rain on and off: high ~13°C / low ~3°C, rain ~67%, light wind (~16 km/h). Wetter Thu–Fri (72–97%), mild and showery Sat–Sun (16°C, 89%), windy Sun (~34 km/h); drier and cold Mon–Tue (lows ~2°C).",
+  "conditionsShort": "Light rain",
+  "temp": {
+    "highC": 13,
+    "lowC": 3,
+    "highF": 55,
+    "lowF": 37,
+    "displayC": "13° / 3°C",
+    "displayF": "55° / 37°F",
+    "currentC": 3,
+    "currentF": 37
+  },
+  "rainChancePct": 67,
+  "wind": {
+    "summary": "light",
+    "maxKmh": 16,
+    "display": "Light, ~16 km/h"
+  },
+  "sun": {
+    "sunrise": "07:03",
+    "sunset": "16:44",
+    "sunriseLabel": "7:03 AM",
+    "sunsetLabel": "4:44 PM",
+    "timezoneNote": "PT"
+  },
+  "asOf": "2026-11-04T05:10:00-08:00",
+  "asOfLabel": "Wed Nov 4, 2026 · 5:10 AM PT",
+  "source": "Open-Meteo (Langley BC)",
+  "lastUpdated": "2026-11-04T05:10:00-08:00"
+}
