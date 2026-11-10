@@ -1,6 +1,6 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-09T05:04:16-07:00",
+  "fetchedAt": "2026-11-09T05:15:00-08:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
     "start": "2026-11-09",
@@ -8,9 +8,18 @@
     "label": "Nov 9–15 (next 7 days)"
   },
   "notes": [
-    "Today Mon Nov 9: U17 Game · vs Abbotsford 12:15 PM @ Abbotsford Rec Centre; U17 HOLD · Abbotsford 5:00 PM @ Abbotsford Rec Centre.",
-    "Beyond 7-day day-list window: Mon Nov 16 (U17 League, U17 Practice); Tue Nov 17 (U15 C4 Practice); Wed Nov 18 (U17 Development); Thu Nov 19 (U17 Practice) — still in calendar.json events.",
-    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5."
+    "Today Mon Nov 9: U17 Abbotsford tournament — game vs Abbotsford 12:15–2:15 PM, HOLD 5:00–7:00 PM (gold game if advancing). Rainy, high ~13°C / low ~5°C (rain ~97%).",
+    "Tue Nov 10: U15 C4 Practice 6 AM SPX 2. Wed Nov 11: U17 League vs Ridge Meadows 8:45 PM (away). Thu Nov 12: U17 League vs Ridge Meadows 9:15 PM SPX 2. Fri Nov 13: U15 vs Pink Pigeons (C2) 7 PM LEC 2, then U17 Dryland 8:30 PM. Sat Nov 14: U15 at Semiahmoo C3 8:00 PM South Surrey Arena (arrive 7:15). Sun Nov 15: U17 League vs Cloverdale 6:15 PM + U15 vs Havoc 7 PM.",
+    "TeamSnap overnight: U17 Abbotsford Monday playoff-day block replaced by a game vs Abbotsford 12:15–2:15 PM plus a 5:00–7:00 PM HOLD, and the Mon 9:30 PM U17 Practice @ SPX 2 was removed. Sunday items aged out. U15 C4 unchanged (labels restored). Upcoming: U17 37, U15 C4 9.",
+    "U15 C4 November (TeamSnap): Tue practices 6 AM SPX 2 Nov 10/17; Fri Nov 13 vs Pink Pigeons (C2) 7 PM LEC 2; Sat Nov 14 at Semiahmoo C3 8 PM South Surrey Arena; Sun Nov 15 + Nov 22 vs C3 Havoc 7 PM LEC 2; Sat Nov 21 Development with C1 10:45 AM LEC 3 and at South Delta C3 4:30 PM; Sat Nov 28 Development with C2 10:45 AM LEC 3.",
+    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; Fri Nov 13 U15 7–8:30 PM runs into U17 Dryland 8:30 PM. Sat Nov 21 is a double for U15 (development morning, South Delta afternoon) but the times do not overlap.",
+    "Google Calendar unchanged apart from Sunday items aging out; stale U15 items TeamSnap dropped or replaced (and TBD crossover) stay excluded — TeamSnap stays on the board.",
+    "Abbotsford Winter Extreme Ski & Board Sale, Sat–Sun Nov 14–15, Ag-Rec Centre (hours not posted).",
+    "Weekly U17 Development Wednesdays 7:00–8:00 PM PT @ LEC 2 through Dec 16 (no session Nov 11).",
+    "MMA A block Dec 3–8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
+    "Mon Nov 16 U17 League vs South Delta 9:00 PM overlaps U17 Practice 9:30 PM @ SPX 2 (TeamSnap — likely practice replaced by game).",
+    "Weekbar Mon Nov 9–Sun Nov 15: U17 yellow Mon + Wed + Thu; U15 orange Tue + Fri + Sat + Sun.",
+    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved (PCAHA from Bulletin #5)."
   ],
   "events": [
     {
@@ -267,19 +276,19 @@
     },
     {
       "id": "ts-u17-10808348-376205623",
-      "summary": "U17 Game · vs Abbotsford",
+      "summary": "U17 Abbotsford Tournament · game vs Abbotsford",
       "location": "Abbotsford Rec Centre",
       "start": "2026-11-09T12:15:30-08:00",
       "end": "2026-11-09T14:15:30-08:00",
-      "whenLabel": "Mon Nov 9 · 12:15 PM–2:15 PM PT"
+      "whenLabel": "Mon Nov 9 · 12:15 PM–2:15 PM PT (semifinal slot; see TeamSnap for rink)"
     },
     {
       "id": "ts-u17-10808348-374267019",
-      "summary": "U17 HOLD · Abbotsford",
+      "summary": "U17 Abbotsford Tournament · HOLD (gold game if advancing)",
       "location": "Abbotsford Rec Centre",
       "start": "2026-11-09T17:00:00-08:00",
       "end": "2026-11-09T19:00:00-08:00",
-      "whenLabel": "Mon Nov 9 · 5:00 PM–7:00 PM PT"
+      "whenLabel": "Mon Nov 9 · 5:00 PM–7:00 PM PT (hold — gold game 5–7 PM at MSA Arena if advancing)"
     },
     {
       "id": "ts-u15-10816643-375553471",
@@ -307,7 +316,7 @@
     },
     {
       "id": "ts-u15-10816643-375553804",
-      "summary": "U15 C4 Game · vs Pink Pigeons",
+      "summary": "U15 C4 Game · vs C2 (Pink Pigeons)",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-11-13T19:00:00-08:00",
       "end": "2026-11-13T20:30:00-08:00",
@@ -332,10 +341,10 @@
     {
       "id": "ts-u15-10816643-376174991",
       "summary": "U15 C4 Game · at Semiahmoo C3",
-      "location": "Semiahmoo (South Surrey)",
+      "location": "South Surrey Arena (2199 148 St, Surrey)",
       "start": "2026-11-14T20:00:00-08:00",
       "end": "2026-11-14T21:15:00-08:00",
-      "whenLabel": "Sat Nov 14 · 8:00 PM–9:15 PM PT"
+      "whenLabel": "Sat Nov 14 · 8:00 PM–9:15 PM PT (arrive 7:15 PM)"
     },
     {
       "id": "ts-u17-10808348-374643036",
@@ -347,7 +356,7 @@
     },
     {
       "id": "ts-u15-10816643-375553645",
-      "summary": "U15 C4 Game · vs LANGLEY C3 - Havoc",
+      "summary": "U15 C4 Game · vs C3 (Havoc)",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-11-15T19:00:00-08:00",
       "end": "2026-11-15T20:30:00-08:00",
@@ -412,10 +421,10 @@
     {
       "id": "ts-u15-10816643-376175057",
       "summary": "U15 C4 Game · at South Delta C3",
-      "location": "South Delta",
+      "location": "South Delta Rec Centre – Main Rink (1720 56th St, Delta)",
       "start": "2026-11-21T16:30:00-08:00",
       "end": "2026-11-21T18:00:00-08:00",
-      "whenLabel": "Sat Nov 21 · 4:30 PM–6:00 PM PT"
+      "whenLabel": "Sat Nov 21 · 4:30 PM–6:00 PM PT (arrive 3:45 PM)"
     },
     {
       "id": "ts-u17-10808348-374643572",
@@ -427,7 +436,7 @@
     },
     {
       "id": "ts-u15-10816643-375553658",
-      "summary": "U15 C4 Game · vs LANGLEY C3 - Havoc",
+      "summary": "U15 C4 Game · vs C3 (Havoc)",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-11-22T19:00:00-08:00",
       "end": "2026-11-22T20:30:00-08:00",
