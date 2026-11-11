@@ -1,60 +1,60 @@
 {
-  "asOf": "2026-11-10T05:15:00-08:00",
-  "note": "Tue morning PT — gold gold-api; WTI/SPX/US10Y latest close (Yahoo); BTC Coinbase",
+  "asOf": "2026-11-11T05:10:00-08:00",
+  "note": "Wed morning PT \u2014 gold gold-api; WTI/SPX/US10Y latest (Yahoo); BTC Coinbase",
   "spots": [
     {
       "id": "gold",
       "name": "Spot gold",
       "symbol": "XAU",
-      "value": 4077.1,
+      "value": 4046.2,
       "unit": "USD/oz",
       "change": "-0.76% vs prior snap",
       "source": "gold-api.com",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "status": "live"
     },
     {
       "id": "oil",
       "name": "Spot oil (WTI)",
       "symbol": "CL",
-      "value": 85.41,
+      "value": 86.62,
       "unit": "USD/bbl",
-      "change": "-1.66% vs prior close",
+      "change": "+0.67% vs prior close",
       "source": "Yahoo CL=F",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "status": "live"
     },
     {
       "id": "btc",
       "name": "Spot BTC",
       "symbol": "BTC",
-      "value": 74274,
+      "value": 73874,
       "unit": "USD",
-      "change": "-0.07% vs prior snap",
+      "change": "-0.54% vs prior snap",
       "source": "Coinbase",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "status": "live"
     },
     {
       "id": "spx",
       "name": "S&P 500",
       "symbol": "SPX",
-      "value": 7549.94,
+      "value": 7520.93,
       "unit": "index",
-      "change": "+2.35% vs prior close",
+      "change": "-0.38% vs prior close",
       "source": "Yahoo ^GSPC",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "status": "live"
     },
     {
       "id": "us10y",
       "name": "US 10-year Treasury",
       "symbol": "US10Y",
-      "value": 4.864,
+      "value": 4.983,
       "unit": "%",
-      "change": "+0.01 pts vs prior close",
+      "change": "+0.12 pts vs prior close",
       "source": "Yahoo ^TNX",
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "status": "live"
     }
   ]
