@@ -1,17 +1,16 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-13T05:10:00-08:00",
+  "fetchedAt": "2026-11-14T05:10:00-08:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-13",
-    "end": "2026-11-18",
-    "label": "Nov 13–19 (next 7 days)"
+    "start": "2026-11-14",
+    "end": "2026-11-20",
+    "label": "Nov 14–20 (next 7 days)"
   },
   "notes": [
-    "Today Fri Nov 13: U15 C4 vs Pink Pigeons (C2) 7 PM LEC 2, then U17 Dryland 8:30 PM. Rain risk, see weather.",
-    "Sat Nov 14: U15 at Semiahmoo C3 8:00 PM South Surrey Arena (arrive 7:15). Sun Nov 15: U17 League vs Cloverdale 6:15 PM + U15 vs Havoc 7 PM LEC 2. Mon Nov 16: U17 League vs South Delta 7:30 PM. Tue Nov 17: U15 C4 Practice 6 AM SPX 2. Wed Nov 18: U17 Development 7 PM LEC 2.",
-    "TeamSnap overnight: no schedule changes (Thu Nov 12 U17 game aged out; only opponent names re-normalized, labels restored).",
-    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1; today U15 7-8:30 PM runs into U17 Dryland 8:30 PM.",
+    "Today Sat Nov 14: U15 C4 at Semiahmoo C3 8:00 PM, South Surrey Arena (arrive 7:15). Sun Nov 15: U17 League vs Cloverdale 6:15 PM LEC 1 + U15 vs C3 7 PM LEC 2. Mon Nov 16: U17 League vs South Delta 7:30 PM. Tue Nov 17: U15 C4 Practice 6 AM SPX 2. Wed Nov 18: U17 Development 7 PM LEC 2. Thu Nov 19: U17 Practice 9:15 PM SPX 2. Fri Nov 20: U17 Dryland 8:30 PM.",
+    "TeamSnap overnight: no schedule changes (Fri Nov 13 items aged out; Sun Nov 15 and Nov 22 opponent shown as C3).",
+    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1.",
     "Google Calendar unchanged (stale U15 items TeamSnap dropped or replaced, and TBD slot, stay excluded).",
     "Abbotsford Winter Extreme Ski & Board Sale, Sat-Sun Nov 14-15, Ag-Rec Centre (hours not posted).",
     "MMA A block Dec 3-8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
@@ -271,22 +270,6 @@
       "whenLabel": "Sun Nov 8 · 4:00 PM–12:00 AM PT"
     },
     {
-      "id": "ts-u15-10816643-375553804",
-      "summary": "U15 C4 Game · vs C2 (Pink Pigeons)",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-13T19:00:00-08:00",
-      "end": "2026-11-13T20:30:00-08:00",
-      "whenLabel": "Fri Nov 13 · 7:00 PM–8:30 PM PT"
-    },
-    {
-      "id": "ts-u17-10808348-374188831",
-      "summary": "U17 Dryland · Aim Athletic",
-      "location": "Aim Athletic (Langley)",
-      "start": "2026-11-13T20:30:00-08:00",
-      "end": "2026-11-13T21:30:00-08:00",
-      "whenLabel": "Fri Nov 13 · 8:30 PM–9:30 PM PT"
-    },
-    {
       "id": "ci701uk11jmgbk814napuvlcvc",
       "summary": "Abbotsford Winter Extreme Ski & Board Sale",
       "location": "Ag-Rec Centre, Abbotsford",
@@ -297,10 +280,10 @@
     {
       "id": "ts-u15-10816643-376174991",
       "summary": "U15 C4 Game · at Semiahmoo C3",
-      "location": "South Surrey Arena (2199 148 St, Surrey)",
+      "location": "Semiahmoo (South Surrey)",
       "start": "2026-11-14T20:00:00-08:00",
       "end": "2026-11-14T21:15:00-08:00",
-      "whenLabel": "Sat Nov 14 · 8:00 PM–9:15 PM PT (arrive 7:15 PM)"
+      "whenLabel": "Sat Nov 14 · 8:00 PM–9:15 PM PT"
     },
     {
       "id": "ts-u17-10808348-374643036",
@@ -312,7 +295,7 @@
     },
     {
       "id": "ts-u15-10816643-375553645",
-      "summary": "U15 C4 Game · vs C3 (Havoc)",
+      "summary": "U15 C4 Game · vs C3",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-11-15T19:00:00-08:00",
       "end": "2026-11-15T20:30:00-08:00",
@@ -369,10 +352,10 @@
     {
       "id": "ts-u15-10816643-376175057",
       "summary": "U15 C4 Game · at South Delta C3",
-      "location": "South Delta Rec Centre – Main Rink (1720 56th St, Delta)",
+      "location": "South Delta",
       "start": "2026-11-21T16:30:00-08:00",
       "end": "2026-11-21T18:00:00-08:00",
-      "whenLabel": "Sat Nov 21 · 4:30 PM–6:00 PM PT (arrive 3:45 PM)"
+      "whenLabel": "Sat Nov 21 · 4:30 PM–6:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374643572",
@@ -384,7 +367,7 @@
     },
     {
       "id": "ts-u15-10816643-375553658",
-      "summary": "U15 C4 Game · vs C3 (Havoc)",
+      "summary": "U15 C4 Game · vs C3",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-11-22T19:00:00-08:00",
       "end": "2026-11-22T20:30:00-08:00",
