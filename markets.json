@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-11-14T05:10:00-08:00",
-  "note": "Fri morning PT — gold gold-api; WTI/SPX/US10Y latest close (Yahoo); BTC Coinbase",
+  "asOf": "2026-11-15T05:00:00-08:00",
+  "note": "Sun morning PT \u2014 gold gold-api; WTI/SPX/US10Y latest close (Yahoo, markets closed weekend); BTC Coinbase",
   "spots": [
     {
       "id": "gold",
@@ -10,7 +10,7 @@
       "unit": "USD/oz",
       "change": "-0.28% vs prior snap",
       "source": "gold-api.com",
-      "asOf": "2026-11-14",
+      "asOf": "2026-11-15",
       "status": "live"
     },
     {
@@ -28,11 +28,11 @@
       "id": "btc",
       "name": "Spot BTC",
       "symbol": "BTC",
-      "value": 67205,
+      "value": 65456,
       "unit": "USD",
-      "change": "-3.13% vs prior snap",
+      "change": "-2.60% vs prior snap",
       "source": "Coinbase",
-      "asOf": "2026-11-14",
+      "asOf": "2026-11-15",
       "status": "live"
     },
     {
