@@ -13,18 +13,18 @@ from __future__ import annotations
 import json
 import re
 import urllib.request
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 TEAMSNAP_JSON = ROOT / "teamsnap.json"
 CALENDAR_JSON = ROOT / "calendar.json"
+# BC did not fall back in Nov 2026: permanent UTC-7 (Arizona / MST).
+# TeamSnap's America/Vancouver VTIMEZONE stays at TZOFFSETTO:-0700 (TZNAME:MST).
+# Do not map those wall clocks through America/Los_Angeles, which is -08 after Nov 1.
 PT = ZoneInfo("America/Vancouver")
-LA = ZoneInfo("America/Los_Angeles")
-# Box tzdata for America/Vancouver is wrong after Nov 2026 DST end (stays at -07).
-# TeamSnap ICS uses America/Los_Angeles; Pacific wall times match, so format via LA.
-PACIFIC = LA
+PACIFIC = timezone(timedelta(hours=-7))
 
 DEFAULT_U17 = {
     "id": "u17a1",
@@ -142,20 +142,13 @@ def parse_vevents(ics_text: str) -> list[dict]:
 def parse_ics_dt(params: str, val: str) -> datetime | date:
     if "VALUE=DATE" in params.upper() or (len(val) == 8 and "T" not in val):
         return date(int(val[0:4]), int(val[4:6]), int(val[6:8]))
-    tz = LA
-    m = re.search(r"TZID=([^;:]+)", params)
-    if m:
-        try:
-            tzid = m.group(1)
-            # Box tzdata for America/Vancouver is wrong after Nov 2026; Pacific wall times match LA.
-            tz = LA if tzid in ("America/Vancouver", "Canada/Pacific") else ZoneInfo(tzid)
-        except Exception:
-            tz = LA
+    # UTC instants convert into UTC-7. All other ICS wall-clock times (including
+    # TZID=America/Vancouver and leftover America/Los_Angeles) are taken as UTC-7
+    # so 20261115T190000 always stores and displays as 7:00 PM.
     if val.endswith("Z"):
         dt = datetime.strptime(val, "%Y%m%dT%H%M%SZ").replace(tzinfo=ZoneInfo("UTC"))
         return dt.astimezone(PACIFIC)
-    dt = datetime.strptime(val, "%Y%m%dT%H%M%S").replace(tzinfo=tz)
-    return dt.astimezone(PACIFIC)
+    return datetime.strptime(val, "%Y%m%dT%H%M%S").replace(tzinfo=PACIFIC)
 
 
 def rink_short(desc: str, loc: str, summary: str) -> tuple[str, str]:
