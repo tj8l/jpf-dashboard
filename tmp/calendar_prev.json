@@ -1,20 +1,16 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-14T05:10:00-08:00",
+  "fetchedAt": "2026-11-15T08:04:15-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-14",
-    "end": "2026-11-20",
-    "label": "Nov 14–20 (next 7 days)"
+    "start": "2026-11-15",
+    "end": "2026-11-21",
+    "label": "Nov 15–21 (next 7 days)"
   },
   "notes": [
-    "Today Sat Nov 14: U15 C4 at Semiahmoo C3 8:00 PM, South Surrey Arena (arrive 7:15). Sun Nov 15: U17 League vs Cloverdale 6:15 PM LEC 1 + U15 vs C3 7 PM LEC 2. Mon Nov 16: U17 League vs South Delta 7:30 PM. Tue Nov 17: U15 C4 Practice 6 AM SPX 2. Wed Nov 18: U17 Development 7 PM LEC 2. Thu Nov 19: U17 Practice 9:15 PM SPX 2. Fri Nov 20: U17 Dryland 8:30 PM.",
-    "TeamSnap overnight: no schedule changes (Fri Nov 13 items aged out; Sun Nov 15 and Nov 22 opponent shown as C3).",
-    "Clashes: Sun Nov 15 and Nov 22 U15 7 PM LEC 2 overlap U17 League 6:15 PM LEC 1.",
-    "Google Calendar unchanged (stale U15 items TeamSnap dropped or replaced, and TBD slot, stay excluded).",
-    "Abbotsford Winter Extreme Ski & Board Sale, Sat-Sun Nov 14-15, Ag-Rec Centre (hours not posted).",
-    "MMA A block Dec 3-8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
-    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved."
+    "Today Sun Nov 15: U17 League · vs Cloverdale 6:15 PM @ LEC 1; U15 C4 Game · vs C3 7:00 PM @ LEC 2.",
+    "Beyond 7-day day-list window: Sun Nov 22 (U17 League, U15 C4 League); Mon Nov 23 (U17 Practice); Tue Nov 24 (U15 C4 Practice); Wed Nov 25 (U17 Development) — still in calendar.json events.",
+    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5."
   ],
   "events": [
     {
@@ -278,163 +274,179 @@
       "whenLabel": "Sat Nov 14 – Sun Nov 15 · all day (hours not posted; check before going)"
     },
     {
-      "id": "ts-u15-10816643-376174991",
-      "summary": "U15 C4 Game · at Semiahmoo C3",
-      "location": "Semiahmoo (South Surrey)",
-      "start": "2026-11-14T20:00:00-08:00",
-      "end": "2026-11-14T21:15:00-08:00",
-      "whenLabel": "Sat Nov 14 · 8:00 PM–9:15 PM PT"
-    },
-    {
       "id": "ts-u17-10808348-374643036",
       "summary": "U17 League · vs Cloverdale",
       "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-11-15T18:15:00-08:00",
-      "end": "2026-11-15T20:15:00-08:00",
+      "start": "2026-11-15T18:15:00-07:00",
+      "end": "2026-11-15T20:15:00-07:00",
       "whenLabel": "Sun Nov 15 · 6:15 PM–8:15 PM PT"
     },
     {
       "id": "ts-u15-10816643-375553645",
       "summary": "U15 C4 Game · vs C3",
       "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-15T19:00:00-08:00",
-      "end": "2026-11-15T20:30:00-08:00",
+      "start": "2026-11-15T19:00:00-07:00",
+      "end": "2026-11-15T20:30:00-07:00",
       "whenLabel": "Sun Nov 15 · 7:00 PM–8:30 PM PT"
     },
     {
       "id": "ts-u17-10808348-374643526",
       "summary": "U17 League · vs South Delta",
       "location": "South Delta",
-      "start": "2026-11-16T19:30:00-08:00",
-      "end": "2026-11-16T21:00:00-08:00",
+      "start": "2026-11-16T19:30:00-07:00",
+      "end": "2026-11-16T21:00:00-07:00",
       "whenLabel": "Mon Nov 16 · 7:30 PM–9:00 PM PT"
     },
     {
       "id": "ts-u15-10816643-375553537",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-11-17T06:00:00-08:00",
-      "end": "2026-11-17T07:00:00-08:00",
+      "start": "2026-11-17T06:00:00-07:00",
+      "end": "2026-11-17T07:00:00-07:00",
       "whenLabel": "Tue Nov 17 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863313",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-18T19:00:00-08:00",
-      "end": "2026-11-18T20:00:00-08:00",
+      "start": "2026-11-18T19:00:00-07:00",
+      "end": "2026-11-18T20:00:00-07:00",
       "whenLabel": "Wed Nov 18 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188727",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-11-19T21:15:00-08:00",
-      "end": "2026-11-19T22:45:00-08:00",
+      "start": "2026-11-19T21:15:00-07:00",
+      "end": "2026-11-19T22:45:00-07:00",
       "whenLabel": "Thu Nov 19 · 9:15 PM–10:45 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188833",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
-      "start": "2026-11-20T20:30:00-08:00",
-      "end": "2026-11-20T21:30:00-08:00",
+      "start": "2026-11-20T20:30:00-07:00",
+      "end": "2026-11-20T21:30:00-07:00",
       "whenLabel": "Fri Nov 20 · 8:30 PM–9:30 PM PT"
     },
     {
       "id": "ts-u15-10816643-375553747",
       "summary": "U15 C4 Development · with C1",
       "location": "LEC 3 (Langley Events Centre)",
-      "start": "2026-11-21T10:45:00-08:00",
-      "end": "2026-11-21T11:45:00-08:00",
+      "start": "2026-11-21T10:45:00-07:00",
+      "end": "2026-11-21T11:45:00-07:00",
       "whenLabel": "Sat Nov 21 · 10:45 AM–11:45 AM PT"
     },
     {
       "id": "ts-u15-10816643-376175057",
       "summary": "U15 C4 Game · at South Delta C3",
       "location": "South Delta",
-      "start": "2026-11-21T16:30:00-08:00",
-      "end": "2026-11-21T18:00:00-08:00",
+      "start": "2026-11-21T16:30:00-07:00",
+      "end": "2026-11-21T18:00:00-07:00",
       "whenLabel": "Sat Nov 21 · 4:30 PM–6:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374643572",
       "summary": "U17 League · vs North Vancouver",
       "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-11-22T18:15:00-08:00",
-      "end": "2026-11-22T20:15:00-08:00",
+      "start": "2026-11-22T18:15:00-07:00",
+      "end": "2026-11-22T20:15:00-07:00",
       "whenLabel": "Sun Nov 22 · 6:15 PM–8:15 PM PT"
     },
     {
       "id": "ts-u15-10816643-375553658",
-      "summary": "U15 C4 Game · vs C3",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-22T19:00:00-08:00",
-      "end": "2026-11-22T20:30:00-08:00",
-      "whenLabel": "Sun Nov 22 · 7:00 PM–8:30 PM PT"
+      "summary": "U15 C4 League · vs cloverdale C2",
+      "location": "Cloverdale Sport & Ice Complex",
+      "start": "2026-11-22T18:15:00-07:00",
+      "end": "2026-11-22T19:45:00-07:00",
+      "whenLabel": "Sun Nov 22 · 6:15 PM–7:45 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188690",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-11-23T21:30:00-08:00",
-      "end": "2026-11-23T23:00:00-08:00",
+      "start": "2026-11-23T21:30:00-07:00",
+      "end": "2026-11-23T23:00:00-07:00",
       "whenLabel": "Mon Nov 23 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451496",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-11-24T06:00:00-07:00",
+      "end": "2026-11-24T06:00:00-07:00",
+      "whenLabel": "Tue Nov 24 · 6:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863314",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-25T19:00:00-08:00",
-      "end": "2026-11-25T20:00:00-08:00",
+      "start": "2026-11-25T19:00:00-07:00",
+      "end": "2026-11-25T20:00:00-07:00",
       "whenLabel": "Wed Nov 25 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374643606",
       "summary": "U17 League · vs Richmond",
       "location": "Richmond Ice Centre - Coliseum Rink",
-      "start": "2026-11-26T21:15:00-08:00",
-      "end": "2026-11-26T22:45:00-08:00",
+      "start": "2026-11-26T21:15:00-07:00",
+      "end": "2026-11-26T22:45:00-07:00",
       "whenLabel": "Thu Nov 26 · 9:15 PM–10:45 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188836",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
-      "start": "2026-11-27T20:30:00-08:00",
-      "end": "2026-11-27T21:30:00-08:00",
+      "start": "2026-11-27T20:30:00-07:00",
+      "end": "2026-11-27T21:30:00-07:00",
       "whenLabel": "Fri Nov 27 · 8:30 PM–9:30 PM PT"
     },
     {
       "id": "ts-u15-10816643-376143328",
       "summary": "U15 C4 Development · with C2",
       "location": "LEC 3 (Langley Events Centre)",
-      "start": "2026-11-28T10:45:00-08:00",
-      "end": "2026-11-28T11:45:00-08:00",
+      "start": "2026-11-28T10:45:00-07:00",
+      "end": "2026-11-28T11:45:00-07:00",
       "whenLabel": "Sat Nov 28 · 10:45 AM–11:45 AM PT"
     },
     {
       "id": "ts-u17-10808348-374643623",
       "summary": "U17 League · vs North Delta",
       "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-11-29T18:15:00-08:00",
-      "end": "2026-11-29T20:15:00-08:00",
+      "start": "2026-11-29T18:15:00-07:00",
+      "end": "2026-11-29T20:15:00-07:00",
       "whenLabel": "Sun Nov 29 · 6:15 PM–8:15 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451272",
+      "summary": "U15 C4 League · vs Semiahmoo C1",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-11-29T19:00:00-07:00",
+      "end": "2026-11-29T20:30:00-07:00",
+      "whenLabel": "Sun Nov 29 · 7:00 PM–8:30 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188691",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-11-30T21:30:00-08:00",
-      "end": "2026-11-30T23:00:00-08:00",
+      "start": "2026-11-30T21:30:00-07:00",
+      "end": "2026-11-30T23:00:00-07:00",
       "whenLabel": "Mon Nov 30 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451497",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-12-01T06:00:00-07:00",
+      "end": "2026-12-01T06:00:00-07:00",
+      "whenLabel": "Tue Dec 1 · 6:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863315",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-12-02T19:00:00-08:00",
-      "end": "2026-12-02T20:00:00-08:00",
+      "start": "2026-12-02T19:00:00-07:00",
+      "end": "2026-12-02T20:00:00-07:00",
       "whenLabel": "Wed Dec 2 · 7:00 PM–8:00 PM PT"
     },
     {
@@ -450,8 +462,8 @@
       "id": "ts-u17-10808348-374188729",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-12-03T21:15:00-08:00",
-      "end": "2026-12-03T22:45:00-08:00",
+      "start": "2026-12-03T21:15:00-07:00",
+      "end": "2026-12-03T22:45:00-07:00",
       "whenLabel": "Thu Dec 3 · 9:15 PM–10:45 PM PT"
     },
     {
@@ -467,8 +479,8 @@
       "id": "ts-u17-10808348-374188838",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
-      "start": "2026-12-04T20:30:00-08:00",
-      "end": "2026-12-04T21:30:00-08:00",
+      "start": "2026-12-04T20:30:00-07:00",
+      "end": "2026-12-04T21:30:00-07:00",
       "whenLabel": "Fri Dec 4 · 8:30 PM–9:30 PM PT"
     },
     {
@@ -484,8 +496,8 @@
       "id": "ts-u17-10808348-374870961",
       "summary": "U17 League · vs North Vancouver",
       "location": "Harry Jerome Recreation Centre",
-      "start": "2026-12-05T16:45:00-08:00",
-      "end": "2026-12-05T18:15:00-08:00",
+      "start": "2026-12-05T16:45:00-07:00",
+      "end": "2026-12-05T18:15:00-07:00",
       "whenLabel": "Sat Dec 5 · 4:45 PM–6:15 PM PT"
     },
     {
@@ -501,8 +513,8 @@
       "id": "ts-u17-10808348-374188671",
       "summary": "U17 HOLD · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-12-06T18:15:00-08:00",
-      "end": "2026-12-06T20:15:00-08:00",
+      "start": "2026-12-06T18:15:00-07:00",
+      "end": "2026-12-06T20:15:00-07:00",
       "whenLabel": "Sun Dec 6 · 6:15 PM–8:15 PM PT"
     },
     {
@@ -515,12 +527,28 @@
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
     {
+      "id": "ts-u15-10816643-376451333",
+      "summary": "U15 C4 League · vs north delta c2",
+      "location": "North Delta",
+      "start": "2026-12-07T21:00:00-07:00",
+      "end": "2026-12-07T22:30:00-07:00",
+      "whenLabel": "Mon Dec 7 · 9:00 PM–10:30 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374188692",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-12-07T21:30:00-08:00",
-      "end": "2026-12-07T23:00:00-08:00",
+      "start": "2026-12-07T21:30:00-07:00",
+      "end": "2026-12-07T23:00:00-07:00",
       "whenLabel": "Mon Dec 7 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451498",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-12-08T06:00:00-07:00",
+      "end": "2026-12-08T06:00:00-07:00",
+      "whenLabel": "Tue Dec 8 · 6:00 AM PT"
     },
     {
       "id": "gb4orqv0uh5gtmvlfncm0pj3b4",
@@ -535,105 +563,225 @@
       "id": "ts-u17-10808348-374863316",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-12-09T19:00:00-08:00",
-      "end": "2026-12-09T20:00:00-08:00",
+      "start": "2026-12-09T19:00:00-07:00",
+      "end": "2026-12-09T20:00:00-07:00",
       "whenLabel": "Wed Dec 9 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188730",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-12-10T21:15:00-08:00",
-      "end": "2026-12-10T22:45:00-08:00",
+      "start": "2026-12-10T21:15:00-07:00",
+      "end": "2026-12-10T22:45:00-07:00",
       "whenLabel": "Thu Dec 10 · 9:15 PM–10:45 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188840",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
-      "start": "2026-12-11T20:30:00-08:00",
-      "end": "2026-12-11T21:30:00-08:00",
+      "start": "2026-12-11T20:30:00-07:00",
+      "end": "2026-12-11T21:30:00-07:00",
       "whenLabel": "Fri Dec 11 · 8:30 PM–9:30 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188672",
       "summary": "U17 HOLD · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-12-13T18:15:00-08:00",
-      "end": "2026-12-13T20:15:00-08:00",
+      "start": "2026-12-13T18:15:00-07:00",
+      "end": "2026-12-13T20:15:00-07:00",
       "whenLabel": "Sun Dec 13 · 6:15 PM–8:15 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451371",
+      "summary": "U15 C4 League · vs south delta C2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-12-13T19:00:00-07:00",
+      "end": "2026-12-13T20:30:00-07:00",
+      "whenLabel": "Sun Dec 13 · 7:00 PM–8:30 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188693",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-12-14T21:30:00-08:00",
-      "end": "2026-12-14T23:00:00-08:00",
+      "start": "2026-12-14T21:30:00-07:00",
+      "end": "2026-12-14T23:00:00-07:00",
       "whenLabel": "Mon Dec 14 · 9:30 PM–11:00 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451499",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2026-12-15T06:00:00-07:00",
+      "end": "2026-12-15T06:00:00-07:00",
+      "whenLabel": "Tue Dec 15 · 6:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863317",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-12-16T19:00:00-08:00",
-      "end": "2026-12-16T20:00:00-08:00",
+      "start": "2026-12-16T19:00:00-07:00",
+      "end": "2026-12-16T20:00:00-07:00",
       "whenLabel": "Wed Dec 16 · 7:00 PM–8:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188731",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
-      "start": "2026-12-17T21:15:00-08:00",
-      "end": "2026-12-17T22:45:00-08:00",
+      "start": "2026-12-17T21:15:00-07:00",
+      "end": "2026-12-17T22:45:00-07:00",
       "whenLabel": "Thu Dec 17 · 9:15 PM–10:45 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188841",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
-      "start": "2026-12-18T20:30:00-08:00",
-      "end": "2026-12-18T21:30:00-08:00",
+      "start": "2026-12-18T20:30:00-07:00",
+      "end": "2026-12-18T21:30:00-07:00",
       "whenLabel": "Fri Dec 18 · 8:30 PM–9:30 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451397",
+      "summary": "U15 C4 League · vs Semiahmoo C6",
+      "location": "Semiahmoo (South Surrey)",
+      "start": "2026-12-20T13:45:00-07:00",
+      "end": "2026-12-20T15:00:00-07:00",
+      "whenLabel": "Sun Dec 20 · 1:45 PM–3:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188673",
       "summary": "U17 HOLD · LEC 1",
       "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-12-20T18:15:00-08:00",
-      "end": "2026-12-20T20:15:00-08:00",
+      "start": "2026-12-20T18:15:00-07:00",
+      "end": "2026-12-20T20:15:00-07:00",
       "whenLabel": "Sun Dec 20 · 6:15 PM–8:15 PM PT"
     },
     {
       "id": "ts-u17-10808348-374256316",
       "summary": "U17 HOLD · TBD",
       "location": "TBD",
-      "start": "2026-12-27T00:00:00-08:00",
-      "end": "2026-12-28T00:00:00-08:00",
+      "start": "2026-12-27T00:00:00-07:00",
+      "end": "2026-12-28T00:00:00-07:00",
       "whenLabel": "Sun Dec 27 · 12:00 AM–12:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374256317",
       "summary": "U17 HOLD · TBD",
       "location": "TBD",
-      "start": "2026-12-28T00:00:00-08:00",
-      "end": "2026-12-29T00:00:00-08:00",
+      "start": "2026-12-28T00:00:00-07:00",
+      "end": "2026-12-29T00:00:00-07:00",
       "whenLabel": "Mon Dec 28 · 12:00 AM–12:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374256318",
       "summary": "U17 HOLD · TBD",
       "location": "TBD",
-      "start": "2026-12-29T00:00:00-08:00",
-      "end": "2026-12-30T00:00:00-08:00",
+      "start": "2026-12-29T00:00:00-07:00",
+      "end": "2026-12-30T00:00:00-07:00",
       "whenLabel": "Tue Dec 29 · 12:00 AM–12:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374256319",
       "summary": "U17 HOLD · TBD",
       "location": "TBD",
-      "start": "2026-12-30T00:00:00-08:00",
-      "end": "2026-12-31T00:00:00-08:00",
+      "start": "2026-12-30T00:00:00-07:00",
+      "end": "2026-12-31T00:00:00-07:00",
       "whenLabel": "Wed Dec 30 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451520",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-01-05T06:00:00-07:00",
+      "end": "2027-01-05T06:00:00-07:00",
+      "whenLabel": "Tue Jan 5 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451521",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-01-12T06:00:00-07:00",
+      "end": "2027-01-12T06:00:00-07:00",
+      "whenLabel": "Tue Jan 12 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451411",
+      "summary": "U15 C4 League · vs South Delta C1",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2027-01-17T19:00:00-07:00",
+      "end": "2027-01-17T20:30:00-07:00",
+      "whenLabel": "Sun Jan 17 · 7:00 PM–8:30 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451522",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-01-19T06:00:00-07:00",
+      "end": "2027-01-19T06:00:00-07:00",
+      "whenLabel": "Tue Jan 19 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451426",
+      "summary": "U15 C4 League · vs north delta C1",
+      "location": "North Delta",
+      "start": "2027-01-25T21:00:00-07:00",
+      "end": "2027-01-25T22:30:00-07:00",
+      "whenLabel": "Mon Jan 25 · 9:00 PM–10:30 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451523",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-01-26T06:00:00-07:00",
+      "end": "2027-01-26T06:00:00-07:00",
+      "whenLabel": "Tue Jan 26 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451524",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-02-02T06:00:00-07:00",
+      "end": "2027-02-02T06:00:00-07:00",
+      "whenLabel": "Tue Feb 2 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451525",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-02-09T06:00:00-07:00",
+      "end": "2027-02-09T06:00:00-07:00",
+      "whenLabel": "Tue Feb 9 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451526",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-02-16T06:00:00-07:00",
+      "end": "2027-02-16T06:00:00-07:00",
+      "whenLabel": "Tue Feb 16 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451527",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-02-23T06:00:00-07:00",
+      "end": "2027-02-23T06:00:00-07:00",
+      "whenLabel": "Tue Feb 23 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451528",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-03-02T06:00:00-07:00",
+      "end": "2027-03-02T06:00:00-07:00",
+      "whenLabel": "Tue Mar 2 · 6:00 AM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376451529",
+      "summary": "U15 C4 Practice · SPX 2",
+      "location": "SPX 2 (Langley)",
+      "start": "2027-03-09T06:00:00-07:00",
+      "end": "2027-03-09T06:00:00-07:00",
+      "whenLabel": "Tue Mar 9 · 6:00 AM PT"
     }
   ]
 }
