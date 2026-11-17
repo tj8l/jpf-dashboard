@@ -1,16 +1,19 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-15T08:04:15-07:00",
+  "fetchedAt": "2026-11-16T05:00:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-15",
-    "end": "2026-11-21",
-    "label": "Nov 15–21 (next 7 days)"
+    "start": "2026-11-16",
+    "end": "2026-11-22",
+    "label": "Nov 16–22 (next 7 days)"
   },
   "notes": [
-    "Today Sun Nov 15: U17 League · vs Cloverdale 6:15 PM @ LEC 1; U15 C4 Game · vs C3 7:00 PM @ LEC 2.",
-    "Beyond 7-day day-list window: Sun Nov 22 (U17 League, U15 C4 League); Mon Nov 23 (U17 Practice); Tue Nov 24 (U15 C4 Practice); Wed Nov 25 (U17 Development) — still in calendar.json events.",
-    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5."
+    "Today Mon Nov 16: U17 League vs South Delta 7:30 PM (South Delta). Tue Nov 17: U15 C4 Practice 6 AM SPX 2. Wed Nov 18: U17 Development 7 PM LEC 2. Thu Nov 19: NEW U15 C4 Practice 6:15 PM SPX 1; U17 Practice 9:15 PM SPX 2. Fri Nov 20: U17 Dryland 8:30 PM Aim Athletic. Sat Nov 21: U15 C4 Development with C1 10:45 AM LEC 3; U15 C4 at South Delta C3 4:30 PM. Sun Nov 22: U17 League vs North Vancouver 6:15 PM LEC 1 + U15 C4 vs Cloverdale C2 6:15 PM Cloverdale Sport & Ice Complex.",
+    "TeamSnap overnight: new U15 C4 Practice Thu Nov 19 6:15–7:30 PM at SPX 1. Sun Nov 15 games aged out. No other changes.",
+    "Clash: Sun Nov 22 U17 League vs North Vancouver 6:15 PM LEC 1 and U15 C4 at Cloverdale 6:15 PM start at the same time, different venues (now inside the 7-day window).",
+    "Google Calendar: no new items; stale U15 Google items and TBD slots stay excluded. Leftover -08:00 offsets on Google events normalized to -07:00 (same wall clock).",
+    "MMA A block Dec 3-8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
+    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved."
   ],
   "events": [
     {
@@ -213,81 +216,65 @@
       "id": "d475ldado8uqjogvs8uggn7vpc",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-04T16:00:00-08:00",
-      "end": "2026-11-05T00:00:00-08:00",
+      "start": "2026-11-04T16:00:00-07:00",
+      "end": "2026-11-05T00:00:00-07:00",
       "whenLabel": "Wed Nov 4 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "7vco3epcilqssjvuctejjun98g",
       "summary": "Zoom call with Bruce (Your Life Is the Ceremony)",
       "location": "Zoom / Skool",
-      "start": "2026-11-04T16:00:00-08:00",
-      "end": "2026-11-04T17:00:00-08:00",
+      "start": "2026-11-04T16:00:00-07:00",
+      "end": "2026-11-04T17:00:00-07:00",
       "whenLabel": "Wed Nov 4 · 4:00 PM–5:00 PM PT"
     },
     {
       "id": "9nmptn2nvp5tmrnucgptpqo6ao",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-05T16:00:00-08:00",
-      "end": "2026-11-06T00:00:00-08:00",
+      "start": "2026-11-05T16:00:00-07:00",
+      "end": "2026-11-06T00:00:00-07:00",
       "whenLabel": "Thu Nov 5 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "klvm6aqf51ag0j0prntpijgasc",
       "summary": "Dentist – Fort Langley Dental Office",
       "location": "Fort Langley Dental Office",
-      "start": "2026-11-06T09:20:00-08:00",
-      "end": "2026-11-06T10:20:00-08:00",
+      "start": "2026-11-06T09:20:00-07:00",
+      "end": "2026-11-06T10:20:00-07:00",
       "whenLabel": "Fri Nov 6 · 9:20 AM–10:20 AM PT (confirm by text reply or 604-888-3811)"
     },
     {
       "id": "gfsk6c9dldfto7n32mkkq8d6k0",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-06T16:00:00-08:00",
-      "end": "2026-11-07T00:00:00-08:00",
+      "start": "2026-11-06T16:00:00-07:00",
+      "end": "2026-11-07T00:00:00-07:00",
       "whenLabel": "Fri Nov 6 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "c1omq1j81qd1qqsm832gaq62hk",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-07T16:00:00-08:00",
-      "end": "2026-11-08T00:00:00-08:00",
+      "start": "2026-11-07T16:00:00-07:00",
+      "end": "2026-11-08T00:00:00-07:00",
       "whenLabel": "Sat Nov 7 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "mr8509qth1bm8hve3i8djsa1ho",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-11-08T16:00:00-08:00",
-      "end": "2026-11-09T00:00:00-08:00",
+      "start": "2026-11-08T16:00:00-07:00",
+      "end": "2026-11-09T00:00:00-07:00",
       "whenLabel": "Sun Nov 8 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "ci701uk11jmgbk814napuvlcvc",
       "summary": "Abbotsford Winter Extreme Ski & Board Sale",
       "location": "Ag-Rec Centre, Abbotsford",
-      "start": "2026-11-14T00:00:00-08:00",
-      "end": "2026-11-16T00:00:00-08:00",
+      "start": "2026-11-14T00:00:00-07:00",
+      "end": "2026-11-16T00:00:00-07:00",
       "whenLabel": "Sat Nov 14 – Sun Nov 15 · all day (hours not posted; check before going)"
-    },
-    {
-      "id": "ts-u17-10808348-374643036",
-      "summary": "U17 League · vs Cloverdale",
-      "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-11-15T18:15:00-07:00",
-      "end": "2026-11-15T20:15:00-07:00",
-      "whenLabel": "Sun Nov 15 · 6:15 PM–8:15 PM PT"
-    },
-    {
-      "id": "ts-u15-10816643-375553645",
-      "summary": "U15 C4 Game · vs C3",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-15T19:00:00-07:00",
-      "end": "2026-11-15T20:30:00-07:00",
-      "whenLabel": "Sun Nov 15 · 7:00 PM–8:30 PM PT"
     },
     {
       "id": "ts-u17-10808348-374643526",
@@ -312,6 +299,14 @@
       "start": "2026-11-18T19:00:00-07:00",
       "end": "2026-11-18T20:00:00-07:00",
       "whenLabel": "Wed Nov 18 · 7:00 PM–8:00 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376499148",
+      "summary": "U15 C4 Practice · SPX 1",
+      "location": "SPX 1 (Langley)",
+      "start": "2026-11-19T18:15:00-07:00",
+      "end": "2026-11-19T19:30:00-07:00",
+      "whenLabel": "Thu Nov 19 · 6:15 PM–7:30 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188727",
@@ -374,8 +369,8 @@
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2026-11-24T06:00:00-07:00",
-      "end": "2026-11-24T06:00:00-07:00",
-      "whenLabel": "Tue Nov 24 · 6:00 AM PT"
+      "end": "2026-11-24T07:00:00-07:00",
+      "whenLabel": "Tue Nov 24 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863314",
@@ -438,8 +433,8 @@
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2026-12-01T06:00:00-07:00",
-      "end": "2026-12-01T06:00:00-07:00",
-      "whenLabel": "Tue Dec 1 · 6:00 AM PT"
+      "end": "2026-12-01T07:00:00-07:00",
+      "whenLabel": "Tue Dec 1 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863315",
@@ -453,8 +448,8 @@
       "id": "bk4lfhhc7akqdj3vo8p4o7f1k4",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-03T16:00:00-08:00",
-      "end": "2026-12-04T00:00:00-08:00",
+      "start": "2026-12-03T16:00:00-07:00",
+      "end": "2026-12-04T00:00:00-07:00",
       "whenLabel": "Thu Dec 3 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -470,8 +465,8 @@
       "id": "fr0bmmkprsedkp091m9r9f2jt4",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-04T16:00:00-08:00",
-      "end": "2026-12-05T00:00:00-08:00",
+      "start": "2026-12-04T16:00:00-07:00",
+      "end": "2026-12-05T00:00:00-07:00",
       "whenLabel": "Fri Dec 4 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -487,8 +482,8 @@
       "id": "a1jif73f4l6ugvhbt8l2mi3f3c",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-05T16:00:00-08:00",
-      "end": "2026-12-06T00:00:00-08:00",
+      "start": "2026-12-05T16:00:00-07:00",
+      "end": "2026-12-06T00:00:00-07:00",
       "whenLabel": "Sat Dec 5 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -504,8 +499,8 @@
       "id": "9fec3idqnc2tjr5squrrivm9cs",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-06T16:00:00-08:00",
-      "end": "2026-12-07T00:00:00-08:00",
+      "start": "2026-12-06T16:00:00-07:00",
+      "end": "2026-12-07T00:00:00-07:00",
       "whenLabel": "Sun Dec 6 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -521,8 +516,8 @@
       "id": "d2jnqme6h096afu1jbd8fn9suk",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-07T16:00:00-08:00",
-      "end": "2026-12-08T00:00:00-08:00",
+      "start": "2026-12-07T16:00:00-07:00",
+      "end": "2026-12-08T00:00:00-07:00",
       "whenLabel": "Mon Dec 7 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -547,15 +542,15 @@
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2026-12-08T06:00:00-07:00",
-      "end": "2026-12-08T06:00:00-07:00",
-      "whenLabel": "Tue Dec 8 · 6:00 AM PT"
+      "end": "2026-12-08T07:00:00-07:00",
+      "whenLabel": "Tue Dec 8 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "gb4orqv0uh5gtmvlfncm0pj3b4",
       "summary": "Work · MMA A",
       "location": "",
-      "start": "2026-12-08T16:00:00-08:00",
-      "end": "2026-12-09T00:00:00-08:00",
+      "start": "2026-12-08T16:00:00-07:00",
+      "end": "2026-12-09T00:00:00-07:00",
       "whenLabel": "Tue Dec 8 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
     },
@@ -612,8 +607,8 @@
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2026-12-15T06:00:00-07:00",
-      "end": "2026-12-15T06:00:00-07:00",
-      "whenLabel": "Tue Dec 15 · 6:00 AM PT"
+      "end": "2026-12-15T07:00:00-07:00",
+      "whenLabel": "Tue Dec 15 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863317",
@@ -692,16 +687,16 @@
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-01-05T06:00:00-07:00",
-      "end": "2027-01-05T06:00:00-07:00",
-      "whenLabel": "Tue Jan 5 · 6:00 AM PT"
+      "end": "2027-01-05T07:00:00-07:00",
+      "whenLabel": "Tue Jan 5 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451521",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-01-12T06:00:00-07:00",
-      "end": "2027-01-12T06:00:00-07:00",
-      "whenLabel": "Tue Jan 12 · 6:00 AM PT"
+      "end": "2027-01-12T07:00:00-07:00",
+      "whenLabel": "Tue Jan 12 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451411",
@@ -716,8 +711,8 @@
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-01-19T06:00:00-07:00",
-      "end": "2027-01-19T06:00:00-07:00",
-      "whenLabel": "Tue Jan 19 · 6:00 AM PT"
+      "end": "2027-01-19T07:00:00-07:00",
+      "whenLabel": "Tue Jan 19 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451426",
@@ -732,56 +727,56 @@
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-01-26T06:00:00-07:00",
-      "end": "2027-01-26T06:00:00-07:00",
-      "whenLabel": "Tue Jan 26 · 6:00 AM PT"
+      "end": "2027-01-26T07:00:00-07:00",
+      "whenLabel": "Tue Jan 26 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451524",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-02-02T06:00:00-07:00",
-      "end": "2027-02-02T06:00:00-07:00",
-      "whenLabel": "Tue Feb 2 · 6:00 AM PT"
+      "end": "2027-02-02T07:00:00-07:00",
+      "whenLabel": "Tue Feb 2 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451525",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-02-09T06:00:00-07:00",
-      "end": "2027-02-09T06:00:00-07:00",
-      "whenLabel": "Tue Feb 9 · 6:00 AM PT"
+      "end": "2027-02-09T07:00:00-07:00",
+      "whenLabel": "Tue Feb 9 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451526",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-02-16T06:00:00-07:00",
-      "end": "2027-02-16T06:00:00-07:00",
-      "whenLabel": "Tue Feb 16 · 6:00 AM PT"
+      "end": "2027-02-16T07:00:00-07:00",
+      "whenLabel": "Tue Feb 16 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451527",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-02-23T06:00:00-07:00",
-      "end": "2027-02-23T06:00:00-07:00",
-      "whenLabel": "Tue Feb 23 · 6:00 AM PT"
+      "end": "2027-02-23T07:00:00-07:00",
+      "whenLabel": "Tue Feb 23 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451528",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-03-02T06:00:00-07:00",
-      "end": "2027-03-02T06:00:00-07:00",
-      "whenLabel": "Tue Mar 2 · 6:00 AM PT"
+      "end": "2027-03-02T07:00:00-07:00",
+      "whenLabel": "Tue Mar 2 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u15-10816643-376451529",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-03-09T06:00:00-07:00",
-      "end": "2027-03-09T06:00:00-07:00",
-      "whenLabel": "Tue Mar 9 · 6:00 AM PT"
+      "end": "2027-03-09T07:00:00-07:00",
+      "whenLabel": "Tue Mar 9 · 6:00 AM–7:00 AM PT"
     }
   ]
 }

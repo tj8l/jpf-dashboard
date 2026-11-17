@@ -1,60 +1,60 @@
 {
-  "asOf": "2026-11-16T05:00:00-07:00",
-  "note": "Mon pre-open PT — gold live (gold-api); WTI futures vs prior close (Yahoo); SPX/US10Y latest close (US cash market not open yet); BTC Coinbase",
+  "asOf": "2026-11-17T05:00:00-07:00",
+  "note": "Tue pre-open PT — gold live (gold-api); WTI futures vs prior close (Yahoo); SPX/US10Y latest close (US cash market not open yet); BTC Coinbase",
   "spots": [
     {
       "id": "gold",
       "name": "Spot gold",
       "symbol": "XAU",
-      "value": 3877.6,
+      "value": 3866.3,
       "unit": "USD/oz",
-      "change": "-0.26% vs prior snap",
+      "change": "-0.29% vs prior snap",
       "source": "gold-api.com",
-      "asOf": "2026-11-16",
+      "asOf": "2026-11-17",
       "status": "live"
     },
     {
       "id": "oil",
       "name": "Spot oil (WTI)",
       "symbol": "CL",
-      "value": 88.11,
+      "value": 86.15,
       "unit": "USD/bbl",
-      "change": "-0.51% vs prior close",
+      "change": "+0.50% vs prior close",
       "source": "Yahoo CL=F",
-      "asOf": "2026-11-16",
+      "asOf": "2026-11-17",
       "status": "live"
     },
     {
       "id": "btc",
       "name": "Spot BTC",
       "symbol": "BTC",
-      "value": 64507,
+      "value": 64805,
       "unit": "USD",
-      "change": "-4.02% vs prior snap",
+      "change": "+0.46% vs prior snap",
       "source": "Coinbase",
-      "asOf": "2026-11-16",
+      "asOf": "2026-11-17",
       "status": "live"
     },
     {
       "id": "spx",
       "name": "S&P 500",
       "symbol": "SPX",
-      "value": 7561.67,
+      "value": 7416.59,
       "unit": "index",
-      "change": "-0.40% vs prior close",
+      "change": "-1.92% vs prior close",
       "source": "Yahoo ^GSPC",
-      "asOf": "2026-11-16",
+      "asOf": "2026-11-17",
       "status": "live"
     },
     {
       "id": "us10y",
       "name": "US 10-year Treasury",
       "symbol": "US10Y",
-      "value": 5.154,
+      "value": 5.121,
       "unit": "%",
-      "change": "+0.05 pts vs prior close",
+      "change": "-0.03 pts vs prior close",
       "source": "Yahoo ^TNX",
-      "asOf": "2026-11-16",
+      "asOf": "2026-11-17",
       "status": "live"
     }
   ]
