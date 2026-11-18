@@ -1,18 +1,18 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-17T05:00:00-07:00",
+  "fetchedAt": "2026-11-18T05:00:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-17",
-    "end": "2026-11-23",
-    "label": "Nov 17–23 (next 7 days)"
+    "start": "2026-11-18",
+    "end": "2026-11-24",
+    "label": "Nov 18–24 (next 7 days)"
   },
   "notes": [
-    "Today Tue Nov 17: U15 C4 Practice 6 AM SPX 2. Wed Nov 18: U17 Development 7 PM LEC 2. Thu Nov 19: U15 C4 Practice 6:15 PM SPX 1; U17 Practice 9:15 PM SPX 2. Fri Nov 20: U17 Dryland 8:30 PM Aim Athletic. Sat Nov 21: U15 C4 Development with C1 10:45 AM LEC 3; U15 C4 at South Delta C3 4:30 PM. Sun Nov 22: U17 League vs North Vancouver 6:15 PM LEC 1 + U15 C4 vs Cloverdale C2 6:15 PM Cloverdale Sport & Ice Complex. Mon Nov 23: U17 Practice 9:30 PM SPX 2.",
-    "TeamSnap overnight: no schedule changes (Mon Nov 16 U17 vs South Delta aged out).",
+    "Today Wed Nov 18: U17 Development 7 PM LEC 2. Thu Nov 19: U15 C4 Practice 6:15 PM SPX 1; U17 Practice 9:15 PM SPX 2. Fri Nov 20: U17 Dryland 8:30 PM Aim Athletic. Sat Nov 21: U15 C4 Development with C1 10:45 AM LEC 3; U15 C4 at South Delta C3 4:30 PM. Sun Nov 22: U17 League vs North Vancouver 6:15 PM LEC 1 + U15 C4 vs Cloverdale C2 6:15 PM Cloverdale Sport & Ice Complex. Mon Nov 23: U17 Practice 9:30 PM SPX 2. Tue Nov 24: U15 C4 Practice 6 AM SPX 2.",
+    "TeamSnap overnight: no schedule changes (Tue Nov 17 U15 C4 Practice aged out).",
     "Clash: Sun Nov 22 U17 League vs North Vancouver 6:15 PM LEC 1 and U15 C4 at Cloverdale 6:15 PM start at the same time, different venues.",
-    "Google Calendar: no new items; stale U15 Google items and TBD slots stay excluded. MMA A Dec 3-8 kept at 4:00 PM–midnight wall clock (Google/IANA would shift them an hour later because they still treat Vancouver as UTC-8).",
-    "MMA A block Dec 3-8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6.",
+    "Google Calendar: could not refresh this morning (connector needs a permission re-grant); existing MMA, personal, and PCAHA items preserved. Stale U15 Google items and TBD slots stay excluded. MMA A Dec 3-8 kept at 4:00 PM–midnight wall clock (Google/IANA would shift them an hour later because they still treat Vancouver as UTC-8).",
+    "MMA A block Dec 3-8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6; also U15 C4 vs North Delta C2 Dec 7 9 PM.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved."
   ],
   "events": [
@@ -275,14 +275,6 @@
       "start": "2026-11-14T00:00:00-07:00",
       "end": "2026-11-16T00:00:00-07:00",
       "whenLabel": "Sat Nov 14 – Sun Nov 15 · all day (hours not posted; check before going)"
-    },
-    {
-      "id": "ts-u15-10816643-375553537",
-      "summary": "U15 C4 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-11-17T06:00:00-07:00",
-      "end": "2026-11-17T07:00:00-07:00",
-      "whenLabel": "Tue Nov 17 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "ts-u17-10808348-374863313",
