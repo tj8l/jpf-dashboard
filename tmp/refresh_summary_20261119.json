@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-19",
+  "weekbar": "2026-11-19..2026-11-25",
+  "teamsnap": {
+    "u17": 28,
+    "u15c4": 25,
+    "adds": [],
+    "moves": [
+      "U15 C4 Practice from Tue Dec 8 6:00-7:00 AM SPX 2 to Wed Dec 9 5:00-6:00 PM LEC 3"
+    ],
+    "cancels": [],
+    "retitles": [],
+    "rolledOff": [
+      "U17 Development Wed Nov 18 7:00 PM LEC 2 (past)"
+    ]
+  },
+  "gcal": {
+    "status": "auth_failed",
+    "note": "Google Calendar connector needs re-auth (missing permission). Existing MMA/personal/PCAHA events preserved; no GCal add/move/cancel check today.",
+    "adds": [],
+    "updates": [],
+    "cancels": []
+  },
+  "clashes_7d": [
+    "Sun Nov 22 U17 vs North Vancouver 6:15 PM LEC 1 / U15 C4 at Cloverdale 6:15 PM (standing)"
+  ],
+  "markets": {
+    "btc": [
+      63923,
+      -0.37
+    ],
+    "gold": [
+      3731.27,
+      -0.9
+    ],
+    "wti": [
+      82.05,
+      -1.45
+    ],
+    "spx": [
+      7323.63,
+      -0.23
+    ],
+    "us10y": [
+      5.066,
+      "-0.04 pts"
+    ]
+  },
+  "weather": {
+    "hi": 11,
+    "lo": 2,
+    "rain": 8,
+    "sunrise": "8:26 AM"
+  },
+  "u15_ics_ok": true,
+  "material": true,
+  "materialReasons": [
+    "TeamSnap moved U15 C4 Practice from Tue Dec 8 6 AM SPX 2 to Wed Dec 9 5 PM LEC 3"
+  ]
+}
