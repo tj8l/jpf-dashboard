@@ -1,19 +1,16 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-18T05:00:00-07:00",
+  "fetchedAt": "2026-11-19T04:52:01-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-18",
-    "end": "2026-11-24",
-    "label": "Nov 18–24 (next 7 days)"
+    "start": "2026-11-19",
+    "end": "2026-11-25",
+    "label": "Nov 19–25 (next 7 days)"
   },
   "notes": [
-    "Today Wed Nov 18: U17 Development 7 PM LEC 2. Thu Nov 19: U15 C4 Practice 6:15 PM SPX 1; U17 Practice 9:15 PM SPX 2. Fri Nov 20: U17 Dryland 8:30 PM Aim Athletic. Sat Nov 21: U15 C4 Development with C1 10:45 AM LEC 3; U15 C4 at South Delta C3 4:30 PM. Sun Nov 22: U17 League vs North Vancouver 6:15 PM LEC 1 + U15 C4 vs Cloverdale C2 6:15 PM Cloverdale Sport & Ice Complex. Mon Nov 23: U17 Practice 9:30 PM SPX 2. Tue Nov 24: U15 C4 Practice 6 AM SPX 2.",
-    "TeamSnap overnight: no schedule changes (Tue Nov 17 U15 C4 Practice aged out).",
-    "Clash: Sun Nov 22 U17 League vs North Vancouver 6:15 PM LEC 1 and U15 C4 at Cloverdale 6:15 PM start at the same time, different venues.",
-    "Google Calendar: could not refresh this morning (connector needs a permission re-grant); existing MMA, personal, and PCAHA items preserved. Stale U15 Google items and TBD slots stay excluded. MMA A Dec 3-8 kept at 4:00 PM–midnight wall clock (Google/IANA would shift them an hour later because they still treat Vancouver as UTC-8).",
-    "MMA A block Dec 3-8 overlaps U17 Practice Dec 3 + Dec 7, Dryland Dec 4, League vs North Vancouver Sat Dec 5 4:45 PM, and HOLD LEC 1 Dec 6; also U15 C4 vs North Delta C2 Dec 7 9 PM.",
-    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 are source of truth for both teams' ice through Mar 20, 2027; MMA, personal, and PCAHA meetings preserved."
+    "Today Thu Nov 19: U15 C4 Practice · SPX 1 6:15 PM @ SPX 1; U17 Practice · SPX 2 9:15 PM @ SPX 2.",
+    "Beyond 7-day day-list window: Thu Nov 26 (U17 League); Fri Nov 27 (U17 Dryland); Sat Nov 28 (U15 C4 Development); Sun Nov 29 (U17 League, U15 C4 League) — still in calendar.json events.",
+    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5."
   ],
   "events": [
     {
@@ -277,14 +274,6 @@
       "whenLabel": "Sat Nov 14 – Sun Nov 15 · all day (hours not posted; check before going)"
     },
     {
-      "id": "ts-u17-10808348-374863313",
-      "summary": "U17 Development · LEC 2",
-      "location": "LEC 2 (Langley Events Centre)",
-      "start": "2026-11-18T19:00:00-07:00",
-      "end": "2026-11-18T20:00:00-07:00",
-      "whenLabel": "Wed Nov 18 · 7:00 PM–8:00 PM PT"
-    },
-    {
       "id": "ts-u15-10816643-376499148",
       "summary": "U15 C4 Practice · SPX 1",
       "location": "SPX 1 (Langley)",
@@ -421,6 +410,13 @@
       "whenLabel": "Tue Dec 1 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "personal-kevin-nelson-retirement-20261202",
+      "summary": "Kevin Nelson retirement",
+      "start": "2026-12-02T16:00:00-07:00",
+      "end": "2026-12-02T20:00:00-07:00",
+      "whenLabel": "Wed Dec 2 · 4:00 PM–8:00 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374863315",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
@@ -522,14 +518,6 @@
       "whenLabel": "Mon Dec 7 · 9:30 PM–11:00 PM PT"
     },
     {
-      "id": "ts-u15-10816643-376451498",
-      "summary": "U15 C4 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-12-08T06:00:00-07:00",
-      "end": "2026-12-08T07:00:00-07:00",
-      "whenLabel": "Tue Dec 8 · 6:00 AM–7:00 AM PT"
-    },
-    {
       "id": "gb4orqv0uh5gtmvlfncm0pj3b4",
       "summary": "Work · MMA A",
       "location": "",
@@ -537,6 +525,14 @@
       "end": "2026-12-09T00:00:00-07:00",
       "whenLabel": "Tue Dec 8 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
+    },
+    {
+      "id": "ts-u15-10816643-376451498",
+      "summary": "U15 C4 Practice · LEC 3",
+      "location": "LEC 3 (Langley Events Centre)",
+      "start": "2026-12-09T17:00:00-07:00",
+      "end": "2026-12-09T18:00:00-07:00",
+      "whenLabel": "Wed Dec 9 · 5:00 PM–6:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374863316",

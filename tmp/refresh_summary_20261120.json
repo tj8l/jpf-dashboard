@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-20",
+  "weekbar": "2026-11-20..2026-11-26",
+  "teamsnap": {
+    "u17": 27,
+    "u15c4": 24,
+    "adds": [],
+    "moves": [],
+    "cancels": [],
+    "retitles": [],
+    "rolledOff": [
+      "U15 C4 Practice Thu Nov 19 6:15 PM SPX 1 (past)",
+      "U17 Practice Thu Nov 19 9:15 PM SPX 2 (past)"
+    ]
+  },
+  "gcal": {
+    "status": "auth_failed",
+    "note": "Google Calendar connector needs re-auth (missing permission). Recurring since at least Nov 19. Existing MMA/personal/PCAHA events preserved, including Kevin Nelson retirement Dec 2; no GCal add/move/cancel check today.",
+    "adds": [],
+    "updates": [],
+    "cancels": []
+  },
+  "clashes_7d": [
+    "Sun Nov 22 U17 vs North Vancouver 6:15 PM LEC 1 / U15 C4 vs Cloverdale C2 6:15 PM Cloverdale (standing)"
+  ],
+  "markets": {
+    "btc": [
+      61733,
+      -3.43
+    ],
+    "gold": [
+      3584.05,
+      -3.95
+    ],
+    "wti": [
+      82.42,
+      -0.95
+    ],
+    "spx": [
+      7175.83,
+      -2.02
+    ],
+    "us10y": [
+      5.052,
+      "-0.01 pts"
+    ],
+    "near_24h": -12.78
+  },
+  "weather": {
+    "hi": 7,
+    "lo": 0,
+    "rain": 1,
+    "sunrise": "8:28 AM"
+  },
+  "u15_ics_ok": true,
+  "material": true,
+  "materialReasons": [
+    "Markets down: gold ~-3.95%, BTC ~-3.43%, SPX ~-2.02%; NEAR -12.8% 24h"
+  ]
+}
