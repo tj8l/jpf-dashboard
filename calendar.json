@@ -1,16 +1,22 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-20T04:50:48-07:00",
+  "fetchedAt": "2026-11-21T05:00:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-20",
-    "end": "2026-11-26",
-    "label": "Nov 20–26 (next 7 days)"
+    "start": "2026-11-21",
+    "end": "2026-11-27",
+    "label": "Nov 21–27 (next 7 days)"
   },
   "notes": [
-    "Today Fri Nov 20: U17 Dryland · Aim Athletic 8:30 PM @ Aim Athletic.",
-    "Beyond 7-day day-list window: Fri Nov 27 (U17 Dryland); Sat Nov 28 (U15 C4 Development); Sun Nov 29 (U17 League, U15 C4 League); Mon Nov 30 (U17 Practice) — still in calendar.json events.",
-    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5."
+    "Today Sat Nov 21: U15 C4 Development · with C1 10:45 AM @ LEC 3 (Langley Events Centre); U15 C4 Game · at South Delta C3 4:30 PM @ South Delta.",
+    "Sun Nov 22: U15 C4 League · vs cloverdale C2 6:15 PM @ Cloverdale Sport & Ice Complex; U17 League · vs North Vancouver 6:15 PM @ LEC 1 (Langley Events Centre).",
+    "Mon Nov 23: U17 Practice · SPX 2 9:30 PM @ SPX 2 (Langley).",
+    "Tue Nov 24: U15 C4 Practice · SPX 2 6:00 AM @ SPX 2 (Langley); Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18 4:00 PM @ LEC Arena 3 (Burgundy).",
+    "Wed Nov 25: Stick & Puck · Aldergrove CC · ages 7+ 5:45 PM @ Aldergrove Community Centre; U17 Development · LEC 2 7:00 PM @ LEC 2 (Langley Events Centre).",
+    "Thu Nov 26: Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18 4:00 PM @ LEC Arena 3 (Burgundy); U15 C4 Practice · LEC 1 6:00 PM @ LEC 1 (Langley Events Centre); U17 League · vs Richmond 9:15 PM @ Richmond Ice Centre - Coliseum Rink.",
+    "Fri Nov 27: Stick & Puck · Aldergrove CC · ages 7+ 4:30 PM @ Aldergrove Community Centre; U17 Dryland · Aim Athletic 8:30 PM @ Aim Athletic (Langley).",
+    "Beyond 7-day day-list window: Sat Nov 28 (U15 C4 Development); Sun Nov 29 (U17 League, U15 C4 League); Mon Nov 30 (U17 Practice); Tue Dec 1 (U15 C4 Practice, Stick & Puck); Wed Dec 2 (Kevin Nelson retirement, Stick & Puck, U17 Development) — still in calendar.json events.",
+    "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5. Stick & puck (Barrett) added from Google Calendar primary; MMA A wall times kept at 4:00 PM–12:00 AM PT (spreadsheet / existing board; Google America/Vancouver still renders one hour late)."
   ],
   "events": [
     {
@@ -210,20 +216,20 @@
       "whenLabel": "Wed Oct 21 · 6:00 PM–7:00 PM PT"
     },
     {
-      "id": "d475ldado8uqjogvs8uggn7vpc",
-      "summary": "Work · MMA A",
-      "location": "",
-      "start": "2026-11-04T16:00:00-07:00",
-      "end": "2026-11-05T00:00:00-07:00",
-      "whenLabel": "Wed Nov 4 · 4:00 PM–12:00 AM PT"
-    },
-    {
       "id": "7vco3epcilqssjvuctejjun98g",
       "summary": "Zoom call with Bruce (Your Life Is the Ceremony)",
       "location": "Zoom / Skool",
       "start": "2026-11-04T16:00:00-07:00",
       "end": "2026-11-04T17:00:00-07:00",
       "whenLabel": "Wed Nov 4 · 4:00 PM–5:00 PM PT"
+    },
+    {
+      "id": "d475ldado8uqjogvs8uggn7vpc",
+      "summary": "Work · MMA A",
+      "location": "",
+      "start": "2026-11-04T16:00:00-07:00",
+      "end": "2026-11-05T00:00:00-07:00",
+      "whenLabel": "Wed Nov 4 · 4:00 PM–12:00 AM PT"
     },
     {
       "id": "9nmptn2nvp5tmrnucgptpqo6ao",
@@ -274,14 +280,6 @@
       "whenLabel": "Sat Nov 14 – Sun Nov 15 · all day (hours not posted; check before going)"
     },
     {
-      "id": "ts-u17-10808348-374188833",
-      "summary": "U17 Dryland · Aim Athletic",
-      "location": "Aim Athletic (Langley)",
-      "start": "2026-11-20T20:30:00-07:00",
-      "end": "2026-11-20T21:30:00-07:00",
-      "whenLabel": "Fri Nov 20 · 8:30 PM–9:30 PM PT"
-    },
-    {
       "id": "ts-u15-10816643-375553747",
       "summary": "U15 C4 Development · with C1",
       "location": "LEC 3 (Langley Events Centre)",
@@ -298,20 +296,20 @@
       "whenLabel": "Sat Nov 21 · 4:30 PM–6:00 PM PT"
     },
     {
-      "id": "ts-u17-10808348-374643572",
-      "summary": "U17 League · vs North Vancouver",
-      "location": "LEC 1 (Langley Events Centre)",
-      "start": "2026-11-22T18:15:00-07:00",
-      "end": "2026-11-22T20:15:00-07:00",
-      "whenLabel": "Sun Nov 22 · 6:15 PM–8:15 PM PT"
-    },
-    {
       "id": "ts-u15-10816643-375553658",
       "summary": "U15 C4 League · vs cloverdale C2",
       "location": "Cloverdale Sport & Ice Complex",
       "start": "2026-11-22T18:15:00-07:00",
       "end": "2026-11-22T19:45:00-07:00",
       "whenLabel": "Sun Nov 22 · 6:15 PM–7:45 PM PT"
+    },
+    {
+      "id": "ts-u17-10808348-374643572",
+      "summary": "U17 League · vs North Vancouver",
+      "location": "LEC 1 (Langley Events Centre)",
+      "start": "2026-11-22T18:15:00-07:00",
+      "end": "2026-11-22T20:15:00-07:00",
+      "whenLabel": "Sun Nov 22 · 6:15 PM–8:15 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188690",
@@ -330,6 +328,24 @@
       "whenLabel": "Tue Nov 24 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20261124T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-11-24T16:00:00-07:00",
+      "end": "2026-11-24T17:45:00-07:00",
+      "whenLabel": "Tue Nov 24 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20261126T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-11-25T17:45:00-07:00",
+      "end": "2026-11-25T18:45:00-07:00",
+      "whenLabel": "Wed Nov 25 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
       "id": "ts-u17-10808348-374863314",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
@@ -338,12 +354,38 @@
       "whenLabel": "Wed Nov 25 · 7:00 PM–8:00 PM PT"
     },
     {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20261126T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-11-26T16:00:00-07:00",
+      "end": "2026-11-26T17:45:00-07:00",
+      "whenLabel": "Thu Nov 26 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "ts-u15-10816643-376684351",
+      "summary": "U15 C4 Practice · LEC 1",
+      "location": "LEC 1 (Langley Events Centre)",
+      "start": "2026-11-26T18:00:00-07:00",
+      "end": "2026-11-26T19:30:00-07:00",
+      "whenLabel": "Thu Nov 26 · 6:00 PM–7:30 PM PT"
+    },
+    {
       "id": "ts-u17-10808348-374643606",
       "summary": "U17 League · vs Richmond",
       "location": "Richmond Ice Centre - Coliseum Rink",
       "start": "2026-11-26T21:15:00-07:00",
       "end": "2026-11-26T22:45:00-07:00",
       "whenLabel": "Thu Nov 26 · 9:15 PM–10:45 PM PT"
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20261127T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-11-27T16:30:00-07:00",
+      "end": "2026-11-27T17:30:00-07:00",
+      "whenLabel": "Fri Nov 27 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
     },
     {
       "id": "ts-u17-10808348-374188836",
@@ -394,11 +436,29 @@
       "whenLabel": "Tue Dec 1 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20261201T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-01T16:00:00-07:00",
+      "end": "2026-12-01T17:45:00-07:00",
+      "whenLabel": "Tue Dec 1 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
       "id": "personal-kevin-nelson-retirement-20261202",
       "summary": "Kevin Nelson retirement",
       "start": "2026-12-02T16:00:00-07:00",
       "end": "2026-12-02T20:00:00-07:00",
       "whenLabel": "Wed Dec 2 · 4:00 PM–8:00 PM PT"
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20261203T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-02T17:45:00-07:00",
+      "end": "2026-12-02T18:45:00-07:00",
+      "whenLabel": "Wed Dec 2 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
     },
     {
       "id": "ts-u17-10808348-374863315",
@@ -407,6 +467,15 @@
       "start": "2026-12-02T19:00:00-07:00",
       "end": "2026-12-02T20:00:00-07:00",
       "whenLabel": "Wed Dec 2 · 7:00 PM–8:00 PM PT"
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20261203T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-03T16:00:00-07:00",
+      "end": "2026-12-03T17:45:00-07:00",
+      "whenLabel": "Thu Dec 3 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
     },
     {
       "id": "bk4lfhhc7akqdj3vo8p4o7f1k4",
@@ -433,6 +502,15 @@
       "end": "2026-12-05T00:00:00-07:00",
       "whenLabel": "Fri Dec 4 · 4:00 PM–12:00 AM PT",
       "description": "Work · MMA A shift (16:00–00:00). From 2026 crew rotation spreadsheet."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20261204T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-04T16:30:00-07:00",
+      "end": "2026-12-04T17:30:00-07:00",
+      "whenLabel": "Fri Dec 4 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
     },
     {
       "id": "ts-u17-10808348-374188838",
@@ -502,6 +580,15 @@
       "whenLabel": "Mon Dec 7 · 9:30 PM–11:00 PM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20261208T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-08T16:00:00-07:00",
+      "end": "2026-12-08T17:45:00-07:00",
+      "whenLabel": "Tue Dec 8 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
       "id": "gb4orqv0uh5gtmvlfncm0pj3b4",
       "summary": "Work · MMA A",
       "location": "",
@@ -519,12 +606,30 @@
       "whenLabel": "Wed Dec 9 · 5:00 PM–6:00 PM PT"
     },
     {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20261210T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-09T17:45:00-07:00",
+      "end": "2026-12-09T18:45:00-07:00",
+      "whenLabel": "Wed Dec 9 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
       "id": "ts-u17-10808348-374863316",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
       "start": "2026-12-09T19:00:00-07:00",
       "end": "2026-12-09T20:00:00-07:00",
       "whenLabel": "Wed Dec 9 · 7:00 PM–8:00 PM PT"
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20261210T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-10T16:00:00-07:00",
+      "end": "2026-12-10T17:45:00-07:00",
+      "whenLabel": "Thu Dec 10 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
     },
     {
       "id": "ts-u17-10808348-374188730",
@@ -535,12 +640,29 @@
       "whenLabel": "Thu Dec 10 · 9:15 PM–10:45 PM PT"
     },
     {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20261211T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-11T16:30:00-07:00",
+      "end": "2026-12-11T17:30:00-07:00",
+      "whenLabel": "Fri Dec 11 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
       "id": "ts-u17-10808348-374188840",
       "summary": "U17 Dryland · Aim Athletic",
       "location": "Aim Athletic (Langley)",
       "start": "2026-12-11T20:30:00-07:00",
       "end": "2026-12-11T21:30:00-07:00",
       "whenLabel": "Fri Dec 11 · 8:30 PM–9:30 PM PT"
+    },
+    {
+      "id": "ts-u15-10816643-376684256",
+      "summary": "U15 C4 Practice · LEC 2",
+      "location": "LEC 2 (Langley Events Centre)",
+      "start": "2026-12-12T15:30:00-07:00",
+      "end": "2026-12-12T17:00:00-07:00",
+      "whenLabel": "Sat Dec 12 · 3:30 PM–5:00 PM PT"
     },
     {
       "id": "ts-u17-10808348-374188672",
@@ -575,6 +697,24 @@
       "whenLabel": "Tue Dec 15 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20261215T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-15T16:00:00-07:00",
+      "end": "2026-12-15T17:45:00-07:00",
+      "whenLabel": "Tue Dec 15 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20261217T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-16T17:45:00-07:00",
+      "end": "2026-12-16T18:45:00-07:00",
+      "whenLabel": "Wed Dec 16 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
       "id": "ts-u17-10808348-374863317",
       "summary": "U17 Development · LEC 2",
       "location": "LEC 2 (Langley Events Centre)",
@@ -583,12 +723,30 @@
       "whenLabel": "Wed Dec 16 · 7:00 PM–8:00 PM PT"
     },
     {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20261217T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-17T16:00:00-07:00",
+      "end": "2026-12-17T17:45:00-07:00",
+      "whenLabel": "Thu Dec 17 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
       "id": "ts-u17-10808348-374188731",
       "summary": "U17 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2026-12-17T21:15:00-07:00",
       "end": "2026-12-17T22:45:00-07:00",
       "whenLabel": "Thu Dec 17 · 9:15 PM–10:45 PM PT"
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20261218T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-18T16:30:00-07:00",
+      "end": "2026-12-18T17:30:00-07:00",
+      "whenLabel": "Fri Dec 18 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
     },
     {
       "id": "ts-u17-10808348-374188841",
@@ -615,6 +773,42 @@
       "whenLabel": "Sun Dec 20 · 6:15 PM–8:15 PM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20261222T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-22T16:00:00-07:00",
+      "end": "2026-12-22T17:45:00-07:00",
+      "whenLabel": "Tue Dec 22 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20261224T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-23T17:45:00-07:00",
+      "end": "2026-12-23T18:45:00-07:00",
+      "whenLabel": "Wed Dec 23 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20261224T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-24T16:00:00-07:00",
+      "end": "2026-12-24T17:45:00-07:00",
+      "whenLabel": "Thu Dec 24 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20261225T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-25T16:30:00-07:00",
+      "end": "2026-12-25T17:30:00-07:00",
+      "whenLabel": "Fri Dec 25 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
       "id": "ts-u17-10808348-374256316",
       "summary": "U17 HOLD · TBD",
       "location": "TBD",
@@ -639,12 +833,48 @@
       "whenLabel": "Tue Dec 29 · 12:00 AM–12:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20261229T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-29T16:00:00-07:00",
+      "end": "2026-12-29T17:45:00-07:00",
+      "whenLabel": "Tue Dec 29 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
       "id": "ts-u17-10808348-374256319",
       "summary": "U17 HOLD · TBD",
       "location": "TBD",
       "start": "2026-12-30T00:00:00-07:00",
       "end": "2026-12-31T00:00:00-07:00",
       "whenLabel": "Wed Dec 30 · 12:00 AM–12:00 AM PT"
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20261231T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2026-12-30T17:45:00-07:00",
+      "end": "2026-12-30T18:45:00-07:00",
+      "whenLabel": "Wed Dec 30 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20261231T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2026-12-31T16:00:00-07:00",
+      "end": "2026-12-31T17:45:00-07:00",
+      "whenLabel": "Thu Dec 31 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270101T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-01T16:30:00-07:00",
+      "end": "2027-01-01T17:30:00-07:00",
+      "whenLabel": "Fri Jan 1 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
     },
     {
       "id": "ts-u15-10816643-376451520",
@@ -655,12 +885,84 @@
       "whenLabel": "Tue Jan 5 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270105T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-01-05T16:00:00-07:00",
+      "end": "2027-01-05T17:45:00-07:00",
+      "whenLabel": "Tue Jan 5 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270107T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-06T17:45:00-07:00",
+      "end": "2027-01-06T18:45:00-07:00",
+      "whenLabel": "Wed Jan 6 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270107T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-01-07T16:00:00-07:00",
+      "end": "2027-01-07T17:45:00-07:00",
+      "whenLabel": "Thu Jan 7 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270108T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-08T16:30:00-07:00",
+      "end": "2027-01-08T17:30:00-07:00",
+      "whenLabel": "Fri Jan 8 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
       "id": "ts-u15-10816643-376451521",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-01-12T06:00:00-07:00",
       "end": "2027-01-12T07:00:00-07:00",
       "whenLabel": "Tue Jan 12 · 6:00 AM–7:00 AM PT"
+    },
+    {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270112T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-01-12T16:00:00-07:00",
+      "end": "2027-01-12T17:45:00-07:00",
+      "whenLabel": "Tue Jan 12 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270114T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-13T17:45:00-07:00",
+      "end": "2027-01-13T18:45:00-07:00",
+      "whenLabel": "Wed Jan 13 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270114T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-01-14T16:00:00-07:00",
+      "end": "2027-01-14T17:45:00-07:00",
+      "whenLabel": "Thu Jan 14 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270115T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-15T16:30:00-07:00",
+      "end": "2027-01-15T17:30:00-07:00",
+      "whenLabel": "Fri Jan 15 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
     },
     {
       "id": "ts-u15-10816643-376451411",
@@ -679,6 +981,42 @@
       "whenLabel": "Tue Jan 19 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270119T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-01-19T16:00:00-07:00",
+      "end": "2027-01-19T17:45:00-07:00",
+      "whenLabel": "Tue Jan 19 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270121T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-20T17:45:00-07:00",
+      "end": "2027-01-20T18:45:00-07:00",
+      "whenLabel": "Wed Jan 20 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270121T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-01-21T16:00:00-07:00",
+      "end": "2027-01-21T17:45:00-07:00",
+      "whenLabel": "Thu Jan 21 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270122T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-22T16:30:00-07:00",
+      "end": "2027-01-22T17:30:00-07:00",
+      "whenLabel": "Fri Jan 22 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
       "id": "ts-u15-10816643-376451426",
       "summary": "U15 C4 League · vs north delta C1",
       "location": "North Delta",
@@ -695,12 +1033,84 @@
       "whenLabel": "Tue Jan 26 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270126T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-01-26T16:00:00-07:00",
+      "end": "2027-01-26T17:45:00-07:00",
+      "whenLabel": "Tue Jan 26 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270128T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-27T17:45:00-07:00",
+      "end": "2027-01-27T18:45:00-07:00",
+      "whenLabel": "Wed Jan 27 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270128T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-01-28T16:00:00-07:00",
+      "end": "2027-01-28T17:45:00-07:00",
+      "whenLabel": "Thu Jan 28 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270129T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-01-29T16:30:00-07:00",
+      "end": "2027-01-29T17:30:00-07:00",
+      "whenLabel": "Fri Jan 29 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
       "id": "ts-u15-10816643-376451524",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-02-02T06:00:00-07:00",
       "end": "2027-02-02T07:00:00-07:00",
       "whenLabel": "Tue Feb 2 · 6:00 AM–7:00 AM PT"
+    },
+    {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270202T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-02-02T16:00:00-07:00",
+      "end": "2027-02-02T17:45:00-07:00",
+      "whenLabel": "Tue Feb 2 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270204T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-02-03T17:45:00-07:00",
+      "end": "2027-02-03T18:45:00-07:00",
+      "whenLabel": "Wed Feb 3 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270204T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-02-04T16:00:00-07:00",
+      "end": "2027-02-04T17:45:00-07:00",
+      "whenLabel": "Thu Feb 4 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270205T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-02-05T16:30:00-07:00",
+      "end": "2027-02-05T17:30:00-07:00",
+      "whenLabel": "Fri Feb 5 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
     },
     {
       "id": "ts-u15-10816643-376451525",
@@ -711,12 +1121,84 @@
       "whenLabel": "Tue Feb 9 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270209T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-02-09T16:00:00-07:00",
+      "end": "2027-02-09T17:45:00-07:00",
+      "whenLabel": "Tue Feb 9 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270211T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-02-10T17:45:00-07:00",
+      "end": "2027-02-10T18:45:00-07:00",
+      "whenLabel": "Wed Feb 10 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270211T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-02-11T16:00:00-07:00",
+      "end": "2027-02-11T17:45:00-07:00",
+      "whenLabel": "Thu Feb 11 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270212T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-02-12T16:30:00-07:00",
+      "end": "2027-02-12T17:30:00-07:00",
+      "whenLabel": "Fri Feb 12 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
       "id": "ts-u15-10816643-376451526",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-02-16T06:00:00-07:00",
       "end": "2027-02-16T07:00:00-07:00",
       "whenLabel": "Tue Feb 16 · 6:00 AM–7:00 AM PT"
+    },
+    {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270216T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-02-16T16:00:00-07:00",
+      "end": "2027-02-16T17:45:00-07:00",
+      "whenLabel": "Tue Feb 16 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270218T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-02-17T17:45:00-07:00",
+      "end": "2027-02-17T18:45:00-07:00",
+      "whenLabel": "Wed Feb 17 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270218T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-02-18T16:00:00-07:00",
+      "end": "2027-02-18T17:45:00-07:00",
+      "whenLabel": "Thu Feb 18 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270219T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-02-19T16:30:00-07:00",
+      "end": "2027-02-19T17:30:00-07:00",
+      "whenLabel": "Fri Feb 19 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
     },
     {
       "id": "ts-u15-10816643-376451527",
@@ -727,6 +1209,42 @@
       "whenLabel": "Tue Feb 23 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270223T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-02-23T16:00:00-07:00",
+      "end": "2027-02-23T17:45:00-07:00",
+      "whenLabel": "Tue Feb 23 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270225T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-02-24T17:45:00-07:00",
+      "end": "2027-02-24T18:45:00-07:00",
+      "whenLabel": "Wed Feb 24 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270225T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-02-25T16:00:00-07:00",
+      "end": "2027-02-25T17:45:00-07:00",
+      "whenLabel": "Thu Feb 25 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270226T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-02-26T16:30:00-07:00",
+      "end": "2027-02-26T17:30:00-07:00",
+      "whenLabel": "Fri Feb 26 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
       "id": "ts-u15-10816643-376451528",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
@@ -735,12 +1253,120 @@
       "whenLabel": "Tue Mar 2 · 6:00 AM–7:00 AM PT"
     },
     {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270302T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-03-02T16:00:00-07:00",
+      "end": "2027-03-02T17:45:00-07:00",
+      "whenLabel": "Tue Mar 2 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270304T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-03-03T17:45:00-07:00",
+      "end": "2027-03-03T18:45:00-07:00",
+      "whenLabel": "Wed Mar 3 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270304T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-03-04T16:00:00-07:00",
+      "end": "2027-03-04T17:45:00-07:00",
+      "whenLabel": "Thu Mar 4 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270305T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-03-05T16:30:00-07:00",
+      "end": "2027-03-05T17:30:00-07:00",
+      "whenLabel": "Fri Mar 5 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
       "id": "ts-u15-10816643-376451529",
       "summary": "U15 C4 Practice · SPX 2",
       "location": "SPX 2 (Langley)",
       "start": "2027-03-09T06:00:00-07:00",
       "end": "2027-03-09T07:00:00-07:00",
       "whenLabel": "Tue Mar 9 · 6:00 AM–7:00 AM PT"
+    },
+    {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270309T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-03-09T16:00:00-07:00",
+      "end": "2027-03-09T17:45:00-07:00",
+      "whenLabel": "Tue Mar 9 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270311T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-03-10T17:45:00-07:00",
+      "end": "2027-03-10T18:45:00-07:00",
+      "whenLabel": "Wed Mar 10 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270311T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-03-11T16:00:00-07:00",
+      "end": "2027-03-11T17:45:00-07:00",
+      "whenLabel": "Thu Mar 11 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270312T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-03-12T16:30:00-07:00",
+      "end": "2027-03-12T17:30:00-07:00",
+      "whenLabel": "Fri Mar 12 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
+    },
+    {
+      "id": "emfaia1o6qecum286qf5pff4s0_20270316T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-03-16T16:00:00-07:00",
+      "end": "2027-03-16T17:45:00-07:00",
+      "whenLabel": "Tue Mar 16 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required for youth. $5 youth. Pre-register recommended. Recurring Tuesdays."
+    },
+    {
+      "id": "q0qg7q5uc8nv09ue25p2la17qo_20270318T004500Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-03-17T17:45:00-07:00",
+      "end": "2027-03-17T18:45:00-07:00",
+      "whenLabel": "Wed Mar 17 · 5:45 PM–6:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Wednesdays."
+    },
+    {
+      "id": "0d4j5gl30ukavpnl4l3h3ojpi8_20270318T230000Z",
+      "summary": "Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18",
+      "location": "LEC Arena 3 (Burgundy)",
+      "start": "2027-03-18T16:00:00-07:00",
+      "end": "2027-03-18T17:45:00-07:00",
+      "whenLabel": "Thu Mar 18 · 4:00 PM–5:45 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). Caged helmet + full gear required. $5 youth. Pre-register recommended. Recurring Thursdays."
+    },
+    {
+      "id": "l0pd1q94jtf8orimtk8v9nrp2s_20270319T233000Z",
+      "summary": "Stick & Puck · Aldergrove CC · ages 7+",
+      "location": "Aldergrove Community Centre",
+      "start": "2027-03-19T16:30:00-07:00",
+      "end": "2027-03-19T17:30:00-07:00",
+      "whenLabel": "Fri Mar 19 · 4:30 PM–5:30 PM PT",
+      "description": "Drop-in stick and puck with Barrett (13). CSA helmet recommended. Online booking opens 23 hours before; drop-in allowed as space permits. Recurring Fridays."
     }
   ]
 }

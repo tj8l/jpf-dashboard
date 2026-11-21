@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-21",
+  "weekbar": "2026-11-21..2026-11-27",
+  "teamsnap": {
+    "u17": 26,
+    "u15c4": 26,
+    "adds": [
+      "U15 C4 Practice · LEC 1 Thu Nov 26 6:00 PM",
+      "U15 C4 Practice · LEC 2 Sat Dec 12 3:30 PM"
+    ],
+    "moves": [],
+    "cancels": [],
+    "retitles": [],
+    "rolledOff": [
+      "U17 Dryland Fri Nov 20 8:30 PM Aim Athletic (past)"
+    ]
+  },
+  "gcal": {
+    "status": "ok_listEvents_primary",
+    "note": "listEvents on primary succeeded (listCalendars still missing permission). Added Stick & Puck series (Barrett) from Google. Did not import Google U15/U17 ice (TeamSnap authoritative). MMA A Dec 3–8 kept at 4:00 PM–12:00 AM PT (Google rendered 5:00 PM–1:00 AM due to America/Vancouver DST; description still says 16:00–00:00). Kevin Nelson retirement Dec 2 4–8 PM preserved (not present in this Google fetch).",
+    "adds": [
+      "68 stick-and-puck instances through 2027-03-19",
+      "2026-11-24T16:00 Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18 @ LEC Arena 3 (Burgundy)",
+      "2026-11-25T17:45 Stick & Puck · Aldergrove CC · ages 7+ @ Aldergrove Community Centre",
+      "2026-11-26T16:00 Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18 @ LEC Arena 3 (Burgundy)",
+      "2026-11-27T16:30 Stick & Puck · Aldergrove CC · ages 7+ @ Aldergrove Community Centre"
+    ],
+    "updates": [],
+    "cancels": []
+  },
+  "clashes_14d": [
+    "Sun Nov 22 U15 C4 League · vs cloverdale C2 18:15 / U17 League · vs North Vancouver 18:15",
+    "Sun Nov 29 U17 League · vs North Delta 18:15 / U15 C4 League · vs Semiahmoo C1 19:00",
+    "Wed Dec 2 Kevin Nelson retirement 16:00 / Stick & Puck · Aldergrove CC · ages 7+ 17:45",
+    "Wed Dec 2 Kevin Nelson retirement 16:00 / U17 Development · LEC 2 19:00",
+    "Thu Dec 3 Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18 16:00 / Work · MMA A 16:00",
+    "Thu Dec 3 Work · MMA A 16:00 / U17 Practice · SPX 2 21:15",
+    "Fri Dec 4 Work · MMA A 16:00 / Stick & Puck · Aldergrove CC · ages 7+ 16:30",
+    "Fri Dec 4 Work · MMA A 16:00 / U17 Dryland · Aim Athletic 20:30",
+    "Sat Dec 5 Work · MMA A 16:00 / U17 League · vs North Vancouver 16:45"
+  ],
+  "markets": {
+    "btc": [
+      58071,
+      -5.93,
+      -5.94,
+      55106
+    ],
+    "gold": [
+      3539.0,
+      -1.26
+    ],
+    "wti": [
+      83.98,
+      0.93
+    ],
+    "spx": [
+      6910.39,
+      -3.7
+    ],
+    "us10y": [
+      4.912,
+      "-0.14 pts"
+    ],
+    "near_24h": -6.66,
+    "fet_24h": -11.18,
+    "eth_24h": -5.54,
+    "sol_24h": -4.3
+  },
+  "weather": {
+    "hi": 9,
+    "lo": 1,
+    "rain": 34,
+    "sunrise": "8:29 AM"
+  },
+  "u15_ics_ok": true,
+  "material": true,
+  "materialReasons": [
+    "TeamSnap added U15 C4 Practice Thu Nov 26 6:00 PM LEC 1 and Sat Dec 12 3:30 PM LEC 2",
+    "Google Calendar recovered; added recurring Stick & Puck with Barrett (LEC Tue/Thu, Aldergrove Wed/Fri) through mid-March",
+    "Markets down: BTC ~-5.93% vs prior snap (24h low ~55106), SPX ~-3.70%, FET -11.2% 24h, NEAR -6.7% 24h",
+    "Standing clash Sun Nov 22: U17 vs North Vancouver 6:15 PM LEC 1 / U15 C4 vs Cloverdale C2 6:15 PM"
+  ]
+}
