@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-22",
+  "weekbar": "2026-11-22..2026-11-28",
+  "teamsnap": {
+    "u17": 26,
+    "u15c4": 24,
+    "adds": [],
+    "moves": [],
+    "cancels": [],
+    "retitles": [],
+    "rolledOff": [
+      "U15 C4 Development with C1 Sat Nov 21 10:45 AM LEC 3 (past)",
+      "U15 C4 Game at South Delta C3 Sat Nov 21 4:30 PM (past)"
+    ]
+  },
+  "gcal": {
+    "status": "auth_failed_need_permission",
+    "note": "listCalendars and listEvents on primary failed this morning (Google Calendar needs a missing permission / reconnect). Did not mutate personal events. Preserved stick & puck, Kevin Nelson retirement, and MMA A. A Google Calendar connect card was already raised in chat. Did not pause the daily refresh; TeamSnap / markets / weather still updated.",
+    "adds": [],
+    "updates": [],
+    "cancels": []
+  },
+  "clashes_14d": [
+    "Sun Nov 22 U15 C4 League · vs cloverdale C2 18:15 / U17 League · vs North Vancouver 18:15",
+    "Sun Nov 29 U17 League · vs North Delta 18:15 / U15 C4 League · vs Semiahmoo C1 19:00",
+    "Wed Dec 2 Kevin Nelson retirement 16:00 / Stick & Puck · Aldergrove CC · ages 7+ 17:45",
+    "Wed Dec 2 Kevin Nelson retirement 16:00 / U17 Development · LEC 2 19:00",
+    "Thu Dec 3 Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18 16:00 / Work · MMA A 16:00",
+    "Thu Dec 3 Work · MMA A 16:00 / U17 Practice · SPX 2 21:15",
+    "Fri Dec 4 Work · MMA A 16:00 / Stick & Puck · Aldergrove CC · ages 7+ 16:30",
+    "Fri Dec 4 Work · MMA A 16:00 / U17 Dryland · Aim Athletic 20:30",
+    "Sat Dec 5 Work · MMA A 16:00 / U17 League · vs North Vancouver 16:45",
+    "Sun Dec 6 Work · MMA A 16:00 / U17 HOLD · LEC 1 18:15"
+  ],
+  "markets": {
+    "btc": [
+      60861,
+      4.8,
+      4.73,
+      58035
+    ],
+    "gold": [
+      3539.0,
+      0.0
+    ],
+    "wti": [
+      83.41,
+      0.24
+    ],
+    "spx": [
+      6910.39,
+      -3.7
+    ],
+    "us10y": [
+      4.912,
+      "-0.14 pts"
+    ],
+    "near_24h": 7.15,
+    "fet_24h": 0.62,
+    "eth_24h": 3.34,
+    "sol_24h": 2.61
+  },
+  "weather": {
+    "hi": 9,
+    "lo": 5,
+    "rain": 45,
+    "sunrise": "8:31 AM"
+  },
+  "u15_ics_ok": true,
+  "habitWeekStart": "2026-11-22",
+  "material": true,
+  "materialReasons": [
+    "Markets: BTC ~4.80% vs prior snap (24h +4.73%), NEAR +7.1% 24h, gold +0.00%",
+    "Standing clash today: U17 vs North Vancouver 6:15 PM LEC 1 / U15 C4 vs Cloverdale C2 6:15 PM at Cloverdale"
+  ]
+}

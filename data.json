@@ -1,8 +1,8 @@
 {
   "meta": {
     "timezone": "America/Vancouver",
-    "lastUpdated": "2026-11-21T05:00:00-07:00",
-    "lastUpdatedLabel": "Sat Nov 21, 2026 · ~5:00 AM PT",
+    "lastUpdated": "2026-11-22T05:00:00-07:00",
+    "lastUpdatedLabel": "Sun Nov 22, 2026 · ~5:00 AM PT",
     "updatedBy": "assistant-scheduled-refresh",
     "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX/US10Y use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
   },
@@ -19,36 +19,36 @@
       "value": 3539.0,
       "display": "$3,539",
       "unit": "USD/oz",
-      "change": -45.05,
-      "changePct": -1.26,
-      "changeDisplay": "-1.26% vs prior snap",
-      "asOf": "2026-11-21T05:00:00-07:00",
+      "change": 0.0,
+      "changePct": 0.0,
+      "changeDisplay": "0.00% vs prior snap",
+      "asOf": "2026-11-22T05:00:00-07:00",
       "source": "gold-api.com"
     },
     {
       "id": "wti",
       "label": "Spot oil (WTI)",
       "ticker": "CL",
-      "value": 83.98,
-      "display": "$83.98",
+      "value": 83.41,
+      "display": "$83.41",
       "unit": "USD/bbl",
-      "change": 0.77,
-      "changePct": 0.93,
-      "changeDisplay": "0.93% vs prior close",
-      "asOf": "2026-11-21T05:00:00-07:00",
+      "change": 0.2,
+      "changePct": 0.24,
+      "changeDisplay": "0.24% vs prior close",
+      "asOf": "2026-11-22T05:00:00-07:00",
       "source": "Yahoo CL=F"
     },
     {
       "id": "btc",
       "label": "Spot BTC",
       "ticker": "BTC",
-      "value": 58071,
-      "display": "$58,071",
+      "value": 60861,
+      "display": "$60,861",
       "unit": "USD",
-      "change": -3662,
-      "changePct": -5.93,
-      "changeDisplay": "-5.93% vs prior snap",
-      "asOf": "2026-11-21T05:00:00-07:00",
+      "change": 2790,
+      "changePct": 4.8,
+      "changeDisplay": "4.80% vs prior snap",
+      "asOf": "2026-11-22T05:00:00-07:00",
       "source": "Coinbase"
     },
     {
@@ -61,7 +61,7 @@
       "change": -265.44,
       "changePct": -3.7,
       "changeDisplay": "-3.70% vs prior close",
-      "asOf": "2026-11-21T05:00:00-07:00",
+      "asOf": "2026-11-22T05:00:00-07:00",
       "source": "Yahoo ^GSPC"
     },
     {
@@ -74,7 +74,7 @@
       "change": -0.14,
       "changePct": -2.77,
       "changeDisplay": "-0.14 pts vs prior close",
-      "asOf": "2026-11-21T05:00:00-07:00",
+      "asOf": "2026-11-22T05:00:00-07:00",
       "source": "Yahoo ^TNX"
     }
   ],
@@ -84,57 +84,57 @@
       "symbol": "ETH",
       "name": "Ethereum",
       "role": "Primary L1 settlement for agents",
-      "price": 1650.39,
-      "change24h": -5.54,
+      "price": 1705.29,
+      "change24h": 3.34,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-11-21T05:00:00-07:00"
+      "asOf": "2026-11-22T05:00:00-07:00"
     },
     {
       "id": "sol",
       "symbol": "SOL",
       "name": "Solana",
       "role": "High-throughput L1",
-      "price": 68.62,
-      "change24h": -4.3,
+      "price": 70.55,
+      "change24h": 2.61,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-11-21T05:00:00-07:00"
+      "asOf": "2026-11-22T05:00:00-07:00"
     },
     {
       "id": "fet",
       "symbol": "FET",
       "name": "Fetch.ai",
       "role": "Agent coin",
-      "price": 0.10924,
-      "change24h": -11.18,
+      "price": 0.10963,
+      "change24h": 0.62,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-11-21T05:00:00-07:00"
+      "asOf": "2026-11-22T05:00:00-07:00"
     },
     {
       "id": "near",
       "symbol": "NEAR",
       "name": "NEAR Protocol",
       "role": "Intents / agent protocol",
-      "price": 2.772,
-      "change24h": -6.66,
+      "price": 2.988,
+      "change24h": 7.15,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-11-21T05:00:00-07:00"
+      "asOf": "2026-11-22T05:00:00-07:00"
     }
   ],
   "bitcoinDetail": {
-    "price": 58071,
-    "change24h": -5.94,
+    "price": 60861,
+    "change24h": 4.73,
     "change7d": null,
-    "high24h": 62114,
-    "low24h": 55106,
+    "high24h": 61239,
+    "low24h": 58035,
     "marketCap": null,
     "ath": 126173,
     "athDate": "2025-10-06",
     "source": "Coinbase",
-    "asOf": "2026-11-21T05:00:00-07:00"
+    "asOf": "2026-11-22T05:00:00-07:00"
   },
   "tasks": [
     {
@@ -265,7 +265,7 @@
       ]
     }
   ],
-  "habitWeekStart": "2026-11-14",
+  "habitWeekStart": "2026-11-22",
   "habitWeekDays": [
     "Sun",
     "Mon",
@@ -277,31 +277,31 @@
   ],
   "news": [
     {
-      "title": "BTC ~$58,071 (-5.93% vs prior snap; -5.94% 24h) — 24h low ~$55,106",
+      "title": "BTC ~$60,861 (+4.80% vs prior snap; +4.73% 24h) — 24h low ~$58,035",
       "source": "Coinbase",
-      "date": "2026-11-21",
-      "dateLabel": "Nov 21",
+      "date": "2026-11-22",
+      "dateLabel": "Nov 22",
       "url": "https://www.coinbase.com/price/bitcoin"
     },
     {
-      "title": "Agent basket: NEAR ~$2.772 (-6.66% 24h); FET ~$0.1092 (-11.18%); SOL ~$68.62 (-4.30%); ETH ~$1,650 (-5.54%)",
+      "title": "Agent basket: NEAR ~$2.988 (+7.15% 24h); FET ~$0.1096 (+0.62%); SOL ~$70.55 (+2.61%); ETH ~$1,705 (+3.34%)",
       "source": "Coinbase",
-      "date": "2026-11-21",
-      "dateLabel": "Nov 21",
+      "date": "2026-11-22",
+      "dateLabel": "Nov 22",
       "url": "https://www.coinbase.com/price/near"
     },
     {
-      "title": "Gold ~$3,539 (-1.26%); WTI ~$83.98 (+0.93% futures vs prior close); SPX 6,910.39 (-3.70%); US10Y 4.91%",
+      "title": "Gold ~$3,539 (+0.00%); WTI ~$83.41 (+0.24% futures vs prior close); SPX 6,910.39 (-3.70%); US10Y 4.91%",
       "source": "gold-api / Yahoo",
-      "date": "2026-11-21",
-      "dateLabel": "Nov 21",
+      "date": "2026-11-22",
+      "dateLabel": "Nov 22",
       "url": "https://finance.yahoo.com/quote/%5EGSPC"
     },
     {
-      "title": "Today: U15 C4 Development with C1 10:45 AM LEC 3, then game at South Delta C3 4:30 PM. Clash Sunday: U17 vs North Vancouver 6:15 PM LEC 1 and U15 C4 vs Cloverdale C2 6:15 PM. New U15 practices: Thu Nov 26 6:00 PM LEC 1, Sat Dec 12 3:30 PM LEC 2. Stick & puck with Barrett this week: Tue 4:00 PM LEC, Wed 5:45 PM Aldergrove, Thu 4:00 PM LEC, Fri 4:30 PM Aldergrove.",
+      "title": "Today: clash — U17 vs North Vancouver 6:15 PM LEC 1 and U15 C4 vs Cloverdale C2 6:15 PM at Cloverdale. Also this week: U15 practice Tue 6:00 AM SPX 2 and Thu 6:00 PM LEC 1; U17 vs Richmond Thu 9:15 PM at Richmond Ice Centre. Stick & puck with Barrett: Tue 4:00 PM LEC, Wed 5:45 PM Aldergrove, Thu 4:00 PM LEC, Fri 4:30 PM Aldergrove.",
       "source": "TeamSnap / Google Calendar",
-      "date": "2026-11-21",
-      "dateLabel": "Nov 21",
+      "date": "2026-11-22",
+      "dateLabel": "Nov 22",
       "url": "https://www.teamsnap.com/"
     }
   ],
@@ -315,17 +315,17 @@
     "conditionsShort": "Cool, chance of rain",
     "temp": {
       "highC": 9,
-      "lowC": 1,
+      "lowC": 5,
       "highF": 48,
-      "lowF": 34,
-      "displayC": "9° / 1°C",
-      "displayF": "48° / 34°F",
-      "currentC": 1,
-      "currentF": 34
+      "lowF": 41,
+      "displayC": "9° / 5°C",
+      "displayF": "48° / 41°F",
+      "currentC": 6,
+      "currentF": 43
     },
-    "rainChancePct": 34,
-    "asOf": "2026-11-21T05:00:00-07:00",
-    "asOfLabel": "Sat Nov 21, 2026 · ~5:00 AM PT"
+    "rainChancePct": 45,
+    "asOf": "2026-11-22T05:00:00-07:00",
+    "asOfLabel": "Sun Nov 22, 2026 · ~5:00 AM PT"
   },
   "workoutLog": [
     {
