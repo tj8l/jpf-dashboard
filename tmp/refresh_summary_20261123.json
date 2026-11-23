@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-23",
+  "weekbar": "2026-11-23..2026-11-29",
+  "teamsnap": {
+    "u17": 25,
+    "u15c4": 23,
+    "adds": [],
+    "moves": [],
+    "cancels": [],
+    "retitles": [],
+    "rolledOff": [
+      "U15 C4 League vs Cloverdale C2 Sun Nov 22 6:15 PM Cloverdale (past)",
+      "U17 League vs North Vancouver Sun Nov 22 6:15 PM LEC 1 (past)"
+    ]
+  },
+  "gcal": {
+    "status": "auth_failed_need_permission",
+    "note": "listCalendars and listEvents on primary failed this morning (Google Calendar needs a missing permission / reconnect). Did not mutate personal events. Preserved stick & puck, Kevin Nelson retirement, and MMA A. A Google Calendar connect card was already raised in chat. Did not pause the daily refresh; TeamSnap / markets / weather still updated.",
+    "adds": [],
+    "updates": [],
+    "cancels": []
+  },
+  "clashes_14d": [
+    "Sun Nov 29 U17 League · vs North Delta 18:15 / U15 C4 League · vs Semiahmoo C1 19:00",
+    "Wed Dec 2 Kevin Nelson retirement 16:00 / Stick & Puck · Aldergrove CC · ages 7+ 17:45",
+    "Wed Dec 2 Kevin Nelson retirement 16:00 / U17 Development · LEC 2 19:00",
+    "Thu Dec 3 Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18 16:00 / Work · MMA A 16:00",
+    "Thu Dec 3 Work · MMA A 16:00 / U17 Practice · SPX 2 21:15",
+    "Fri Dec 4 Work · MMA A 16:00 / Stick & Puck · Aldergrove CC · ages 7+ 16:30",
+    "Fri Dec 4 Work · MMA A 16:00 / U17 Dryland · Aim Athletic 20:30",
+    "Sat Dec 5 Work · MMA A 16:00 / U17 League · vs North Vancouver 16:45",
+    "Sun Dec 6 Work · MMA A 16:00 / U17 HOLD · LEC 1 18:15",
+    "Mon Dec 7 Work · MMA A 16:00 / U15 C4 League · vs north delta c2 21:00",
+    "Mon Dec 7 Work · MMA A 16:00 / U17 Practice · SPX 2 21:30",
+    "Mon Dec 7 U15 C4 League · vs north delta c2 21:00 / U17 Practice · SPX 2 21:30"
+  ],
+  "markets": {
+    "btc": [
+      61398,
+      0.88,
+      0.72,
+      60287
+    ],
+    "gold": [
+      3621.65,
+      2.34
+    ],
+    "wti": [
+      82.05,
+      -2.3
+    ],
+    "spx": [
+      6910.39,
+      -3.7
+    ],
+    "us10y": [
+      4.912,
+      "-0.14 pts"
+    ],
+    "near_24h": 1.16,
+    "fet_24h": 1.48,
+    "eth_24h": 1.12,
+    "sol_24h": 2.92
+  },
+  "weather": {
+    "hi": 10,
+    "lo": 5,
+    "rain": 73,
+    "sunrise": "8:32 AM"
+  },
+  "u15_ics_ok": true,
+  "habitWeekStart": "2026-11-22",
+  "material": true,
+  "materialReasons": [
+    "Markets: BTC ~0.88% vs prior snap (24h +0.72%), NEAR +1.2% 24h, gold +2.34%",
+    "WTI -2.30% vs prior close (~$82.05)"
+  ]
+}
