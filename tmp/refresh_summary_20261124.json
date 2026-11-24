@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-24",
+  "weekbar": "2026-11-24..2026-11-30",
+  "teamsnap": {
+    "u17": 24,
+    "u15c4": 23,
+    "adds": [],
+    "moves": [],
+    "cancels": [],
+    "retitles": [],
+    "rolledOff": [
+      "U17 Practice Mon Nov 23 9:30 PM SPX 2 (past)"
+    ]
+  },
+  "gcal": {
+    "status": "auth_failed_need_permission",
+    "note": "listCalendars and listEvents on primary failed this morning (Google Calendar needs a missing permission / reconnect). Did not mutate personal events. Preserved stick & puck, Kevin Nelson retirement, and MMA A. A Google Calendar connect card is already in chat. Did not pause the daily refresh; TeamSnap / markets / weather still updated.",
+    "adds": [],
+    "updates": [],
+    "cancels": []
+  },
+  "clashes_14d": [
+    "Sun Nov 29 U17 League · vs North Delta 18:15 / U15 C4 League · vs Semiahmoo C1 19:00",
+    "Wed Dec 2 Kevin Nelson retirement 16:00 / Stick & Puck · Aldergrove CC · ages 7+ 17:45",
+    "Wed Dec 2 Kevin Nelson retirement 16:00 / U17 Development · LEC 2 19:00",
+    "Thu Dec 3 Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18 16:00 / Work · MMA A 16:00",
+    "Thu Dec 3 Work · MMA A 16:00 / U17 Practice · SPX 2 21:15",
+    "Fri Dec 4 Work · MMA A 16:00 / Stick & Puck · Aldergrove CC · ages 7+ 16:30",
+    "Fri Dec 4 Work · MMA A 16:00 / U17 Dryland · Aim Athletic 20:30",
+    "Sat Dec 5 Work · MMA A 16:00 / U17 League · vs North Vancouver 16:45",
+    "Sun Dec 6 Work · MMA A 16:00 / U17 HOLD · LEC 1 18:15",
+    "Mon Dec 7 Work · MMA A 16:00 / U15 C4 League · vs north delta c2 21:00",
+    "Mon Dec 7 Work · MMA A 16:00 / U17 Practice · SPX 2 21:30",
+    "Mon Dec 7 U15 C4 League · vs north delta c2 21:00 / U17 Practice · SPX 2 21:30",
+    "Tue Dec 8 Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18 16:00 / Work · MMA A 16:00"
+  ],
+  "markets": {
+    "btc": [
+      60222,
+      -1.92,
+      -1.83,
+      59300
+    ],
+    "gold": [
+      3632.2,
+      0.29
+    ],
+    "wti": [
+      80.22,
+      0.06
+    ],
+    "spx": [
+      7237.17,
+      4.73
+    ],
+    "us10y": [
+      4.918,
+      "+0.01 pts"
+    ],
+    "near_24h": -2.7,
+    "fet_24h": -4.24,
+    "eth_24h": -1.57,
+    "sol_24h": -2.37
+  },
+  "weather": {
+    "hi": 13,
+    "lo": 7,
+    "rain": 100,
+    "wind": 29,
+    "sunrise": "8:33 AM"
+  },
+  "u15_ics_ok": true,
+  "habitWeekStart": "2026-11-22",
+  "material": true,
+  "materialReasons": [
+    "SPX +4.73% vs prior close (7,237.17)"
+  ]
+}
