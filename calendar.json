@@ -1,21 +1,21 @@
 {
   "timezone": "America/Vancouver",
-  "fetchedAt": "2026-11-24T05:00:00-07:00",
+  "fetchedAt": "2026-11-25T05:00:00-07:00",
   "source": "Google Calendar (primary) + TeamSnap LANGLEY MHA U17 A1 + LANGLEY MHA U15 C4",
   "range": {
-    "start": "2026-11-24",
-    "end": "2026-11-30",
-    "label": "Nov 24–30 (next 7 days)"
+    "start": "2026-11-25",
+    "end": "2026-12-01",
+    "label": "Nov 25–Dec 1 (next 7 days)"
   },
   "notes": [
-    "Today Tue Nov 24: U15 C4 Practice · SPX 2 6:00 AM @ SPX 2 (Langley); Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18 4:00 PM @ LEC Arena 3 (Burgundy).",
-    "Wed Nov 25: Stick & Puck · Aldergrove CC · ages 7+ 5:45 PM @ Aldergrove Community Centre; U17 Development · LEC 2 7:00 PM @ LEC 2 (Langley Events Centre).",
+    "Today Wed Nov 25: Stick & Puck · Aldergrove CC · ages 7+ 5:45 PM @ Aldergrove Community Centre; U17 Development · LEC 2 7:00 PM @ LEC 2 (Langley Events Centre).",
     "Thu Nov 26: Stick & Puck · LEC Arena 3 (Burgundy) · ages 13-18 4:00 PM @ LEC Arena 3 (Burgundy); U15 C4 Practice · LEC 1 6:00 PM @ LEC 1 (Langley Events Centre); U17 League · vs Richmond 9:15 PM @ Richmond Ice Centre - Coliseum Rink.",
     "Fri Nov 27: Stick & Puck · Aldergrove CC · ages 7+ 4:30 PM @ Aldergrove Community Centre; U17 Dryland · Aim Athletic 8:30 PM @ Aim Athletic (Langley).",
     "Sat Nov 28: U15 C4 Development · with C2 10:45 AM @ LEC 3 (Langley Events Centre).",
     "Sun Nov 29: U17 League · vs North Delta 6:15 PM @ LEC 1 (Langley Events Centre); U15 C4 League · vs Semiahmoo C1 7:00 PM @ LEC 2 (Langley Events Centre).",
     "Mon Nov 30: U17 Practice · SPX 2 9:30 PM @ SPX 2 (Langley).",
-    "Beyond 7-day day-list window: Tue Dec 1 (U15 C4 Practice, Stick & Puck); Wed Dec 2 (Kevin Nelson retirement, Stick & Puck, U17 Development); Thu Dec 3 (Stick & Puck, Work, U17 Practice); Fri Dec 4 (Work, Stick & Puck, U17 Dryland); Sat Dec 5 (Work, U17 League) — still in calendar.json events.",
+    "Tue Dec 1: U15 C4 Practice · SPX 2 6:00 AM @ SPX 2 (Langley); Stick & Puck · LEC Arena 3 (Burgundy) · ages 6-18 4:00 PM @ LEC Arena 3 (Burgundy).",
+    "Beyond 7-day day-list window: Wed Dec 2 (Kevin Nelson retirement, Stick & Puck, U17 Development); Thu Dec 3 (Stick & Puck, Work, U17 Practice); Fri Dec 4 (Work, Stick & Puck, U17 Dryland); Sat Dec 5 (Work, U17 League); Sun Dec 6 (Work, U17 HOLD) — still in calendar.json events.",
     "TeamSnap LANGLEY MHA U17 A1 + U15 C4 is source of truth for both teams' ice; Amanda/Google U17 and Google U15 C/C4 ice replaced. MMA, personal, and PCAHA meetings preserved. PCAHA dates from 2026–2027 Bulletin #5. Stick & puck (Barrett) and Kevin Nelson retirement preserved from the board (Google Calendar could not be refreshed this morning). MMA A wall times kept at 4:00 PM–12:00 AM PT (spreadsheet / existing board)."
   ],
   "events": [
@@ -278,14 +278,6 @@
       "start": "2026-11-14T00:00:00-07:00",
       "end": "2026-11-16T00:00:00-07:00",
       "whenLabel": "Sat Nov 14 – Sun Nov 15 · all day (hours not posted; check before going)"
-    },
-    {
-      "id": "ts-u15-10816643-376451496",
-      "summary": "U15 C4 Practice · SPX 2",
-      "location": "SPX 2 (Langley)",
-      "start": "2026-11-24T06:00:00-07:00",
-      "end": "2026-11-24T07:00:00-07:00",
-      "whenLabel": "Tue Nov 24 · 6:00 AM–7:00 AM PT"
     },
     {
       "id": "emfaia1o6qecum286qf5pff4s0_20261124T230000Z",
