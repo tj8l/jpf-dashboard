@@ -1,35 +1,35 @@
 {
   "location": "Langley, BC",
   "timezone": "America/Vancouver",
-  "date": "2026-11-26",
-  "dateLabel": "Thu Nov 26, 2026",
-  "conditions": "Thursday: high ~12°C / low ~7°C, rain ~100%, wind ~27 km/h. Fri (~83%), Sat (~3%).",
-  "conditionsShort": "Cool, rain likely",
+  "date": "2026-11-27",
+  "dateLabel": "Fri Nov 27, 2026",
+  "conditions": "Friday: high ~10°C / low ~6°C, rain ~45%, wind ~18 km/h. Sat (~1%), Sun (~67%).",
+  "conditionsShort": "Cool, chance of rain",
   "temp": {
-    "highC": 12,
-    "lowC": 7,
-    "highF": 54,
-    "lowF": 45,
-    "displayC": "12° / 7°C",
-    "displayF": "54° / 45°F",
-    "currentC": 10,
-    "currentF": 50
+    "highC": 10,
+    "lowC": 6,
+    "highF": 50,
+    "lowF": 43,
+    "displayC": "10° / 6°C",
+    "displayF": "50° / 43°F",
+    "currentC": 8,
+    "currentF": 46
   },
-  "rainChancePct": 100,
+  "rainChancePct": 45,
   "wind": {
-    "summary": "moderate",
-    "maxKmh": 27,
-    "display": "Moderate, ~27 km/h"
+    "summary": "light",
+    "maxKmh": 18,
+    "display": "Light, ~18 km/h"
   },
   "sun": {
-    "sunrise": "08:36",
-    "sunset": "17:18",
-    "sunriseLabel": "8:36 AM",
-    "sunsetLabel": "5:18 PM",
+    "sunrise": "08:38",
+    "sunset": "17:17",
+    "sunriseLabel": "8:38 AM",
+    "sunsetLabel": "5:17 PM",
     "timezoneNote": "PT"
   },
-  "asOf": "2026-11-26T05:00:00-07:00",
-  "asOfLabel": "Thu Nov 26, 2026 · ~5:00 AM PT",
+  "asOf": "2026-11-27T05:00:00-07:00",
+  "asOfLabel": "Fri Nov 27, 2026 · ~5:00 AM PT",
   "source": "Open-Meteo (Langley BC)",
-  "lastUpdated": "2026-11-26T05:00:00-07:00"
+  "lastUpdated": "2026-11-27T05:00:00-07:00"
 }
