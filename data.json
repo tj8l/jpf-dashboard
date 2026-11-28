@@ -1,8 +1,8 @@
 {
   "meta": {
     "timezone": "America/Vancouver",
-    "lastUpdated": "2026-11-27T05:00:00-07:00",
-    "lastUpdatedLabel": "Fri Nov 27, 2026 · ~5:00 AM PT",
+    "lastUpdated": "2026-11-28T05:00:00-07:00",
+    "lastUpdatedLabel": "Sat Nov 28, 2026 · ~5:00 AM PT",
     "updatedBy": "assistant-scheduled-refresh",
     "notes": "User-editable source of truth for tasks (the To-do list), habits, watchlist, and notes. In the browser, tasks/habits also edit via localStorage key jpf-dashboard-v1 (stable ids merge over these defaults so an assistant HTML refresh does not wipe local edits). Prices and news are snapshots the assistant refreshes. Calendar events live in calendar.json. Weather for Langley lives in weather.json and under weather in this file. Browser AssetDetail modal: every primary market spot (XAU, WTI, BTC, SPX, US10Y) and crypto watchlist row opens live price + chart. Crypto uses Coinbase first (+ CoinGecko fallback); gold uses gold-api.com (CORS); WTI/SPX/US10Y use CNBC quote API (CORS-friendly) with Yahoo/allorigins fallback. Does not write localStorage for prices."
   },
@@ -16,65 +16,65 @@
       "id": "xau",
       "label": "Spot gold",
       "ticker": "XAU",
-      "value": 3671.5,
-      "display": "$3,672",
+      "value": 3650.0,
+      "display": "$3,650",
       "unit": "USD/oz",
-      "change": 107.1,
-      "changePct": 3.0,
-      "changeDisplay": "3.00% vs prior snap",
-      "asOf": "2026-11-27T05:00:00-07:00",
+      "change": -21.5,
+      "changePct": -0.59,
+      "changeDisplay": "-0.59% vs prior snap",
+      "asOf": "2026-11-28T05:00:00-07:00",
       "source": "gold-api.com"
     },
     {
       "id": "wti",
       "label": "Spot oil (WTI)",
       "ticker": "CL",
-      "value": 85.25,
-      "display": "$85.25",
+      "value": 83.08,
+      "display": "$83.08",
       "unit": "USD/bbl",
-      "change": 1.57,
-      "changePct": 1.88,
-      "changeDisplay": "1.88% vs prior close",
-      "asOf": "2026-11-27T05:00:00-07:00",
+      "change": -0.6,
+      "changePct": -0.72,
+      "changeDisplay": "-0.72% vs prior close",
+      "asOf": "2026-11-28T05:00:00-07:00",
       "source": "Yahoo CL=F"
     },
     {
       "id": "btc",
       "label": "Spot BTC",
       "ticker": "BTC",
-      "value": 61457,
-      "display": "$61,457",
+      "value": 59176,
+      "display": "$59,176",
       "unit": "USD",
-      "change": 782,
-      "changePct": 1.29,
-      "changeDisplay": "1.29% vs prior snap",
-      "asOf": "2026-11-27T05:00:00-07:00",
+      "change": -2281,
+      "changePct": -3.71,
+      "changeDisplay": "-3.71% vs prior snap",
+      "asOf": "2026-11-28T05:00:00-07:00",
       "source": "Coinbase"
     },
     {
       "id": "spx",
       "label": "S&P 500",
       "ticker": "SPX",
-      "value": 7182.78,
-      "display": "7,182.78",
+      "value": 7297.49,
+      "display": "7,297.49",
       "unit": "index",
-      "change": -18.31,
-      "changePct": -0.25,
-      "changeDisplay": "-0.25% vs prior close",
-      "asOf": "2026-11-27T05:00:00-07:00",
+      "change": 114.71,
+      "changePct": 1.6,
+      "changeDisplay": "1.60% vs prior close",
+      "asOf": "2026-11-28T05:00:00-07:00",
       "source": "Yahoo ^GSPC"
     },
     {
       "id": "us10y",
       "label": "US 10-year Treasury",
       "ticker": "US10Y",
-      "value": 4.848,
-      "display": "4.85%",
+      "value": 4.936,
+      "display": "4.94%",
       "unit": "%",
-      "change": -0.056,
-      "changePct": -1.14,
-      "changeDisplay": "-0.06 pts vs prior close",
-      "asOf": "2026-11-27T05:00:00-07:00",
+      "change": 0.088,
+      "changePct": 1.82,
+      "changeDisplay": "+0.09 pts vs prior close",
+      "asOf": "2026-11-28T05:00:00-07:00",
       "source": "Yahoo ^TNX"
     }
   ],
@@ -84,57 +84,57 @@
       "symbol": "ETH",
       "name": "Ethereum",
       "role": "Primary L1 settlement for agents",
-      "price": 1718.26,
-      "change24h": 1.19,
+      "price": 1646.37,
+      "change24h": -4.36,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-11-27T05:00:00-07:00"
+      "asOf": "2026-11-28T05:00:00-07:00"
     },
     {
       "id": "sol",
       "symbol": "SOL",
       "name": "Solana",
       "role": "High-throughput L1",
-      "price": 72.86,
-      "change24h": 2.96,
+      "price": 70.86,
+      "change24h": -3.03,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-11-27T05:00:00-07:00"
+      "asOf": "2026-11-28T05:00:00-07:00"
     },
     {
       "id": "fet",
       "symbol": "FET",
       "name": "Fetch.ai",
       "role": "Agent coin",
-      "price": 0.12834,
-      "change24h": 10.7,
+      "price": 0.12331,
+      "change24h": -4.41,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-11-27T05:00:00-07:00"
+      "asOf": "2026-11-28T05:00:00-07:00"
     },
     {
       "id": "near",
       "symbol": "NEAR",
       "name": "NEAR Protocol",
       "role": "Intents / agent protocol",
-      "price": 3.095,
-      "change24h": 0.96,
+      "price": 2.992,
+      "change24h": -3.97,
       "change7d": null,
       "source": "Coinbase",
-      "asOf": "2026-11-27T05:00:00-07:00"
+      "asOf": "2026-11-28T05:00:00-07:00"
     }
   ],
   "bitcoinDetail": {
-    "price": 61457,
-    "change24h": 1.36,
+    "price": 59176,
+    "change24h": -3.89,
     "change7d": null,
-    "high24h": 62123,
-    "low24h": 59842,
+    "high24h": 61630,
+    "low24h": 58700,
     "marketCap": null,
     "ath": 126173,
     "athDate": "2025-10-06",
     "source": "Coinbase",
-    "asOf": "2026-11-27T05:00:00-07:00"
+    "asOf": "2026-11-28T05:00:00-07:00"
   },
   "tasks": [
     {
@@ -277,31 +277,31 @@
   ],
   "news": [
     {
-      "title": "BTC ~$61,457 (+1.29% vs prior snap; +1.36% 24h) — 24h low ~$59,842",
+      "title": "BTC ~$59,176 (-3.71% vs prior snap; -3.89% 24h) — 24h low ~$58,700",
       "source": "Coinbase",
-      "date": "2026-11-27",
-      "dateLabel": "Nov 27",
+      "date": "2026-11-28",
+      "dateLabel": "Nov 28",
       "url": "https://www.coinbase.com/price/bitcoin"
     },
     {
-      "title": "Agent basket: NEAR ~$3.095 (+0.96% 24h); FET ~$0.1283 (+10.70%); SOL ~$72.86 (+2.96%); ETH ~$1,718 (+1.19%)",
+      "title": "Agent basket: NEAR ~$2.992 (-3.97% 24h); FET ~$0.1233 (-4.41%); SOL ~$70.86 (-3.03%); ETH ~$1,646 (-4.36%)",
       "source": "Coinbase",
-      "date": "2026-11-27",
-      "dateLabel": "Nov 27",
+      "date": "2026-11-28",
+      "dateLabel": "Nov 28",
       "url": "https://www.coinbase.com/price/near"
     },
     {
-      "title": "Gold ~$3,672 (+3.00%); WTI ~$85.25 (+1.88% futures vs prior close); SPX 7,182.78 (-0.25%); US10Y 4.85%",
+      "title": "Gold ~$3,650 (-0.59%); WTI ~$83.08 (-0.72% futures vs prior close); SPX 7,297.49 (+1.60%); US10Y 4.94%",
       "source": "gold-api / Yahoo",
-      "date": "2026-11-27",
-      "dateLabel": "Nov 27",
+      "date": "2026-11-28",
+      "dateLabel": "Nov 28",
       "url": "https://finance.yahoo.com/quote/%5EGSPC"
     },
     {
-      "title": "Today: Stick & puck 4:30 PM Aldergrove; U17 Dryland 8:30 PM Aim Athletic. Sat: U15 Development with C2 10:45 AM LEC 3. Sunday clash: U17 vs North Delta 6:15 PM LEC 1 and U15 vs Semiahmoo C1 7:00 PM LEC 2. Tue Dec 1: U15 practice 6:00 AM SPX 2. Wed Dec 2: Kevin Nelson retirement 4:00 PM, U17 Development 7:00 PM LEC 2.",
+      "title": "Today: U15 Development with C2 10:45 AM LEC 3. Sunday clash: U17 vs North Delta 6:15 PM LEC 1 and U15 vs Semiahmoo C1 7:00 PM LEC 2. Mon: U17 practice 9:30 PM SPX 2. Tue Dec 1: U15 practice 6:00 AM SPX 2. Wed Dec 2: Kevin Nelson retirement 4:00 PM, U17 Development 7:00 PM LEC 2.",
       "source": "TeamSnap / Google Calendar",
-      "date": "2026-11-27",
-      "dateLabel": "Nov 27",
+      "date": "2026-11-28",
+      "dateLabel": "Nov 28",
       "url": "https://www.teamsnap.com/"
     }
   ],
@@ -312,20 +312,20 @@
   ],
   "weather": {
     "location": "Langley, BC",
-    "conditionsShort": "Cool, chance of rain",
+    "conditionsShort": "Cool and mostly dry",
     "temp": {
       "highC": 10,
-      "lowC": 6,
+      "lowC": 4,
       "highF": 50,
-      "lowF": 43,
-      "displayC": "10° / 6°C",
-      "displayF": "50° / 43°F",
-      "currentC": 8,
-      "currentF": 46
+      "lowF": 39,
+      "displayC": "10° / 4°C",
+      "displayF": "50° / 39°F",
+      "currentC": 6,
+      "currentF": 43
     },
-    "rainChancePct": 45,
-    "asOf": "2026-11-27T05:00:00-07:00",
-    "asOfLabel": "Fri Nov 27, 2026 · ~5:00 AM PT"
+    "rainChancePct": 2,
+    "asOf": "2026-11-28T05:00:00-07:00",
+    "asOfLabel": "Sat Nov 28, 2026 · ~5:00 AM PT"
   },
   "workoutLog": [
     {
